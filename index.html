@@ -414,6 +414,38 @@
         .grad-5 { background: linear-gradient(145deg, oklch(22% 0.10 142), oklch(38% 0.15 130)); }
         .grad-6 { background: linear-gradient(145deg, oklch(26% 0.10 205), oklch(44% 0.13 178)); }
         .grad-7 { background: linear-gradient(145deg, oklch(30% 0.12 172), oklch(50% 0.16 150)); }
+        .grad-8 { background: linear-gradient(145deg, oklch(22% 0.08 230), oklch(38% 0.12 210)); }
+        .grad-9 { background: linear-gradient(145deg, oklch(30% 0.09 55), oklch(48% 0.14 43)); }
+
+        /* ── DAY EXCURSION SEPARATOR ── */
+        .tours-day-break {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 72px 0 48px;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+        .tdb-h {
+            font-family: var(--h);
+            font-size: clamp(26px, 3.2vw, 46px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--dark);
+            line-height: 1.05;
+            letter-spacing: -0.5px;
+            margin: 8px 0 14px;
+        }
+        .tdb-sub {
+            font-size: 16px;
+            color: oklch(44% 0.01 142);
+            line-height: 1.7;
+            max-width: 540px;
+        }
+        @media (max-width: 768px) {
+            .tours-day-break { flex-direction: column; align-items: flex-start; gap: 20px; padding: 48px 0 32px; }
+        }
 
         .tc-photo.has-img .tc-ph { opacity: 0; transition: opacity 300ms ease; }
         .tc-photo img {
@@ -1178,6 +1210,21 @@
             </div>
         </div>
 
+
+    </div><!-- /.tours-grid (multi-day) -->
+
+    <!-- ── DAY EXCURSIONS SEPARATOR ── -->
+    <div class="tours-day-break rv">
+        <div class="tdb-text">
+            <p class="sec-label">Just one day in Manaus?</p>
+            <h3 class="tdb-h">Back the same evening —<br>four routes, four faces of the Amazon</h3>
+            <p class="tdb-sub">No overnight required. Each day excursion departs from your hotel and returns by evening — showing a completely different Amazon: rivers, dolphins, caves, waterfalls, or jungle channels.</p>
+        </div>
+        <a href="tours/index.html" class="all-lnk" style="white-space:nowrap;flex-shrink:0;">All day trips <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="tours-grid rv d1" style="grid-template-columns: repeat(2, 1fr);">
+
         <div class="tc rv d1">
             <div class="tc-photo grad-6">
                 <img src="assets/images/tours/pink-dolphins.jpg" alt="Pink dolphins day tour from Manaus — swim at Janauari Ecological Park and visit indigenous village" loading="lazy" onload="this.parentElement.classList.add('has-img')">
@@ -1220,7 +1267,47 @@
             </div>
         </div>
 
-    </div>
+        <div class="tc rv d3">
+            <div class="tc-photo grad-8">
+                <img src="assets/images/tours/anavilhanas.jpg" alt="Pink Dolphins and Anavilhanas Archipelago day trip from Manaus — Novo Airão, wild river beaches and 400-island labyrinth" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <div class="tc-ph"><i class="fa-solid fa-map"></i></div>
+                <span class="tc-pill">1 Day</span>
+            </div>
+            <div class="tc-body">
+                <h3 class="tc-name">Pink Dolphins &amp; Anavilhanas</h3>
+                <ul class="tc-hl">
+                    <li>Pink dolphin interaction in Novo Airão</li>
+                    <li>400-island Anavilhanas Archipelago</li>
+                    <li>Wild river beaches &amp; regional lunch</li>
+                </ul>
+                <div class="tc-footer">
+                    <span class="tc-dur">Full Day</span>
+                    <a href="tours/anavilhanas/index.html" class="tc-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tc rv d4">
+            <div class="tc-photo grad-9">
+                <img src="assets/images/tours/pf-hero.jpg" alt="Presidente Figueiredo day tour from Manaus — ancient sandstone caves, waterfalls and natural swimming pools" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <div class="tc-ph"><i class="fa-solid fa-mountain"></i></div>
+                <span class="tc-pill">1 Day · Private</span>
+            </div>
+            <div class="tc-body">
+                <h3 class="tc-name">Presidente Figueiredo</h3>
+                <ul class="tc-hl">
+                    <li>Ancient sandstone caves &amp; crystal grottos</li>
+                    <li>Natural swimming pools &amp; waterfalls</li>
+                    <li>Private guided day — 7 natural sites</li>
+                </ul>
+                <div class="tc-footer">
+                    <span class="tc-dur">Full Day · Private</span>
+                    <a href="tours/presidente-figueiredo/index.html" class="tc-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.tours-grid (day excursions) -->
 
 </section>
 
@@ -1617,7 +1704,7 @@
       "name": "Amazon Tours from Manaus",
       "description": "Expert naturalist-guided tours in the Amazon rainforest departing from Manaus, Brazil",
       "url": "https://amazonecotravellers.com/#tours",
-      "numberOfItems": 7,
+      "numberOfItems": 9,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -1700,6 +1787,30 @@
             "description": "Full-day boat tour from Manaus. Explore the Anavilhanas archipelago, spot macaws and monkeys, and visit a freshwater Amazon beach.",
             "url": "https://amazonecotravellers.com/tours/ariau-river/",
             "image": "https://amazonecotravellers.com/assets/images/tours/ariau-river.jpg",
+            "provider": { "@id": "https://amazonecotravellers.com/#business" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Pink Dolphins & Anavilhanas Archipelago — Day Trip from Manaus",
+            "description": "Full-day trip from Manaus. Pink river dolphin interaction in Novo Airão, speedboat through the Anavilhanas Archipelago, wild river beaches.",
+            "url": "https://amazonecotravellers.com/tours/anavilhanas/",
+            "image": "https://amazonecotravellers.com/assets/images/tours/anavilhanas.jpg",
+            "provider": { "@id": "https://amazonecotravellers.com/#business" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Presidente Figueiredo — Caves, Waterfalls & Natural Pools Day Tour from Manaus",
+            "description": "Private day tour from Manaus to Presidente Figueiredo. Seven natural sites: ancient sandstone caves, crystal grottos, natural swimming pools, and hidden waterfalls.",
+            "url": "https://amazonecotravellers.com/tours/presidente-figueiredo/",
+            "image": "https://amazonecotravellers.com/assets/images/tours/pf-hero.jpg",
             "provider": { "@id": "https://amazonecotravellers.com/#business" }
           }
         }
