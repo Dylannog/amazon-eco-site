@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all 7 guided Amazon tours from Manaus, Brazil. From 1-day excursions to 8-day expeditions — specialist naturalist guides, pink river dolphins, Anavilhanas & more.">
+    <title>All Amazon Tours from Manaus | Amazon Eco Travellers</title>
+    <link rel="canonical" href="https://amazonecotravellers.com/tours/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazonecotravellers.com/tours/">
+    <meta property="og:site_name" content="Amazon Eco Travellers">
+    <meta property="og:title" content="All Amazon Tours from Manaus | Amazon Eco Travellers">
+    <meta property="og:description" content="7 guided Amazon tours from Manaus: from 1-day excursions to 8-day expeditions. Expert naturalist biologist guides, pink river dolphins, Anavilhanas & more.">
+    <meta property="og:image" content="https://amazonecotravellers.com/assets/images/tours/amazon-explorers.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="All Amazon Tours from Manaus | Amazon Eco Travellers">
+    <meta name="twitter:description" content="7 guided Amazon tours from Manaus. Specialist naturalist guides, pink river dolphins, Anavilhanas & the full Amazon ecosystem.">
+    <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/tours/amazon-explorers.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        /* ── PAGE HERO ── */
+        .ph {
+            height: 46vh;
+            min-height: 360px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .ph .hero-bg {
+            background-image: url('../assets/images/tours/amazon-explorers.jpg');
+            background-position: center 45%;
+        }
+
+        .ph .hero-ov {
+            background: linear-gradient(
+                180deg,
+                oklch(8% 0.02 142 / 0.2) 0%,
+                oklch(8% 0.02 142 / 0.55) 45%,
+                oklch(6% 0.02 100 / 0.92) 100%
+            );
+        }
+
+        .ph-c {
+            position: relative; z-index: 1;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 56px 56px;
+        }
+
+        .ph-eyebrow {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: oklch(80% 0.14 142);
+            margin-bottom: 16px;
+            display: flex; align-items: center; gap: 12px;
+        }
+        .ph-eyebrow::before {
+            content: ''; display: block;
+            width: 28px; height: 1px;
+            background: oklch(72% 0.1 142 / 0.6);
+        }
+
+        .ph-h {
+            font-family: var(--h);
+            font-size: clamp(42px, 6.5vw, 78px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.04;
+            letter-spacing: -1px;
+            margin-bottom: 14px;
+        }
+        .ph-h em { font-style: normal; color: oklch(76% 0.18 142); }
+
+        .ph-sub {
+            font-size: 16px;
+            font-weight: 300;
+            color: oklch(80% 0.03 142);
+            max-width: 560px;
+            line-height: 1.7;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            position: absolute; top: 84px; left: 0; right: 0;
+            z-index: 2;
+            padding: 0 56px;
+            display: flex; align-items: center; gap: 8px;
+            font-size: 12px; font-weight: 500;
+            color: oklch(72% 0.04 142);
+        }
+        .breadcrumb a { color: oklch(70% 0.08 142); transition: color 150ms; }
+        .breadcrumb a:hover { color: var(--warm-white); }
+        .breadcrumb i { font-size: 9px; opacity: 0.6; }
+
+        /* ── FILTER BAR ── */
+        .filter-bar {
+            position: sticky;
+            top: 72px;
+            z-index: 100;
+            background: var(--warm-white);
+            border-bottom: 1px solid var(--border);
+            box-shadow: 0 2px 12px oklch(0% 0 0 / 0.05);
+        }
+
+        .fb-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 56px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .fb-btn {
+            background: none; border: none; cursor: pointer;
+            font-family: var(--b);
+            font-size: 14px; font-weight: 500;
+            color: var(--gray);
+            padding: 18px 18px 16px;
+            border-bottom: 2px solid transparent;
+            display: inline-flex; align-items: center; gap: 9px;
+            transition: color 160ms var(--ease), border-color 160ms var(--ease);
+            white-space: nowrap;
+            position: relative; top: 1px;
+        }
+        .fb-btn:hover { color: var(--dark); }
+        .fb-btn.active {
+            color: var(--green);
+            border-bottom-color: var(--green);
+            font-weight: 600;
+        }
+
+        .fb-n {
+            font-size: 11px; font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 50px;
+            background: var(--green-l);
+            color: var(--green-d);
+            transition: background 160ms var(--ease), color 160ms var(--ease);
+        }
+        .fb-btn.active .fb-n { background: var(--green); color: var(--warm-white); }
+
+        /* ── LISTING WRAPPER ── */
+        .tl-wrap {
+            background: var(--warm-cream);
+            padding: 72px 56px 96px;
+        }
+
+        .tl-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ── SECTION HEADS ── */
+        .tl-head {
+            margin-bottom: 36px;
+        }
+        .tl-head.tl-head--day {
+            margin-top: 80px;
+            padding-top: 64px;
+            border-top: 1px solid var(--border);
+        }
+
+        .tl-sec-h {
+            font-family: var(--h);
+            font-size: clamp(26px, 3vw, 38px);
+            font-style: italic;
+            color: var(--dark);
+            margin-bottom: 8px;
+            line-height: 1.15;
+        }
+
+        .tl-sec-sub {
+            font-size: 15px;
+            color: var(--gray);
+            max-width: 520px;
+            line-height: 1.7;
+        }
+
+        /* ── MULTI-DAY EDITORIAL CARDS ── */
+        .tl-item {
+            margin-bottom: 24px;
+            transition: opacity 210ms var(--ease);
+        }
+        .tl-item:last-child { margin-bottom: 0; }
+
+        .tl-card {
+            display: grid;
+            grid-template-columns: 42% 1fr;
+            grid-template-areas: "photo body";
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            background: var(--warm-white);
+            box-shadow: 0 2px 12px oklch(0% 0 0 / 0.05);
+            transition: box-shadow 300ms var(--ease), transform 300ms var(--ease);
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .tl-card:hover {
+                box-shadow: 0 16px 48px oklch(0% 0 0 / 0.11);
+                transform: translateY(-3px);
+            }
+        }
+
+        .tl-card--rev {
+            grid-template-areas: "body photo";
+            grid-template-columns: 1fr 42%;
+        }
+
+        .tl-photo {
+            grid-area: photo;
+            position: relative;
+            overflow: hidden;
+            min-height: 340px;
+        }
+
+        .tl-photo img {
+            position: absolute; inset: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 600ms var(--ease);
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .tl-card:hover .tl-photo img { transform: scale(1.04); }
+        }
+
+        .tl-dur-pill {
+            position: absolute;
+            bottom: 18px; left: 18px;
+            background: oklch(8% 0.02 100 / 0.72);
+            backdrop-filter: blur(10px);
+            color: var(--warm-white);
+            font-size: 12px; font-weight: 600;
+            letter-spacing: 0.3px;
+            padding: 6px 15px;
+            border-radius: 50px;
+            border: 1px solid oklch(100% 0 0 / 0.14);
+        }
+
+        .tl-body {
+            grid-area: body;
+            padding: 44px 52px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 22px;
+        }
+
+        .tl-name {
+            font-family: var(--h);
+            font-size: clamp(26px, 2.8vw, 42px);
+            font-style: italic;
+            color: var(--dark);
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+
+        .tl-desc {
+            font-size: 15px;
+            color: oklch(40% 0.01 142);
+            line-height: 1.8;
+            max-width: 54ch;
+        }
+
+        .tl-hl {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        .tl-hl li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: oklch(36% 0.015 142);
+        }
+
+        .tl-hl li i {
+            color: var(--green);
+            font-size: 12px;
+            width: 14px;
+            flex-shrink: 0;
+        }
+
+        .tl-foot {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tl-cta {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--green);
+            color: var(--warm-white);
+            padding: 12px 26px;
+            border-radius: 50px;
+            font-size: 14px; font-weight: 600;
+            transition: background 180ms var(--ease), transform 150ms var(--ease), box-shadow 180ms var(--ease);
+        }
+        .tl-cta:hover { background: var(--green-d); box-shadow: 0 6px 20px oklch(50% 0.18 142 / 0.3); }
+        .tl-cta:active { transform: scale(0.97); }
+        .tl-cta i { transition: transform 180ms var(--ease); }
+        .tl-cta:hover i { transform: translateX(3px); }
+
+        .tl-wa {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: transparent;
+            color: oklch(44% 0.16 145);
+            border: 1.5px solid oklch(44% 0.16 145);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 14px; font-weight: 600;
+            transition: background 180ms var(--ease), color 180ms var(--ease), transform 150ms var(--ease);
+        }
+        .tl-wa:hover { background: #25D366; border-color: #25D366; color: var(--warm-white); }
+        .tl-wa:active { transform: scale(0.97); }
+
+        /* ── DAY EXCURSION CARDS ── */
+        .tl-day-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .tl-day-card {
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            background: var(--warm-white);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 12px oklch(0% 0 0 / 0.05);
+            transition: box-shadow 300ms var(--ease), transform 300ms var(--ease);
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .tl-day-card:hover {
+                box-shadow: 0 16px 48px oklch(0% 0 0 / 0.11);
+                transform: translateY(-3px);
+            }
+        }
+
+        .tl-day-photo {
+            position: relative;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+        .tl-day-photo img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 600ms var(--ease);
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .tl-day-card:hover .tl-day-photo img { transform: scale(1.04); }
+        }
+
+        .tl-day-badge {
+            display: inline-flex; align-items: center; gap: 7px;
+            background: var(--amber);
+            color: var(--dark);
+            font-size: 10px; font-weight: 700;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 50px;
+        }
+
+        .tl-day-body {
+            padding: 30px 36px 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            flex: 1;
+        }
+
+        .tl-day-name {
+            font-family: var(--h);
+            font-size: clamp(22px, 2vw, 30px);
+            font-style: italic;
+            color: var(--dark);
+            line-height: 1.15;
+        }
+
+        .tl-day-desc {
+            font-size: 14px;
+            color: oklch(42% 0.01 142);
+            line-height: 1.8;
+        }
+
+        .tl-day-foot {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: auto;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1100px) {
+            .tl-wrap { padding: 56px 40px 80px; }
+            .ph-c { padding: 0 40px 48px; }
+            .breadcrumb { padding: 0 40px; }
+            .fb-inner { padding: 0 40px; }
+            .tl-body { padding: 36px 40px; }
+        }
+
+        @media (max-width: 960px) {
+            .tl-card, .tl-card--rev {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "photo"
+                    "body";
+            }
+            .tl-photo { min-height: 280px; }
+            .tl-dur-pill { left: 16px; bottom: 16px; }
+        }
+
+        @media (max-width: 768px) {
+            .tl-wrap { padding: 48px 24px 72px; }
+            .ph { height: 52vh; }
+            .ph-c { padding: 0 24px 40px; }
+            .breadcrumb { padding: 0 24px; }
+            .fb-inner { padding: 0 20px; overflow-x: auto; }
+            .fb-btn { padding: 16px 12px 14px; font-size: 13px; }
+            .tl-body { padding: 28px 28px; gap: 18px; }
+            .tl-day-row { grid-template-columns: 1fr; }
+            .tl-head.tl-head--day { margin-top: 56px; padding-top: 48px; }
+            .tl-day-body { padding: 24px 28px 28px; }
+        }
+
+        @media (max-width: 480px) {
+            .tl-foot, .tl-day-foot { flex-direction: column; align-items: flex-start; }
+            .tl-cta, .tl-wa { width: 100%; justify-content: center; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .tl-card, .tl-day-card { transition: box-shadow 150ms ease !important; }
+            .tl-card:hover, .tl-day-card:hover { transform: none !important; }
+            .tl-photo img, .tl-day-photo img { transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+    <a href="../index.html" class="logo">
+        <img class="logo-w" src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+        <img class="logo-c" src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+    </a>
+    <nav>
+        <div class="dd">
+            <span class="nl dd-t">Tours <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="./amazon-explorers/index.html" class="di"><span>Amazon Explorers</span><span class="di-dur">5D / 4N</span></a>
+                <a href="./river-explorer/index.html" class="di"><span>River Explorer</span><span class="di-dur">5D / 4N</span></a>
+                <a href="./chlorophyll/index.html" class="di"><span>Chlorophyll</span><span class="di-dur">6D / 5N</span></a>
+                <a href="./birdwatching/index.html" class="di"><span>Birdwatching</span><span class="di-dur">7D / 6N</span></a>
+                <a href="./ecological-expedition/index.html" class="di"><span>Ecological Expedition</span><span class="di-dur">8D / 7N</span></a>
+                <hr style="border:none;border-top:1px solid var(--border);margin:4px 10px;">
+                <a href="./pink-dolphins/index.html" class="di"><span>Pink Dolphins &amp; Indigenous Village</span><span class="di-dur">1 Day</span></a>
+                <a href="./ariau-river/index.html" class="di"><span>Ariau River &amp; Rio Negro</span><span class="di-dur">1 Day</span></a>
+            </div>
+        </div>
+        <div class="dd">
+            <span class="nl dd-t">Accommodations <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="/accommodations/lodge/" class="di">Amazon Lodge</a>
+                <a href="/accommodations/riverboat/" class="di">River Boat</a>
+            </div>
+        </div>
+        <a href="/amazon/" class="nl">The Amazon</a>
+        <a href="/about/" class="nl">About Us</a>
+        <a href="/blog/" class="nl">Blog</a>
+        <div class="lang">
+            <button class="lb on">EN</button>
+            <button class="lb">DE</button>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="btn-book">Book Now</a>
+        <button class="mob-btn" id="mob-open" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="ph" style="position:relative;">
+    <div class="hero-bg"></div>
+    <div class="hero-ov"></div>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Tours</span>
+    </nav>
+    <div class="ph-c rv">
+        <p class="ph-eyebrow">Guided from Manaus, Brazil</p>
+        <h1 class="ph-h">All <em>Expeditions</em></h1>
+        <p class="ph-sub">Seven routes into the Amazon basin, guided by specialist naturalists. From a single day on the Rio Negro to eight days across every major ecosystem.</p>
+    </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" role="tablist" aria-label="Filter tours by type">
+    <div class="fb-inner">
+        <button class="fb-btn active" data-filter="all" role="tab" aria-selected="true">
+            All Tours <span class="fb-n">7</span>
+        </button>
+        <button class="fb-btn" data-filter="multi-day" role="tab" aria-selected="false">
+            Multi-Day <span class="fb-n">5</span>
+        </button>
+        <button class="fb-btn" data-filter="day-excursion" role="tab" aria-selected="false">
+            Day Excursions <span class="fb-n">2</span>
+        </button>
+    </div>
+</div>
+
+<!-- LISTING -->
+<div class="tl-wrap">
+    <div class="tl-inner">
+
+        <!-- ── MULTI-DAY SECTION ── -->
+        <div class="tl-head rv" data-section-head="multi-day">
+            <p class="sec-label">Overnight Expeditions</p>
+            <h2 class="tl-sec-h">Multi-Day Tours</h2>
+            <p class="tl-sec-sub">Stay long enough to feel the forest change rhythm. Each multi-day route combines wildlife encounters, jungle walks, and river travel led by a specialist naturalist biologist.</p>
+        </div>
+
+        <!-- Amazon Explorers — image LEFT -->
+        <div class="tl-item rv d1" data-type="multi-day">
+            <article class="tl-card">
+                <div class="tl-photo">
+                    <img src="../assets/images/tours/amazon-explorers.jpg" alt="Tourists on a boat moving through the Igapó flooded forest on the Amazon Explorers 5-day tour from Manaus">
+                    <span class="tl-dur-pill">5 Days · 4 Nights</span>
+                </div>
+                <div class="tl-body">
+                    <h2 class="tl-name">Amazon<br>Explorers</h2>
+                    <p class="tl-desc">A five-day immersion in the Rio Negro basin: canopy observation tower at dawn, Igapó flooded forest by canoe, five nights between eco-lodge and riverboat. Pink river dolphins, an indigenous village, and every encounter guided by a specialist naturalist biologist.</p>
+                    <ul class="tl-hl">
+                        <li><i class="fa-solid fa-tower-observation"></i> Ducke Reserve canopy tower at first light</li>
+                        <li><i class="fa-solid fa-water"></i> Pink river dolphin encounter</li>
+                        <li><i class="fa-solid fa-people-group"></i> Indigenous village visit</li>
+                    </ul>
+                    <div class="tl-foot">
+                        <a href="./amazon-explorers/index.html" class="tl-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Amazon%20Explorers%205-day%20tour." target="_blank" class="tl-wa"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- River Explorer — image RIGHT -->
+        <div class="tl-item rv d1" data-type="multi-day">
+            <article class="tl-card tl-card--rev">
+                <div class="tl-photo">
+                    <img src="../assets/images/tours/river-explorer.jpg" alt="Mist over the Rio Negro river at dawn on the River Explorer 5-day Amazon tour from Manaus">
+                    <span class="tl-dur-pill">5 Days · 4 Nights</span>
+                </div>
+                <div class="tl-body">
+                    <h2 class="tl-name">River<br>Explorer</h2>
+                    <p class="tl-desc">Five days following the Rio Negro upriver, from the MUSA forest canopy tower at first light to swimming with pink river dolphins in the afternoon. Uacari monkeys and Anavilhanas National Park anchor the middle days.</p>
+                    <ul class="tl-hl">
+                        <li><i class="fa-solid fa-tower-observation"></i> MUSA canopy observation tower</li>
+                        <li><i class="fa-solid fa-otter"></i> Golden-backed Uacari monkey encounter</li>
+                        <li><i class="fa-solid fa-map"></i> Anavilhanas National Park</li>
+                    </ul>
+                    <div class="tl-foot">
+                        <a href="./river-explorer/index.html" class="tl-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20River%20Explorer%205-day%20tour." target="_blank" class="tl-wa"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Chlorophyll — image LEFT -->
+        <div class="tl-item rv d1" data-type="multi-day">
+            <article class="tl-card">
+                <div class="tl-photo">
+                    <img src="../assets/images/tours/chlorophyll.jpg" alt="Sunset over the Amazon rainforest canopy on the Chlorophyll 6-day ecological tour from Manaus">
+                    <span class="tl-dur-pill">6 Days · 5 Nights</span>
+                </div>
+                <div class="tl-body">
+                    <h2 class="tl-name">Chlorophyll</h2>
+                    <p class="tl-desc">Six days across five distinct Amazon ecosystems: canopy, Igapó, terra firme, várzea, and riverine community. Built for those who want ecological understanding alongside the headline wildlife encounters.</p>
+                    <ul class="tl-hl">
+                        <li><i class="fa-solid fa-leaf"></i> Five distinct Amazon ecosystems</li>
+                        <li><i class="fa-solid fa-water"></i> Igarapé canoe through flooded forest</li>
+                        <li><i class="fa-solid fa-dove"></i> Pink dolphins &amp; macaw sightings</li>
+                    </ul>
+                    <div class="tl-foot">
+                        <a href="./chlorophyll/index.html" class="tl-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Chlorophyll%206-day%20tour." target="_blank" class="tl-wa"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Birdwatching — image RIGHT -->
+        <div class="tl-item rv d1" data-type="multi-day">
+            <article class="tl-card tl-card--rev">
+                <div class="tl-photo">
+                    <img src="../assets/images/tours/birdwatching.jpg" alt="Birdwatching in the Amazon rainforest on the 7-day specialist birdwatching tour from Manaus">
+                    <span class="tl-dur-pill">7 Days · 6 Nights</span>
+                </div>
+                <div class="tl-body">
+                    <h2 class="tl-name">Bird&shy;watching</h2>
+                    <p class="tl-desc">Seven days guided by an ornithologist specialist, covering six habitats and 600+ potential species. The Cock-of-the-Rock display arena, pre-dawn silent canoe, and Anavilhanas floodplain anchor the week.</p>
+                    <ul class="tl-hl">
+                        <li><i class="fa-solid fa-dove"></i> 600+ species across 6 habitats</li>
+                        <li><i class="fa-solid fa-feather-pointed"></i> Cock-of-the-Rock display arena</li>
+                        <li><i class="fa-solid fa-binoculars"></i> Ornithologist specialist guide</li>
+                    </ul>
+                    <div class="tl-foot">
+                        <a href="./birdwatching/index.html" class="tl-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Birdwatching%207-day%20tour." target="_blank" class="tl-wa"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Ecological Expedition — image LEFT -->
+        <div class="tl-item rv d1" data-type="multi-day">
+            <article class="tl-card">
+                <div class="tl-photo">
+                    <img src="../assets/images/tours/ecological-expedition.jpg" alt="Uacari monkey in the Amazon rainforest on the Ecological Expedition 8-day tour from Manaus">
+                    <span class="tl-dur-pill">8 Days · 7 Nights</span>
+                </div>
+                <div class="tl-body">
+                    <h2 class="tl-name">Ecological<br>Expedition</h2>
+                    <p class="tl-desc">Eight days across the full spectrum of Amazon life: our most comprehensive route. Every ecosystem, every habitat type, from the Ducke Reserve canopy to the Madeira River. Guided by a specialist naturalist biologist who has spent a lifetime in this forest.</p>
+                    <ul class="tl-hl">
+                        <li><i class="fa-solid fa-compass"></i> Every major Amazon ecosystem</li>
+                        <li><i class="fa-solid fa-moon"></i> Night jungle walk with caimans</li>
+                        <li><i class="fa-solid fa-feather-pointed"></i> Cock-of-the-Rock arena</li>
+                    </ul>
+                    <div class="tl-foot">
+                        <a href="./ecological-expedition/index.html" class="tl-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Ecological%20Expedition%208-day%20tour." target="_blank" class="tl-wa"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- ── DAY EXCURSIONS SECTION ── -->
+        <div class="tl-head tl-head--day rv" data-section-head="day-excursion">
+            <p class="sec-label">Back the same day</p>
+            <h2 class="tl-sec-h">Day Excursions</h2>
+            <p class="tl-sec-sub">Full-day routes departing from Manaus with no overnight required. Ideal before or after a longer trip, or as a standalone Amazon experience.</p>
+        </div>
+
+        <div class="tl-day-row">
+
+            <!-- Pink Dolphins -->
+            <div class="tl-item rv d1" data-type="day-excursion">
+                <article class="tl-day-card">
+                    <div class="tl-day-photo">
+                        <img src="../assets/images/tours/pink-dolphins.jpg" alt="Pink river dolphins in the Rio Negro on the Pink Dolphins and Indigenous Village day tour from Manaus">
+                        <span class="tc-pill">1 Day · 09:00–18:00</span>
+                    </div>
+                    <div class="tl-day-body">
+                        <span class="tl-day-badge"><i class="fa-solid fa-sun"></i> Day Excursion</span>
+                        <h2 class="tl-day-name">Pink Dolphins &amp;<br>Indigenous Village</h2>
+                        <p class="tl-day-desc">Meeting of the Waters, Janauarí Ecological Park, regional Amazonian lunch, and an encounter with wild pink river dolphins. Includes an indigenous village visit. Back in Manaus the same evening.</p>
+                        <ul class="tl-hl">
+                            <li><i class="fa-solid fa-water"></i> Swim with wild pink river dolphins</li>
+                            <li><i class="fa-solid fa-arrows-split-up-and-left"></i> Meeting of the Waters</li>
+                            <li><i class="fa-solid fa-people-group"></i> Indigenous village visit</li>
+                        </ul>
+                        <div class="tl-day-foot">
+                            <a href="./pink-dolphins/index.html" class="tl-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Pink%20Dolphins%20%26%20Indigenous%20Village%20day%20tour." target="_blank" class="tl-wa"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Ariau River -->
+            <div class="tl-item rv d2" data-type="day-excursion">
+                <article class="tl-day-card">
+                    <div class="tl-day-photo">
+                        <img src="../assets/images/tours/ariau-river.jpg" alt="Motorized canoe on the Ariau River on the Ariau River and Rio Negro day tour from Manaus">
+                        <span class="tc-pill">1 Day · 07:30–18:30</span>
+                    </div>
+                    <div class="tl-day-body">
+                        <span class="tl-day-badge"><i class="fa-solid fa-sun"></i> Day Excursion</span>
+                        <h2 class="tl-day-name">Ariau River &amp;<br>Rio Negro</h2>
+                        <p class="tl-day-desc">Motorized canoe through jungle channels, a native-guided forest walk, freshwater swimming on the Rio Negro, and traditional piranha fishing near the Anavilhanas archipelago. Early start, full return by 18:30.</p>
+                        <ul class="tl-hl">
+                            <li><i class="fa-solid fa-ship"></i> Ariau River motorized canoe</li>
+                            <li><i class="fa-solid fa-shoe-prints"></i> Guided jungle trail walk</li>
+                            <li><i class="fa-solid fa-fish"></i> Traditional piranha fishing</li>
+                        </ul>
+                        <div class="tl-day-foot">
+                            <a href="./ariau-river/index.html" class="tl-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Ariau%20River%20%26%20Rio%20Negro%20day%20tour." target="_blank" class="tl-wa"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div><!-- /.tl-day-row -->
+
+    </div><!-- /.tl-inner -->
+</div><!-- /.tl-wrap -->
+
+<!-- CTA -->
+<section id="cta">
+    <h2 class="cta-t rv">Not sure which tour<br><em>is right for you?</em></h2>
+    <p class="cta-s rv d1">Tell us your dates, group size, and what interests you most — wildlife, birds, community, or all of the above. We'll recommend the right route and answer every question.</p>
+    <div class="cta-btns rv d2">
+        <a href="https://wa.me/5592991321047?text=Hi!%20I'd%20like%20help%20choosing%20the%20right%20Amazon%20tour." target="_blank" class="btn-wa">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="../index.html" class="btn-cta">Back to Home <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="ft-grid">
+        <div class="ft-brand">
+            <img src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+            <p class="ft-tag">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-guided expeditions for curious travellers from around the world.</p>
+            <div class="ft-soc">
+                <a href="https://www.facebook.com/EcoBiologists" target="_blank" class="fs"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amazonecotravellers" target="_blank" class="fs"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" class="fs"><i class="fa-brands fa-tripadvisor"></i></a>
+                <a href="https://wa.me/5592991321047" target="_blank" class="fs"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="ft-col">
+            <h5>Tours</h5>
+            <ul>
+                <li><a href="./amazon-explorers/index.html">Amazon Explorers</a></li>
+                <li><a href="./river-explorer/index.html">River Explorer</a></li>
+                <li><a href="./chlorophyll/index.html">Chlorophyll</a></li>
+                <li><a href="./birdwatching/index.html">Birdwatching</a></li>
+                <li><a href="./ecological-expedition/index.html">Ecological Expedition</a></li>
+                <li><a href="./pink-dolphins/index.html">Pink Dolphins</a></li>
+                <li><a href="./ariau-river/index.html">Ariau River</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Information</h5>
+            <ul>
+                <li><a href="/faq/">FAQ</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/reviews/">Reviews</a></li>
+                <li><a href="/gallery/">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/accommodations/">Accommodations</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ft-btm">
+        <p>&copy; 2025 Amazon Eco Travellers. All rights reserved.</p>
+        <p>Manaus, Amazonas, Brazil &mdash; <a href="tel:+5592991321047">+55 92 99132-1047</a></p>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5592991321047" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- MOBILE DRAWER -->
+<div class="mob-drawer" id="mob-drawer" aria-hidden="true">
+    <div class="mob-overlay" id="mob-overlay"></div>
+    <nav class="mob-panel">
+        <div class="mob-head">
+            <img src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+            <button class="mob-close" id="mob-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mob-section">
+            <h6>Multi-Day Tours</h6>
+            <a href="./amazon-explorers/index.html" class="mob-link">Amazon Explorers <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="./river-explorer/index.html" class="mob-link">River Explorer <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="./chlorophyll/index.html" class="mob-link">Chlorophyll <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="./birdwatching/index.html" class="mob-link">Birdwatching <span class="mob-link-dur">7D / 6N</span></a>
+            <a href="./ecological-expedition/index.html" class="mob-link">Ecological Expedition <span class="mob-link-dur">8D / 7N</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Day Excursions</h6>
+            <a href="./pink-dolphins/index.html" class="mob-link">Pink Dolphins &amp; Indigenous Village <span class="mob-link-dur">1 Day</span></a>
+            <a href="./ariau-river/index.html" class="mob-link">Ariau River &amp; Rio Negro <span class="mob-link-dur">1 Day</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Explore</h6>
+            <a href="/about/" class="mob-link">About Us</a>
+            <a href="/gallery/" class="mob-link">Gallery</a>
+            <a href="/faq/" class="mob-link">FAQ</a>
+            <a href="/contact/" class="mob-link">Contact</a>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="mob-book">Book Now on WhatsApp</a>
+    </nav>
+</div>
+
+<script src="../assets/js/main.js"></script>
+
+<script>
+    (function () {
+        const EASE = 'cubic-bezier(0.23,1,0.32,1)';
+        const DURATION = 200;
+
+        const filterBtns = document.querySelectorAll('.fb-btn');
+        const items = document.querySelectorAll('.tl-item');
+        const sectionHeads = document.querySelectorAll('[data-section-head]');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                this.classList.add('active');
+                this.setAttribute('aria-selected', 'true');
+
+                const filter = this.dataset.filter;
+
+                items.forEach(item => {
+                    const match = filter === 'all' || item.dataset.type === filter;
+                    if (match) {
+                        item.style.display = '';
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.97)';
+                        requestAnimationFrame(() => {
+                            requestAnimationFrame(() => {
+                                item.style.transition = `opacity ${DURATION}ms ${EASE}, transform ${DURATION}ms ${EASE}`;
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            });
+                        });
+                    } else {
+                        item.style.transition = `opacity ${DURATION}ms ${EASE}, transform ${DURATION}ms ${EASE}`;
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.97)';
+                        setTimeout(() => {
+                            if (item.style.opacity === '0') item.style.display = 'none';
+                        }, DURATION + 20);
+                    }
+                });
+
+                sectionHeads.forEach(head => {
+                    const match = filter === 'all' || head.dataset.sectionHead === filter;
+                    head.style.display = match ? '' : 'none';
+                });
+            });
+        });
+    })();
+</script>
+
+<script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://amazonecotravellers.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://amazonecotravellers.com/tours/" }
+  ]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Amazon Tours from Manaus",
+  "description": "All guided Amazon tours departing from Manaus, Brazil — from 1-day excursions to 8-day expeditions led by specialist naturalist biologists.",
+  "url": "https://amazonecotravellers.com/tours/",
+  "numberOfItems": 7,
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Amazon Explorers — 5-Day Amazon Tour from Manaus", "url": "https://amazonecotravellers.com/tours/amazon-explorers/" },
+    { "@type": "ListItem", "position": 2, "name": "River Explorer — 5-Day Amazon River Tour from Manaus", "url": "https://amazonecotravellers.com/tours/river-explorer/" },
+    { "@type": "ListItem", "position": 3, "name": "Chlorophyll — 6-Day Amazon Nature Tour from Manaus", "url": "https://amazonecotravellers.com/tours/chlorophyll/" },
+    { "@type": "ListItem", "position": 4, "name": "Birdwatching — 7-Day Amazon Birdwatching Tour from Manaus", "url": "https://amazonecotravellers.com/tours/birdwatching/" },
+    { "@type": "ListItem", "position": 5, "name": "Ecological Expedition — 8-Day Amazon Tour from Manaus", "url": "https://amazonecotravellers.com/tours/ecological-expedition/" },
+    { "@type": "ListItem", "position": 6, "name": "Pink Dolphins & Indigenous Village — Amazon Day Tour from Manaus", "url": "https://amazonecotravellers.com/tours/pink-dolphins/" },
+    { "@type": "ListItem", "position": 7, "name": "Ariau River & Rio Negro — Amazon Day Tour from Manaus", "url": "https://amazonecotravellers.com/tours/ariau-river/" }
+  ]
+}
+]
+</script>
+
+</body>
+</html>

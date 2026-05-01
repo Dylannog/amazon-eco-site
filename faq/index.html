@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Answers to the most common questions about Amazon Eco Travellers tours — best time to visit, what to pack, group sizes, wildlife, health, and how to book.">
+    <title>FAQ — Frequently Asked Questions | Amazon Eco Travellers</title>
+    <link rel="canonical" href="https://amazonecotravellers.com/faq/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazonecotravellers.com/faq/">
+    <meta property="og:site_name" content="Amazon Eco Travellers">
+    <meta property="og:title" content="FAQ — Amazon Eco Travellers">
+    <meta property="og:description" content="Everything you need to know before booking a guided Amazon tour from Manaus: seasons, packing, wildlife, health, and booking.">
+    <meta property="og:image" content="https://amazonecotravellers.com/assets/images/about/about-hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAQ — Amazon Eco Travellers">
+    <meta name="twitter:description" content="Everything you need to know before your Amazon expedition from Manaus.">
+    <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/about/about-hero.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        /* ── HERO ── */
+        .fq-hero {
+            background: oklch(14% 0.07 142);
+            min-height: 52vh;
+            display: flex;
+            align-items: flex-end;
+            padding: 120px 72px 88px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fq-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 80% 30%, oklch(38% 0.12 142 / 0.11) 0%, transparent 55%);
+            pointer-events: none;
+        }
+
+        .fq-hero-inner {
+            position: relative;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: end;
+        }
+
+        .fq-hero-bc {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 12px;
+            color: oklch(48% 0.05 142);
+            margin-bottom: 44px;
+        }
+        .fq-hero-bc a {
+            color: oklch(48% 0.05 142);
+            transition: color 180ms var(--ease);
+        }
+        .fq-hero-bc a:hover { color: oklch(76% 0.12 142); }
+        .fq-hero-bc i { font-size: 8px; }
+
+        .fq-hero-ey {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: oklch(68% 0.12 142);
+            margin-bottom: 22px;
+            display: flex; align-items: center; gap: 12px;
+        }
+        .fq-hero-ey::before {
+            content: ''; display: block;
+            width: 28px; height: 1px;
+            background: oklch(52% 0.08 142 / 0.7);
+        }
+
+        .fq-hero-h {
+            font-family: var(--h);
+            font-size: clamp(34px, 4.5vw, 62px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .fq-hero-h em {
+            font-style: normal;
+            color: oklch(76% 0.16 142);
+        }
+
+        .fq-hero-right {
+            padding-bottom: 6px;
+        }
+
+        .fq-hero-p {
+            font-size: 16px;
+            font-weight: 300;
+            color: oklch(62% 0.04 142);
+            line-height: 1.82;
+            margin-bottom: 32px;
+        }
+
+        .fq-hero-cats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .fq-hero-cat {
+            font-size: 12px;
+            font-weight: 600;
+            color: oklch(66% 0.09 142);
+            border: 1px solid oklch(40% 0.07 142 / 0.6);
+            padding: 6px 16px;
+            border-radius: 50px;
+            transition: color 180ms var(--ease), border-color 180ms var(--ease);
+        }
+        .fq-hero-cat:hover {
+            color: oklch(82% 0.12 142);
+            border-color: oklch(55% 0.1 142 / 0.8);
+        }
+
+        /* ── BODY ── */
+        .fq-body {
+            background: var(--warm-cream);
+            padding: 100px 72px 120px;
+        }
+
+        .fq-body-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 96px;
+            align-items: start;
+        }
+
+        /* ── STICKY NAV ── */
+        .fq-nav {
+            position: sticky;
+            top: 96px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .fq-nav-label {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: oklch(68% 0.01 140);
+            padding: 0 14px 12px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 6px;
+        }
+
+        .fq-nav-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--gray);
+            padding: 9px 14px;
+            border-radius: 8px;
+            transition: color 180ms var(--ease), background 180ms var(--ease);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .fq-nav-link::before {
+            content: '';
+            display: block;
+            width: 5px; height: 5px;
+            border-radius: 50%;
+            background: var(--border);
+            flex-shrink: 0;
+            transition: background 180ms var(--ease);
+        }
+        .fq-nav-link:hover {
+            color: var(--dark);
+            background: oklch(94% 0.02 120);
+        }
+        .fq-nav-link.is-active {
+            color: var(--green-d);
+            background: var(--green-l);
+        }
+        .fq-nav-link.is-active::before { background: var(--green); }
+
+        /* ── SECTIONS ── */
+        .fq-sections {
+            display: flex;
+            flex-direction: column;
+            gap: 72px;
+        }
+
+        .fq-section-head {
+            margin-bottom: 32px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .fq-section-icon {
+            width: 40px; height: 40px;
+            border-radius: 10px;
+            background: var(--green-l);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: var(--green);
+            flex-shrink: 0;
+        }
+
+        .fq-section-title {
+            font-family: var(--h);
+            font-size: 26px;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--dark);
+            line-height: 1.2;
+        }
+
+        /* ── ACCORDION ITEMS ── */
+        .fq-item {
+            border-bottom: 1px solid var(--border);
+        }
+        .fq-item:last-child { border-bottom: none; }
+
+        .fq-q {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: var(--b);
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+            text-align: left;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: color 180ms var(--ease);
+        }
+        .fq-q:hover { color: var(--green-d); }
+
+        .fq-q-ico {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            border: 1.5px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: var(--gray);
+            flex-shrink: 0;
+            transition: border-color 180ms var(--ease), color 180ms var(--ease),
+                        background 180ms var(--ease), transform 280ms var(--ease);
+        }
+
+        .fq-item.is-open .fq-q { color: var(--green-d); }
+        .fq-item.is-open .fq-q-ico {
+            border-color: var(--green);
+            color: var(--green);
+            background: var(--green-l);
+            transform: rotate(45deg);
+        }
+
+        .fq-ans-wrap {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 300ms var(--ease);
+        }
+        .fq-item.is-open .fq-ans-wrap {
+            grid-template-rows: 1fr;
+        }
+
+        .fq-ans-inner {
+            overflow: hidden;
+        }
+
+        .fq-ans {
+            padding: 0 48px 28px 0;
+            font-size: 15px;
+            color: oklch(40% 0.01 140);
+            line-height: 1.88;
+        }
+        .fq-ans p + p { margin-top: 14px; }
+        .fq-ans em { font-style: italic; color: var(--dark); }
+        .fq-ans a { color: var(--green); }
+        .fq-ans a:hover { text-decoration: underline; }
+
+        /* ── CTA ── */
+        .fq-cta {
+            background: oklch(16% 0.08 142);
+            padding: 100px 72px;
+            text-align: center;
+        }
+
+        .fq-cta-inner { max-width: 620px; margin: 0 auto; }
+
+        .fq-cta-label {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: oklch(55% 0.09 142);
+            margin-bottom: 26px;
+        }
+
+        .fq-cta-h {
+            font-family: var(--h);
+            font-size: clamp(30px, 3.5vw, 48px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.18;
+            margin-bottom: 18px;
+        }
+        .fq-cta-h em {
+            font-style: normal;
+            color: oklch(76% 0.16 142);
+        }
+
+        .fq-cta-p {
+            font-size: 16px;
+            color: oklch(58% 0.04 142);
+            line-height: 1.75;
+            margin-bottom: 42px;
+        }
+
+        .fq-cta-btns {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .fq-hero-inner {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .fq-hero-right { padding-bottom: 0; }
+            .fq-body-inner {
+                grid-template-columns: 1fr;
+                gap: 56px;
+            }
+            .fq-nav { position: static; flex-direction: row; flex-wrap: wrap; gap: 6px; }
+            .fq-nav-label { display: none; }
+            .fq-nav-link { font-size: 13px; padding: 7px 14px; }
+        }
+
+        @media (max-width: 768px) {
+            .fq-hero   { padding: 100px 28px 68px; min-height: 44vh; }
+            .fq-body   { padding: 68px 28px 96px; }
+            .fq-cta    { padding: 72px 28px; }
+            .fq-ans    { padding-right: 16px; }
+            .fq-cta-btns { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+    <a href="../index.html" class="logo">
+        <img class="logo-w" src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+        <img class="logo-c" src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+    </a>
+    <nav>
+        <div class="dd">
+            <span class="nl dd-t">Tours <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="../tours/amazon-explorers/index.html" class="di"><span>Amazon Explorers</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/river-explorer/index.html" class="di"><span>River Explorer</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/chlorophyll/index.html" class="di"><span>Chlorophyll</span><span class="di-dur">6D / 5N</span></a>
+                <a href="../tours/birdwatching/index.html" class="di"><span>Birdwatching</span><span class="di-dur">7D / 6N</span></a>
+                <a href="../tours/ecological-expedition/index.html" class="di"><span>Ecological Expedition</span><span class="di-dur">8D / 7N</span></a>
+                <hr style="border:none;border-top:1px solid var(--border);margin:4px 10px;">
+                <a href="../tours/pink-dolphins/index.html" class="di"><span>Pink Dolphins &amp; Indigenous Village</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/ariau-river/index.html" class="di"><span>Ariau River &amp; Rio Negro</span><span class="di-dur">1 Day</span></a>
+            </div>
+        </div>
+        <a href="../tours/index.html" class="nl">All Tours</a>
+        <a href="../about/index.html" class="nl">About Us</a>
+        <div class="lang">
+            <button class="lb on">EN</button>
+            <button class="lb">DE</button>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="btn-book">Book Now</a>
+        <button class="mob-btn" id="mob-open" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="fq-hero">
+    <div class="fq-hero-inner">
+        <div>
+            <nav class="fq-hero-bc" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>FAQ</span>
+            </nav>
+            <p class="fq-hero-ey">Common questions</p>
+            <h1 class="fq-hero-h">Answers to the questions<br>we hear <em>most.</em></h1>
+        </div>
+        <div class="fq-hero-right">
+            <p class="fq-hero-p">From the best time to visit to what to pack and how to book — everything you need before your Amazon expedition.</p>
+            <div class="fq-hero-cats">
+                <a href="#planning" class="fq-hero-cat">Planning</a>
+                <a href="#tours" class="fq-hero-cat">The Tours</a>
+                <a href="#expect" class="fq-hero-cat">What to Expect</a>
+                <a href="#health" class="fq-hero-cat">Health &amp; Safety</a>
+                <a href="#booking" class="fq-hero-cat">Booking</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BODY -->
+<section class="fq-body">
+    <div class="fq-body-inner">
+
+        <!-- STICKY NAV -->
+        <nav class="fq-nav" aria-label="FAQ categories">
+            <p class="fq-nav-label">Jump to</p>
+            <a href="#planning" class="fq-nav-link" data-nav="planning">Planning</a>
+            <a href="#tours"    class="fq-nav-link" data-nav="tours">The Tours</a>
+            <a href="#expect"   class="fq-nav-link" data-nav="expect">What to Expect</a>
+            <a href="#health"   class="fq-nav-link" data-nav="health">Health &amp; Safety</a>
+            <a href="#booking"  class="fq-nav-link" data-nav="booking">Booking</a>
+        </nav>
+
+        <!-- ACCORDION SECTIONS -->
+        <div class="fq-sections">
+
+            <!-- PLANNING YOUR TRIP -->
+            <div class="fq-section" id="planning">
+                <div class="fq-section-head">
+                    <div class="fq-section-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h2 class="fq-section-title">Planning Your Trip</h2>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        When is the best time to visit the Amazon?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>There is no bad time — the two seasons simply offer very different experiences. The wet season (December&ndash;June) floods the forest, creating <em>igap&oacute;</em>: flooded forest you can canoe directly through, with wildlife concentrated on higher ground and an extraordinary underwater landscape. Fruit is abundant, monkeys are plentiful, and the scenery is unlike anywhere else on earth.</p>
+                            <p>The dry season (July&ndash;November) reveals sandbanks, clearer river channels, and easier walking in the jungle. Giant river otters and caimans are more visible along exposed shorelines. Both seasons have their strengths. Tell us what you most want to see and we'll recommend the timing that fits.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        How do I get to Manaus?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Manaus has an international airport (Eduardo Gomes &mdash; MAO) with direct flights from S&atilde;o Paulo, Bogot&aacute;, Lisbon, and Miami, among others. From Europe and North America, most routes connect through S&atilde;o Paulo (GRU). Once you land, we arrange all transfers to the departure point for your tour.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        Do I need a visa to enter Brazil?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Citizens of the US, UK, EU, Canada and Australia currently enter Brazil visa-free for stays of up to 90 days. Requirements do change &mdash; always confirm with your country's embassy or the Brazilian consulate before booking. We're happy to advise on what documents are typically needed.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        What should I pack?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Light, long-sleeved clothing in neutral or dark colours (avoid bright white), a wide-brimmed hat, reef-safe sunscreen, insect repellent (DEET-based works best in the forest), a quality rain jacket, and sturdy closed-toe shoes or hiking sandals. A headlamp with fresh batteries is essential for night walks.</p>
+                            <p>We send a detailed packing list to everyone who books, tailored to the specific tour and season.</p>
+                        </div>
+                    </div></div>
+                </div>
+            </div>
+
+            <!-- THE TOURS -->
+            <div class="fq-section" id="tours">
+                <div class="fq-section-head">
+                    <div class="fq-section-icon"><i class="fa-solid fa-binoculars"></i></div>
+                    <h2 class="fq-section-title">The Tours</h2>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        How many people are in each group?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>We keep groups small &mdash; typically between 4 and 8 guests. This isn't a marketing decision: a small group moves quietly through the forest. A large one doesn't. The difference in what you see and hear is not subtle.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        What's included in the tour price?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>All tours include accommodation (on multi-day trips), all meals from the first dinner to the last breakfast, guide fees, all river and overland transport within the itinerary, park entrance fees, and any equipment we provide in the field. Day excursions include all activities and lunch.</p>
+                            <p>International flights and travel insurance are <em>not</em> included. We strongly recommend purchasing comprehensive travel insurance before departure.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        Are the tours suitable for people with no jungle experience?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Yes. Our tours are designed for curious, motivated travellers &mdash; not technical adventurers. What helps is a genuine interest in wildlife and nature, a willingness to slow down and look closely, and some comfort with heat and humidity. We've guided botanists, retired schoolteachers, and first-time international travellers. The forest does the rest.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        Can I book a private tour?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Yes. All our tours can run as private departures for individuals, couples, or families. <a href="../contact/index.html">Contact us</a> to discuss dates and availability &mdash; private departures can often be arranged on more flexible scheduling than group tours.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        Are the tours suitable for children?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Some are. Day excursions work well for families with children aged 10 and above. Multi-day expeditions involve early starts, uneven terrain, and long days on the water &mdash; we assess this case by case. <a href="../contact/index.html">Contact us</a> with your children's ages and we'll give you an honest answer about which tours are a good fit.</p>
+                        </div>
+                    </div></div>
+                </div>
+            </div>
+
+            <!-- WHAT TO EXPECT -->
+            <div class="fq-section" id="expect">
+                <div class="fq-section-head">
+                    <div class="fq-section-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h2 class="fq-section-title">What to Expect</h2>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        What wildlife might I see?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>The Amazon basin holds more species per square kilometre than anywhere else on earth &mdash; but wildlife sightings are never guaranteed. This is not a zoo. What we offer is the knowledge to find animals where they actually live.</p>
+                            <p>Common sightings include multiple primate species (howler monkeys, spider monkeys, squirrel monkeys, white-faced sakis), pink and grey river dolphins, caimans, giant river otters, river turtles, and hundreds of bird species. Night walks regularly produce owls, night monkeys, and sleeping birds roosting in the open. The quality of what you see depends partly on patience &mdash; and patience is something we know how to encourage.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        How physically demanding are the tours?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Moderate. You should be comfortable walking on uneven, sometimes muddy ground for a few hours at a stretch, getting in and out of small boats, and managing heat and humidity. You don't need to be particularly fit, but you should be mobile and comfortable outdoors.</p>
+                            <p>If you have a specific medical condition or mobility concern, <a href="../contact/index.html">contact us before booking</a>. We'll tell you honestly whether a given tour works for you.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        What is the accommodation like on multi-day tours?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Multi-day tours use simple, clean jungle lodges with private or shared rooms, mosquito nets, and basic amenities. The focus is on the forest, not the room. Conditions are comfortable but not luxurious: solid beds, cold showers, and generators rather than mains electricity.</p>
+                            <p>For travellers expecting air conditioning and hotel-grade facilities, we'd gently suggest this might not be the right trip. For travellers who want to fall asleep to the sound of the forest, it tends to be exactly right.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        Will I have phone or internet access in the forest?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Mostly not. Signal is limited or absent during multi-day expeditions &mdash; which most of our guests find is one of the best things about the experience. We are always reachable in an emergency. If you need to stay connected for professional reasons, let us know and we'll tell you honestly what connectivity exists on your specific itinerary.</p>
+                        </div>
+                    </div></div>
+                </div>
+            </div>
+
+            <!-- HEALTH & SAFETY -->
+            <div class="fq-section" id="health">
+                <div class="fq-section-head">
+                    <div class="fq-section-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h2 class="fq-section-title">Health &amp; Safety</h2>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        Do I need vaccinations before visiting the Amazon?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Yellow fever vaccination is strongly recommended for the Amazon &mdash; some countries require proof of vaccination to re-enter after visiting Brazil. We also recommend ensuring you're up to date on hepatitis A, typhoid, and routine vaccinations. Consult your doctor or a travel health clinic at least 4&ndash;6 weeks before departure.</p>
+                            <p>We don't provide medical advice, but we're happy to share what previous guests have typically been recommended by their physicians.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        Is the Amazon safe?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>The forest and rivers are safe when explored with guides who know the terrain, the wildlife, and the conditions. We plan every itinerary with built-in contingencies for weather, river levels, and medical needs. Standard urban awareness applies in Manaus itself, as in any large city.</p>
+                            <p>In over a decade of operation, we've never had a serious incident on any of our expeditions.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        What happens if someone gets sick or injured during the tour?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>We carry a comprehensive first aid kit on every expedition and our guides are trained in wilderness first response. For serious situations, we have evacuation protocols established and maintain contact with medical facilities in Manaus.</p>
+                            <p>We strongly recommend all guests carry comprehensive travel insurance that includes medical evacuation cover. This is not optional advice &mdash; it matters.</p>
+                        </div>
+                    </div></div>
+                </div>
+            </div>
+
+            <!-- BOOKING -->
+            <div class="fq-section" id="booking">
+                <div class="fq-section-head">
+                    <div class="fq-section-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h2 class="fq-section-title">Booking</h2>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        How do I book a tour?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>The simplest way is via WhatsApp &mdash; message us with your preferred tour, approximate dates, and group size and we'll confirm availability and walk you through next steps. You can also use the <a href="../contact/index.html">contact form on our contact page</a>. We don't operate through third-party booking platforms.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        What is your cancellation policy?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>We understand travel plans change. Cancellations made more than 60 days before departure receive a full refund less a small administration fee. Between 30 and 60 days, 50% is refunded. Within 30 days of departure, tours are non-refundable but transferable to a different date.</p>
+                            <p>We always try to be flexible &mdash; if your circumstances change, contact us and we'll work something out.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        Do you operate year-round?
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Yes. We run tours in every month of the year, adapting the itinerary to the season. Some activities are seasonal &mdash; sandbank landings and certain river channels require dry season conditions, for instance. We'll always tell you exactly what's available on your specific dates so you can set the right expectations.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+                <div class="fq-item">
+                    <button class="fq-q" aria-expanded="false">
+                        I still have a question that isn't answered here.
+                        <span class="fq-q-ico"><i class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="fq-ans-wrap"><div class="fq-ans-inner">
+                        <div class="fq-ans">
+                            <p>Then ask us directly. WhatsApp is the fastest way to reach us: <a href="https://wa.me/5592991321047?text=Hi!%20I%27ve%20read%20the%20FAQ%20and%20have%20a%20question%20about%20your%20tours." target="_blank">+55 92 99132-1047</a>. Or use the <a href="../contact/index.html">contact form</a> and we'll reply by email within one business day.</p>
+                        </div>
+                    </div></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="fq-cta">
+    <div class="fq-cta-inner rv">
+        <p class="fq-cta-label">Ready to go</p>
+        <h2 class="fq-cta-h">Seven tours, one <em>extraordinary</em> forest.</h2>
+        <p class="fq-cta-p">Multi-day expeditions and single-day excursions, all departing from Manaus. Browse the options and then reach out &mdash; we'll help you choose the right one.</p>
+        <div class="fq-cta-btns">
+            <a href="../tours/index.html" class="btn-solid">View All Tours</a>
+            <a href="https://wa.me/5592991321047?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20your%20Amazon%20tours." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="ft-grid">
+        <div class="ft-brand">
+            <img src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+            <p class="ft-tag">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-led expeditions for curious travellers from around the world.</p>
+            <div class="ft-soc">
+                <a href="https://www.facebook.com/EcoBiologists" target="_blank" class="fs"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amazonecotravellers" target="_blank" class="fs"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" class="fs"><i class="fa-brands fa-tripadvisor"></i></a>
+                <a href="https://wa.me/5592991321047" target="_blank" class="fs"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="ft-col">
+            <h5>Tours</h5>
+            <ul>
+                <li><a href="../tours/amazon-explorers/index.html">Amazon Explorers</a></li>
+                <li><a href="../tours/river-explorer/index.html">River Explorer</a></li>
+                <li><a href="../tours/chlorophyll/index.html">Chlorophyll</a></li>
+                <li><a href="../tours/birdwatching/index.html">Birdwatching</a></li>
+                <li><a href="../tours/ecological-expedition/index.html">Ecological Expedition</a></li>
+                <li><a href="../tours/pink-dolphins/index.html">Pink Dolphins</a></li>
+                <li><a href="../tours/ariau-river/index.html">Ariau River</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Information</h5>
+            <ul>
+                <li><a href="../faq/index.html" style="color: var(--green);">FAQ</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about/index.html">About Us</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ft-btm">
+        <p>&copy; 2025 Amazon Eco Travellers. All rights reserved.</p>
+        <p>Manaus, Amazonas, Brazil &mdash; <a href="tel:+5592991321047">+55 92 99132-1047</a></p>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5592991321047" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- MOBILE DRAWER -->
+<div class="mob-drawer" id="mob-drawer" aria-hidden="true">
+    <div class="mob-overlay" id="mob-overlay"></div>
+    <nav class="mob-panel">
+        <div class="mob-head">
+            <img src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+            <button class="mob-close" id="mob-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mob-section">
+            <h6>Multi-Day Tours</h6>
+            <a href="../tours/amazon-explorers/index.html" class="mob-link">Amazon Explorers <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/river-explorer/index.html" class="mob-link">River Explorer <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/chlorophyll/index.html" class="mob-link">Chlorophyll <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="../tours/birdwatching/index.html" class="mob-link">Birdwatching <span class="mob-link-dur">7D / 6N</span></a>
+            <a href="../tours/ecological-expedition/index.html" class="mob-link">Ecological Expedition <span class="mob-link-dur">8D / 7N</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Day Excursions</h6>
+            <a href="../tours/pink-dolphins/index.html" class="mob-link">Pink Dolphins &amp; Indigenous Village <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/ariau-river/index.html" class="mob-link">Ariau River &amp; Rio Negro <span class="mob-link-dur">1 Day</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Explore</h6>
+            <a href="../about/index.html" class="mob-link">About Us</a>
+            <a href="../gallery/index.html" class="mob-link">Gallery</a>
+            <a href="../faq/index.html" class="mob-link">FAQ</a>
+            <a href="../contact/index.html" class="mob-link">Contact</a>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="mob-book">Book Now on WhatsApp</a>
+    </nav>
+</div>
+
+<script src="../assets/js/main.js"></script>
+
+<script>
+(function () {
+    /* ── ACCORDION ── */
+    var items = document.querySelectorAll('.fq-item');
+
+    items.forEach(function (item) {
+        var btn = item.querySelector('.fq-q');
+        btn.addEventListener('click', function () {
+            var isOpen = item.classList.contains('is-open');
+
+            items.forEach(function (el) {
+                el.classList.remove('is-open');
+                el.querySelector('.fq-q').setAttribute('aria-expanded', 'false');
+            });
+
+            if (!isOpen) {
+                item.classList.add('is-open');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+    /* ── SCROLL-SPY (sticky nav) ── */
+    var sections = document.querySelectorAll('.fq-section');
+    var navLinks = document.querySelectorAll('.fq-nav-link');
+
+    if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var id = entry.target.id;
+                    navLinks.forEach(function (link) {
+                        link.classList.toggle('is-active', link.dataset.nav === id);
+                    });
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+
+        sections.forEach(function (sec) { io.observe(sec); });
+    }
+}());
+</script>
+
+<script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://amazonecotravellers.com/" },
+    { "@type": "ListItem", "position": 2, "name": "FAQ",  "item": "https://amazonecotravellers.com/faq/" }
+  ]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When is the best time to visit the Amazon?",
+      "acceptedAnswer": { "@type": "Answer", "text": "There is no bad time. The wet season (December–June) floods the forest and creates igapó, perfect for canoe exploration. The dry season (July–November) reveals sandbanks and easier jungle walking. Tell us what you want to see and we'll recommend the right timing." }
+    },
+    {
+      "@type": "Question",
+      "name": "How many people are in each group?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We keep groups small — typically between 4 and 8 guests. A small group moves quietly through the forest; a large one doesn't. The difference in what you see and hear is significant." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in the tour price?",
+      "acceptedAnswer": { "@type": "Answer", "text": "All tours include accommodation (multi-day), all meals, guide fees, transport, park entrance fees, and provided equipment. International flights and travel insurance are not included." }
+    },
+    {
+      "@type": "Question",
+      "name": "What wildlife might I see?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Common sightings include multiple primate species, pink and grey river dolphins, caimans, giant river otters, river turtles, and hundreds of bird species. Night walks regularly produce owls and night monkeys. Sightings are never guaranteed — this is the wild Amazon." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need vaccinations?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yellow fever vaccination is strongly recommended. We also suggest hepatitis A, typhoid, and routine vaccinations. Consult your doctor at least 4–6 weeks before departure." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book a tour?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The simplest way is via WhatsApp at +55 92 99132-1047. Message us with your preferred tour, approximate dates, and group size and we'll confirm availability and next steps." }
+    }
+  ]
+}
+]
+</script>
+
+</body>
+</html>

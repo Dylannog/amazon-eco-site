@@ -1,0 +1,15 @@
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporários
+*.tmp
+*.log

@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photos from Amazon Eco Travellers expeditions — wildlife, landscapes, and life on the river. All images taken in the field by our naturalist guides.">
+    <title>Gallery — Amazon Expeditions in Photos | Amazon Eco Travellers</title>
+    <link rel="canonical" href="https://amazonecotravellers.com/gallery/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazonecotravellers.com/gallery/">
+    <meta property="og:site_name" content="Amazon Eco Travellers">
+    <meta property="og:title" content="Photo Gallery — Amazon Eco Travellers">
+    <meta property="og:description" content="Wildlife, landscapes, and life on the river. All photos taken in the field during our guided Amazon expeditions from Manaus.">
+    <meta property="og:image" content="https://amazonecotravellers.com/assets/images/tours/ch-macaw.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Photo Gallery — Amazon Eco Travellers">
+    <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/tours/ch-macaw.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        /* ── HERO ── */
+        .gl-hero {
+            background: oklch(14% 0.07 142);
+            min-height: 48vh;
+            display: flex;
+            align-items: flex-end;
+            padding: 120px 72px 72px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gl-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 90% 20%, oklch(38% 0.12 142 / 0.1) 0%, transparent 55%);
+            pointer-events: none;
+        }
+
+        .gl-hero-inner {
+            position: relative;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: end;
+        }
+
+        .gl-hero-bc {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 12px;
+            color: oklch(48% 0.05 142);
+            margin-bottom: 44px;
+        }
+        .gl-hero-bc a { color: oklch(48% 0.05 142); transition: color 180ms var(--ease); }
+        .gl-hero-bc a:hover { color: oklch(76% 0.12 142); }
+        .gl-hero-bc i { font-size: 8px; }
+
+        .gl-hero-ey {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: oklch(68% 0.12 142);
+            margin-bottom: 22px;
+            display: flex; align-items: center; gap: 12px;
+        }
+        .gl-hero-ey::before {
+            content: ''; display: block;
+            width: 28px; height: 1px;
+            background: oklch(52% 0.08 142 / 0.7);
+        }
+
+        .gl-hero-h {
+            font-family: var(--h);
+            font-size: clamp(34px, 4.5vw, 62px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+        .gl-hero-h em {
+            font-style: normal;
+            color: oklch(76% 0.16 142);
+        }
+
+        .gl-hero-right { padding-bottom: 4px; }
+
+        .gl-hero-p {
+            font-size: 16px;
+            font-weight: 300;
+            color: oklch(62% 0.04 142);
+            line-height: 1.82;
+            margin-bottom: 28px;
+        }
+
+        .gl-hero-count {
+            font-size: 13px;
+            color: oklch(50% 0.06 142);
+            letter-spacing: 0.3px;
+        }
+        .gl-hero-count strong {
+            font-size: 28px;
+            font-family: var(--h);
+            font-style: italic;
+            color: oklch(76% 0.14 142);
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+
+        /* ── FILTER BAR ── */
+        .gl-bar {
+            background: var(--warm-white);
+            padding: 0 72px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 72px;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .gl-fb {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gray);
+            padding: 18px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            position: relative;
+            transition: color 180ms var(--ease);
+            white-space: nowrap;
+        }
+        .gl-fb::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 20px; right: 20px;
+            height: 2px;
+            background: var(--green);
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 200ms var(--ease);
+        }
+        .gl-fb:hover { color: var(--dark); }
+        .gl-fb.is-active { color: var(--green-d); }
+        .gl-fb.is-active::after { transform: scaleX(1); }
+
+        .gl-fb-n {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px; height: 20px;
+            border-radius: 50%;
+            background: var(--green-l);
+            color: var(--green-d);
+            font-size: 10px;
+            font-weight: 700;
+            margin-left: 6px;
+        }
+        .gl-fb.is-active .gl-fb-n {
+            background: var(--green);
+            color: var(--warm-white);
+        }
+
+        /* ── GRID ── */
+        .gl-body {
+            background: oklch(10% 0.03 142);
+            padding: 8px;
+        }
+
+        .gl-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 300px;
+            gap: 6px;
+            grid-auto-flow: dense;
+        }
+
+        .gl-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 4px;
+            opacity: 1;
+            transition: opacity 220ms var(--ease);
+        }
+
+        .gl-item--wide { grid-column: span 2; }
+        .gl-item--tall { grid-row: span 2; }
+
+        .gl-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            transition: transform 520ms var(--ease);
+            display: block;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .gl-item:hover img { transform: scale(1.05); }
+            .gl-item:hover .gl-cap { opacity: 1; transform: translateY(0); }
+        }
+
+        .gl-cap {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            padding: 40px 20px 16px;
+            background: linear-gradient(to top, oklch(6% 0.02 142 / 0.82), transparent);
+            font-size: 13px;
+            color: oklch(86% 0.03 142);
+            font-style: italic;
+            opacity: 0;
+            transform: translateY(6px);
+            transition: opacity 280ms var(--ease), transform 280ms var(--ease);
+        }
+
+        /* click hint on mobile */
+        @media (hover: none) {
+            .gl-cap { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── LIGHTBOX ── */
+        .gl-lb {
+            position: fixed;
+            inset: 0;
+            z-index: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 260ms var(--ease);
+        }
+        .gl-lb.is-open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .gl-lb-bg {
+            position: absolute;
+            inset: 0;
+            background: oklch(4% 0.01 142 / 0.94);
+            cursor: zoom-out;
+        }
+
+        .gl-lb-wrap {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 90vw;
+            max-height: 90vh;
+        }
+
+        .gl-lb-img {
+            max-width: 90vw;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 8px;
+            transition: opacity 180ms var(--ease);
+            display: block;
+        }
+
+        .gl-lb-cap {
+            margin-top: 14px;
+            font-size: 14px;
+            font-style: italic;
+            color: oklch(68% 0.04 142);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .gl-lb-close {
+            position: fixed;
+            top: 24px; right: 28px;
+            z-index: 2;
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            background: oklch(100% 0 0 / 0.1);
+            border: 1px solid oklch(100% 0 0 / 0.2);
+            color: oklch(88% 0.02 142);
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 180ms var(--ease), transform 150ms var(--ease);
+        }
+        .gl-lb-close:hover { background: oklch(100% 0 0 / 0.18); }
+        .gl-lb-close:active { transform: scale(0.94); }
+
+        .gl-lb-prev,
+        .gl-lb-next {
+            position: fixed;
+            top: 50%; transform: translateY(-50%);
+            z-index: 2;
+            width: 52px; height: 52px;
+            border-radius: 50%;
+            background: oklch(100% 0 0 / 0.1);
+            border: 1px solid oklch(100% 0 0 / 0.18);
+            color: oklch(88% 0.02 142);
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 180ms var(--ease), transform 150ms var(--ease);
+        }
+        .gl-lb-prev { left: 24px; }
+        .gl-lb-next { right: 24px; }
+        .gl-lb-prev:hover,
+        .gl-lb-next:hover { background: oklch(100% 0 0 / 0.2); }
+        .gl-lb-prev:active { transform: translateY(-50%) scale(0.94); }
+        .gl-lb-next:active { transform: translateY(-50%) scale(0.94); }
+
+        .gl-lb-counter {
+            position: fixed;
+            bottom: 28px;
+            left: 50%; transform: translateX(-50%);
+            z-index: 2;
+            font-size: 13px;
+            font-weight: 500;
+            color: oklch(56% 0.04 142);
+            letter-spacing: 1px;
+        }
+
+        /* ── CTA ── */
+        .gl-cta {
+            background: oklch(16% 0.08 142);
+            padding: 96px 72px;
+            text-align: center;
+        }
+        .gl-cta-inner { max-width: 580px; margin: 0 auto; }
+
+        .gl-cta-label {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: oklch(55% 0.09 142);
+            margin-bottom: 24px;
+        }
+
+        .gl-cta-h {
+            font-family: var(--h);
+            font-size: clamp(28px, 3.2vw, 46px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.18;
+            margin-bottom: 16px;
+        }
+        .gl-cta-h em { font-style: normal; color: oklch(76% 0.16 142); }
+
+        .gl-cta-p {
+            font-size: 16px;
+            color: oklch(58% 0.04 142);
+            line-height: 1.75;
+            margin-bottom: 40px;
+        }
+
+        .gl-cta-btns {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .gl-hero-inner { grid-template-columns: 1fr; gap: 28px; }
+            .gl-hero-right { padding-bottom: 0; }
+            .gl-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 260px; }
+            .gl-item--wide { grid-column: span 2; }
+            .gl-bar { padding: 0 28px; overflow-x: auto; }
+        }
+
+        @media (max-width: 640px) {
+            .gl-hero { padding: 100px 28px 60px; }
+            .gl-cta  { padding: 72px 28px; }
+            .gl-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+            .gl-item--wide { grid-column: span 2; }
+            .gl-item--tall { grid-row: span 1; }
+            .gl-lb-prev { left: 8px; }
+            .gl-lb-next { right: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+    <a href="../index.html" class="logo">
+        <img class="logo-w" src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+        <img class="logo-c" src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+    </a>
+    <nav>
+        <div class="dd">
+            <span class="nl dd-t">Tours <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="../tours/amazon-explorers/index.html" class="di"><span>Amazon Explorers</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/river-explorer/index.html" class="di"><span>River Explorer</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/chlorophyll/index.html" class="di"><span>Chlorophyll</span><span class="di-dur">6D / 5N</span></a>
+                <a href="../tours/birdwatching/index.html" class="di"><span>Birdwatching</span><span class="di-dur">7D / 6N</span></a>
+                <a href="../tours/ecological-expedition/index.html" class="di"><span>Ecological Expedition</span><span class="di-dur">8D / 7N</span></a>
+                <hr style="border:none;border-top:1px solid var(--border);margin:4px 10px;">
+                <a href="../tours/pink-dolphins/index.html" class="di"><span>Pink Dolphins &amp; Indigenous Village</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/ariau-river/index.html" class="di"><span>Ariau River &amp; Rio Negro</span><span class="di-dur">1 Day</span></a>
+            </div>
+        </div>
+        <a href="../tours/index.html" class="nl">All Tours</a>
+        <a href="../about/index.html" class="nl">About Us</a>
+        <div class="lang">
+            <button class="lb on">EN</button>
+            <button class="lb">DE</button>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="btn-book">Book Now</a>
+        <button class="mob-btn" id="mob-open" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="gl-hero">
+    <div class="gl-hero-inner">
+        <div>
+            <nav class="gl-hero-bc" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Gallery</span>
+            </nav>
+            <p class="gl-hero-ey">In the field</p>
+            <h1 class="gl-hero-h">The Amazon<br>through our <em>lens.</em></h1>
+        </div>
+        <div class="gl-hero-right">
+            <p class="gl-hero-p">Every photo taken in the field during our expeditions. Wildlife, landscapes, and life on the river — nothing staged, nothing manufactured.</p>
+            <p class="gl-hero-count"><strong id="gl-count">39</strong> photographs from the Amazon basin</p>
+        </div>
+    </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="gl-bar" role="toolbar" aria-label="Filter gallery">
+    <button class="gl-fb is-active" data-filter="all">All <span class="gl-fb-n" id="gl-n-all">39</span></button>
+    <button class="gl-fb" data-filter="wildlife">Wildlife <span class="gl-fb-n" id="gl-n-wildlife">21</span></button>
+    <button class="gl-fb" data-filter="landscape">Landscapes <span class="gl-fb-n" id="gl-n-landscape">8</span></button>
+    <button class="gl-fb" data-filter="people">People &amp; Culture <span class="gl-fb-n" id="gl-n-people">10</span></button>
+</div>
+
+<!-- GRID -->
+<div class="gl-body">
+    <div class="gl-grid" id="gl-grid">
+
+        <!-- WIDE: hero — landscape -->
+        <figure class="gl-item gl-item--wide" data-cat="landscape">
+            <img src="../assets/images/hero.jpg" alt="The Amazon River at dusk from the water" loading="eager">
+            <figcaption class="gl-cap">The Amazon River at dusk</figcaption>
+        </figure>
+
+        <!-- TALL: spider monkey — wildlife -->
+        <figure class="gl-item gl-item--tall" data-cat="wildlife">
+            <img src="../assets/images/tours/ae-day2-monkey.jpg" alt="Spider monkey Ateles belzebuth in the canopy" loading="eager">
+            <figcaption class="gl-cap">Spider monkey — Amazon Explorers</figcaption>
+        </figure>
+
+        <!-- normal: amazon-explorers tour hero — landscape -->
+        <figure class="gl-item" data-cat="landscape">
+            <img src="../assets/images/tours/amazon-explorers.jpg" alt="Tour boat navigating through flooded igapó forest" loading="lazy">
+            <figcaption class="gl-cap">Igapó — flooded forest, Amazon Explorers</figcaption>
+        </figure>
+
+        <!-- normal: observation tower — people -->
+        <figure class="gl-item" data-cat="people">
+            <img src="../assets/images/tours/ae-day1-tower.jpg" alt="Group of guests at an observation tower at dawn" loading="lazy">
+            <figcaption class="gl-cap">Dawn at the observation tower</figcaption>
+        </figure>
+
+        <!-- WIDE: mirrored canal — landscape -->
+        <figure class="gl-item gl-item--wide" data-cat="landscape">
+            <img src="../assets/images/tours/ae-day3-river.jpg" alt="Perfectly mirrored canal deep in the Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">A mirrored igarapé — Amazon Explorers</figcaption>
+        </figure>
+
+        <!-- normal: guides examining trunk — people -->
+        <figure class="gl-item" data-cat="people">
+            <img src="../assets/images/tours/ae-day4-walk.jpg" alt="Naturalist guides examining a fallen trunk in primary forest" loading="lazy">
+            <figcaption class="gl-cap">Reading the forest floor</figcaption>
+        </figure>
+
+        <!-- WIDE: boat on misty river — landscape -->
+        <figure class="gl-item gl-item--wide" data-cat="landscape">
+            <img src="../assets/images/tours/re-day1-boat.jpg" alt="River boat moving through early morning mist on the Amazon" loading="lazy">
+            <figcaption class="gl-cap">Morning on the river — River Explorer</figcaption>
+        </figure>
+
+        <!-- TALL: red macaw — wildlife -->
+        <figure class="gl-item gl-item--tall" data-cat="wildlife">
+            <img src="../assets/images/tours/ch-macaw.jpg" alt="Red macaw in close-up, vivid plumage" loading="lazy">
+            <figcaption class="gl-cap">Red macaw — Chlorophyll</figcaption>
+        </figure>
+
+        <!-- normal: aerial dawn over forest — landscape -->
+        <figure class="gl-item" data-cat="landscape">
+            <img src="../assets/images/tours/re-day1-tower.jpg" alt="Aerial view of primary Amazon forest at dawn from a tower" loading="lazy">
+            <figcaption class="gl-cap">Primary forest at first light</figcaption>
+        </figure>
+
+        <!-- normal: swimming with dolphins — people -->
+        <figure class="gl-item" data-cat="people">
+            <img src="../assets/images/tours/re-day2-dolphins.jpg" alt="Guests swimming with pink river dolphins in the Amazon" loading="lazy">
+            <figcaption class="gl-cap">Swimming with river dolphins — River Explorer</figcaption>
+        </figure>
+
+        <!-- normal: floating riverside village — people -->
+        <figure class="gl-item" data-cat="people">
+            <img src="../assets/images/tours/re-day3-village.jpg" alt="A ribeirinho community floating on the Amazon River" loading="lazy">
+            <figcaption class="gl-cap">A river community — River Explorer</figcaption>
+        </figure>
+
+        <!-- WIDE: sunset over canopy — landscape -->
+        <figure class="gl-item gl-item--wide" data-cat="landscape">
+            <img src="../assets/images/tours/ch-canopy.jpg" alt="Golden sunset over the unbroken Amazon canopy" loading="lazy">
+            <figcaption class="gl-cap">Sunset over the canopy — Chlorophyll</figcaption>
+        </figure>
+
+        <!-- normal: canoe in igarapé — people -->
+        <figure class="gl-item" data-cat="people">
+            <img src="../assets/images/tours/ch-canoe.jpg" alt="Guests paddling a canoe through a narrow igarapé" loading="lazy">
+            <figcaption class="gl-cap">Exploring by canoe — Chlorophyll</figcaption>
+        </figure>
+
+        <!-- normal: pink dolphin surfacing — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/ch-boto.jpg" alt="Pink river dolphin surfacing in the black waters of the Negro" loading="lazy">
+            <figcaption class="gl-cap">Pink river dolphin — Chlorophyll</figcaption>
+        </figure>
+
+        <!-- normal: capuchin monkey — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/ch-monkey.jpg" alt="Capuchin monkey in the forest" loading="lazy">
+            <figcaption class="gl-cap">Capuchin monkey — Chlorophyll</figcaption>
+        </figure>
+
+        <!-- normal: yellow riverside house — landscape -->
+        <figure class="gl-item" data-cat="landscape">
+            <img src="../assets/images/tours/ch-ribeirinho.jpg" alt="Brightly painted yellow house on stilts on the Amazon riverbank" loading="lazy">
+            <figcaption class="gl-cap">Riverside life — Chlorophyll</figcaption>
+        </figure>
+
+        <!-- normal: trogon — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/bw-trogon.jpg" alt="Violaceous trogon perched on a branch in the Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">Violaceous trogon — Birdwatching</figcaption>
+        </figure>
+
+        <!-- TALL: toucan — wildlife -->
+        <figure class="gl-item gl-item--tall" data-cat="wildlife">
+            <img src="../assets/images/tours/bw-toucan.jpg" alt="Toucan with vivid colourful beak, Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">Toucan — Birdwatching</figcaption>
+        </figure>
+
+        <!-- normal: hummingbird — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/bw-hummingbird.jpg" alt="Hummingbird hovering at a white flower in the Amazon" loading="lazy">
+            <figcaption class="gl-cap">Hummingbird — Birdwatching</figcaption>
+        </figure>
+
+        <!-- normal: raptor — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/bw-raptor.jpg" alt="Black-and-white hawk perched on river driftwood" loading="lazy">
+            <figcaption class="gl-cap">Hawk on driftwood — Birdwatching</figcaption>
+        </figure>
+
+        <!-- WIDE: heron in flight — wildlife -->
+        <figure class="gl-item gl-item--wide" data-cat="wildlife">
+            <img src="../assets/images/tours/bw-heron.jpg" alt="Great heron in full flight over the Amazon várzea at dusk" loading="lazy">
+            <figcaption class="gl-cap">Heron in flight — Birdwatching</figcaption>
+        </figure>
+
+        <!-- normal: parrots — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/bw-parrots.jpg" alt="Pair of Amazon parrots in dense forest foliage" loading="lazy">
+            <figcaption class="gl-cap">Amazon parrots — Birdwatching</figcaption>
+        </figure>
+
+        <!-- TALL: cock-of-the-rock — wildlife -->
+        <figure class="gl-item gl-item--tall" data-cat="wildlife">
+            <img src="../assets/images/tours/ee-cock-of-rock.jpg" alt="Brilliant orange Cock-of-the-rock on a branch in the Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">Cock-of-the-rock — Ecological Expedition</figcaption>
+        </figure>
+
+        <!-- normal: dolphin leaping — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/ee-dolphin.jpg" alt="River dolphin leaping dramatically from the Amazon" loading="lazy">
+            <figcaption class="gl-cap">River dolphin — Ecological Expedition</figcaption>
+        </figure>
+
+        <!-- normal: night monkey trio — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/ee-night-monkey.jpg" alt="Trio of Aotus night monkeys roosting in the Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">Night monkeys — Ecological Expedition</figcaption>
+        </figure>
+
+        <!-- normal: orchid — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/ee-orchid.jpg" alt="Purple orchid growing from a trunk in primary Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">Forest orchid — Ecological Expedition</figcaption>
+        </figure>
+
+        <!-- normal: guide in forest — people -->
+        <figure class="gl-item" data-cat="people">
+            <img src="../assets/images/tours/ee-trek.jpg" alt="Naturalist guide at rest in primary Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">In the field — Ecological Expedition</figcaption>
+        </figure>
+
+        <!-- normal: tamarin — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/ee-tamarin.jpg" alt="Saddleback tamarin perched on a branch looking directly at the camera" loading="lazy">
+            <figcaption class="gl-cap">Saddleback tamarin — Ecological Expedition</figcaption>
+        </figure>
+
+        <!-- normal: dolphin leap — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/pd-dolphin-leap.jpg" alt="Pink river dolphin leaping with water spray" loading="lazy">
+            <figcaption class="gl-cap">Dolphin leap — Pink Dolphins excursion</figcaption>
+        </figure>
+
+        <!-- normal: dolphin pink surfacing — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/pd-dolphin-pink.jpg" alt="Pink boto surfacing in the river" loading="lazy">
+            <figcaption class="gl-cap">Boto rosa — Pink Dolphins excursion</figcaption>
+        </figure>
+
+        <!-- WIDE: monkey leaping — wildlife -->
+        <figure class="gl-item gl-item--wide" data-cat="wildlife">
+            <img src="../assets/images/tours/ar-monkey-leap.jpg" alt="Spider monkey mid-leap between trees in the Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">Spider monkey in flight — Ariau River</figcaption>
+        </figure>
+
+        <!-- TALL: cotinga — wildlife -->
+        <figure class="gl-item gl-item--tall" data-cat="wildlife">
+            <img src="../assets/images/tours/ar-cotinga.jpg" alt="Spangled Cotinga, electric blue plumage, on a branch" loading="lazy">
+            <figcaption class="gl-cap">Spangled Cotinga — Ariau River</figcaption>
+        </figure>
+
+        <!-- normal: aracari — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/ar-aracari.jpg" alt="Lettered Aracari toucanet on a perch in the Amazon" loading="lazy">
+            <figcaption class="gl-cap">Lettered Aracari — Ariau River</figcaption>
+        </figure>
+
+        <!-- normal: capuchin looking — wildlife -->
+        <figure class="gl-item" data-cat="wildlife">
+            <img src="../assets/images/tours/ar-capuchin.jpg" alt="Capuchin monkey looking directly at the camera" loading="lazy">
+            <figcaption class="gl-cap">Capuchin — Ariau River</figcaption>
+        </figure>
+
+        <!-- WIDE: birdwatching from canoe at dawn — people -->
+        <figure class="gl-item gl-item--wide" data-cat="people">
+            <img src="../assets/images/about/about-hero.jpg" alt="Guests birdwatching from a canoe at dawn on the Amazon" loading="lazy">
+            <figcaption class="gl-cap">Dawn birdwatching by canoe</figcaption>
+        </figure>
+
+        <!-- TALL: guide portrait at sunset — people -->
+        <figure class="gl-item gl-item--tall" data-cat="people">
+            <img src="../assets/images/about/about-guide.jpg" alt="Amazon Eco Travellers naturalist guide on the Rio Negro at golden hour" loading="lazy">
+            <figcaption class="gl-cap">Naturalist guide — Rio Negro</figcaption>
+        </figure>
+
+        <!-- WIDE: guests laughing on canoe — people -->
+        <figure class="gl-item gl-item--wide" data-cat="people">
+            <img src="../assets/images/about/about-group.jpg" alt="Guests laughing together on a river canoe excursion" loading="lazy">
+            <figcaption class="gl-cap">Life on the river</figcaption>
+        </figure>
+
+        <!-- normal: misty Rio Negro canoe — landscape -->
+        <figure class="gl-item" data-cat="landscape">
+            <img src="../assets/images/about/about-river.jpg" alt="Naturalist canoe on the misty Rio Negro at dawn" loading="lazy">
+            <figcaption class="gl-cap">Dawn on the Rio Negro</figcaption>
+        </figure>
+
+        <!-- normal: naturalist in forest trek — people -->
+        <figure class="gl-item" data-cat="people">
+            <img src="../assets/images/about/about-trek.jpg" alt="Field naturalist at rest in primary Amazon forest" loading="lazy">
+            <figcaption class="gl-cap">A moment in primary forest</figcaption>
+        </figure>
+
+    </div>
+</div>
+
+<!-- CTA -->
+<section class="gl-cta">
+    <div class="gl-cta-inner rv">
+        <p class="gl-cta-label">See it in person</p>
+        <h2 class="gl-cta-h">These photos don't capture<br>what being there <em>feels like.</em></h2>
+        <p class="gl-cta-p">Browse our tours and find the expedition that fits your time and interests. Not sure where to start? We're happy to help.</p>
+        <div class="gl-cta-btns">
+            <a href="../tours/index.html" class="btn-solid">View All Tours</a>
+            <a href="https://wa.me/5592991321047?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20your%20Amazon%20tours." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="ft-grid">
+        <div class="ft-brand">
+            <img src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+            <p class="ft-tag">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-led expeditions for curious travellers from around the world.</p>
+            <div class="ft-soc">
+                <a href="https://www.facebook.com/EcoBiologists" target="_blank" class="fs"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amazonecotravellers" target="_blank" class="fs"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" class="fs"><i class="fa-brands fa-tripadvisor"></i></a>
+                <a href="https://wa.me/5592991321047" target="_blank" class="fs"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="ft-col">
+            <h5>Tours</h5>
+            <ul>
+                <li><a href="../tours/amazon-explorers/index.html">Amazon Explorers</a></li>
+                <li><a href="../tours/river-explorer/index.html">River Explorer</a></li>
+                <li><a href="../tours/chlorophyll/index.html">Chlorophyll</a></li>
+                <li><a href="../tours/birdwatching/index.html">Birdwatching</a></li>
+                <li><a href="../tours/ecological-expedition/index.html">Ecological Expedition</a></li>
+                <li><a href="../tours/pink-dolphins/index.html">Pink Dolphins</a></li>
+                <li><a href="../tours/ariau-river/index.html">Ariau River</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Information</h5>
+            <ul>
+                <li><a href="../faq/index.html">FAQ</a></li>
+                <li><a href="../gallery/index.html" style="color: var(--green);">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about/index.html">About Us</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ft-btm">
+        <p>&copy; 2025 Amazon Eco Travellers. All rights reserved.</p>
+        <p>Manaus, Amazonas, Brazil &mdash; <a href="tel:+5592991321047">+55 92 99132-1047</a></p>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5592991321047" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- MOBILE DRAWER -->
+<div class="mob-drawer" id="mob-drawer" aria-hidden="true">
+    <div class="mob-overlay" id="mob-overlay"></div>
+    <nav class="mob-panel">
+        <div class="mob-head">
+            <img src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+            <button class="mob-close" id="mob-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mob-section">
+            <h6>Multi-Day Tours</h6>
+            <a href="../tours/amazon-explorers/index.html" class="mob-link">Amazon Explorers <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/river-explorer/index.html" class="mob-link">River Explorer <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/chlorophyll/index.html" class="mob-link">Chlorophyll <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="../tours/birdwatching/index.html" class="mob-link">Birdwatching <span class="mob-link-dur">7D / 6N</span></a>
+            <a href="../tours/ecological-expedition/index.html" class="mob-link">Ecological Expedition <span class="mob-link-dur">8D / 7N</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Day Excursions</h6>
+            <a href="../tours/pink-dolphins/index.html" class="mob-link">Pink Dolphins &amp; Indigenous Village <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/ariau-river/index.html" class="mob-link">Ariau River &amp; Rio Negro <span class="mob-link-dur">1 Day</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Explore</h6>
+            <a href="../about/index.html" class="mob-link">About Us</a>
+            <a href="../gallery/index.html" class="mob-link">Gallery</a>
+            <a href="../faq/index.html" class="mob-link">FAQ</a>
+            <a href="../contact/index.html" class="mob-link">Contact</a>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="mob-book">Book Now on WhatsApp</a>
+    </nav>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="gl-lb" id="gl-lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="gl-lb-close" id="gl-lb-close" aria-label="Close photo viewer"><i class="fa-solid fa-xmark"></i></button>
+    <button class="gl-lb-prev"  id="gl-lb-prev"  aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="gl-lb-next"  id="gl-lb-next"  aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="gl-lb-wrap">
+        <img class="gl-lb-img" id="gl-lb-img" src="" alt="">
+        <p class="gl-lb-cap" id="gl-lb-cap"></p>
+    </div>
+    <p class="gl-lb-counter" id="gl-lb-counter"></p>
+    <div class="gl-lb-bg" id="gl-lb-bg"></div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+
+<script>
+(function () {
+    var items    = Array.from(document.querySelectorAll('.gl-item'));
+    var filterBtns = document.querySelectorAll('.gl-fb');
+    var countEl  = document.getElementById('gl-count');
+
+    /* ── FILTER ── */
+    var TRANS = 200;
+
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var cat = btn.dataset.filter;
+
+            filterBtns.forEach(function (b) { b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+
+            var visible = 0;
+
+            items.forEach(function (item) {
+                var match = cat === 'all' || item.dataset.cat === cat;
+                if (match) {
+                    item.style.display = '';
+                    requestAnimationFrame(function () { item.style.opacity = '1'; });
+                    visible++;
+                } else {
+                    item.style.opacity = '0';
+                    setTimeout(function () { item.style.display = 'none'; }, TRANS);
+                }
+            });
+
+            setTimeout(function () {
+                if (countEl) countEl.textContent = visible;
+            }, TRANS);
+        });
+    });
+
+    /* ── LIGHTBOX ── */
+    var lb       = document.getElementById('gl-lb');
+    var lbImg    = document.getElementById('gl-lb-img');
+    var lbCap    = document.getElementById('gl-lb-cap');
+    var lbCtr    = document.getElementById('gl-lb-counter');
+    var lbClose  = document.getElementById('gl-lb-close');
+    var lbPrev   = document.getElementById('gl-lb-prev');
+    var lbNext   = document.getElementById('gl-lb-next');
+    var lbBg     = document.getElementById('gl-lb-bg');
+    var current  = 0;
+    var pool     = [];
+
+    function getPool() {
+        return items.filter(function (item) { return item.style.display !== 'none'; });
+    }
+
+    function openLb(idx) {
+        pool = getPool();
+        current = idx;
+        render();
+        lb.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLb() {
+        lb.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+
+    function render() {
+        var item = pool[current];
+        var img  = item.querySelector('img');
+        lbImg.style.opacity = '0';
+        setTimeout(function () {
+            lbImg.src = img.src;
+            lbImg.alt = img.alt;
+            lbCap.textContent = img.alt;
+            lbImg.style.opacity = '1';
+        }, 160);
+        lbCtr.textContent = (current + 1) + ' / ' + pool.length;
+    }
+
+    function prev() { current = (current - 1 + pool.length) % pool.length; render(); }
+    function next() { current = (current + 1) % pool.length; render(); }
+
+    items.forEach(function (item, i) {
+        item.addEventListener('click', function () {
+            pool = getPool();
+            var idx = pool.indexOf(item);
+            openLb(idx >= 0 ? idx : 0);
+        });
+    });
+
+    lbClose.addEventListener('click', closeLb);
+    lbBg.addEventListener('click', closeLb);
+    lbPrev.addEventListener('click', function (e) { e.stopPropagation(); prev(); });
+    lbNext.addEventListener('click', function (e) { e.stopPropagation(); next(); });
+
+    document.addEventListener('keydown', function (e) {
+        if (!lb.classList.contains('is-open')) return;
+        if (e.key === 'Escape')     closeLb();
+        if (e.key === 'ArrowLeft')  prev();
+        if (e.key === 'ArrowRight') next();
+    });
+
+    /* touch swipe in lightbox */
+    var touchX = 0;
+    lb.addEventListener('touchstart', function (e) { touchX = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+        var dx = e.changedTouches[0].clientX - touchX;
+        if (Math.abs(dx) > 50) { dx < 0 ? next() : prev(); }
+    });
+}());
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",    "item": "https://amazonecotravellers.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://amazonecotravellers.com/gallery/" }
+  ]
+}
+</script>
+
+</body>
+</html>
