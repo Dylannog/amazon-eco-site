@@ -1,27 +1,27 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full-day Amazon day trip from Manaus: swim with pink river dolphins in Novo Airão, navigate the Anavilhanas Archipelago — one of the world's largest river island systems — and lunch with a riverside community. Expert guide. Back same day.">
-    <title>Pink Dolphins & Anavilhanas Archipelago — Amazon Day Trip from Manaus | Amazon Eco Travellers</title>
-    <link rel="canonical" href="https://amazonecotravellers.com/tours/anavilhanas/">
+    <meta name="description" content="Private day tour from Manaus to Presidente Figueiredo: ancient sandstone caves, crystal grottos, natural swimming pools, and hidden waterfalls — fully guided at an unhurried pace, all entrance fees included.">
+    <title>Presidente Figueiredo Day Tour — Caves, Waterfalls & Natural Pools from Manaus | Amazon Eco Travellers</title>
+    <link rel="canonical" href="https://amazonecotravellers.com/tours/presidente-figueiredo/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://amazonecotravellers.com/tours/anavilhanas/">
+    <meta property="og:url" content="https://amazonecotravellers.com/tours/presidente-figueiredo/">
     <meta property="og:site_name" content="Amazon Eco Travellers">
-    <meta property="og:title" content="Pink Dolphins & Anavilhanas Archipelago — Amazon Day Trip from Manaus">
-    <meta property="og:description" content="One day. Pink river dolphins, a 400-island labyrinth, white-sand river beaches, and lunch with a riverside community — departing Manaus at dawn, back by evening.">
-    <meta property="og:image" content="https://amazonecotravellers.com/assets/images/tours/anavilhanas.jpg">
+    <meta property="og:title" content="Presidente Figueiredo — Into the Amazon's Waterfall Valley">
+    <meta property="og:description" content="Ancient sandstone caves, crystal pools, and hidden waterfalls — a private, guided day in one of the Amazon's most spectacular geological landscapes. Departs from Manaus.">
+    <meta property="og:image" content="https://amazonecotravellers.com/assets/images/tours/pf-hero.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pink Dolphins & Anavilhanas Archipelago — Amazon Day Trip from Manaus">
-    <meta name="twitter:description" content="One day. Pink river dolphins, 400-island archipelago, white-sand river beaches — departing Manaus at dawn, back by evening.">
-    <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/tours/anavilhanas.jpg">
+    <meta name="twitter:title" content="Presidente Figueiredo — Into the Amazon's Waterfall Valley">
+    <meta name="twitter:description" content="Caves, grottos, natural pools, hidden waterfalls. A private day in the Amazon's geological heartland, two hours from Manaus.">
+    <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/tours/pf-hero.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,8 +32,8 @@
     <style>
         /* ── TOUR HERO ── */
         .tour-hero {
-            height: 72vh;
-            min-height: 480px;
+            height: 80vh;
+            min-height: 520px;
             position: relative;
             display: flex;
             align-items: flex-end;
@@ -41,16 +41,16 @@
         }
 
         .tour-hero .hero-bg {
-            background-image: url('../../assets/images/tours/anavilhanas.jpg');
+            background-image: url('../../assets/images/tours/pf-hero.jpg');
             background-position: center 55%;
         }
 
         .tour-hero .hero-ov {
             background: linear-gradient(
                 180deg,
-                oklch(8% 0.02 220 / 0.05) 0%,
-                oklch(8% 0.02 180 / 0.40) 50%,
-                oklch(6% 0.02 160 / 0.90) 100%
+                oklch(6% 0.02 140 / 0.05) 0%,
+                oklch(8% 0.03 140 / 0.35) 45%,
+                oklch(5% 0.02 130 / 0.92) 100%
             );
         }
 
@@ -59,7 +59,7 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 56px 64px;
+            padding: 0 56px 72px;
         }
 
         .tour-badge {
@@ -77,21 +77,22 @@
 
         .tour-hero-h {
             font-family: var(--h);
-            font-size: clamp(38px, 6.5vw, 74px);
+            font-size: clamp(38px, 6.5vw, 78px);
             font-weight: 400;
             font-style: italic;
             color: var(--warm-white);
-            line-height: 1.05;
-            letter-spacing: -1px;
-            margin-bottom: 16px;
+            line-height: 1.02;
+            letter-spacing: -1.5px;
+            margin-bottom: 18px;
         }
 
         .tour-hero-sub {
             font-size: 17px;
             font-weight: 300;
-            color: oklch(82% 0.03 180);
+            color: oklch(82% 0.04 142);
             margin-bottom: 36px;
-            max-width: 600px;
+            max-width: 620px;
+            line-height: 1.65;
         }
 
         .tour-hero-meta {
@@ -105,14 +106,14 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: oklch(80% 0.04 160);
+            color: oklch(78% 0.05 142);
             font-size: 14px;
             font-weight: 500;
         }
         .thm i { font-size: 14px; color: var(--green); }
         .thm strong { color: var(--warm-white); }
 
-        /* ── TOUR STATS STRIP ── */
+        /* ── STATS STRIP ── */
         .tour-stats {
             background: var(--dark);
             padding: 0 56px;
@@ -144,9 +145,9 @@
             display: flex; align-items: center; justify-content: center;
             flex-shrink: 0;
         }
-        .ts-icon i { font-size: 15px; color: oklch(72% 0.12 160); }
+        .ts-icon i { font-size: 15px; color: oklch(72% 0.12 142); }
 
-        .ts-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: oklch(42% 0.01 160); margin-bottom: 3px; }
+        .ts-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: oklch(42% 0.01 142); margin-bottom: 3px; }
         .ts-val   { font-size: 15px; font-weight: 600; color: var(--warm-white); }
 
         /* ── TOUR BODY ── */
@@ -160,17 +161,14 @@
             align-items: start;
         }
 
-        /* ── PHOTO GALLERY ── */
+        /* ── GALLERY ── */
         .tour-gallery-section {
             background: var(--warm-white);
             padding: 72px 56px;
             border-top: 1px solid var(--border);
         }
 
-        .tour-gallery-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .tour-gallery-inner { max-width: 1200px; margin: 0 auto; }
 
         .gallery-label {
             font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
@@ -198,7 +196,7 @@
         }
         .gallery-item:hover img { transform: scale(1.04); }
 
-        /* ── ITINERARY ── */
+        /* ── ITINERARY / STOP BLOCKS ── */
         .itin-title {
             font-family: var(--h);
             font-size: 34px;
@@ -212,7 +210,6 @@
             display: grid;
             grid-template-columns: 64px 1fr;
             gap: 0 28px;
-            margin-bottom: 0;
             position: relative;
         }
 
@@ -250,9 +247,7 @@
             flex-shrink: 0;
         }
 
-        .day-content {
-            padding: 4px 0 48px;
-        }
+        .day-content { padding: 4px 0 48px; }
 
         .day-label {
             font-size: 10px; font-weight: 700;
@@ -316,13 +311,21 @@
             border-bottom: 1px solid var(--border);
         }
         .sc-head .sec-label { margin-bottom: 8px; }
+
+        .sc-price-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
         .sc-price {
             font-family: var(--h);
-            font-size: 28px;
+            font-size: 26px;
             color: var(--dark);
             line-height: 1.1;
         }
-        .sc-price span { font-family: var(--b); font-size: 14px; color: var(--gray); font-style: normal; }
+        .sc-price span { font-family: var(--b); font-size: 13px; color: var(--gray); font-style: normal; }
+
         .sc-price-note {
             font-size: 12px;
             color: var(--gray);
@@ -330,6 +333,21 @@
         }
 
         .sc-body { padding: 20px 28px 28px; }
+
+        .sc-scarcity {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: oklch(98% 0.02 45);
+            border: 1px solid oklch(88% 0.06 45);
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 12px;
+            font-weight: 600;
+            color: oklch(42% 0.08 45);
+            margin-bottom: 16px;
+        }
+        .sc-scarcity i { color: oklch(58% 0.14 45); font-size: 13px; flex-shrink: 0; }
 
         .sc-cta-wa {
             display: flex;
@@ -380,32 +398,9 @@
             content: ''; flex: 1; height: 1px; background: var(--border);
         }
 
-        .sc-note {
-            text-align: center;
-            font-size: 12px;
-            color: var(--gray-l);
-        }
+        .sc-note { text-align: center; font-size: 12px; color: var(--gray-l); }
 
-        .sc-scarcity {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: oklch(98% 0.02 45);
-            border: 1px solid oklch(88% 0.06 45);
-            border-radius: 10px;
-            padding: 10px 14px;
-            font-size: 12px;
-            font-weight: 600;
-            color: oklch(42% 0.08 45);
-            margin-bottom: 16px;
-        }
-        .sc-scarcity i { color: oklch(58% 0.14 45); font-size: 13px; flex-shrink: 0; }
-
-        .inc-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+        .inc-list { display: flex; flex-direction: column; gap: 10px; }
 
         .inc-item {
             display: flex;
@@ -419,40 +414,7 @@
         .inc-item.yes i { color: var(--green); }
         .inc-item.no  i { color: oklch(58% 0.12 25); }
 
-        /* ── RELATED TOURS ── */
-        #related {
-            background: var(--warm-cream);
-            padding: 96px 56px;
-        }
-
-        .related-hd {
-            text-align: center;
-            margin-bottom: 56px;
-        }
-
-        .related-inner { max-width: 1200px; margin: 0 auto; }
-
-        .related-sub-label {
-            font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
-            color: var(--gray-l); margin: 56px 0 28px;
-            display: flex; align-items: center; gap: 14px;
-        }
-        .related-sub-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-
-        /* Breadcrumb */
-        .breadcrumb {
-            position: absolute; top: 84px; left: 0; right: 0;
-            z-index: 2;
-            padding: 0 56px;
-            display: flex; align-items: center; gap: 8px;
-            font-size: 12px; font-weight: 500;
-            color: oklch(75% 0.04 160);
-        }
-        .breadcrumb a { color: oklch(72% 0.08 160); transition: color 150ms; }
-        .breadcrumb a:hover { color: var(--warm-white); }
-        .breadcrumb i { font-size: 9px; opacity: 0.6; }
-
-        /* Intro section */
+        /* ── INTRO ── */
         .tour-intro {
             background: var(--warm-white);
             padding: 48px 56px 0;
@@ -475,6 +437,33 @@
         }
         .tih i { font-size: 15px; color: var(--green); flex-shrink: 0; }
 
+        /* ── BREADCRUMB ── */
+        .breadcrumb {
+            position: absolute; top: 84px; left: 0; right: 0;
+            z-index: 2;
+            padding: 0 56px;
+            display: flex; align-items: center; gap: 8px;
+            font-size: 12px; font-weight: 500;
+            color: oklch(75% 0.04 142);
+        }
+        .breadcrumb a { color: oklch(72% 0.08 142); transition: color 150ms; }
+        .breadcrumb a:hover { color: var(--warm-white); }
+        .breadcrumb i { font-size: 9px; opacity: 0.6; }
+
+        /* ── RELATED ── */
+        #related {
+            background: var(--warm-cream);
+            padding: 96px 56px;
+        }
+        .related-hd { text-align: center; margin-bottom: 56px; }
+        .related-inner { max-width: 1200px; margin: 0 auto; }
+        .related-sub-label {
+            font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+            color: var(--gray-l); margin: 56px 0 28px;
+            display: flex; align-items: center; gap: 14px;
+        }
+        .related-sub-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
         /* ── RESPONSIVE ── */
         @media (max-width: 1100px) {
             .tour-body { grid-template-columns: 1fr; gap: 48px; padding: 64px 40px; }
@@ -483,7 +472,7 @@
             .ts-inner { flex-wrap: wrap; }
             .ts-item { flex: 1 1 calc(50% - 40px); padding: 20px 24px; }
             .ts-item:first-child { padding-left: 24px; }
-            .tour-hero-c { padding: 0 40px 56px; }
+            .tour-hero-c { padding: 0 40px 64px; }
             #related { padding: 72px 40px; }
         }
 
@@ -494,8 +483,8 @@
 
         @media (max-width: 768px) {
             .breadcrumb { padding: 0 24px; }
-            .tour-hero { height: 65vh; }
-            .tour-hero-c { padding: 0 24px 48px; }
+            .tour-hero { height: 70vh; }
+            .tour-hero-c { padding: 0 24px 56px; }
             .tour-hero-meta { gap: 16px; }
             .tour-body { padding: 48px 24px; }
             .tour-stats { padding: 0 24px; }
@@ -530,6 +519,7 @@
             <div class="dd-p">
                 <a href="../../tours/amazon-explorers/index.html" class="di"><span>Amazon Explorers</span><span class="di-dur">5D / 4N</span></a>
                 <a href="../../tours/river-explorer/index.html" class="di"><span>River Explorer</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../../tours/jungle-lodge-3days/index.html" class="di"><span>Jungle Lodge Expedition</span><span class="di-dur">3D / 2N</span></a>
                 <a href="../../tours/chlorophyll/index.html" class="di"><span>Chlorophyll</span><span class="di-dur">6D / 5N</span></a>
                 <a href="../../tours/birdwatching/index.html" class="di"><span>Birdwatching</span><span class="di-dur">7D / 6N</span></a>
                 <a href="../../tours/ecological-expedition/index.html" class="di"><span>Ecological Expedition</span><span class="di-dur">8D / 7N</span></a>
@@ -560,7 +550,7 @@
     </nav>
 </header>
 
-<!-- TOUR HERO -->
+<!-- HERO -->
 <section class="tour-hero" style="position:relative;">
     <div class="hero-bg"></div>
     <div class="hero-ov"></div>
@@ -569,16 +559,16 @@
         <i class="fa-solid fa-chevron-right"></i>
         <a href="../../tours/index.html">Tours</a>
         <i class="fa-solid fa-chevron-right"></i>
-        <span>Pink Dolphins &amp; Anavilhanas</span>
+        <span>Presidente Figueiredo</span>
     </nav>
     <div class="tour-hero-c rv">
-        <div class="tour-badge"><i class="fa-solid fa-sun"></i> Day Excursion</div>
-        <h1 class="tour-hero-h">Pink Dolphins &amp;<br><em>Anavilhanas</em></h1>
-        <p class="tour-hero-sub">Leave Manaus at dawn. By mid-morning you're feeding wild boto dolphins in the black waters of Novo Airão — then deep inside the world's second-largest river archipelago, a 400-island labyrinth that has no equivalent on Earth.</p>
+        <div class="tour-badge"><i class="fa-solid fa-water"></i> Private Day · Exclusive</div>
+        <h1 class="tour-hero-h">Presidente Figueiredo<br><em>Into the Waterfall Valley</em></h1>
+        <p class="tour-hero-sub">Less than two hours from Manaus, the Amazon's geology shifts. Ancient sandstone carved by black-water rivers opens into cathedral caves, crystal grottos, hidden waterfalls, and natural swimming pools — one of the most spectacular and least-visited landscapes in the entire region. A private, unhurried day built for those who want to see beyond the usual circuit.</p>
         <div class="tour-hero-meta">
-            <span class="thm"><i class="fa-regular fa-calendar"></i> <strong>Full Day</strong> &nbsp;· 06:30 → 19:30</span>
+            <span class="thm"><i class="fa-solid fa-mountain"></i> <strong>7 Natural</strong> &nbsp;Sites</span>
             <span class="thm"><i class="fa-solid fa-location-dot"></i> Departs from <strong>Manaus</strong></span>
-            <span class="thm"><i class="fa-solid fa-user-tie"></i> <strong>Expert</strong> Guide</span>
+            <span class="thm"><i class="fa-solid fa-user-tie"></i> <strong>Private</strong> Experience</span>
             <span class="thm"><i class="fa-solid fa-globe"></i> EN · DE · PT · ES</span>
         </div>
     </div>
@@ -588,10 +578,10 @@
 <div class="tour-stats">
     <div class="ts-inner">
         <div class="ts-item rv d1">
-            <div class="ts-icon"><i class="fa-regular fa-clock"></i></div>
+            <div class="ts-icon"><i class="fa-regular fa-calendar"></i></div>
             <div>
                 <p class="ts-label">Duration</p>
-                <p class="ts-val">Full Day — 06:30 to 19:30</p>
+                <p class="ts-val">Full Day (≈ 10 hours)</p>
             </div>
         </div>
         <div class="ts-item rv d2">
@@ -605,14 +595,14 @@
             <div class="ts-icon"><i class="fa-solid fa-gauge-simple"></i></div>
             <div>
                 <p class="ts-label">Activity Level</p>
-                <p class="ts-val">Easy — All Fitness Levels</p>
+                <p class="ts-val">Easy to Moderate</p>
             </div>
         </div>
         <div class="ts-item rv d4">
             <div class="ts-icon"><i class="fa-solid fa-users"></i></div>
             <div>
-                <p class="ts-label">Group Size</p>
-                <p class="ts-val">Small &amp; Private (min. 2)</p>
+                <p class="ts-label">Format</p>
+                <p class="ts-val">Private — min. 2 guests</p>
             </div>
         </div>
     </div>
@@ -621,14 +611,16 @@
 <!-- INTRO HIGHLIGHTS -->
 <div class="tour-intro">
     <div class="tour-intro-inner">
-        <p class="tour-intro-text rv">The <strong>Anavilhanas Archipelago</strong> is the second-largest river archipelago in the world — 400 islands, 700 lakes, and 350,000 hectares of channels, flooded forest, and white-sand river beaches that no road reaches. This excursion puts you inside it. <br><br>The journey starts in Novo Airão, a small town 180 km from Manaus where <em>Inia geoffrensis</em> — the Amazon pink river dolphin — surfaces close to the floating docks. Interacting with a boto in its own habitat is a genuinely rare experience, and this is one of the few places in the world where it happens reliably and responsibly. From there, a speedboat takes you into the Anavilhanas for several hours of navigation: river beaches without another soul on them, the ancient trees of the flooded forest, and the Lago do Arraia — a still, enclosed lake that amplifies every sound the forest makes. The day ends with a regional lunch in a riverside community before the drive back to Manaus.</p>
+        <p class="tour-intro-text rv">Known in Brazil as the <strong><em>Cidade das Cachoeiras</em></strong> — the City of Waterfalls — <strong>Presidente Figueiredo</strong> sits on a geological formation unlike anything else in the Amazon basin. Precambrian sandstone, shaped over hundreds of millions of years by black-water rivers rich in tannins, has produced a landscape of extraordinary variety: dark cave chambers carpeted in white sand and moss-covered arches, grottos where waterfall curtains drop into amber-tinted pools, natural swimming holes carved into rock, and waterfalls that range from thundering cascades to intimate hidden falls reachable only on foot through intact forest.<br><br>This is a private, exclusive experience — no group queues, no shared buses. Your guide — an experienced naturalist who knows these sites beyond the posted trails — takes you through seven distinct natural environments at a deliberate pace, with time to swim, observe, and photograph. Everything is included: transport door to door, all entrance fees, rubber boots for the cave trails, and dedicated photo assistance at every stop. For travellers who want to experience the Amazon's geological and ecological depth beyond the river-and-jungle circuit, this day is without equal in the region.</p>
         <div class="tour-intro-highlights rv d1">
-            <div class="tih"><i class="fa-solid fa-water"></i> Pink dolphin interaction</div>
-            <div class="tih"><i class="fa-solid fa-map"></i> Anavilhanas Archipelago</div>
-            <div class="tih"><i class="fa-solid fa-umbrella-beach"></i> Wild river beaches</div>
-            <div class="tih"><i class="fa-solid fa-droplet"></i> Lago do Arraia</div>
-            <div class="tih"><i class="fa-solid fa-tree"></i> Ancient floodplain trees</div>
-            <div class="tih"><i class="fa-solid fa-bowl-food"></i> Riverside community lunch</div>
+            <div class="tih"><i class="fa-solid fa-mountain"></i> Caverna do Maroaga</div>
+            <div class="tih"><i class="fa-solid fa-archway"></i> Gruta da Judéia</div>
+            <div class="tih"><i class="fa-solid fa-droplet"></i> Crystal Lagoon</div>
+            <div class="tih"><i class="fa-solid fa-water"></i> Rio Vermelho</div>
+            <div class="tih"><i class="fa-solid fa-person-swimming"></i> Natural Pools</div>
+            <div class="tih"><i class="fa-solid fa-wave-square"></i> Two Waterfalls</div>
+            <div class="tih"><i class="fa-solid fa-car"></i> Private Transport</div>
+            <div class="tih"><i class="fa-solid fa-camera"></i> Photo Assistance</div>
         </div>
     </div>
 </div>
@@ -638,88 +630,110 @@
 
     <!-- ITINERARY -->
     <main class="itinerary">
-        <h2 class="itin-title rv">How the day unfolds</h2>
+        <h2 class="itin-title rv">Seven stops, one valley</h2>
 
+        <!-- STOP 1 -->
         <div class="day-block rv">
             <div class="day-num"><div class="dn-circle">1</div></div>
             <div class="day-content">
-                <p class="day-label">06:30 — Departure</p>
-                <h3 class="day-name">Hotel Pick-up &amp; the Road to Novo Airão</h3>
-                <p class="day-desc">The early start is deliberate. The 180 km drive from Manaus to Novo Airão takes roughly two and a half hours along the AM-352 highway — a route that traces the northern margin of the Rio Negro, passing through cerrado, secondary forest, and eventually the deep vegetation corridors that announce the heart of Amazonas state. An expert guide accompanies you from the first moment, and the conversation on that drive sets the tone for everything that follows. By the time the river comes into view at Novo Airão, the forest has already started to make its case.</p>
+                <p class="day-label">Stop 1 — Cave</p>
+                <h3 class="day-name">Caverna do Maroaga — The Cathedral Under the Forest</h3>
+                <p class="day-desc">The first stop sets the tone for the day. <em>Caverna do Maroaga</em> sits within the Maroaga Ecological Reserve, a protected area where the main attraction is geological — though in the Amazon, geology and biology are inseparable. Rubber boots are required for the cave floor: white sand and shallow amber water filtered through layers of tannins from the surrounding vegetation. <br><br>Inside, sandstone has been sculpted over millennia into arch-like chambers, their walls covered in dense green moss. At the back of the cave, a waterfall drops silently into the amber pool below — a scene of remarkable stillness that photographers regularly spend hours inside. Your guide provides context on the cave formation, the hydrology, and the ecology of the reserve. No group tours, no crowds: this visit is yours.</p>
                 <div class="day-tags">
-                    <span class="day-tag"><i class="fa-solid fa-car"></i> Hotel Pick-up</span>
-                    <span class="day-tag"><i class="fa-solid fa-road"></i> AM-352 Highway</span>
-                    <span class="day-tag"><i class="fa-solid fa-clock"></i> ~2h30 Drive</span>
+                    <span class="day-tag"><i class="fa-solid fa-mountain"></i> Sandstone Cave</span>
+                    <span class="day-tag"><i class="fa-solid fa-droplet"></i> Amber Pool</span>
+                    <span class="day-tag"><i class="fa-solid fa-shoe-prints"></i> Guided Trail</span>
+                    <span class="day-tag"><i class="fa-solid fa-camera"></i> Photo Stop</span>
                 </div>
             </div>
         </div>
 
+        <!-- STOP 2 -->
         <div class="day-block rv">
             <div class="day-num"><div class="dn-circle">2</div></div>
             <div class="day-content">
-                <p class="day-label">~09:00 — Novo Airão</p>
-                <h3 class="day-name">Pink River Dolphins — <em>Inia geoffrensis</em></h3>
-                <p class="day-desc">Novo Airão sits at the mouth of the Rio Jaú, where it meets the Rio Negro — and for decades, the boto dolphins of this stretch have associated the floating platforms here with food and curiosity. <em>Inia geoffrensis</em> is the largest freshwater dolphin in the world: up to 2.5 metres long, surprisingly intelligent, and coloured in shades of pink that intensify with age and excitement. This is an unscripted interaction — you enter the water, and the boto decide how close to come. Most come very close. The experience is consistently described by visitors as the most memorable part of their time in the Amazon, and that assessment is not difficult to understand when you are standing in the Rio Negro with a dolphin circling your knees.</p>
+                <p class="day-label">Stop 2 — Grotto</p>
+                <h3 class="day-name">Gruta da Judéia — The Stone Labyrinth</h3>
+                <p class="day-desc">A different geological character from Maroaga. <em>Gruta da Judéia</em> is a sandstone grotto with a narrower entrance and a more intimate, labyrinthine atmosphere. The rock formations here tell a different chapter of the same ancient story — shaped by the same slow chemistry of water, pressure, and time, but into a space that feels more enclosed, more hidden. Aerial roots have worked their way through fissures in the ceiling, hanging down into the chamber like curtains. <br><br>Less visited than Maroaga, it rewards the traveller who chose an exploratory guide over a group tour. There are no signs telling you where to look. The guide navigates it from memory.</p>
                 <div class="day-tags">
-                    <span class="day-tag"><i class="fa-solid fa-water"></i> Rio Negro</span>
-                    <span class="day-tag"><i class="fa-solid fa-otter"></i> Pink Dolphins</span>
-                    <span class="day-tag"><i class="fa-solid fa-camera"></i> Photo Opportunity</span>
+                    <span class="day-tag"><i class="fa-solid fa-archway"></i> Sandstone Grotto</span>
+                    <span class="day-tag"><i class="fa-solid fa-leaf"></i> Aerial Roots</span>
+                    <span class="day-tag"><i class="fa-solid fa-eye"></i> Off the Beaten Path</span>
                 </div>
             </div>
         </div>
 
+        <!-- STOP 3 -->
         <div class="day-block rv">
             <div class="day-num"><div class="dn-circle">3</div></div>
             <div class="day-content">
-                <p class="day-label">10:30 — Anavilhanas Archipelago</p>
-                <h3 class="day-name">Into the Island Labyrinth — Speedboat Navigation</h3>
-                <p class="day-desc">At 10:30, you board the speedboat and enter the Anavilhanas Archipelago proper. What the satellite image cannot prepare you for is the experience of being inside it: the Rio Negro divides and subdivides into channels that narrow, widen, and split again, with islands on every side — some forested to their waterline, others ending in clean river beaches. The water here is stained the colour of black tea by dissolved organic tannins from the forest floor, a phenomenon that makes the Rio Negro one of the most acidic large rivers in the world and, paradoxically, one of the warmest and clearest for swimming. The guide navigates through channels that most boats never enter, reading the current and the forest simultaneously.</p>
+                <p class="day-label">Stop 3 — Midday Break</p>
+                <h3 class="day-name">Lagoa Cristalina — The Crystal Lagoon</h3>
+                <p class="day-desc">The route pauses at <em>Lagoa Cristalina</em> — the Crystal Lagoon — a spring-fed natural swimming area set within intact forest. This is the midday stop: time to swim in clear, cool water, to eat, and to sit in the shade with the sounds of the surrounding forest. The water is transparent to the bottom, fed by underground springs that keep it consistently cold throughout the year. <br><br>The rhythm of the day slows here intentionally. After two cave visits in quick succession, the open sky and clean water of the lagoon are a welcome contrast. This is where the Amazon reminds you that rest is also part of the experience.</p>
                 <div class="day-tags">
-                    <span class="day-tag"><i class="fa-solid fa-ship"></i> Speedboat</span>
-                    <span class="day-tag"><i class="fa-solid fa-map"></i> 400 Islands</span>
-                    <span class="day-tag"><i class="fa-solid fa-binoculars"></i> Wildlife Watch</span>
+                    <span class="day-tag"><i class="fa-solid fa-person-swimming"></i> Swimming</span>
+                    <span class="day-tag"><i class="fa-solid fa-utensils"></i> Lunch Break</span>
+                    <span class="day-tag"><i class="fa-solid fa-droplet"></i> Spring-Fed Pool</span>
                 </div>
             </div>
         </div>
 
+        <!-- STOP 4 -->
         <div class="day-block rv">
             <div class="day-num"><div class="dn-circle">4</div></div>
             <div class="day-content">
-                <p class="day-label">Mid-morning</p>
-                <h3 class="day-name">River Beaches, Lago do Arraia &amp; Ancient Trees</h3>
-                <p class="day-desc">The navigation makes several stops. The river beaches — Praia de Santo Antônio, Tiririca, Praia do Meio, Praia do Pinheiro — are accessible only by boat, which is why they look the way they look: fine pale sand, dark water, no infrastructure, no other visitors. You swim here or simply stand in the shallows and take stock of where you are. The route also passes through the Lago do Arraia, an enclosed lake system where the stillness is absolute and the forested margins press close on every side. The ancient Amazonian trees along the banks — some centuries old, their root systems adapted to months of seasonal flooding — are among the most visually striking features of the entire day.</p>
+                <p class="day-label">Stop 4 — River</p>
+                <h3 class="day-name">Rio Vermelho — The Red River</h3>
+                <p class="day-desc">Named for the amber and russet tones of its water — stained by the tannins of decomposing organic matter, the same chemistry that colours the Rio Negro black — <em>Rio Vermelho</em> is one of the clearest expressions of Amazonian black-water ecology in the region. The colour shift visible at the margins, where transparent current meets dark stone, has a quality that is simultaneously alien and logical once explained. <br><br>Your guide covers the biochemistry of black-water rivers: why they run clear but dark, how they shape the species communities that live in and around them, and why the plants and animals here are adapted differently from those in the white-water ecosystems downstream. The Amazon has multiple distinct hydrological worlds, and this is one of the most visually striking.</p>
                 <div class="day-tags">
-                    <span class="day-tag"><i class="fa-solid fa-umbrella-beach"></i> River Beaches</span>
-                    <span class="day-tag"><i class="fa-solid fa-person-swimming"></i> Swimming</span>
-                    <span class="day-tag"><i class="fa-solid fa-droplet"></i> Lago do Arraia</span>
-                    <span class="day-tag"><i class="fa-solid fa-tree"></i> Ancient Trees</span>
+                    <span class="day-tag"><i class="fa-solid fa-water"></i> Black-Water River</span>
+                    <span class="day-tag"><i class="fa-solid fa-magnifying-glass"></i> Naturalist Briefing</span>
+                    <span class="day-tag"><i class="fa-solid fa-fish"></i> Riparian Ecology</span>
                 </div>
             </div>
         </div>
 
+        <!-- STOP 5 -->
         <div class="day-block rv">
             <div class="day-num"><div class="dn-circle">5</div></div>
             <div class="day-content">
-                <p class="day-label">~13:00 — Midday</p>
-                <h3 class="day-name">Regional Lunch &amp; Riverside Community</h3>
-                <p class="day-desc">Lunch is served in a riverside community — one of the <em>comunidades ribeirinhas</em> that have sustained themselves along the Rio Negro for generations, with diets, architecture, and daily rhythms shaped entirely by the river. The meal is regional: freshwater fish prepared with local techniques, farinha, and whatever the kitchen has harvested that morning. This is not a staged cultural experience — it is lunch with people who live here, and the difference is immediately apparent. The occasion also creates the right conditions for birdwatching: the mid-afternoon quiet along the river margins tends to bring out herons, kingfishers, and occasionally the scarlet macaws that nest in the forest behind the community.</p>
+                <p class="day-label">Stop 5 — Natural Pools</p>
+                <h3 class="day-name">Piscinas Naturais do Mutum — Rock Pools in the Forest</h3>
+                <p class="day-desc">Natural pools formed in sandstone by centuries of river erosion — calm, clear, and swimmable. The <em>Piscinas do Mutum</em> sit within a sheltered forest setting with graduated depths and a quality of stillness that makes them feel genuinely hidden, even in a valley this full of water. <br><br>Time here is unscripted. Some guests swim. Others sit on the warm rock and watch the forest edge. The guide is available for questions — about the species visible in and around the pools, the geology underfoot, or simply the name of a bird passing overhead. There is no agenda here beyond being in a remarkable place.</p>
                 <div class="day-tags">
-                    <span class="day-tag"><i class="fa-solid fa-bowl-food"></i> Regional Lunch</span>
-                    <span class="day-tag"><i class="fa-solid fa-people-group"></i> Riverside Community</span>
-                    <span class="day-tag"><i class="fa-solid fa-dove"></i> Bird Observation</span>
+                    <span class="day-tag"><i class="fa-solid fa-person-swimming"></i> Swimming</span>
+                    <span class="day-tag"><i class="fa-solid fa-mountain"></i> Rock Pools</span>
+                    <span class="day-tag"><i class="fa-solid fa-leaf"></i> Forest Setting</span>
                 </div>
             </div>
         </div>
 
+        <!-- STOP 6 -->
         <div class="day-block rv">
             <div class="day-num"><div class="dn-circle">6</div></div>
             <div class="day-content">
-                <p class="day-label">16:30 — Return</p>
-                <h3 class="day-name">Back to Manaus by Evening</h3>
-                <p class="day-desc">Departure from Novo Airão at 16:30. The return drive follows the same AM-352 highway as the morning, but the light is different — late afternoon in the Amazon turns the forest edges amber and the sky into something worth watching. You arrive back in Manaus around 19:30, in time for dinner. What you carry from the day is harder to quantify: the specific colour of the Rio Negro at full sun, the sensation of a dolphin close enough to touch, the scale of an archipelago that has no roads and no crowds and does not need them.</p>
+                <p class="day-label">Stop 6 — Waterfall</p>
+                <h3 class="day-name">Cachoeira do Mutum — The Main Falls</h3>
+                <p class="day-desc"><em>Cachoeira do Mutum</em> is the signature waterfall of the valley. It drops over a broad ledge of red sandstone — the iron-rich substrate that gives Rio Vermelho its name — into a wide pool open to the sky, with primary forest tight on both banks. In the wet season, the volume is thunderous; in the dry season, the exposed rock formations become visible in their full geological detail. Both versions are worth seeing.<br><br>The waterfall is photographically generous from multiple angles and distances. Photo assistance is included — your guide knows the best positions for light at different times of the day and will help you get the frame you came for.</p>
                 <div class="day-tags">
-                    <span class="day-tag"><i class="fa-solid fa-plane-arrival"></i> Return Manaus ~19:30</span>
-                    <span class="day-tag"><i class="fa-solid fa-car"></i> Hotel Drop-off</span>
+                    <span class="day-tag"><i class="fa-solid fa-wave-square"></i> Main Waterfall</span>
+                    <span class="day-tag"><i class="fa-solid fa-camera"></i> Photo Assistance</span>
+                    <span class="day-tag"><i class="fa-solid fa-person-swimming"></i> Swimming Pool</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- STOP 7 -->
+        <div class="day-block rv">
+            <div class="day-num"><div class="dn-circle">7</div></div>
+            <div class="day-content">
+                <p class="day-label">Stop 7 — Hidden Falls</p>
+                <h3 class="day-name">Cachoeira do Escondidinho — The Little Hidden One</h3>
+                <p class="day-desc">The day ends where the valley keeps its secret. <em>Escondidinho</em> — the Little Hidden One — sits at the end of a short trail that the guide navigates without signage. Finding it is part of the experience: it doesn't appear on the standard tourist maps, and reaching it requires knowing the way. Smaller and more intimate than Mutum, it falls into a deep pool sheltered by overhanging rock. <br><br>The pool is cold, deep, and quiet. After a full day in the valley, this last stop carries the particular quality of a place you have earned. The return to Manaus follows as the light changes over the forest — the same road that brought you out, now heading home.</p>
+                <div class="day-tags">
+                    <span class="day-tag"><i class="fa-solid fa-eye-slash"></i> Hidden Location</span>
+                    <span class="day-tag"><i class="fa-solid fa-water"></i> Deep Swimming Pool</span>
+                    <span class="day-tag"><i class="fa-solid fa-shoe-prints"></i> Short Trail</span>
                 </div>
             </div>
         </div>
@@ -733,19 +747,19 @@
         <div class="sidebar-card rv">
             <div class="sc-head">
                 <p class="sec-label">Pricing</p>
-                <p class="sc-price">R$ 1.100 <span>/ per person</span></p>
-                <p class="sc-price-note">Minimum 2 participants · Spots are limited</p>
+                <p class="sc-price">R$ 800 <span>/ per person</span></p>
+                <p class="sc-price-note">Private experience — minimum 2 guests</p>
             </div>
             <div class="sc-body">
                 <div class="sc-scarcity">
                     <i class="fa-solid fa-clock"></i>
-                    Limited availability — book ahead to secure your date
+                    Exclusive dates — contact us to confirm
                 </div>
-                <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Pink%20Dolphins%20%26%20Anavilhanas%20day%20trip." target="_blank" class="sc-cta-wa">
+                <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Presidente%20Figueiredo%20Private%20Day%20Tour." target="_blank" class="sc-cta-wa">
                     <i class="fa-brands fa-whatsapp" style="font-size:18px;"></i> Reserve on WhatsApp
                 </a>
                 <div class="sc-divider">or</div>
-                <a href="mailto:info@amazonecotravellers.com?subject=Pink%20Dolphins%20%26%20Anavilhanas%20-%20Day%20Trip%20Inquiry" class="sc-cta-email">
+                <a href="mailto:info@amazonecotravellers.com?subject=Presidente%20Figueiredo%20Day%20Tour%20Inquiry" class="sc-cta-email">
                     <i class="fa-regular fa-envelope"></i> Send an Email
                 </a>
                 <p class="sc-note">No commitment required. We reply within 24 hours.</p>
@@ -759,20 +773,17 @@
             </div>
             <div class="sc-body">
                 <ul class="inc-list">
-                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Hotel pick-up &amp; drop-off in Manaus</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Air-conditioned vehicle (Manaus ↔ Novo Airão)</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Speedboat navigation through Anavilhanas</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Pink dolphin interaction (Novo Airão)</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Regional lunch at riverside community</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Expert bilingual guide throughout</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Photo assistance</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Mineral water</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Private air-conditioned transport (hotel ↔ sites)</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Rubber boots for the Maroaga cave trail</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Mineral water throughout the day</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Photo assistance at every stop</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> Experienced naturalist guide</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-circle-check"></i> All entrance fees &amp; park taxes</li>
                     <hr style="border:none;border-top:1px solid var(--border);margin:6px 0;">
-                    <li class="inc-item no"><i class="fa-solid fa-circle-xmark"></i> Breakfast</li>
-                    <li class="inc-item no"><i class="fa-solid fa-circle-xmark"></i> Additional beverages</li>
-                    <li class="inc-item no"><i class="fa-solid fa-circle-xmark"></i> Local handicrafts</li>
+                    <li class="inc-item no"><i class="fa-solid fa-circle-xmark"></i> Lunch (available to purchase at Lagoa Cristalina)</li>
+                    <li class="inc-item no"><i class="fa-solid fa-circle-xmark"></i> Alcoholic beverages</li>
+                    <li class="inc-item no"><i class="fa-solid fa-circle-xmark"></i> Tips &amp; personal expenses</li>
                     <li class="inc-item no"><i class="fa-solid fa-circle-xmark"></i> Travel insurance</li>
-                    <li class="inc-item no"><i class="fa-solid fa-circle-xmark"></i> Personal expenses &amp; tips</li>
                 </ul>
             </div>
         </div>
@@ -784,13 +795,13 @@
             </div>
             <div class="sc-body">
                 <ul class="inc-list">
-                    <li class="inc-item yes"><i class="fa-solid fa-language"></i> Guides speak EN, DE, PT &amp; ES</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-shirt"></i> Bring swimwear, sunscreen &amp; insect repellent</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-shoe-prints"></i> Light footwear or sandals recommended</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-users"></i> Minimum 2 participants</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-shield-halved"></i> Safety kit &amp; first aid on board</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-leaf"></i> Eco-responsible — no wildlife feeding beyond the official boto platform</li>
-                    <li class="inc-item yes"><i class="fa-solid fa-calendar-check"></i> Flexible scheduling — contact us for available dates</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-language"></i> Guide speaks EN, DE, PT &amp; ES</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-shirt"></i> Light clothes &amp; quick-dry swimwear recommended</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-socks"></i> Rubber boots provided — closed shoes for the trail</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-spray-can-sparkles"></i> Insect repellent &amp; sunscreen essential</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-cloud-rain"></i> Pack a rain poncho — always</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-camera"></i> Camera / phone — shots are assisted throughout</li>
+                    <li class="inc-item yes"><i class="fa-solid fa-leaf"></i> Leave no trace — eco-responsible conduct required</li>
                 </ul>
             </div>
         </div>
@@ -801,19 +812,19 @@
 <!-- PHOTO GALLERY -->
 <section class="tour-gallery-section rv">
     <div class="tour-gallery-inner">
-        <p class="gallery-label">In the field</p>
+        <p class="gallery-label">In the valley</p>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="../../assets/images/tours/an-boto-water.jpg" alt="Pink river dolphin (Inia geoffrensis) surfacing in the black waters of Novo Airão, Amazonas, Brazil" loading="lazy">
+                <img src="../../assets/images/tours/pf-cave-arches.jpg" alt="Cathedral-like interior of Caverna do Maroaga with moss-covered sandstone arches and white sand floor, Presidente Figueiredo, Amazonas" loading="lazy" style="object-position: center 30%;">
             </div>
             <div class="gallery-item">
-                <img src="../../assets/images/tours/an-islands.jpg" alt="Aerial perspective of the Anavilhanas Archipelago showing the labyrinth of river islands and channels on the Rio Negro, Amazonas" loading="lazy">
+                <img src="../../assets/images/tours/pf-gruta.jpg" alt="Amber-tinted pool inside a sandstone cave with a waterfall curtain and hanging vines — Gruta da Judéia, Presidente Figueiredo" loading="lazy" style="object-position: center 40%;">
             </div>
             <div class="gallery-item">
-                <img src="../../assets/images/tours/an-beach.jpg" alt="Pristine white-sand river beach inside the Anavilhanas Archipelago — accessible only by boat, no roads, no crowds" loading="lazy">
+                <img src="../../assets/images/tours/pf-waterfall.jpg" alt="Cachoeira do Mutum — wide cascade over red sandstone into a natural pool, Presidente Figueiredo, Amazon, Brazil" loading="lazy" style="object-position: center 50%;">
             </div>
             <div class="gallery-item">
-                <img src="../../assets/images/tours/an-community.jpg" alt="Traditional riverside community along the Rio Negro — where regional lunch is served during the Anavilhanas day trip" loading="lazy">
+                <img src="../../assets/images/tours/pf-rocks.jpg" alt="Ancient sandstone rock formations with aerial roots and dense forest canopy, Presidente Figueiredo ecological reserve" loading="lazy" style="object-position: center 40%;">
             </div>
         </div>
     </div>
@@ -823,54 +834,10 @@
 <section id="related">
     <div class="related-inner">
         <div class="related-hd rv">
-            <p class="sec-label">Go deeper</p>
-            <h2 class="sec-title">Stay longer in<br>the Amazon</h2>
+            <p class="sec-label">One day opens many doors</p>
+            <h2 class="sec-title">More to explore<br>from Manaus</h2>
         </div>
 
-        <!-- Multi-day -->
-        <div class="tours-grid" style="grid-template-columns:repeat(2,1fr);">
-            <div class="tc rv d1">
-                <div class="tc-photo grad-1">
-                    <img src="../../assets/images/tours/amazon-explorers.jpg" alt="Amazon Explorers 5-day jungle tour from Manaus" loading="lazy" onload="this.parentElement.classList.add('has-img')">
-                    <div class="tc-ph"><i class="fa-solid fa-compass"></i></div>
-                    <span class="tc-pill">5 Days · 4 Nights</span>
-                </div>
-                <div class="tc-body">
-                    <h3 class="tc-name">Amazon Explorers</h3>
-                    <ul class="tc-hl">
-                        <li>Canopy tower &amp; flooded forest</li>
-                        <li>Pink river dolphin encounters</li>
-                        <li>Indigenous village visit</li>
-                    </ul>
-                    <div class="tc-footer">
-                        <span class="tc-dur">5 Days / 4 Nights</span>
-                        <a href="../../tours/amazon-explorers/index.html" class="tc-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="tc rv d2">
-                <div class="tc-photo grad-3">
-                    <img src="../../assets/images/tours/chlorophyll.jpg" alt="Chlorophyll 6-day Amazon nature tour from Manaus" loading="lazy" onload="this.parentElement.classList.add('has-img')">
-                    <div class="tc-ph"><i class="fa-solid fa-leaf"></i></div>
-                    <span class="tc-pill">6 Days · 5 Nights</span>
-                </div>
-                <div class="tc-body">
-                    <h3 class="tc-name">Chlorophyll</h3>
-                    <ul class="tc-hl">
-                        <li>Six days across five ecosystems</li>
-                        <li>Igarapé canoe &amp; jungle walks</li>
-                        <li>Pink dolphins &amp; riverine communities</li>
-                    </ul>
-                    <div class="tc-footer">
-                        <span class="tc-dur">6 Days / 5 Nights</span>
-                        <a href="../../tours/chlorophyll/index.html" class="tc-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Day excursions -->
-        <p class="related-sub-label rv">Other Day Excursions — back in Manaus the same day</p>
         <div class="tours-grid" style="grid-template-columns:repeat(2,1fr);">
             <div class="tc rv d1">
                 <div class="tc-photo grad-6">
@@ -893,34 +860,75 @@
             </div>
             <div class="tc rv d2">
                 <div class="tc-photo grad-2">
-                    <img src="../../assets/images/tours/ariau-river.jpg" alt="Ariau River and Rio Negro day tour from Manaus" loading="lazy" onload="this.parentElement.classList.add('has-img')">
-                    <div class="tc-ph"><i class="fa-solid fa-ship"></i></div>
+                    <img src="../../assets/images/tours/anavilhanas.jpg" alt="Pink Dolphins and Anavilhanas day trip from Manaus" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                    <div class="tc-ph"><i class="fa-solid fa-map"></i></div>
                     <span class="tc-pill">1 Day</span>
                 </div>
                 <div class="tc-body">
-                    <h3 class="tc-name">Ariau River &amp; Rio Negro</h3>
+                    <h3 class="tc-name">Pink Dolphins &amp; Anavilhanas</h3>
                     <ul class="tc-hl">
-                        <li>Canoe through jungle channels</li>
-                        <li>Guided jungle trail walk</li>
-                        <li>Piranha fishing &amp; Rio Negro beach</li>
+                        <li>Pink dolphin interaction in Novo Airão</li>
+                        <li>400-island river archipelago</li>
+                        <li>Wild river beaches</li>
                     </ul>
                     <div class="tc-footer">
                         <span class="tc-dur">Full Day</span>
-                        <a href="../../tours/ariau-river/index.html" class="tc-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="../../tours/anavilhanas/index.html" class="tc-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <p class="related-sub-label rv">Want more time in the Amazon?</p>
+        <div class="tours-grid" style="grid-template-columns:repeat(2,1fr);">
+            <div class="tc rv d1">
+                <div class="tc-photo grad-1">
+                    <img src="../../assets/images/tours/jungle-lodge-3d.jpg" alt="Amazon Jungle Lodge 3-day expedition from Manaus" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                    <div class="tc-ph"><i class="fa-solid fa-tent"></i></div>
+                    <span class="tc-pill">3 Days · 2 Nights</span>
+                </div>
+                <div class="tc-body">
+                    <h3 class="tc-name">Jungle Lodge Expedition</h3>
+                    <ul class="tc-hl">
+                        <li>Two nights deep in primary Amazon forest</li>
+                        <li>Pink dolphins, piranha fishing, night caiman</li>
+                        <li>Full board &amp; bilingual guide</li>
+                    </ul>
+                    <div class="tc-footer">
+                        <span class="tc-dur">3 Days / 2 Nights</span>
+                        <a href="../../tours/jungle-lodge-3days/index.html" class="tc-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tc rv d2">
+                <div class="tc-photo grad-3">
+                    <img src="../../assets/images/tours/amazon-explorers.jpg" alt="Amazon Explorers 5-day tour from Manaus" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                    <div class="tc-ph"><i class="fa-solid fa-compass"></i></div>
+                    <span class="tc-pill">5 Days · 4 Nights</span>
+                </div>
+                <div class="tc-body">
+                    <h3 class="tc-name">Amazon Explorers</h3>
+                    <ul class="tc-hl">
+                        <li>Five days across multiple ecosystems</li>
+                        <li>Canopy tower &amp; flooded igapó forest</li>
+                        <li>Indigenous village &amp; river communities</li>
+                    </ul>
+                    <div class="tc-footer">
+                        <span class="tc-dur">5 Days / 4 Nights</span>
+                        <a href="../../tours/amazon-explorers/index.html" class="tc-cta">View Tour <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- CTA -->
 <section id="cta">
-    <h2 class="cta-t rv">Ready to meet<br>the pink dolphins?</h2>
-    <p class="cta-s rv d1">Tell us your dates and group size. We confirm availability and send everything you need — no commitment required.</p>
+    <h2 class="cta-t rv">Ready to go beyond<br>the river?</h2>
+    <p class="cta-s rv d1">Tell us your dates and group size. We confirm availability and send everything you need — no commitment required. We reply within 24 hours.</p>
     <div class="cta-btns rv d2">
-        <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Pink%20Dolphins%20%26%20Anavilhanas%20day%20trip." target="_blank" class="btn-wa">
+        <a href="https://wa.me/5592991321047?text=Hi!%20I'm%20interested%20in%20the%20Presidente%20Figueiredo%20Private%20Day%20Tour." target="_blank" class="btn-wa">
             <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
         </a>
         <a href="../../tours/index.html" class="btn-cta">See All Tours <i class="fa-solid fa-arrow-right"></i></a>
@@ -945,6 +953,7 @@
             <ul>
                 <li><a href="../../tours/amazon-explorers/index.html">Amazon Explorers</a></li>
                 <li><a href="../../tours/river-explorer/index.html">River Explorer</a></li>
+                <li><a href="../../tours/jungle-lodge-3days/index.html">Jungle Lodge Expedition</a></li>
                 <li><a href="../../tours/chlorophyll/index.html">Chlorophyll</a></li>
                 <li><a href="../../tours/birdwatching/index.html">Birdwatching</a></li>
                 <li><a href="../../tours/ecological-expedition/index.html">Ecological Expedition</a></li>
@@ -995,6 +1004,7 @@
             <h6>Multi-Day Tours</h6>
             <a href="../../tours/amazon-explorers/index.html" class="mob-link">Amazon Explorers <span class="mob-link-dur">5D / 4N</span></a>
             <a href="../../tours/river-explorer/index.html" class="mob-link">River Explorer <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../../tours/jungle-lodge-3days/index.html" class="mob-link">Jungle Lodge Expedition <span class="mob-link-dur">3D / 2N</span></a>
             <a href="../../tours/chlorophyll/index.html" class="mob-link">Chlorophyll <span class="mob-link-dur">6D / 5N</span></a>
             <a href="../../tours/birdwatching/index.html" class="mob-link">Birdwatching <span class="mob-link-dur">7D / 6N</span></a>
             <a href="../../tours/ecological-expedition/index.html" class="mob-link">Ecological Expedition <span class="mob-link-dur">8D / 7N</span></a>
@@ -1027,16 +1037,16 @@
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://amazonecotravellers.com/" },
     { "@type": "ListItem", "position": 2, "name": "Tours", "item": "https://amazonecotravellers.com/tours/" },
-    { "@type": "ListItem", "position": 3, "name": "Pink Dolphins & Anavilhanas", "item": "https://amazonecotravellers.com/tours/anavilhanas/" }
+    { "@type": "ListItem", "position": 3, "name": "Presidente Figueiredo — Caves, Waterfalls & Natural Pools", "item": "https://amazonecotravellers.com/tours/presidente-figueiredo/" }
   ]
 },
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
-  "name": "Pink Dolphins & Anavilhanas Archipelago — Amazon Day Trip from Manaus",
-  "description": "Full-day Amazon day trip from Manaus, Brazil. Pink river dolphin interaction in Novo Airão, speedboat navigation through the Anavilhanas Archipelago (world's second-largest river island system), white-sand river beaches, Lago do Arraia, and regional lunch at a riverside community. Expert bilingual guide included. Departs 06:30, returns ~19:30.",
-  "url": "https://amazonecotravellers.com/tours/anavilhanas/",
-  "image": "https://amazonecotravellers.com/assets/images/tours/anavilhanas.jpg",
+  "name": "Presidente Figueiredo Private Day Tour — Caves, Waterfalls & Natural Pools from Manaus",
+  "description": "Private day tour from Manaus to Presidente Figueiredo, the Amazon's waterfall valley. Seven natural sites including Caverna do Maroaga, Gruta da Judéia, Lagoa Cristalina, Rio Vermelho, Piscinas Naturais do Mutum, Cachoeira do Mutum, and Cachoeira do Escondidinho. All entrance fees, rubber boots, mineral water, and photo assistance included.",
+  "url": "https://amazonecotravellers.com/tours/presidente-figueiredo/",
+  "image": "https://amazonecotravellers.com/assets/images/tours/pf-hero.jpg",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Amazon Eco Travellers",
@@ -1049,23 +1059,24 @@
       "addressCountry": "BR"
     }
   },
-  "touristType": ["Nature tourists", "Wildlife enthusiasts", "Eco tourists"],
+  "touristType": ["Nature tourists", "Wildlife enthusiasts", "Eco tourists", "Adventure tourists", "Geology enthusiasts"],
   "itinerary": {
     "@type": "ItemList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Departure from Manaus — Hotel pick-up at 06:30" },
-      { "@type": "ListItem", "position": 2, "name": "Novo Airão — Pink river dolphin interaction (~09:00)" },
-      { "@type": "ListItem", "position": 3, "name": "Anavilhanas Archipelago speedboat navigation (10:30)" },
-      { "@type": "ListItem", "position": 4, "name": "River beaches and Lago do Arraia" },
-      { "@type": "ListItem", "position": 5, "name": "Regional lunch at a riverside community (~13:00)" },
-      { "@type": "ListItem", "position": 6, "name": "Return to Manaus — arrival ~19:30" }
+      { "@type": "ListItem", "position": 1, "name": "Caverna do Maroaga — Sandstone cave with amber pool and waterfall" },
+      { "@type": "ListItem", "position": 2, "name": "Gruta da Judéia — Sandstone grotto with aerial roots" },
+      { "@type": "ListItem", "position": 3, "name": "Lagoa Cristalina — Crystal spring lagoon (lunch break)" },
+      { "@type": "ListItem", "position": 4, "name": "Rio Vermelho — Black-water river with naturalist briefing" },
+      { "@type": "ListItem", "position": 5, "name": "Piscinas Naturais do Mutum — Natural rock pools in forest" },
+      { "@type": "ListItem", "position": 6, "name": "Cachoeira do Mutum — Main waterfall over red sandstone" },
+      { "@type": "ListItem", "position": 7, "name": "Cachoeira do Escondidinho — Hidden waterfall at end of forest trail" }
     ]
   },
   "offers": {
     "@type": "Offer",
-    "price": "1100",
-    "priceCurrency": "BRL",
-    "description": "Per person, minimum 2 participants"
+    "name": "Private Day Tour — minimum 2 guests",
+    "price": "800",
+    "priceCurrency": "BRL"
   }
 }
 ]
