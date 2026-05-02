@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Where you'll sleep in the Amazon: a boat-access-only jungle lodge deep in primary forest, or a private riverboat expedition. Both options depart from Manaus with Amazon Eco Travellers.">
+    <title>Amazon Accommodations — Jungle Lodge &amp; Riverboat | Amazon Eco Travellers</title>
+    <link rel="canonical" href="https://amazonecotravellers.com/accommodations/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazonecotravellers.com/accommodations/">
+    <meta property="og:site_name" content="Amazon Eco Travellers">
+    <meta property="og:title" content="Amazon Accommodations — Jungle Lodge &amp; Riverboat">
+    <meta property="og:description" content="A boat-access-only jungle lodge in primary Amazon forest, or a private riverboat on the Rio Negro. Both surrounded by unbroken wilderness, departing from Manaus.">
+    <meta property="og:image" content="https://amazonecotravellers.com/assets/images/tours/al-hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amazon Accommodations — Jungle Lodge &amp; Riverboat from Manaus">
+    <meta name="twitter:description" content="Sleep in the Amazon: a boat-access-only jungle lodge or a private riverboat expedition. No roads. No grid. Just the forest.">
+    <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/tours/al-hero.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --green:      oklch(50% 0.18 142);
+            --green-d:    oklch(34% 0.14 142);
+            --green-l:    oklch(94% 0.06 142);
+            --green-xl:   oklch(97% 0.03 142);
+            --amber:      oklch(66% 0.17 75);
+            --amber-d:    oklch(54% 0.16 60);
+            --terra:      oklch(56% 0.14 35);
+            --dark:       oklch(15% 0.01 100);
+            --gray:       oklch(48% 0.01 140);
+            --gray-l:     oklch(70% 0.008 140);
+            --warm-cream: oklch(97% 0.014 90);
+            --warm-white: oklch(99% 0.008 90);
+            --border:     oklch(88% 0.01 120);
+            --ease:    cubic-bezier(0.23, 1, 0.32, 1);
+            --ease-io: cubic-bezier(0.77, 0, 0.175, 1);
+            --h: 'Spectral', Georgia, serif;
+            --b: 'Figtree', system-ui, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--b); font-size: 17px; color: var(--dark); background: var(--warm-white); line-height: 1.7; }
+        img  { max-width: 100%; display: block; }
+        a    { text-decoration: none; color: inherit; }
+        ul   { list-style: none; }
+
+        /* ── HERO ── */
+        .ac-hero {
+            height: 72vh;
+            min-height: 520px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        .ac-hero-bg {
+            position: absolute;
+            inset: 0;
+            background-image: url('../assets/images/tours/al-hero.jpg');
+            background-size: cover;
+            background-position: center 40%;
+            transform: scale(1.04);
+            transition: transform 8s var(--ease);
+        }
+        .ac-hero-bg.loaded { transform: scale(1); }
+        .ac-hero-ov {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                oklch(6% 0.02 140 / 0.12) 0%,
+                oklch(8% 0.03 140 / 0.38) 40%,
+                oklch(5% 0.02 130 / 0.90) 100%
+            );
+        }
+        .ac-hero-c {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 56px 72px;
+        }
+        .ac-hero-bc {
+            position: absolute;
+            top: -520px;
+            left: 56px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            color: oklch(72% 0.04 142);
+        }
+        .ac-hero-bc a { color: oklch(68% 0.08 142); transition: color 150ms; }
+        .ac-hero-bc a:hover { color: var(--warm-white); }
+        .ac-hero-bc i { font-size: 9px; opacity: 0.6; }
+        .ac-eyebrow {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+            color: oklch(68% 0.12 142);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .ac-eyebrow::before {
+            content: '';
+            display: block;
+            width: 24px; height: 1px;
+            background: oklch(52% 0.08 142 / 0.8);
+        }
+        .ac-hero-h {
+            font-family: var(--h);
+            font-size: clamp(36px, 5.8vw, 72px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.04;
+            letter-spacing: -1.5px;
+            margin-bottom: 22px;
+            max-width: 760px;
+        }
+        .ac-hero-sub {
+            font-size: 16px;
+            font-weight: 300;
+            color: oklch(80% 0.04 142);
+            max-width: 580px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        .ac-hero-anchors {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .ac-anc-lodge {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: var(--green);
+            color: var(--warm-white);
+            padding: 13px 26px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 180ms var(--ease), transform 150ms var(--ease);
+        }
+        .ac-anc-lodge:hover { background: var(--green-d); transform: translateY(-1px); }
+        .ac-anc-boat {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: oklch(100% 0 0 / 0.10);
+            border: 1.5px solid oklch(100% 0 0 / 0.28);
+            color: var(--warm-white);
+            padding: 12px 26px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            backdrop-filter: blur(6px);
+            transition: background 180ms var(--ease), transform 150ms var(--ease);
+        }
+        .ac-anc-boat:hover { background: oklch(100% 0 0 / 0.18); transform: translateY(-1px); }
+
+        /* ── OPTION INTRO STRIP ── */
+        .ac-strip {
+            background: var(--dark);
+            padding: 0 56px;
+        }
+        .ac-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: stretch;
+            border-bottom: 1px solid oklch(100% 0 0 / 0.06);
+        }
+        .ac-strip-item {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 26px 40px;
+            border-right: 1px solid oklch(100% 0 0 / 0.08);
+            cursor: pointer;
+            transition: background 180ms var(--ease);
+            text-decoration: none;
+        }
+        .ac-strip-item:last-child { border-right: none; }
+        .ac-strip-item:hover { background: oklch(100% 0 0 / 0.03); }
+        .ac-strip-icon {
+            width: 44px; height: 44px;
+            border-radius: 12px;
+            background: oklch(100% 0 0 / 0.07);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .ac-strip-icon i { font-size: 16px; color: oklch(70% 0.12 142); }
+        .ac-strip-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: oklch(42% 0.01 142); margin-bottom: 3px; }
+        .ac-strip-val { font-size: 15px; font-weight: 600; color: var(--warm-white); }
+
+        /* ── SHARED SECTION STYLES ── */
+        .ac-section {
+            padding: 100px 56px;
+        }
+        .ac-section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 72px;
+            align-items: start;
+        }
+        .ac-section-inner.rev { direction: rtl; }
+        .ac-section-inner.rev > * { direction: ltr; }
+
+        .ac-sec-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 16px;
+        }
+        .ac-sec-h {
+            font-family: var(--h);
+            font-size: clamp(30px, 3vw, 46px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--dark);
+            line-height: 1.12;
+            letter-spacing: -0.5px;
+            margin-bottom: 24px;
+        }
+        .ac-sec-sub {
+            font-size: 16px;
+            font-weight: 600;
+            color: oklch(38% 0.01 142);
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+        .ac-sec-p {
+            font-size: 15px;
+            color: oklch(40% 0.01 142);
+            line-height: 1.85;
+            margin-bottom: 32px;
+        }
+        .ac-amenities {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 36px;
+        }
+        .ac-am-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--green-l);
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--green-d);
+        }
+        .ac-am-item i { font-size: 13px; color: var(--green); flex-shrink: 0; }
+        .ac-sec-cta-wrap {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .ac-cta-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: var(--green);
+            color: var(--warm-white);
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 180ms var(--ease), transform 150ms var(--ease), box-shadow 180ms var(--ease);
+        }
+        .ac-cta-primary:hover { background: var(--green-d); transform: translateY(-1px); box-shadow: 0 8px 24px oklch(50% 0.18 142 / 0.30); }
+        .ac-cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--gray);
+            font-size: 13px;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2px;
+            transition: color 150ms, border-color 150ms;
+        }
+        .ac-cta-secondary:hover { color: var(--green); border-color: var(--green); }
+
+        /* ── PHOTO MOSAIC ── */
+        .ac-mosaic {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 280px 280px;
+            gap: 10px;
+        }
+        .ac-mosaic-main {
+            grid-column: 1;
+            grid-row: 1 / 3;
+            border-radius: 18px;
+            overflow: hidden;
+            position: relative;
+        }
+        .ac-mosaic-a, .ac-mosaic-b {
+            border-radius: 14px;
+            overflow: hidden;
+            position: relative;
+        }
+        .ac-mosaic-main img,
+        .ac-mosaic-a img,
+        .ac-mosaic-b img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 600ms var(--ease);
+        }
+        .ac-mosaic-main:hover img,
+        .ac-mosaic-a:hover img,
+        .ac-mosaic-b:hover img { transform: scale(1.05); }
+
+        /* ── LOCATION BADGE ── */
+        .ac-loc-badge {
+            position: absolute;
+            bottom: 16px; left: 16px;
+            background: oklch(8% 0.03 140 / 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid oklch(100% 0 0 / 0.12);
+            border-radius: 50px;
+            padding: 7px 14px;
+            font-size: 12px;
+            font-weight: 600;
+            color: oklch(82% 0.04 142);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .ac-loc-badge i { color: var(--green); font-size: 11px; }
+
+        /* ── DIVIDER ── */
+        .ac-divider {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 1px;
+            background: var(--border);
+        }
+
+        /* ── TOURS SECTION ── */
+        .ac-tours {
+            background: var(--warm-cream);
+            padding: 96px 56px;
+        }
+        .ac-tours-inner { max-width: 1200px; margin: 0 auto; }
+        .ac-tours-hd { text-align: center; margin-bottom: 56px; }
+        .ac-tours-ey {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--gray-l);
+            margin-bottom: 14px;
+        }
+        .ac-tours-h {
+            font-family: var(--h);
+            font-size: clamp(26px, 3vw, 38px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--dark);
+        }
+        .ac-tours-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .ac-tc {
+            background: var(--warm-white);
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: transform 220ms var(--ease), box-shadow 220ms var(--ease);
+        }
+        .ac-tc:hover { transform: translateY(-4px); box-shadow: 0 16px 40px oklch(15% 0.01 100 / 0.10); }
+        .ac-tc-photo {
+            height: 190px;
+            overflow: hidden;
+            position: relative;
+            background: var(--green-l);
+        }
+        .ac-tc-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 500ms var(--ease); }
+        .ac-tc:hover .ac-tc-photo img { transform: scale(1.05); }
+        .ac-tc-badge {
+            position: absolute;
+            top: 12px; left: 12px;
+            background: oklch(8% 0.03 140 / 0.72);
+            backdrop-filter: blur(6px);
+            border-radius: 50px;
+            padding: 4px 12px;
+            font-size: 11px; font-weight: 700;
+            color: var(--warm-white);
+            display: flex; align-items: center; gap: 6px;
+        }
+        .ac-tc-badge i { color: var(--green); font-size: 10px; }
+        .ac-tc-body { padding: 22px 22px 20px; }
+        .ac-tc-name {
+            font-family: var(--h);
+            font-size: 18px;
+            font-style: italic;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        .ac-tc-p { font-size: 13px; color: var(--gray); line-height: 1.6; margin-bottom: 16px; }
+        .ac-tc-ft {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+        }
+        .ac-tc-dur { font-size: 12px; font-weight: 600; color: var(--gray-l); }
+        .ac-tc-link {
+            font-size: 13px; font-weight: 700;
+            color: var(--green);
+            display: flex; align-items: center; gap: 5px;
+            transition: gap 150ms;
+        }
+        .ac-tc:hover .ac-tc-link { gap: 8px; }
+
+        /* ── CTA ── */
+        #ac-cta {
+            background: oklch(16% 0.08 142);
+            padding: 96px 56px;
+            text-align: center;
+        }
+        .ac-cta-h {
+            font-family: var(--h);
+            font-size: clamp(28px, 3.5vw, 48px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.18;
+            margin-bottom: 18px;
+        }
+        .ac-cta-p {
+            font-size: 16px;
+            color: oklch(66% 0.06 142);
+            max-width: 520px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+        .ac-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .btn-wa-lg {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: #25D366; color: var(--warm-white);
+            padding: 16px 32px; border-radius: 50px;
+            font-size: 15px; font-weight: 700;
+            transition: background 180ms var(--ease), transform 150ms var(--ease), box-shadow 180ms var(--ease);
+        }
+        .btn-wa-lg:hover { background: #1dbb58; transform: translateY(-1px); box-shadow: 0 8px 28px rgba(37,211,102,0.40); }
+        .btn-tours-lg {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: transparent; color: var(--warm-white);
+            padding: 14px 28px; border-radius: 50px;
+            font-size: 14px; font-weight: 600;
+            border: 1.5px solid oklch(100% 0 0 / 0.22);
+            transition: background 180ms var(--ease), transform 150ms var(--ease);
+        }
+        .btn-tours-lg:hover { background: oklch(100% 0 0 / 0.08); transform: translateY(-1px); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1100px) {
+            .ac-section { padding: 80px 40px; }
+            .ac-section-inner { gap: 48px; }
+            .ac-tours { padding: 72px 40px; }
+            .ac-strip { padding: 0 40px; }
+            #ac-cta { padding: 80px 40px; }
+        }
+        @media (max-width: 900px) {
+            .ac-section-inner { grid-template-columns: 1fr; gap: 40px; }
+            .ac-section-inner.rev { direction: ltr; }
+            .ac-mosaic { grid-template-rows: 260px 200px; }
+            .ac-tours-grid { grid-template-columns: 1fr 1fr; }
+            .ac-strip-inner { flex-wrap: wrap; }
+            .ac-strip-item { flex: 1 1 calc(50% - 40px); border-right: none; border-bottom: 1px solid oklch(100% 0 0 / 0.07); padding: 18px 20px; }
+            .ac-strip-item:nth-child(odd) { border-right: 1px solid oklch(100% 0 0 / 0.07); }
+            .ac-strip-item:last-child { border-bottom: none; }
+        }
+        @media (max-width: 768px) {
+            .ac-hero-c { padding: 0 24px 56px; }
+            .ac-section { padding: 64px 24px; }
+            .ac-strip { padding: 0 24px; }
+            .ac-tours { padding: 64px 24px; }
+            #ac-cta { padding: 72px 24px; }
+            .ac-mosaic { grid-template-columns: 1fr; grid-template-rows: 260px 160px 160px; }
+            .ac-mosaic-main { grid-column: 1; grid-row: 1; }
+            .ac-amenities { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .ac-tours-grid { grid-template-columns: 1fr; }
+            .ac-hero-anchors { flex-direction: column; }
+            .ac-anc-lodge, .ac-anc-boat { width: fit-content; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+    <a href="../index.html" class="logo">
+        <img class="logo-w" src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+        <img class="logo-c" src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+    </a>
+    <nav>
+        <div class="dd">
+            <span class="nl dd-t">Tours <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="../tours/amazon-explorers/index.html" class="di"><span>Amazon Explorers</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/river-explorer/index.html" class="di"><span>River Explorer</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/jungle-lodge-3days/index.html" class="di"><span>Jungle Lodge Expedition</span><span class="di-dur">3D / 2N</span></a>
+                <a href="../tours/amazon-lodge/index.html" class="di"><span>Amazon Lodge</span><span class="di-dur">2D / 1N</span></a>
+                <a href="../tours/jungle-retreat/index.html" class="di"><span>Jungle Retreat</span><span class="di-dur">4D / 3N</span></a>
+                <a href="../tours/amazon-complete/index.html" class="di"><span>The Full Amazon</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/amazon-expedition/index.html" class="di"><span>Amazon Expedition</span><span class="di-dur">6D / 5N</span></a>
+                <a href="../tours/chlorophyll/index.html" class="di"><span>Chlorophyll</span><span class="di-dur">6D / 5N</span></a>
+                <a href="../tours/birdwatching/index.html" class="di"><span>Birdwatching</span><span class="di-dur">7D / 6N</span></a>
+                <a href="../tours/ecological-expedition/index.html" class="di"><span>Ecological Expedition</span><span class="di-dur">8D / 7N</span></a>
+                <hr style="border:none;border-top:1px solid var(--border);margin:4px 10px;">
+                <a href="../tours/pink-dolphins/index.html" class="di"><span>Pink Dolphins &amp; Indigenous Village</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/ariau-river/index.html" class="di"><span>Ariau River &amp; Rio Negro</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/anavilhanas/index.html" class="di"><span>Pink Dolphins &amp; Anavilhanas</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/presidente-figueiredo/index.html" class="di"><span>Presidente Figueiredo</span><span class="di-dur">1 Day</span></a>
+            </div>
+        </div>
+        <div class="dd">
+            <span class="nl dd-t" style="color: var(--green) !important;">Accommodations <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="../accommodations/index.html#lodge" class="di">Amazon Lodge</a>
+                <a href="../accommodations/index.html#riverboat" class="di">River Boat</a>
+            </div>
+        </div>
+        <a href="../about/index.html" class="nl">About Us</a>
+        <div class="lang">
+            <button class="lb on">EN</button>
+            <button class="lb">DE</button>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="btn-book">Book Now</a>
+        <button class="mob-btn" id="mob-open" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="ac-hero">
+    <div class="ac-hero-bg" id="acBg"></div>
+    <div class="ac-hero-ov"></div>
+    <div class="ac-hero-c">
+        <nav aria-label="Breadcrumb" style="position:absolute;top:-520px;left:56px;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:500;color:oklch(72% 0.04 142);">
+            <a href="../index.html" style="color:oklch(68% 0.08 142);transition:color 150ms;">Home</a>
+            <i class="fa-solid fa-chevron-right" style="font-size:9px;opacity:0.6;"></i>
+            <span>Accommodations</span>
+        </nav>
+        <p class="ac-eyebrow rv">Accommodations</p>
+        <h1 class="ac-hero-h rv d1">Where you'll sleep<br>in the Amazon.</h1>
+        <p class="ac-hero-sub rv d2">Two options. Both boat-access only. Both surrounded by primary Amazon forest. No roads — just the river, the canopy, and the sounds that city life never reaches.</p>
+        <div class="ac-hero-anchors rv d3">
+            <a href="#lodge" class="ac-anc-lodge"><i class="fa-solid fa-tent"></i> Amazon Lodge</a>
+            <a href="#riverboat" class="ac-anc-boat"><i class="fa-solid fa-sailboat"></i> River Boat</a>
+        </div>
+    </div>
+</section>
+
+<!-- STRIP -->
+<div class="ac-strip">
+    <div class="ac-strip-inner">
+        <a href="#lodge" class="ac-strip-item">
+            <div class="ac-strip-icon"><i class="fa-solid fa-tent"></i></div>
+            <div>
+                <p class="ac-strip-label">Option 1</p>
+                <p class="ac-strip-val">Amazon Jungle Lodge</p>
+            </div>
+        </a>
+        <a href="#riverboat" class="ac-strip-item">
+            <div class="ac-strip-icon"><i class="fa-solid fa-sailboat"></i></div>
+            <div>
+                <p class="ac-strip-label">Option 2</p>
+                <p class="ac-strip-val">River Boat</p>
+            </div>
+        </a>
+        <div class="ac-strip-item" style="cursor:default;">
+            <div class="ac-strip-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+                <p class="ac-strip-label">Departure</p>
+                <p class="ac-strip-val">Manaus, AM, Brazil</p>
+            </div>
+        </div>
+        <div class="ac-strip-item" style="cursor:default;">
+            <div class="ac-strip-icon"><i class="fa-solid fa-road-barrier"></i></div>
+            <div>
+                <p class="ac-strip-label">Access</p>
+                <p class="ac-strip-val">River Only — No Roads</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 1: AMAZON LODGE
+══════════════════════════════════════════════ -->
+<section class="ac-section" id="lodge" style="background:var(--warm-cream);">
+    <div class="ac-section-inner">
+
+        <!-- TEXT -->
+        <div class="rv">
+            <p class="ac-sec-label">Amazon Jungle Lodge</p>
+            <h2 class="ac-sec-h">Primary forest,<br>no roads in.</h2>
+            <p class="ac-sec-sub">A working eco-lodge accessible only by boat, set inside primary Amazon rainforest on the banks of a black-water river tributary.</p>
+            <p class="ac-sec-p">The lodge sits at the end of a river route that no paved road reaches. Getting there means a boat transfer from Manaus — first through the Meeting of the Waters, then upriver into forest that has never been cleared. The structure itself was built to interfere as little as possible with its surroundings: open-sided communal areas that let the forest in, rooms with screened windows and the sounds of the canopy at night, and a dock where the river comes directly to the threshold.<br><br>Meals are prepared on-site using regional ingredients and served in the communal dining area overlooking the forest. Power comes from solar panels; the only light at night is what the lodge provides and what the forest does on its own. Fireflies. Moonlit river. The occasional eyeshine of a caiman along the bank.</p>
+
+            <div class="ac-amenities">
+                <div class="ac-am-item"><i class="fa-solid fa-bed"></i> Private rooms</div>
+                <div class="ac-am-item"><i class="fa-solid fa-bowl-food"></i> Full board meals</div>
+                <div class="ac-am-item"><i class="fa-solid fa-solar-panel"></i> Solar-powered</div>
+                <div class="ac-am-item"><i class="fa-solid fa-water"></i> River dock</div>
+                <div class="ac-am-item"><i class="fa-solid fa-fan"></i> Ceiling fans</div>
+                <div class="ac-am-item"><i class="fa-solid fa-shield-halved"></i> Screened windows</div>
+                <div class="ac-am-item"><i class="fa-solid fa-person-hiking"></i> Forest trails</div>
+                <div class="ac-am-item"><i class="fa-solid fa-binoculars"></i> Wildlife decks</div>
+            </div>
+
+            <div class="ac-sec-cta-wrap">
+                <a href="../tours/amazon-lodge/index.html" class="ac-cta-primary">
+                    <i class="fa-solid fa-tent"></i> Lodge Tours
+                </a>
+                <a href="https://wa.me/5592991321047?text=Hi!%20I'd%20like%20to%20know%20more%20about%20the%20Amazon%20Lodge." target="_blank" class="ac-cta-secondary">
+                    Ask about the lodge <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOSAIC -->
+        <div class="ac-mosaic rv d1">
+            <div class="ac-mosaic-main">
+                <img src="../assets/images/tours/al-hero.jpg" alt="Amazon jungle lodge at the river's edge — boat access only" loading="lazy">
+                <div class="ac-loc-badge"><i class="fa-solid fa-location-dot"></i> Rio Negro tributary</div>
+            </div>
+            <div class="ac-mosaic-a">
+                <img src="../assets/images/tours/al-room.jpg" alt="Lodge bedroom with forest views and screened windows" loading="lazy">
+            </div>
+            <div class="ac-mosaic-b">
+                <img src="../assets/images/tours/al-breakfast.jpg" alt="Breakfast at the lodge with regional Amazon dishes" loading="lazy">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div style="padding:0 56px;background:var(--warm-cream);">
+    <div class="ac-divider"></div>
+</div>
+
+<!-- Lodge gallery strip -->
+<section style="background:var(--warm-cream);padding:0 56px 80px;">
+    <div style="max-width:1200px;margin:0 auto;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gray-l);margin-bottom:24px;">Lodge — More Views</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+            <div style="height:220px;border-radius:14px;overflow:hidden;">
+                <img src="../assets/images/tours/al-sunrise.jpg" alt="Sunrise over the Amazon canopy from the lodge" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform 500ms var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="height:220px;border-radius:14px;overflow:hidden;">
+                <img src="../assets/images/tours/al-canoe.jpg" alt="Canoe from the lodge on a black-water river" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform 500ms var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+            <div style="height:220px;border-radius:14px;overflow:hidden;">
+                <img src="../assets/images/tours/ex6-jungle.jpg" alt="Dense primary Amazon rainforest surrounding the lodge" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform 500ms var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 2: RIVERBOAT
+══════════════════════════════════════════════ -->
+<section class="ac-section" id="riverboat" style="background:var(--warm-white);">
+    <div class="ac-section-inner rev">
+
+        <!-- TEXT -->
+        <div class="rv">
+            <p class="ac-sec-label">River Boat</p>
+            <h2 class="ac-sec-h">Your cabin moves<br>with the river.</h2>
+            <p class="ac-sec-sub">A private expedition boat that doubles as your accommodation — sleeping aboard as the Amazon moves around you, anchoring in different sections of the river each night.</p>
+            <p class="ac-sec-p">The riverboat is for travellers who want the Amazon to be fully surrounding, not simply adjacent. Rather than sleeping in a fixed point and going out to the forest, the boat moves through it — anchoring at different locations along the Rio Negro and its tributaries, positioning guests for activities that the lodge cannot reach and staying as long as the wildlife warrants.<br><br>Cabins are private, with full bedding and ventilation. The boat carries a small team: skipper, naturalist guide, and cook. Meals are prepared fresh onboard, adapted to the day's route and the local catch. Evenings on the upper deck watching the river turn orange and then black are, for most guests, among the most memorable hours of the entire trip.<br><br>The riverboat option is available exclusively as part of multi-day expedition packages — it is not offered as standalone accommodation.</p>
+
+            <div class="ac-amenities">
+                <div class="ac-am-item"><i class="fa-solid fa-bed"></i> Private cabins</div>
+                <div class="ac-am-item"><i class="fa-solid fa-utensils"></i> Onboard cook</div>
+                <div class="ac-am-item"><i class="fa-solid fa-route"></i> Multiple anchoring spots</div>
+                <div class="ac-am-item"><i class="fa-solid fa-fish"></i> Fishing off the deck</div>
+                <div class="ac-am-item"><i class="fa-solid fa-moon"></i> Night river excursions</div>
+                <div class="ac-am-item"><i class="fa-solid fa-binoculars"></i> Upper observation deck</div>
+                <div class="ac-am-item"><i class="fa-solid fa-user-tie"></i> Naturalist onboard</div>
+                <div class="ac-am-item"><i class="fa-solid fa-anchor"></i> Black-water river routes</div>
+            </div>
+
+            <div class="ac-sec-cta-wrap">
+                <a href="../tours/amazon-expedition/index.html" class="ac-cta-primary">
+                    <i class="fa-solid fa-sailboat"></i> Boat Tours
+                </a>
+                <a href="https://wa.me/5592991321047?text=Hi!%20I'd%20like%20to%20know%20more%20about%20the%20riverboat%20option." target="_blank" class="ac-cta-secondary">
+                    Ask about the boat <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOSAIC -->
+        <div class="ac-mosaic rv d1">
+            <div class="ac-mosaic-main">
+                <img src="../assets/images/tours/ex6-lodge.jpg" alt="Amazon riverboat anchored on the Rio Negro at dusk" loading="lazy">
+                <div class="ac-loc-badge"><i class="fa-solid fa-location-dot"></i> Rio Negro</div>
+            </div>
+            <div class="ac-mosaic-a">
+                <img src="../assets/images/tours/ex6-sunset.jpg" alt="Sunset over the Amazon river from the boat deck" loading="lazy">
+            </div>
+            <div class="ac-mosaic-b">
+                <img src="../assets/images/tours/ec5-waters.jpg" alt="Meeting of the Waters seen from a riverboat" loading="lazy">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TOURS SECTION
+══════════════════════════════════════════════ -->
+<section class="ac-tours">
+    <div class="ac-tours-inner">
+        <div class="ac-tours-hd">
+            <p class="ac-tours-ey rv">Tours that include accommodation</p>
+            <h2 class="ac-tours-h rv d1">Choose your expedition</h2>
+        </div>
+        <div class="ac-tours-grid">
+
+            <div class="ac-tc rv d1">
+                <div class="ac-tc-photo">
+                    <img src="../assets/images/tours/al-hero.jpg" alt="Amazon Lodge 2-day tour" loading="lazy">
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                </div>
+                <div class="ac-tc-body">
+                    <h3 class="ac-tc-name">Amazon Lodge Overnight</h3>
+                    <p class="ac-tc-p">Two days, one night. Meeting of the Waters, pink dolphins, piranha fishing, caiman search by spotlight, and a canopy sunrise.</p>
+                    <div class="ac-tc-ft">
+                        <span class="ac-tc-dur">2 Days / 1 Night</span>
+                        <a href="../tours/amazon-lodge/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ac-tc rv d2">
+                <div class="ac-tc-photo">
+                    <img src="../assets/images/tours/jungle-lodge-3d.jpg" alt="Jungle Lodge 3-day expedition" loading="lazy">
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                </div>
+                <div class="ac-tc-body">
+                    <h3 class="ac-tc-name">Jungle Lodge Expedition</h3>
+                    <p class="ac-tc-p">Three days, two nights. Deep into primary forest with night caiman search, jungle treks, and visits to riverside communities.</p>
+                    <div class="ac-tc-ft">
+                        <span class="ac-tc-dur">3 Days / 2 Nights</span>
+                        <a href="../tours/jungle-lodge-3days/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ac-tc rv d3">
+                <div class="ac-tc-photo">
+                    <img src="../assets/images/tours/ex6-hero.jpg" alt="Amazon Expedition 6-day riverboat tour" loading="lazy">
+                    <span class="ac-tc-badge"><i class="fa-solid fa-sailboat"></i> Riverboat</span>
+                </div>
+                <div class="ac-tc-body">
+                    <h3 class="ac-tc-name">Amazon Expedition</h3>
+                    <p class="ac-tc-p">Six days aboard a private boat on the Rio Negro. The most immersive option — multiple river systems, remote anchoring, expedition wildlife.</p>
+                    <div class="ac-tc-ft">
+                        <span class="ac-tc-dur">6 Days / 5 Nights</span>
+                        <a href="../tours/amazon-expedition/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ac-tc rv d1">
+                <div class="ac-tc-photo">
+                    <img src="../assets/images/tours/ps4-hero.jpg" alt="Jungle Retreat 4-day tour" loading="lazy">
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                </div>
+                <div class="ac-tc-body">
+                    <h3 class="ac-tc-name">Jungle Retreat</h3>
+                    <p class="ac-tc-p">Four days, three nights combining lodge and jungle camp. Victoria-Régia water lilies, igarapé canoe, and deep forest trekking.</p>
+                    <div class="ac-tc-ft">
+                        <span class="ac-tc-dur">4 Days / 3 Nights</span>
+                        <a href="../tours/jungle-retreat/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ac-tc rv d2">
+                <div class="ac-tc-photo">
+                    <img src="../assets/images/tours/ec5-hero.jpg" alt="The Full Amazon 5-day tour" loading="lazy">
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                </div>
+                <div class="ac-tc-body">
+                    <h3 class="ac-tc-name">The Full Amazon</h3>
+                    <p class="ac-tc-p">Five days built around the most complete range of Amazonian habitats, wildlife, and cultural experiences available from Manaus.</p>
+                    <div class="ac-tc-ft">
+                        <span class="ac-tc-dur">5 Days / 4 Nights</span>
+                        <a href="../tours/amazon-complete/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ac-tc rv d3">
+                <div class="ac-tc-photo">
+                    <img src="../assets/images/tours/amazon-explorers.jpg" alt="Amazon Explorers 5-day tour" loading="lazy">
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                </div>
+                <div class="ac-tc-body">
+                    <h3 class="ac-tc-name">Amazon Explorers</h3>
+                    <p class="ac-tc-p">The original expedition. Five days of canopy towers, riverside communities, night walks, and time in primary forest off the tourist trail.</p>
+                    <div class="ac-tc-ft">
+                        <span class="ac-tc-dur">5 Days / 4 Nights</span>
+                        <a href="../tours/amazon-explorers/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+            <a href="../tours/index.html" class="ac-cta-primary rv" style="display:inline-flex;">See all 14 tours <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="ac-cta">
+    <h2 class="ac-cta-h rv">Not sure which option<br>fits your trip?</h2>
+    <p class="ac-cta-p rv d1">Tell us your dates, group size, and what you want from the Amazon. We'll match you with the right accommodation and build the itinerary around it.</p>
+    <div class="ac-cta-btns rv d2">
+        <a href="https://wa.me/5592991321047?text=Hi!%20I'd%20like%20help%20choosing%20between%20the%20lodge%20and%20riverboat%20options." target="_blank" class="btn-wa-lg">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="../tours/index.html" class="btn-tours-lg">
+            Browse all tours <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="ft-grid">
+        <div class="ft-brand">
+            <img src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+            <p class="ft-tag">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-guided expeditions for curious travellers from around the world.</p>
+            <div class="ft-soc">
+                <a href="https://www.facebook.com/EcoBiologists" target="_blank" class="fs"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amazonecotravellers" target="_blank" class="fs"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" class="fs"><i class="fa-brands fa-tripadvisor"></i></a>
+                <a href="https://wa.me/5592991321047" target="_blank" class="fs"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="ft-col">
+            <h5>Tours</h5>
+            <ul>
+                <li><a href="../tours/amazon-explorers/index.html">Amazon Explorers</a></li>
+                <li><a href="../tours/river-explorer/index.html">River Explorer</a></li>
+                <li><a href="../tours/jungle-lodge-3days/index.html">Jungle Lodge Expedition</a></li>
+                <li><a href="../tours/amazon-lodge/index.html">Amazon Lodge</a></li>
+                <li><a href="../tours/jungle-retreat/index.html">Jungle Retreat</a></li>
+                <li><a href="../tours/amazon-complete/index.html">The Full Amazon</a></li>
+                <li><a href="../tours/amazon-expedition/index.html">Amazon Expedition</a></li>
+                <li><a href="../tours/chlorophyll/index.html">Chlorophyll</a></li>
+                <li><a href="../tours/birdwatching/index.html">Birdwatching</a></li>
+                <li><a href="../tours/ecological-expedition/index.html">Ecological Expedition</a></li>
+                <li><a href="../tours/pink-dolphins/index.html">Pink Dolphins</a></li>
+                <li><a href="../tours/ariau-river/index.html">Ariau River</a></li>
+                <li><a href="../tours/anavilhanas/index.html">Pink Dolphins &amp; Anavilhanas</a></li>
+                <li><a href="../tours/presidente-figueiredo/index.html">Presidente Figueiredo</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Information</h5>
+            <ul>
+                <li><a href="../faq/index.html">FAQ</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about/index.html">About Us</a></li>
+                <li><a href="../accommodations/index.html">Accommodations</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ft-btm">
+        <p>&copy; 2025 Amazon Eco Travellers. All rights reserved.</p>
+        <p>Manaus, Amazonas, Brazil &mdash; <a href="tel:+5592991321047">+55 92 99132-1047</a></p>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5592991321047" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- MOBILE DRAWER -->
+<div class="mob-drawer" id="mob-drawer" aria-hidden="true">
+    <div class="mob-overlay" id="mob-overlay"></div>
+    <nav class="mob-panel">
+        <div class="mob-head">
+            <img src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+            <button class="mob-close" id="mob-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mob-section">
+            <h6>Multi-Day Tours</h6>
+            <a href="../tours/amazon-explorers/index.html" class="mob-link">Amazon Explorers <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/river-explorer/index.html" class="mob-link">River Explorer <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/jungle-lodge-3days/index.html" class="mob-link">Jungle Lodge Expedition <span class="mob-link-dur">3D / 2N</span></a>
+            <a href="../tours/amazon-lodge/index.html" class="mob-link">Amazon Lodge <span class="mob-link-dur">2D / 1N</span></a>
+            <a href="../tours/jungle-retreat/index.html" class="mob-link">Jungle Retreat <span class="mob-link-dur">4D / 3N</span></a>
+            <a href="../tours/amazon-complete/index.html" class="mob-link">The Full Amazon <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/amazon-expedition/index.html" class="mob-link">Amazon Expedition <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="../tours/chlorophyll/index.html" class="mob-link">Chlorophyll <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="../tours/birdwatching/index.html" class="mob-link">Birdwatching <span class="mob-link-dur">7D / 6N</span></a>
+            <a href="../tours/ecological-expedition/index.html" class="mob-link">Ecological Expedition <span class="mob-link-dur">8D / 7N</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Day Excursions</h6>
+            <a href="../tours/pink-dolphins/index.html" class="mob-link">Pink Dolphins &amp; Indigenous Village <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/ariau-river/index.html" class="mob-link">Ariau River &amp; Rio Negro <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/anavilhanas/index.html" class="mob-link">Pink Dolphins &amp; Anavilhanas <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/presidente-figueiredo/index.html" class="mob-link">Presidente Figueiredo <span class="mob-link-dur">1 Day</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Explore</h6>
+            <a href="../accommodations/index.html" class="mob-link" style="color:var(--green);">Accommodations</a>
+            <a href="../about/index.html" class="mob-link">About Us</a>
+            <a href="../gallery/index.html" class="mob-link">Gallery</a>
+            <a href="../faq/index.html" class="mob-link">FAQ</a>
+            <a href="../contact/index.html" class="mob-link">Contact</a>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="mob-book">Book Now on WhatsApp</a>
+    </nav>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script>
+    // Animate hero bg on load
+    document.getElementById('acBg').addEventListener('load', function() {
+        this.classList.add('loaded');
+    });
+    document.getElementById('acBg').classList.add('loaded');
+</script>
+
+<script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://amazonecotravellers.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Accommodations", "item": "https://amazonecotravellers.com/accommodations/" }
+  ]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "Amazon Eco Lodge",
+  "description": "Boat-access-only jungle lodge in primary Amazon rainforest on a Rio Negro tributary, operated by Amazon Eco Travellers. Full board, solar-powered, private rooms with forest views.",
+  "url": "https://amazonecotravellers.com/accommodations/#lodge",
+  "image": "https://amazonecotravellers.com/assets/images/tours/al-hero.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Manaus",
+    "addressRegion": "AM",
+    "addressCountry": "BR"
+  },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Full board meals", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Solar power", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Private rooms", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "River dock", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wildlife observation decks", "value": true }
+  ],
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Amazon Eco Travellers",
+    "url": "https://amazonecotravellers.com",
+    "telephone": "+5592991321047"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "Amazon River Boat",
+  "description": "Private expedition riverboat with cabins for multi-day tours on the Rio Negro and its tributaries, operated by Amazon Eco Travellers from Manaus, Brazil.",
+  "url": "https://amazonecotravellers.com/accommodations/#riverboat",
+  "image": "https://amazonecotravellers.com/assets/images/tours/ex6-lodge.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Manaus",
+    "addressRegion": "AM",
+    "addressCountry": "BR"
+  },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Private cabins", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Onboard cook", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Naturalist guide onboard", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Observation deck", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Night river excursions", "value": true }
+  ],
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Amazon Eco Travellers",
+    "url": "https://amazonecotravellers.com",
+    "telephone": "+5592991321047"
+  }
+}
+]
+</script>
+
+</body>
+</html>
