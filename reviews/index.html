@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read verified reviews from travellers who joined Amazon Eco Travellers expeditions from Manaus, Brazil. Rated Excellent on TripAdvisor. All five-star reviews from real guests.">
+    <title>Reviews — What Travellers Say | Amazon Eco Travellers</title>
+    <link rel="canonical" href="https://amazonecotravellers.com/reviews/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazonecotravellers.com/reviews/">
+    <meta property="og:site_name" content="Amazon Eco Travellers">
+    <meta property="og:title" content="Reviews — Real Amazon Expeditions, Real Feedback">
+    <meta property="og:description" content="Verified reviews from travellers who spent time in the Amazon with our naturalist guides. Rated Excellent on TripAdvisor.">
+    <meta property="og:image" content="https://amazonecotravellers.com/assets/images/about/about-hero.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amazon Eco Travellers — Guest Reviews">
+    <meta name="twitter:description" content="Real accounts from travellers who explored the Amazon with expert naturalist guides from Manaus.">
+    <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/about/about-hero.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --green:      oklch(50% 0.18 142);
+            --green-d:    oklch(34% 0.14 142);
+            --green-l:    oklch(94% 0.06 142);
+            --amber:      oklch(66% 0.17 75);
+            --dark:       oklch(15% 0.01 100);
+            --gray:       oklch(48% 0.01 140);
+            --gray-l:     oklch(70% 0.008 140);
+            --warm-cream: oklch(97% 0.014 90);
+            --warm-white: oklch(99% 0.008 90);
+            --border:     oklch(88% 0.01 120);
+            --ease:    cubic-bezier(0.23, 1, 0.32, 1);
+            --ease-io: cubic-bezier(0.77, 0, 0.175, 1);
+            --h: 'Spectral', Georgia, serif;
+            --b: 'Figtree', system-ui, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--b); font-size: 17px; color: var(--dark); background: var(--warm-white); line-height: 1.7; }
+        img  { max-width: 100%; display: block; }
+        a    { text-decoration: none; color: inherit; }
+        ul   { list-style: none; }
+
+        /* ── SPLIT HERO ── */
+        .rv-hero {
+            min-height: 100svh;
+            display: grid;
+            grid-template-columns: 52% 48%;
+        }
+        .rv-hero-text {
+            background: oklch(14% 0.07 142);
+            padding: 120px 72px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .rv-hero-bc {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 12px;
+            color: oklch(44% 0.05 142);
+            margin-bottom: 44px;
+        }
+        .rv-hero-bc a { color: oklch(44% 0.05 142); transition: color 180ms; }
+        .rv-hero-bc a:hover { color: oklch(72% 0.12 142); }
+        .rv-hero-bc i { font-size: 8px; }
+        .rv-eyebrow {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: oklch(68% 0.12 142);
+            margin-bottom: 24px;
+            display: flex; align-items: center; gap: 12px;
+        }
+        .rv-eyebrow::before {
+            content: ''; display: block;
+            width: 28px; height: 1px;
+            background: oklch(52% 0.08 142 / 0.7);
+        }
+        .rv-hero-h {
+            font-family: var(--h);
+            font-size: clamp(34px, 3.6vw, 56px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.14;
+            letter-spacing: -0.3px;
+            margin-bottom: 30px;
+            max-width: 520px;
+        }
+        .rv-hero-h em { font-style: normal; color: oklch(76% 0.16 142); }
+        .rv-hero-p {
+            font-size: 15px;
+            font-weight: 300;
+            color: oklch(66% 0.04 142);
+            line-height: 1.82;
+            max-width: 440px;
+            margin-bottom: 48px;
+        }
+        .rv-trust-row {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .rv-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-size: 13px;
+            font-weight: 600;
+            color: oklch(58% 0.06 142);
+        }
+        .rv-trust-item i { color: var(--amber); font-size: 14px; }
+        .rv-trust-item .ta-i { color: oklch(64% 0.10 170); }
+        .rv-trust-stars { color: var(--amber); font-size: 14px; letter-spacing: 2px; }
+        .rv-hero-photo {
+            position: relative;
+            overflow: hidden;
+        }
+        .rv-hero-photo img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+        .rv-hero-photo::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(to bottom, oklch(8% 0.03 142 / 0.3) 0%, transparent 40%);
+        }
+
+        /* ── STATS STRIP ── */
+        .rv-strip {
+            background: var(--dark);
+            padding: 0 56px;
+        }
+        .rv-strip-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: stretch;
+            border-bottom: 1px solid oklch(100% 0 0 / 0.06);
+        }
+        .rv-si {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 26px 40px;
+            flex: 1;
+            border-right: 1px solid oklch(100% 0 0 / 0.08);
+        }
+        .rv-si:last-child { border-right: none; }
+        .rv-si-icon {
+            width: 44px; height: 44px;
+            border-radius: 12px;
+            background: oklch(100% 0 0 / 0.07);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .rv-si-icon i { font-size: 16px; color: oklch(70% 0.12 142); }
+        .rv-si-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: oklch(42% 0.01 142); margin-bottom: 3px; }
+        .rv-si-val { font-size: 16px; font-weight: 700; color: var(--warm-white); }
+        .rv-si-val .stars { color: var(--amber); font-size: 14px; letter-spacing: 1px; }
+
+        /* ── REVIEWS GRID ── */
+        .rv-main {
+            background: var(--warm-white);
+            padding: 96px 56px;
+        }
+        .rv-main-inner { max-width: 1200px; margin: 0 auto; }
+        .rv-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-bottom: 56px;
+        }
+        .rv-card {
+            background: var(--warm-white);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transition: box-shadow 220ms var(--ease), transform 220ms var(--ease);
+        }
+        .rv-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px oklch(15% 0.01 100 / 0.08); }
+        .rv-card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .rv-stars { color: var(--amber); font-size: 17px; letter-spacing: 3px; }
+        .rv-platform {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            color: oklch(52% 0.08 170);
+            letter-spacing: 0.5px;
+        }
+        .rv-platform i { font-size: 15px; }
+        .rv-quote {
+            font-family: var(--h);
+            font-style: italic;
+            font-size: 36px;
+            color: var(--green-l);
+            line-height: 1;
+            flex-shrink: 0;
+        }
+        .rv-text {
+            font-size: 15px;
+            color: oklch(36% 0.01 142);
+            line-height: 1.82;
+            flex: 1;
+        }
+        .rv-meta {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+        .rv-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        .rv-origin {
+            font-size: 12px;
+            color: var(--gray-l);
+            margin-top: 2px;
+        }
+        .rv-tour-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--green-l);
+            color: var(--green-d);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 50px;
+            white-space: nowrap;
+        }
+        .rv-tour-tag i { font-size: 10px; }
+
+        /* ── FEATURED QUOTE ── */
+        .rv-pull {
+            background: oklch(14% 0.07 142);
+            padding: 80px 56px;
+        }
+        .rv-pull-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .rv-pull-quote {
+            font-family: var(--h);
+            font-size: clamp(22px, 2.8vw, 34px);
+            font-style: italic;
+            font-weight: 400;
+            color: var(--warm-white);
+            line-height: 1.48;
+            margin-bottom: 28px;
+        }
+        .rv-pull-quote em { font-style: normal; color: oklch(76% 0.16 142); }
+        .rv-pull-attr {
+            font-size: 13px;
+            font-weight: 600;
+            color: oklch(52% 0.08 142);
+            letter-spacing: 0.5px;
+        }
+
+        /* ── TRIPADVISOR SECTION ── */
+        .rv-ta {
+            background: var(--warm-cream);
+            padding: 80px 56px;
+        }
+        .rv-ta-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        .rv-ta-h {
+            font-family: var(--h);
+            font-size: clamp(26px, 2.8vw, 40px);
+            font-style: italic;
+            font-weight: 400;
+            color: var(--dark);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .rv-ta-p {
+            font-size: 15px;
+            color: var(--gray);
+            line-height: 1.82;
+            margin-bottom: 32px;
+        }
+        .btn-ta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: oklch(56% 0.13 172);
+            color: var(--warm-white);
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: background 180ms var(--ease), transform 150ms var(--ease);
+        }
+        .btn-ta:hover { background: oklch(46% 0.11 172); transform: translateY(-1px); }
+        .rv-ta-badge {
+            background: var(--warm-white);
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            padding: 36px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .rv-ta-rating-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .rv-ta-score {
+            font-family: var(--h);
+            font-size: 56px;
+            font-weight: 600;
+            color: var(--dark);
+            line-height: 1;
+        }
+        .rv-ta-score-label { font-size: 13px; color: var(--gray); margin-top: 4px; }
+        .rv-ta-bar-row {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .rv-ta-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .rv-ta-bar-label { color: var(--gray); width: 64px; flex-shrink: 0; }
+        .rv-ta-bar-track {
+            flex: 1;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--border);
+            overflow: hidden;
+        }
+        .rv-ta-bar-fill {
+            height: 100%;
+            border-radius: 3px;
+            background: oklch(56% 0.13 172);
+        }
+        .rv-ta-bar-count { color: var(--gray-l); width: 24px; text-align: right; }
+        .rv-ta-foot {
+            font-size: 12px;
+            color: var(--gray-l);
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ── CTA ── */
+        #rv-cta {
+            background: oklch(16% 0.08 142);
+            padding: 96px 56px;
+            text-align: center;
+        }
+        .rv-cta-h {
+            font-family: var(--h);
+            font-size: clamp(28px, 3.5vw, 46px);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.18;
+            margin-bottom: 18px;
+        }
+        .rv-cta-p {
+            font-size: 16px;
+            color: oklch(64% 0.05 142);
+            max-width: 500px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+        .rv-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .btn-wa-lg {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: #25D366; color: var(--warm-white);
+            padding: 16px 32px; border-radius: 50px;
+            font-size: 15px; font-weight: 700;
+            transition: background 180ms, transform 150ms, box-shadow 180ms;
+        }
+        .btn-wa-lg:hover { background: #1dbb58; transform: translateY(-1px); box-shadow: 0 8px 28px rgba(37,211,102,0.40); }
+        .btn-tours-lg {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: transparent; color: var(--warm-white);
+            padding: 14px 28px; border-radius: 50px;
+            font-size: 14px; font-weight: 600;
+            border: 1.5px solid oklch(100% 0 0 / 0.22);
+            transition: background 180ms, transform 150ms;
+        }
+        .btn-tours-lg:hover { background: oklch(100% 0 0 / 0.08); transform: translateY(-1px); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1100px) {
+            .rv-main { padding: 80px 40px; }
+            .rv-pull { padding: 64px 40px; }
+            .rv-ta { padding: 64px 40px; }
+            #rv-cta { padding: 80px 40px; }
+            .rv-strip { padding: 0 40px; }
+        }
+        @media (max-width: 900px) {
+            .rv-hero { grid-template-columns: 1fr; min-height: auto; }
+            .rv-hero-photo { height: 50vh; min-height: 300px; }
+            .rv-hero-text { padding: 100px 40px 60px; }
+            .rv-grid { grid-template-columns: 1fr; }
+            .rv-ta-inner { grid-template-columns: 1fr; gap: 40px; }
+            .rv-strip-inner { flex-wrap: wrap; }
+            .rv-si { flex: 1 1 calc(50% - 40px); border-right: none; border-bottom: 1px solid oklch(100% 0 0 / 0.07); padding: 18px 20px; }
+            .rv-si:last-child { border-bottom: none; }
+        }
+        @media (max-width: 768px) {
+            .rv-hero-text { padding: 90px 24px 56px; }
+            .rv-main { padding: 64px 24px; }
+            .rv-pull { padding: 56px 24px; }
+            .rv-ta { padding: 56px 24px; }
+            #rv-cta { padding: 72px 24px; }
+            .rv-strip { padding: 0 24px; }
+            .rv-card { padding: 24px; }
+            .rv-meta { flex-direction: column; align-items: flex-start; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+    <a href="../index.html" class="logo">
+        <img class="logo-w" src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+        <img class="logo-c" src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+    </a>
+    <nav>
+        <div class="dd">
+            <span class="nl dd-t">Tours <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="../tours/amazon-explorers/index.html" class="di"><span>Amazon Explorers</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/river-explorer/index.html" class="di"><span>River Explorer</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/jungle-lodge-3days/index.html" class="di"><span>Jungle Lodge Expedition</span><span class="di-dur">3D / 2N</span></a>
+                <a href="../tours/amazon-lodge/index.html" class="di"><span>Amazon Lodge</span><span class="di-dur">2D / 1N</span></a>
+                <a href="../tours/jungle-retreat/index.html" class="di"><span>Jungle Retreat</span><span class="di-dur">4D / 3N</span></a>
+                <a href="../tours/amazon-complete/index.html" class="di"><span>The Full Amazon</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/amazon-expedition/index.html" class="di"><span>Amazon Expedition</span><span class="di-dur">6D / 5N</span></a>
+                <a href="../tours/chlorophyll/index.html" class="di"><span>Chlorophyll</span><span class="di-dur">6D / 5N</span></a>
+                <a href="../tours/birdwatching/index.html" class="di"><span>Birdwatching</span><span class="di-dur">7D / 6N</span></a>
+                <a href="../tours/ecological-expedition/index.html" class="di"><span>Ecological Expedition</span><span class="di-dur">8D / 7N</span></a>
+                <hr style="border:none;border-top:1px solid var(--border);margin:4px 10px;">
+                <a href="../tours/pink-dolphins/index.html" class="di"><span>Pink Dolphins &amp; Indigenous Village</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/ariau-river/index.html" class="di"><span>Ariau River &amp; Rio Negro</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/anavilhanas/index.html" class="di"><span>Pink Dolphins &amp; Anavilhanas</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/presidente-figueiredo/index.html" class="di"><span>Presidente Figueiredo</span><span class="di-dur">1 Day</span></a>
+            </div>
+        </div>
+        <div class="dd">
+            <span class="nl dd-t">Accommodations <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="../accommodations/index.html#lodge" class="di">Amazon Lodge</a>
+                <a href="../accommodations/index.html#riverboat" class="di">River Boat</a>
+            </div>
+        </div>
+        <a href="../about/index.html" class="nl">About Us</a>
+        <div class="lang">
+            <button class="lb on">EN</button>
+            <button class="lb">DE</button>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="btn-book">Book Now</a>
+        <button class="mob-btn" id="mob-open" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+</header>
+
+<!-- SPLIT HERO -->
+<section class="rv-hero">
+    <div class="rv-hero-text">
+        <nav class="rv-hero-bc" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Reviews</span>
+        </nav>
+        <p class="rv-eyebrow">What Travellers Say</p>
+        <h1 class="rv-hero-h">Real Amazon. Real <em>accounts.</em></h1>
+        <p class="rv-hero-p">Every review on this page is from a traveller who spent time in the Amazon with our guides. No stock testimonials, no invented feedback — these are the words people reached for when they got home and tried to describe what they'd experienced.</p>
+        <div class="rv-trust-row">
+            <div class="rv-trust-item">
+                <span class="rv-trust-stars">★★★★★</span>
+                <span>All five-star rated</span>
+            </div>
+            <div class="rv-trust-item" style="color:oklch(52% 0.05 142);">·</div>
+            <div class="rv-trust-item">
+                <i class="fa-brands fa-tripadvisor ta-i"></i>
+                <span>Excellent on TripAdvisor</span>
+            </div>
+        </div>
+    </div>
+    <div class="rv-hero-photo">
+        <img src="../assets/images/about/about-hero.jpg" alt="Naturalist guide and guests birdwatching by canoe at sunrise on the Amazon" loading="eager">
+    </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="rv-strip">
+    <div class="rv-strip-inner">
+        <div class="rv-si">
+            <div class="rv-si-icon"><i class="fa-solid fa-star"></i></div>
+            <div>
+                <p class="rv-si-label">Average Rating</p>
+                <p class="rv-si-val"><span class="stars">★★★★★</span> 5.0</p>
+            </div>
+        </div>
+        <div class="rv-si">
+            <div class="rv-si-icon"><i class="fa-brands fa-tripadvisor"></i></div>
+            <div>
+                <p class="rv-si-label">TripAdvisor Status</p>
+                <p class="rv-si-val">Excellent</p>
+            </div>
+        </div>
+        <div class="rv-si">
+            <div class="rv-si-icon"><i class="fa-solid fa-globe"></i></div>
+            <div>
+                <p class="rv-si-label">Guests From</p>
+                <p class="rv-si-val">20+ Countries</p>
+            </div>
+        </div>
+        <div class="rv-si">
+            <div class="rv-si-icon"><i class="fa-solid fa-repeat"></i></div>
+            <div>
+                <p class="rv-si-label">Return Rate</p>
+                <p class="rv-si-val">High — guests return &amp; refer</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- REVIEWS GRID -->
+<section class="rv-main">
+    <div class="rv-main-inner">
+        <div class="rv-grid">
+
+            <!-- Review 1 -->
+            <div class="rv-card rv d1">
+                <div class="rv-card-top">
+                    <div class="rv-stars">★★★★★</div>
+                    <div class="rv-platform">
+                        <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
+                    </div>
+                </div>
+                <p class="rv-text">"It was a trip of a lifetime. My guide Edson was very attentive to the details of the five day itinerary. I stayed in two different eco lodges with excellent local food. I saw lots of wildlife including sloths, caimans, beautiful birds, pink dolphins and grey river dolphins. I felt safe as a solo traveller and had a wonderful experience."</p>
+                <div class="rv-meta">
+                    <div>
+                        <p class="rv-name">Porpavai K.</p>
+                        <p class="rv-origin">August 2024</p>
+                    </div>
+                    <span class="rv-tour-tag"><i class="fa-solid fa-compass"></i> Amazon Expedition</span>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="rv-card rv d2">
+                <div class="rv-card-top">
+                    <div class="rv-stars">★★★★★</div>
+                    <div class="rv-platform">
+                        <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
+                    </div>
+                </div>
+                <p class="rv-text">"Edson is a super guide. He has a vast knowledge on the Amazon ecosystem and is really dedicated. I travelled both north and south Amazon with him in 4 nights and got some excellent photos. From a tiny sound he can guess the wildlife surrounding you. Amazing skill for the Amazon."</p>
+                <div class="rv-meta">
+                    <div>
+                        <p class="rv-name">Fuad H.</p>
+                        <p class="rv-origin">Brasília, Brazil · June 2024</p>
+                    </div>
+                    <span class="rv-tour-tag"><i class="fa-solid fa-binoculars"></i> Amazon Tour</span>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="rv-card rv d3">
+                <div class="rv-card-top">
+                    <div class="rv-stars">★★★★★</div>
+                    <div class="rv-platform">
+                        <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
+                    </div>
+                </div>
+                <p class="rv-text">"We had one of our best travel experiences so far with this package! From pick up at the airport, to delivery in the Amazon, we felt our every need taken care of. The lodges give you the feeling of truly being in the middle of nowhere. We saw crocodiles, sloths, dolphins, monkeys and a massive variety of birds. Sincere recommendations!"</p>
+                <div class="rv-meta">
+                    <div>
+                        <p class="rv-name">Kristine &amp; Anders R.</p>
+                        <p class="rv-origin">January 2025</p>
+                    </div>
+                    <span class="rv-tour-tag"><i class="fa-solid fa-tent"></i> Amazon Package</span>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="rv-card rv d4">
+                <div class="rv-card-top">
+                    <div class="rv-stars">★★★★★</div>
+                    <div class="rv-platform">
+                        <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
+                    </div>
+                </div>
+                <p class="rv-text">"The six of us, three couples, spent an unforgettable 5 days in the Amazon with Edson. He is highly professional and profoundly knowledgeable, with great passion for nature and habitat preservation. He selected secluded private lodges providing an out of the world experience, fully immersed in Amazon habitats. We highly recommend Edson and his tour."</p>
+                <div class="rv-meta">
+                    <div>
+                        <p class="rv-name">Cosmopark A.</p>
+                        <p class="rv-origin">Las Vegas, USA · February 2024</p>
+                    </div>
+                    <span class="rv-tour-tag"><i class="fa-solid fa-people-group"></i> 5-Day Expedition</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="rv-pull">
+    <div class="rv-pull-inner">
+        <p class="rv-pull-quote rv">"From a tiny sound he can guess the wildlife surrounding you. <em>Amazing skill for the Amazon.</em>"</p>
+        <p class="rv-pull-attr">— Fuad H., Brasília · Amazon Tour, June 2024</p>
+    </div>
+</div>
+
+<!-- TRIPADVISOR SECTION -->
+<section class="rv-ta">
+    <div class="rv-ta-inner">
+        <div class="rv">
+            <h2 class="rv-ta-h">Find more reviews<br>on TripAdvisor</h2>
+            <p class="rv-ta-p">We're listed on TripAdvisor as an Amazon tour operator based in Manaus. All reviews there are submitted directly by guests who booked through us — the platform verifies that they actually travelled with the provider. No curated selection, no moderation on our end.</p>
+            <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" class="btn-ta">
+                <i class="fa-brands fa-tripadvisor"></i> View on TripAdvisor
+            </a>
+        </div>
+        <div class="rv-ta-badge rv d1">
+            <div class="rv-ta-rating-row">
+                <div>
+                    <p class="rv-ta-score">5.0</p>
+                    <p class="rv-ta-score-label">out of 5</p>
+                </div>
+                <div style="flex:1;">
+                    <div style="color:var(--amber);font-size:22px;letter-spacing:4px;margin-bottom:6px;">★★★★★</div>
+                    <p style="font-size:13px;font-weight:700;color:oklch(56% 0.13 172);">Excellent</p>
+                </div>
+            </div>
+            <div class="rv-ta-bar-row">
+                <div class="rv-ta-bar-item">
+                    <span class="rv-ta-bar-label">Excellent</span>
+                    <div class="rv-ta-bar-track"><div class="rv-ta-bar-fill" style="width:100%;"></div></div>
+                    <span class="rv-ta-bar-count">4</span>
+                </div>
+                <div class="rv-ta-bar-item">
+                    <span class="rv-ta-bar-label">Very Good</span>
+                    <div class="rv-ta-bar-track"><div class="rv-ta-bar-fill" style="width:0%;background:oklch(72% 0.10 172);"></div></div>
+                    <span class="rv-ta-bar-count">0</span>
+                </div>
+                <div class="rv-ta-bar-item">
+                    <span class="rv-ta-bar-label">Average</span>
+                    <div class="rv-ta-bar-track"><div class="rv-ta-bar-fill" style="width:0%;background:var(--amber);"></div></div>
+                    <span class="rv-ta-bar-count">0</span>
+                </div>
+                <div class="rv-ta-bar-item">
+                    <span class="rv-ta-bar-label">Poor</span>
+                    <div class="rv-ta-bar-track"><div class="rv-ta-bar-fill" style="width:0%;background:oklch(62% 0.14 35);"></div></div>
+                    <span class="rv-ta-bar-count">0</span>
+                </div>
+                <div class="rv-ta-bar-item">
+                    <span class="rv-ta-bar-label">Terrible</span>
+                    <div class="rv-ta-bar-track"><div class="rv-ta-bar-fill" style="width:0%;background:oklch(48% 0.16 25);"></div></div>
+                    <span class="rv-ta-bar-count">0</span>
+                </div>
+            </div>
+            <p class="rv-ta-foot">Verified reviews · Amazon Eco Travellers, Manaus</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="rv-cta">
+    <h2 class="rv-cta-h rv">Ready to write<br>your own account?</h2>
+    <p class="rv-cta-p rv d1">Tell us your dates and group size. We confirm availability and send everything you need — no commitment required.</p>
+    <div class="rv-cta-btns rv d2">
+        <a href="https://wa.me/5592991321047?text=Hi!%20I%20read%20your%20reviews%20and%20would%20like%20to%20book%20a%20tour." target="_blank" class="btn-wa-lg">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="../tours/index.html" class="btn-tours-lg">
+            See all tours <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="ft-grid">
+        <div class="ft-brand">
+            <img src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+            <p class="ft-tag">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-guided expeditions for curious travellers from around the world.</p>
+            <div class="ft-soc">
+                <a href="https://www.facebook.com/EcoBiologists" target="_blank" class="fs"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amazonecotravellers" target="_blank" class="fs"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" class="fs"><i class="fa-brands fa-tripadvisor"></i></a>
+                <a href="https://wa.me/5592991321047" target="_blank" class="fs"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="ft-col">
+            <h5>Tours</h5>
+            <ul>
+                <li><a href="../tours/amazon-explorers/index.html">Amazon Explorers</a></li>
+                <li><a href="../tours/river-explorer/index.html">River Explorer</a></li>
+                <li><a href="../tours/jungle-lodge-3days/index.html">Jungle Lodge Expedition</a></li>
+                <li><a href="../tours/amazon-lodge/index.html">Amazon Lodge</a></li>
+                <li><a href="../tours/jungle-retreat/index.html">Jungle Retreat</a></li>
+                <li><a href="../tours/amazon-complete/index.html">The Full Amazon</a></li>
+                <li><a href="../tours/amazon-expedition/index.html">Amazon Expedition</a></li>
+                <li><a href="../tours/chlorophyll/index.html">Chlorophyll</a></li>
+                <li><a href="../tours/birdwatching/index.html">Birdwatching</a></li>
+                <li><a href="../tours/ecological-expedition/index.html">Ecological Expedition</a></li>
+                <li><a href="../tours/pink-dolphins/index.html">Pink Dolphins</a></li>
+                <li><a href="../tours/ariau-river/index.html">Ariau River</a></li>
+                <li><a href="../tours/anavilhanas/index.html">Pink Dolphins &amp; Anavilhanas</a></li>
+                <li><a href="../tours/presidente-figueiredo/index.html">Presidente Figueiredo</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Information</h5>
+            <ul>
+                <li><a href="../faq/index.html">FAQ</a></li>
+                <li><a href="../reviews/index.html" style="color:var(--green);">Reviews</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about/index.html">About Us</a></li>
+                <li><a href="../accommodations/index.html">Accommodations</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ft-btm">
+        <p>&copy; 2025 Amazon Eco Travellers. All rights reserved.</p>
+        <p>Manaus, Amazonas, Brazil &mdash; <a href="tel:+5592991321047">+55 92 99132-1047</a></p>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5592991321047" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- MOBILE DRAWER -->
+<div class="mob-drawer" id="mob-drawer" aria-hidden="true">
+    <div class="mob-overlay" id="mob-overlay"></div>
+    <nav class="mob-panel">
+        <div class="mob-head">
+            <img src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+            <button class="mob-close" id="mob-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mob-section">
+            <h6>Multi-Day Tours</h6>
+            <a href="../tours/amazon-explorers/index.html" class="mob-link">Amazon Explorers <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/river-explorer/index.html" class="mob-link">River Explorer <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/jungle-lodge-3days/index.html" class="mob-link">Jungle Lodge Expedition <span class="mob-link-dur">3D / 2N</span></a>
+            <a href="../tours/amazon-lodge/index.html" class="mob-link">Amazon Lodge <span class="mob-link-dur">2D / 1N</span></a>
+            <a href="../tours/jungle-retreat/index.html" class="mob-link">Jungle Retreat <span class="mob-link-dur">4D / 3N</span></a>
+            <a href="../tours/amazon-complete/index.html" class="mob-link">The Full Amazon <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/amazon-expedition/index.html" class="mob-link">Amazon Expedition <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="../tours/chlorophyll/index.html" class="mob-link">Chlorophyll <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="../tours/birdwatching/index.html" class="mob-link">Birdwatching <span class="mob-link-dur">7D / 6N</span></a>
+            <a href="../tours/ecological-expedition/index.html" class="mob-link">Ecological Expedition <span class="mob-link-dur">8D / 7N</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Day Excursions</h6>
+            <a href="../tours/pink-dolphins/index.html" class="mob-link">Pink Dolphins &amp; Indigenous Village <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/ariau-river/index.html" class="mob-link">Ariau River &amp; Rio Negro <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/anavilhanas/index.html" class="mob-link">Pink Dolphins &amp; Anavilhanas <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/presidente-figueiredo/index.html" class="mob-link">Presidente Figueiredo <span class="mob-link-dur">1 Day</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Explore</h6>
+            <a href="../accommodations/index.html" class="mob-link">Accommodations</a>
+            <a href="../reviews/index.html" class="mob-link" style="color:var(--green);">Reviews</a>
+            <a href="../about/index.html" class="mob-link">About Us</a>
+            <a href="../gallery/index.html" class="mob-link">Gallery</a>
+            <a href="../faq/index.html" class="mob-link">FAQ</a>
+            <a href="../contact/index.html" class="mob-link">Contact</a>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="mob-book">Book Now on WhatsApp</a>
+    </nav>
+</div>
+
+<script src="../assets/js/main.js"></script>
+
+<script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://amazonecotravellers.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Reviews", "item": "https://amazonecotravellers.com/reviews/" }
+  ]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Amazon Eco Travellers",
+  "url": "https://amazonecotravellers.com",
+  "telephone": "+5592991321047",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Manaus",
+    "addressRegion": "AM",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "reviewCount": "4"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Porpavai K." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "It was a trip of a lifetime. My guide Edson was very attentive to the details of the five day itinerary. I stayed in two different eco lodges with excellent local food. I saw lots of wildlife including sloths, caimans, beautiful birds, pink dolphins and grey river dolphins. I felt safe as a solo traveller and had a wonderful experience.",
+      "datePublished": "2024-08-01"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Fuad H." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Edson is a super guide. He has a vast knowledge on the Amazon ecosystem and is really dedicated. I travelled both north and south Amazon with him in 4 nights and got some excellent photos. From a tiny sound he can guess the wildlife surrounding you. Amazing skill for the Amazon.",
+      "datePublished": "2024-06-01"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Kristine & Anders R." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "We had one of our best travel experiences so far with this package! From pick up at the airport, to delivery in the Amazon, we felt our every need taken care of. The lodges give you the feeling of truly being in the middle of nowhere. We saw crocodiles, sloths, dolphins, monkeys and a massive variety of birds. Sincere recommendations!",
+      "datePublished": "2025-01-01"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Cosmopark A." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "The six of us, three couples, spent an unforgettable 5 days in the Amazon with Edson. He is highly professional and profoundly knowledgeable, with great passion for nature and habitat preservation. He selected secluded private lodges providing an out of the world experience, fully immersed in Amazon habitats. We highly recommend Edson and his tour.",
+      "datePublished": "2024-02-01"
+    }
+  ]
+}
+]
+</script>
+
+</body>
+</html>

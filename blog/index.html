@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Field notes, wildlife guides, and expedition stories from the Amazon rainforest. Written by the naturalist guides of Amazon Eco Travellers, based in Manaus, Brazil.">
+    <title>Blog — Field Notes from the Amazon | Amazon Eco Travellers</title>
+    <link rel="canonical" href="https://amazonecotravellers.com/blog/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amazonecotravellers.com/blog/">
+    <meta property="og:site_name" content="Amazon Eco Travellers">
+    <meta property="og:title" content="Amazon Field Notes — Blog by Amazon Eco Travellers">
+    <meta property="og:description" content="Wildlife guides, expedition stories, and practical travel advice from the naturalists who live and work in the Amazon rainforest.">
+    <meta property="og:image" content="https://amazonecotravellers.com/assets/images/tours/ec5-sunrise.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amazon Field Notes — Blog by Amazon Eco Travellers">
+    <meta name="twitter:description" content="Naturalist field notes, wildlife guides, and stories from deep in the Amazon rainforest.">
+    <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/tours/ec5-sunrise.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --green:      oklch(50% 0.18 142);
+            --green-d:    oklch(34% 0.14 142);
+            --green-l:    oklch(94% 0.06 142);
+            --amber:      oklch(66% 0.17 75);
+            --dark:       oklch(15% 0.01 100);
+            --gray:       oklch(48% 0.01 140);
+            --gray-l:     oklch(70% 0.008 140);
+            --warm-cream: oklch(97% 0.014 90);
+            --warm-white: oklch(99% 0.008 90);
+            --border:     oklch(88% 0.01 120);
+            --ease:    cubic-bezier(0.23, 1, 0.32, 1);
+            --h: 'Spectral', Georgia, serif;
+            --b: 'Figtree', system-ui, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        body { font-family: var(--b); font-size: 17px; color: var(--dark); background: var(--warm-white); line-height: 1.7; }
+        img  { max-width: 100%; display: block; }
+        a    { text-decoration: none; color: inherit; }
+        ul   { list-style: none; }
+
+        /* ── HERO ── */
+        .bl-hero {
+            height: 68vh;
+            min-height: 480px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        .bl-hero-bg {
+            position: absolute; inset: 0;
+            background-image: url('../assets/images/tours/ec5-sunrise.jpg');
+            background-size: cover;
+            background-position: center 30%;
+        }
+        .bl-hero-ov {
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg,
+                oklch(6% 0.02 140 / 0.15) 0%,
+                oklch(8% 0.03 140 / 0.45) 50%,
+                oklch(5% 0.02 130 / 0.88) 100%
+            );
+        }
+        .bl-hero-c {
+            position: relative; z-index: 1;
+            width: 100%; max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 56px 72px;
+        }
+        .bl-eyebrow {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: oklch(68% 0.12 142);
+            margin-bottom: 18px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .bl-eyebrow::before {
+            content: ''; display: block;
+            width: 24px; height: 1px;
+            background: oklch(52% 0.08 142 / 0.8);
+        }
+        .bl-hero-h {
+            font-family: var(--h);
+            font-size: clamp(34px, 5vw, 64px);
+            font-weight: 400; font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.06; letter-spacing: -1px;
+            margin-bottom: 20px;
+            max-width: 700px;
+        }
+        .bl-hero-sub {
+            font-size: 16px; font-weight: 300;
+            color: oklch(78% 0.04 142);
+            max-width: 560px; line-height: 1.7;
+        }
+        .bl-hero-bc {
+            position: absolute;
+            top: -430px; left: 56px;
+            display: flex; align-items: center; gap: 8px;
+            font-size: 12px; font-weight: 500;
+            color: oklch(64% 0.04 142);
+        }
+        .bl-hero-bc a { color: oklch(60% 0.08 142); transition: color 150ms; }
+        .bl-hero-bc a:hover { color: var(--warm-white); }
+        .bl-hero-bc i { font-size: 9px; opacity: 0.6; }
+
+        /* ── CATEGORIES ── */
+        .bl-cats {
+            background: var(--dark);
+            padding: 0 56px;
+        }
+        .bl-cats-inner {
+            max-width: 1200px; margin: 0 auto;
+            display: flex; align-items: center; gap: 6px;
+            padding: 20px 0;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .bl-cats-inner::-webkit-scrollbar { display: none; }
+        .bl-cat {
+            display: inline-flex; align-items: center; gap: 7px;
+            padding: 8px 18px; border-radius: 50px;
+            font-size: 12px; font-weight: 600;
+            white-space: nowrap;
+            border: 1.5px solid oklch(100% 0 0 / 0.14);
+            color: oklch(62% 0.04 142);
+            transition: border-color 150ms, color 150ms;
+            cursor: pointer;
+            background: transparent;
+        }
+        .bl-cat:hover, .bl-cat.on {
+            border-color: var(--green);
+            color: oklch(76% 0.10 142);
+        }
+        .bl-cat i { font-size: 11px; }
+
+        /* ── COMING SOON ── */
+        .bl-soon {
+            padding: 120px 56px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .bl-soon-h {
+            font-family: var(--h);
+            font-size: clamp(30px, 3vw, 46px);
+            font-style: italic; font-weight: 400;
+            color: var(--dark);
+            line-height: 1.14;
+            margin-bottom: 22px;
+        }
+        .bl-soon-p {
+            font-size: 15px; color: var(--gray);
+            line-height: 1.85; margin-bottom: 32px;
+        }
+        .bl-notify {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .btn-notify {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: var(--green); color: var(--warm-white);
+            padding: 13px 26px; border-radius: 50px;
+            font-size: 14px; font-weight: 600;
+            transition: background 180ms, transform 150ms;
+        }
+        .btn-notify:hover { background: var(--green-d); transform: translateY(-1px); }
+
+        /* ── TOPIC PREVIEWS ── */
+        .bl-topics {
+            background: var(--warm-cream);
+            padding: 96px 56px;
+        }
+        .bl-topics-inner { max-width: 1200px; margin: 0 auto; }
+        .bl-topics-hd { margin-bottom: 52px; }
+        .bl-topics-ey {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3px; text-transform: uppercase;
+            color: var(--gray-l); margin-bottom: 14px;
+        }
+        .bl-topics-h {
+            font-family: var(--h);
+            font-size: clamp(24px, 2.8vw, 36px);
+            font-style: italic; font-weight: 400; color: var(--dark);
+        }
+        .bl-topics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .bl-topic-card {
+            background: var(--warm-white);
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+        .bl-topic-img {
+            height: 180px; overflow: hidden;
+            background: var(--green-l);
+            position: relative;
+        }
+        .bl-topic-img img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 500ms var(--ease);
+        }
+        .bl-topic-card:hover .bl-topic-img img { transform: scale(1.06); }
+        .bl-topic-pill {
+            position: absolute; top: 12px; left: 12px;
+            background: oklch(8% 0.03 140 / 0.72);
+            backdrop-filter: blur(6px);
+            border-radius: 50px; padding: 4px 12px;
+            font-size: 11px; font-weight: 700;
+            color: var(--warm-white);
+            display: flex; align-items: center; gap: 6px;
+        }
+        .bl-topic-pill i { color: var(--green); font-size: 10px; }
+        .bl-topic-body { padding: 22px; }
+        .bl-topic-h {
+            font-family: var(--h);
+            font-size: 18px; font-style: italic;
+            color: var(--dark); margin-bottom: 8px;
+        }
+        .bl-topic-p {
+            font-size: 13px; color: var(--gray);
+            line-height: 1.7; margin-bottom: 14px;
+        }
+        .bl-topic-soon {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            color: var(--gray-l);
+            display: flex; align-items: center; gap: 6px;
+        }
+        .bl-topic-soon i { font-size: 10px; }
+
+        /* ── CTA ── */
+        #bl-cta {
+            background: oklch(16% 0.08 142);
+            padding: 96px 56px;
+            text-align: center;
+        }
+        .bl-cta-h {
+            font-family: var(--h);
+            font-size: clamp(26px, 3.2vw, 44px);
+            font-style: italic; font-weight: 400;
+            color: var(--warm-white);
+            line-height: 1.18; margin-bottom: 18px;
+        }
+        .bl-cta-p {
+            font-size: 15px; color: oklch(62% 0.05 142);
+            max-width: 480px; margin: 0 auto 36px; line-height: 1.7;
+        }
+        .bl-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .btn-wa-lg {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: #25D366; color: var(--warm-white);
+            padding: 15px 30px; border-radius: 50px;
+            font-size: 14px; font-weight: 700;
+            transition: background 180ms, transform 150ms, box-shadow 180ms;
+        }
+        .btn-wa-lg:hover { background: #1dbb58; transform: translateY(-1px); box-shadow: 0 8px 28px rgba(37,211,102,0.40); }
+        .btn-tours-lg {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: transparent; color: var(--warm-white);
+            padding: 13px 26px; border-radius: 50px;
+            font-size: 13px; font-weight: 600;
+            border: 1.5px solid oklch(100% 0 0 / 0.22);
+            transition: background 180ms, transform 150ms;
+        }
+        .btn-tours-lg:hover { background: oklch(100% 0 0 / 0.08); transform: translateY(-1px); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1100px) {
+            .bl-soon { gap: 56px; padding: 96px 40px; }
+            .bl-topics { padding: 72px 40px; }
+            .bl-cats { padding: 0 40px; }
+            #bl-cta { padding: 80px 40px; }
+        }
+        @media (max-width: 900px) {
+            .bl-soon { grid-template-columns: 1fr; gap: 40px; }
+            .bl-topics-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .bl-hero-c { padding: 0 24px 56px; }
+            .bl-hero-bc { left: 24px; }
+            .bl-soon { padding: 64px 24px; }
+            .bl-topics { padding: 64px 24px; }
+            .bl-cats { padding: 0 24px; }
+            #bl-cta { padding: 72px 24px; }
+        }
+        @media (max-width: 600px) {
+            .bl-topics-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+    <a href="../index.html" class="logo">
+        <img class="logo-w" src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+        <img class="logo-c" src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+    </a>
+    <nav>
+        <div class="dd">
+            <span class="nl dd-t">Tours <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="../tours/amazon-explorers/index.html" class="di"><span>Amazon Explorers</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/river-explorer/index.html" class="di"><span>River Explorer</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/jungle-lodge-3days/index.html" class="di"><span>Jungle Lodge Expedition</span><span class="di-dur">3D / 2N</span></a>
+                <a href="../tours/amazon-lodge/index.html" class="di"><span>Amazon Lodge</span><span class="di-dur">2D / 1N</span></a>
+                <a href="../tours/jungle-retreat/index.html" class="di"><span>Jungle Retreat</span><span class="di-dur">4D / 3N</span></a>
+                <a href="../tours/amazon-complete/index.html" class="di"><span>The Full Amazon</span><span class="di-dur">5D / 4N</span></a>
+                <a href="../tours/amazon-expedition/index.html" class="di"><span>Amazon Expedition</span><span class="di-dur">6D / 5N</span></a>
+                <a href="../tours/chlorophyll/index.html" class="di"><span>Chlorophyll</span><span class="di-dur">6D / 5N</span></a>
+                <a href="../tours/birdwatching/index.html" class="di"><span>Birdwatching</span><span class="di-dur">7D / 6N</span></a>
+                <a href="../tours/ecological-expedition/index.html" class="di"><span>Ecological Expedition</span><span class="di-dur">8D / 7N</span></a>
+                <hr style="border:none;border-top:1px solid var(--border);margin:4px 10px;">
+                <a href="../tours/pink-dolphins/index.html" class="di"><span>Pink Dolphins &amp; Indigenous Village</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/ariau-river/index.html" class="di"><span>Ariau River &amp; Rio Negro</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/anavilhanas/index.html" class="di"><span>Pink Dolphins &amp; Anavilhanas</span><span class="di-dur">1 Day</span></a>
+                <a href="../tours/presidente-figueiredo/index.html" class="di"><span>Presidente Figueiredo</span><span class="di-dur">1 Day</span></a>
+            </div>
+        </div>
+        <div class="dd">
+            <span class="nl dd-t">Accommodations <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <div class="dd-p">
+                <a href="../accommodations/index.html#lodge" class="di">Amazon Lodge</a>
+                <a href="../accommodations/index.html#riverboat" class="di">River Boat</a>
+            </div>
+        </div>
+        <a href="../about/index.html" class="nl">About Us</a>
+        <div class="lang">
+            <button class="lb on">EN</button>
+            <button class="lb">DE</button>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="btn-book">Book Now</a>
+        <button class="mob-btn" id="mob-open" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="bl-hero">
+    <div class="bl-hero-bg"></div>
+    <div class="bl-hero-ov"></div>
+    <div class="bl-hero-c">
+        <nav class="bl-hero-bc" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Blog</span>
+        </nav>
+        <p class="bl-eyebrow rv">Field Notes</p>
+        <h1 class="bl-hero-h rv d1">Stories from<br>inside the forest.</h1>
+        <p class="bl-hero-sub rv d2">Wildlife guides, expedition accounts, and practical travel knowledge — written by the naturalists who actually live and work in this forest.</p>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<div class="bl-cats">
+    <div class="bl-cats-inner">
+        <button class="bl-cat on"><i class="fa-solid fa-border-all"></i> All</button>
+        <button class="bl-cat"><i class="fa-solid fa-otter"></i> Wildlife</button>
+        <button class="bl-cat"><i class="fa-solid fa-binoculars"></i> Birdwatching</button>
+        <button class="bl-cat"><i class="fa-solid fa-person-hiking"></i> Field Notes</button>
+        <button class="bl-cat"><i class="fa-solid fa-map"></i> Travel Guides</button>
+        <button class="bl-cat"><i class="fa-solid fa-seedling"></i> Conservation</button>
+        <button class="bl-cat"><i class="fa-solid fa-camera"></i> Photography</button>
+        <button class="bl-cat"><i class="fa-solid fa-calendar"></i> Seasonality</button>
+    </div>
+</div>
+
+<!-- COMING SOON -->
+<div style="max-width:1200px;margin:0 auto;padding:96px 56px 0;">
+    <div class="rv" style="max-width:660px;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:18px;">Coming Soon</p>
+        <h2 style="font-family:var(--h);font-size:clamp(28px,3vw,42px);font-style:italic;font-weight:400;color:var(--dark);line-height:1.18;margin-bottom:20px;">Field notes are in preparation.</h2>
+        <p style="font-size:15px;color:var(--gray);line-height:1.85;margin-bottom:28px;">Our guides spend most of their time in the field, not at a desk. The blog is coming — written from first-hand observation, not from research papers. Topics will cover wildlife identification, seasonality guides, what to expect on each type of expedition, and occasional accounts of specific days in the forest that are worth recording.</p>
+        <p style="font-size:15px;color:var(--gray);line-height:1.85;margin-bottom:36px;">In the meantime, send us a message via WhatsApp — every question you have about the Amazon, our guides answer directly.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="https://wa.me/5592991321047?text=Hi!%20I%20have%20a%20question%20about%20the%20Amazon." target="_blank" class="btn-notify">
+                <i class="fa-brands fa-whatsapp"></i> Ask a Question
+            </a>
+            <a href="../tours/index.html" style="display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:14px;font-weight:600;border-bottom:1px solid var(--border);padding-bottom:2px;transition:border-color 150ms;">
+                Browse Tours <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- TOPIC PREVIEWS -->
+<section class="bl-topics" style="margin-top:80px;">
+    <div class="bl-topics-inner">
+        <div class="bl-topics-hd rv">
+            <p class="bl-topics-ey">What's coming</p>
+            <h2 class="bl-topics-h">Topics we'll be covering</h2>
+        </div>
+        <div class="bl-topics-grid">
+
+            <div class="bl-topic-card rv d1">
+                <div class="bl-topic-img">
+                    <img src="../assets/images/tours/ee-dolphin.jpg" alt="Pink river dolphin in the Amazon" loading="lazy">
+                    <span class="bl-topic-pill"><i class="fa-solid fa-otter"></i> Wildlife</span>
+                </div>
+                <div class="bl-topic-body">
+                    <h3 class="bl-topic-h">The Pink River Dolphin: What You Actually Need to Know</h3>
+                    <p class="bl-topic-p">Inia geoffrensis is not a tourist attraction — it's a keystone species with an extraordinary biology. A field guide to their behaviour, habitat, and what responsible observation looks like.</p>
+                    <p class="bl-topic-soon"><i class="fa-regular fa-clock"></i> Coming soon</p>
+                </div>
+            </div>
+
+            <div class="bl-topic-card rv d2">
+                <div class="bl-topic-img">
+                    <img src="../assets/images/tours/bw-toucan.jpg" alt="Toucan in the Amazon canopy" loading="lazy">
+                    <span class="bl-topic-pill"><i class="fa-solid fa-binoculars"></i> Birdwatching</span>
+                </div>
+                <div class="bl-topic-body">
+                    <h3 class="bl-topic-h">Best Time of Year to See Birds on the Rio Negro</h3>
+                    <p class="bl-topic-p">Seasonality shapes everything in the Amazon. A guide to which months favour birdwatching, why water levels determine access, and which species are resident versus migratory.</p>
+                    <p class="bl-topic-soon"><i class="fa-regular fa-clock"></i> Coming soon</p>
+                </div>
+            </div>
+
+            <div class="bl-topic-card rv d3">
+                <div class="bl-topic-img">
+                    <img src="../assets/images/tours/ec5-canoe.jpg" alt="Canoe through flooded forest at dusk" loading="lazy">
+                    <span class="bl-topic-pill"><i class="fa-solid fa-person-hiking"></i> Field Notes</span>
+                </div>
+                <div class="bl-topic-body">
+                    <h3 class="bl-topic-h">Six Hours in an Igapó: A Field Account</h3>
+                    <p class="bl-topic-p">Igapó — seasonally flooded black-water forest — is one of the most biodiverse and least-visited ecosystems in the Amazon basin. What we saw on one canoe trip, recorded in detail.</p>
+                    <p class="bl-topic-soon"><i class="fa-regular fa-clock"></i> Coming soon</p>
+                </div>
+            </div>
+
+            <div class="bl-topic-card rv d1">
+                <div class="bl-topic-img">
+                    <img src="../assets/images/tours/ch-canopy.jpg" alt="Amazon forest canopy from above" loading="lazy">
+                    <span class="bl-topic-pill"><i class="fa-solid fa-calendar"></i> Seasonality</span>
+                </div>
+                <div class="bl-topic-body">
+                    <h3 class="bl-topic-h">Amazon High Season vs. Low Season: An Honest Guide</h3>
+                    <p class="bl-topic-p">Most articles describe the dry season as "best" and the wet season as "worse." The reality is more interesting. A practical breakdown of what each season offers for different types of travellers.</p>
+                    <p class="bl-topic-soon"><i class="fa-regular fa-clock"></i> Coming soon</p>
+                </div>
+            </div>
+
+            <div class="bl-topic-card rv d2">
+                <div class="bl-topic-img">
+                    <img src="../assets/images/tours/ee-trek.jpg" alt="Trekking through primary Amazon rainforest" loading="lazy">
+                    <span class="bl-topic-pill"><i class="fa-solid fa-map"></i> Travel Guide</span>
+                </div>
+                <div class="bl-topic-body">
+                    <h3 class="bl-topic-h">First Time in Manaus: What to Do Before Your Tour Starts</h3>
+                    <p class="bl-topic-p">The city itself is underrated. A field guide to Manaus written for travellers who are about to go deep into the Amazon — and want to understand where they're departing from.</p>
+                    <p class="bl-topic-soon"><i class="fa-regular fa-clock"></i> Coming soon</p>
+                </div>
+            </div>
+
+            <div class="bl-topic-card rv d3">
+                <div class="bl-topic-img">
+                    <img src="../assets/images/tours/ee-night-monkey.jpg" alt="Night monkey in the Amazon forest at dusk" loading="lazy">
+                    <span class="bl-topic-pill"><i class="fa-solid fa-moon"></i> Night Wildlife</span>
+                </div>
+                <div class="bl-topic-body">
+                    <h3 class="bl-topic-h">The Amazon After Dark: A Night Walk Taxonomy</h3>
+                    <p class="bl-topic-p">More species are active at night in the Amazon than during the day. A guide to what you can expect to encounter on a night walk or night caiman search — and how to read the forest in the dark.</p>
+                    <p class="bl-topic-soon"><i class="fa-regular fa-clock"></i> Coming soon</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="bl-cta">
+    <h2 class="bl-cta-h rv">Have a question<br>about the Amazon?</h2>
+    <p class="bl-cta-p rv d1">Our guides answer directly on WhatsApp. No bots, no queue — the person who replies is the person who will take you into the forest.</p>
+    <div class="bl-cta-btns rv d2">
+        <a href="https://wa.me/5592991321047?text=Hi!%20I%20have%20a%20question%20about%20the%20Amazon." target="_blank" class="btn-wa-lg">
+            <i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp
+        </a>
+        <a href="../tours/index.html" class="btn-tours-lg">
+            See all tours <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="ft-grid">
+        <div class="ft-brand">
+            <img src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+            <p class="ft-tag">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-guided expeditions for curious travellers from around the world.</p>
+            <div class="ft-soc">
+                <a href="https://www.facebook.com/EcoBiologists" target="_blank" class="fs"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amazonecotravellers" target="_blank" class="fs"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" class="fs"><i class="fa-brands fa-tripadvisor"></i></a>
+                <a href="https://wa.me/5592991321047" target="_blank" class="fs"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="ft-col">
+            <h5>Tours</h5>
+            <ul>
+                <li><a href="../tours/amazon-explorers/index.html">Amazon Explorers</a></li>
+                <li><a href="../tours/river-explorer/index.html">River Explorer</a></li>
+                <li><a href="../tours/jungle-lodge-3days/index.html">Jungle Lodge Expedition</a></li>
+                <li><a href="../tours/amazon-lodge/index.html">Amazon Lodge</a></li>
+                <li><a href="../tours/jungle-retreat/index.html">Jungle Retreat</a></li>
+                <li><a href="../tours/amazon-complete/index.html">The Full Amazon</a></li>
+                <li><a href="../tours/amazon-expedition/index.html">Amazon Expedition</a></li>
+                <li><a href="../tours/chlorophyll/index.html">Chlorophyll</a></li>
+                <li><a href="../tours/birdwatching/index.html">Birdwatching</a></li>
+                <li><a href="../tours/ecological-expedition/index.html">Ecological Expedition</a></li>
+                <li><a href="../tours/pink-dolphins/index.html">Pink Dolphins</a></li>
+                <li><a href="../tours/ariau-river/index.html">Ariau River</a></li>
+                <li><a href="../tours/anavilhanas/index.html">Pink Dolphins &amp; Anavilhanas</a></li>
+                <li><a href="../tours/presidente-figueiredo/index.html">Presidente Figueiredo</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Information</h5>
+            <ul>
+                <li><a href="../faq/index.html">FAQ</a></li>
+                <li><a href="../reviews/index.html">Reviews</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="ft-col">
+            <h5>Company</h5>
+            <ul>
+                <li><a href="../about/index.html">About Us</a></li>
+                <li><a href="../accommodations/index.html">Accommodations</a></li>
+                <li><a href="../blog/index.html" style="color:var(--green);">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ft-btm">
+        <p>&copy; 2025 Amazon Eco Travellers. All rights reserved.</p>
+        <p>Manaus, Amazonas, Brazil &mdash; <a href="tel:+5592991321047">+55 92 99132-1047</a></p>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5592991321047" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- MOBILE DRAWER -->
+<div class="mob-drawer" id="mob-drawer" aria-hidden="true">
+    <div class="mob-overlay" id="mob-overlay"></div>
+    <nav class="mob-panel">
+        <div class="mob-head">
+            <img src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+            <button class="mob-close" id="mob-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mob-section">
+            <h6>Multi-Day Tours</h6>
+            <a href="../tours/amazon-explorers/index.html" class="mob-link">Amazon Explorers <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/river-explorer/index.html" class="mob-link">River Explorer <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/jungle-lodge-3days/index.html" class="mob-link">Jungle Lodge Expedition <span class="mob-link-dur">3D / 2N</span></a>
+            <a href="../tours/amazon-lodge/index.html" class="mob-link">Amazon Lodge <span class="mob-link-dur">2D / 1N</span></a>
+            <a href="../tours/jungle-retreat/index.html" class="mob-link">Jungle Retreat <span class="mob-link-dur">4D / 3N</span></a>
+            <a href="../tours/amazon-complete/index.html" class="mob-link">The Full Amazon <span class="mob-link-dur">5D / 4N</span></a>
+            <a href="../tours/amazon-expedition/index.html" class="mob-link">Amazon Expedition <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="../tours/chlorophyll/index.html" class="mob-link">Chlorophyll <span class="mob-link-dur">6D / 5N</span></a>
+            <a href="../tours/birdwatching/index.html" class="mob-link">Birdwatching <span class="mob-link-dur">7D / 6N</span></a>
+            <a href="../tours/ecological-expedition/index.html" class="mob-link">Ecological Expedition <span class="mob-link-dur">8D / 7N</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Day Excursions</h6>
+            <a href="../tours/pink-dolphins/index.html" class="mob-link">Pink Dolphins &amp; Indigenous Village <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/ariau-river/index.html" class="mob-link">Ariau River &amp; Rio Negro <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/anavilhanas/index.html" class="mob-link">Pink Dolphins &amp; Anavilhanas <span class="mob-link-dur">1 Day</span></a>
+            <a href="../tours/presidente-figueiredo/index.html" class="mob-link">Presidente Figueiredo <span class="mob-link-dur">1 Day</span></a>
+        </div>
+        <div class="mob-section">
+            <h6>Explore</h6>
+            <a href="../accommodations/index.html" class="mob-link">Accommodations</a>
+            <a href="../reviews/index.html" class="mob-link">Reviews</a>
+            <a href="../about/index.html" class="mob-link">About Us</a>
+            <a href="../blog/index.html" class="mob-link" style="color:var(--green);">Blog</a>
+            <a href="../gallery/index.html" class="mob-link">Gallery</a>
+            <a href="../faq/index.html" class="mob-link">FAQ</a>
+            <a href="../contact/index.html" class="mob-link">Contact</a>
+        </div>
+        <a href="https://wa.me/5592991321047" target="_blank" class="mob-book">Book Now on WhatsApp</a>
+    </nav>
+</div>
+
+<script src="../assets/js/main.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://amazonecotravellers.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://amazonecotravellers.com/blog/" }
+  ]
+}
+</script>
+
+</body>
+</html>
