@@ -505,6 +505,86 @@
                 gap: 4px;
             }
         }
+
+        /* ── MEMORIAL ── */
+        .ab-memorial {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 600px;
+        }
+        .ab-memorial-text {
+            background: oklch(11% 0.06 142);
+            padding: 100px 72px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .ab-memorial-tag {
+            font-size: 11px; font-weight: 700;
+            letter-spacing: 3.5px; text-transform: uppercase;
+            color: oklch(56% 0.08 142);
+            margin-bottom: 28px;
+            display: flex; align-items: center; gap: 12px;
+        }
+        .ab-memorial-tag::before {
+            content: '';
+            display: block; width: 28px; height: 1px;
+            background: oklch(44% 0.06 142 / 0.7);
+        }
+        .ab-memorial-name {
+            font-family: var(--h);
+            font-size: clamp(34px, 3.8vw, 58px);
+            font-weight: 400; font-style: italic;
+            color: var(--warm-white);
+            line-height: 1.1; letter-spacing: -0.5px;
+            margin-bottom: 32px;
+        }
+        .ab-memorial-name em {
+            font-style: normal;
+            color: oklch(72% 0.14 142);
+        }
+        .ab-memorial-divider {
+            width: 48px; height: 1px;
+            background: oklch(44% 0.08 142);
+            margin-bottom: 28px;
+        }
+        .ab-memorial-p {
+            font-size: 15px; font-weight: 300;
+            color: oklch(62% 0.04 142);
+            line-height: 1.92;
+            max-width: 460px;
+        }
+        .ab-memorial-p + .ab-memorial-p { margin-top: 20px; }
+        .ab-memorial-photo {
+            position: relative;
+            overflow: hidden;
+        }
+        .ab-memorial-photo img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            transition: transform 8s ease;
+        }
+        .ab-memorial-photo:hover img { transform: scale(1.04); }
+        .ab-memorial-photo::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(
+                to right,
+                oklch(11% 0.06 142 / 0.30) 0%,
+                transparent 50%
+            );
+            pointer-events: none;
+        }
+        @media (max-width: 900px) {
+            .ab-memorial { grid-template-columns: 1fr; }
+            .ab-memorial-photo { height: 420px; }
+            .ab-memorial-text { padding: 72px 40px; }
+        }
+        @media (max-width: 600px) {
+            .ab-memorial-text { padding: 64px 24px; }
+            .ab-memorial-photo { height: 340px; }
+        }
     </style>
 </head>
 <body>
@@ -682,6 +762,21 @@
         </div>
     </div>
 </div>
+
+<!-- ── MEMORIAL: EDSON ROBERTO ── -->
+<section class="ab-memorial">
+    <div class="ab-memorial-text rv">
+        <p class="ab-memorial-tag">In Memory Of</p>
+        <h2 class="ab-memorial-name">Edson <em>Roberto</em></h2>
+        <div class="ab-memorial-divider"></div>
+        <p class="ab-memorial-p">Edson Roberto founded Amazon Eco Travellers from a conviction that the most powerful act of conservation is a genuine encounter — a moment when a person truly meets the forest for the first time and cannot look away. He was born alongside these rivers, and spent his life learning to read them: the calls, the silences, the subtle shifts that told him something was there before anyone else had noticed.</p>
+        <p class="ab-memorial-p">He built this company the way he moved through the forest — quietly, carefully, without leaving a trace. Every guide who walks these trails carries something of what he taught. Every trip still follows the ethics he put in place. The Amazon is still being introduced, one traveller at a time, the way he first imagined it.</p>
+        <p class="ab-memorial-p" style="margin-top:32px; font-size:14px; color:oklch(48% 0.06 142); font-style:italic;">Founder · Amazon Eco Travellers</p>
+    </div>
+    <div class="ab-memorial-photo">
+        <img src="../assets/images/about/edson-founder.jpg" alt="Edson Roberto, founder of Amazon Eco Travellers, on the river at sunset" loading="lazy">
+    </div>
+</section>
 
 <!-- ── CTA ── -->
 <section class="ab-cta">
