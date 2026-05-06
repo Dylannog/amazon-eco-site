@@ -26,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <style>
         /* ── HERO ── */
@@ -574,10 +575,12 @@
         </div>
         <a href="../tours/index.html" class="nl">All Tours</a>
         <a href="../about/index.html" class="nl">About Us</a>
-<a href="../blog/index.html" class="nl">Blog</a>
-                <div class="lang">
+        <a href="../blog/index.html" class="nl">Blog</a>
+        <div class="lang">
             <button class="lb on">EN</button>
             <button class="lb">DE</button>
+            <button class="lb">ES</button>
+            <button class="lb">PT</button>
         </div>
         <a href="https://wa.me/5592991321047" target="_blank" class="btn-book">Book Now</a>
         <button class="mob-btn" id="mob-open" aria-label="Open menu">
@@ -670,13 +673,24 @@
                         <label for="ct-tour">Which tour interests you?</label>
                         <select id="ct-tour" name="tour">
                             <option value="">Not sure yet &mdash; I have a general question</option>
-                            <option value="amazon-explorers">Amazon Explorers &mdash; 5 days</option>
-                            <option value="river-explorer">River Explorer &mdash; 5 days</option>
-                            <option value="chlorophyll">Chlorophyll &mdash; 6 days</option>
-                            <option value="birdwatching">Birdwatching &mdash; 7 days</option>
-                            <option value="ecological-expedition">Ecological Expedition &mdash; 8 days</option>
-                            <option value="pink-dolphins">Pink Dolphins &amp; Indigenous Village &mdash; 1 day</option>
-                            <option value="ariau-river">Ariau River &amp; Rio Negro &mdash; 1 day</option>
+                            <optgroup label="Multi-Day Tours">
+                                <option value="amazon-explorers">Amazon Explorers &mdash; 5 days</option>
+                                <option value="river-explorer">River Explorer &mdash; 5 days</option>
+                                <option value="jungle-lodge-expedition">Jungle Lodge Expedition &mdash; 3 days</option>
+                                <option value="amazon-lodge">Amazon Lodge &mdash; 2 days</option>
+                                <option value="jungle-retreat">Jungle Retreat &mdash; 4 days</option>
+                                <option value="the-full-amazon">The Full Amazon &mdash; 5 days</option>
+                                <option value="amazon-expedition">Amazon Expedition &mdash; 6 days</option>
+                                <option value="chlorophyll">Chlorophyll &mdash; 6 days</option>
+                                <option value="birdwatching">Birdwatching &mdash; 7 days</option>
+                                <option value="ecological-expedition">Ecological Expedition &mdash; 8 days</option>
+                            </optgroup>
+                            <optgroup label="Day Excursions">
+                                <option value="pink-dolphins">Pink Dolphins &amp; Indigenous Village &mdash; 1 day</option>
+                                <option value="ariau-river">Ariau River &amp; Rio Negro &mdash; 1 day</option>
+                                <option value="anavilhanas">Pink Dolphins &amp; Anavilhanas &mdash; 1 day</option>
+                                <option value="presidente-figueiredo">Presidente Figueiredo &mdash; 1 day</option>
+                            </optgroup>
                         </select>
                     </div>
                     <div class="ct-field">
@@ -819,8 +833,16 @@
 
 <script>
 (function () {
-    var form = document.getElementById('ct-form');
-    var wrap = document.getElementById('ct-form-wrap');
+    // ── EmailJS credentials ── replace with your own from emailjs.com
+    var EMAILJS_PUBLIC_KEY  = 'xAyW3r9tTskrr7fc_';
+    var EMAILJS_SERVICE_ID  = 'service_8tvotys';
+    var EMAILJS_TEMPLATE_ID = 'template_hm38kb8';
+
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+    var form   = document.getElementById('ct-form');
+    var wrap   = document.getElementById('ct-form-wrap');
+    var submit = form.querySelector('.ct-submit');
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -828,19 +850,37 @@
         var name  = document.getElementById('ct-name').value.trim();
         var email = document.getElementById('ct-email').value.trim();
 
-        if (!name) { document.getElementById('ct-name').focus(); return; }
+        if (!name)  { document.getElementById('ct-name').focus();  return; }
         if (!email || !email.includes('@')) { document.getElementById('ct-email').focus(); return; }
 
         var first = name.split(' ')[0];
 
-        wrap.innerHTML = [
-            '<div class="ct-thanks">',
-            '  <div class="ct-thanks-icon"><i class="fa-solid fa-check"></i></div>',
-            '  <h3 class="ct-thanks-h">Message received.</h3>',
-            '  <p class="ct-thanks-p">Thanks, ' + first + '. We\'ll get back to you at ' + email + ' as soon as we can &mdash; usually within a few hours.</p>',
-            '  <a href="../tours/index.html" class="btn-solid" style="margin-top:8px;">Explore all tours</a>',
-            '</div>'
-        ].join('');
+        submit.disabled     = true;
+        submit.textContent  = 'Sending…';
+
+        emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+            .then(function () {
+                wrap.innerHTML = [
+                    '<div class="ct-thanks">',
+                    '  <div class="ct-thanks-icon"><i class="fa-solid fa-check"></i></div>',
+                    '  <h3 class="ct-thanks-h">Message received.</h3>',
+                    '  <p class="ct-thanks-p">Thanks, ' + first + '. We\'ll get back to you at ' + email + ' as soon as we can &mdash; usually within a few hours.</p>',
+                    '  <a href="../tours/index.html" class="btn-solid" style="margin-top:8px;">Explore all tours</a>',
+                    '</div>'
+                ].join('');
+            })
+            .catch(function () {
+                submit.disabled    = false;
+                submit.textContent = 'Send message';
+                var err = form.querySelector('.ct-send-err');
+                if (!err) {
+                    err = document.createElement('p');
+                    err.className = 'ct-send-err';
+                    err.style.cssText = 'color:#c0392b;font-size:14px;margin-top:12px;';
+                    form.appendChild(err);
+                }
+                err.textContent = 'Something went wrong. Try WhatsApp or email us directly.';
+            });
     });
 }());
 </script>
