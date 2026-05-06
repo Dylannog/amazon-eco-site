@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Eco Travellers — International Growth Campaign 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Figtree:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest:      #0c2217;
+      --forest-mid:  #142e1e;
+      --green:       #2a6b43;
+      --green-light: #3d8a5a;
+      --amber:       #c08a3a;
+      --amber-light: #d4a057;
+      --cream:       #faf5ee;
+      --cream-dark:  #ede6d8;
+      --pale:        #eaf0ec;
+      --dark:        #141414;
+    }
+
+    body {
+      background: #222;
+      font-family: 'Figtree', sans-serif;
+      padding: 48px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+
+    /* ─── Page shell ─── */
+    .page {
+      width: 794px;
+      min-height: 1123px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.55);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ─── Shared header strip ─── */
+    .ph {
+      background: var(--forest);
+      padding: 16px 68px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .ph-brand {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 9px;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+    .ph-num {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      color: rgba(250,245,238,0.35);
+      letter-spacing: 1.5px;
+    }
+
+    /* ─── Body areas ─── */
+    .pb {
+      flex: 1;
+      padding: 50px 68px 56px;
+      background: var(--cream);
+    }
+    .pb-dark {
+      flex: 1;
+      padding: 50px 68px 56px;
+      background: var(--forest);
+    }
+
+    /* ─── Section label + title ─── */
+    .sn {
+      font-family: 'Space Mono', monospace;
+      font-size: 9.5px;
+      letter-spacing: 3px;
+      color: var(--amber);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sn::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(192,138,58,0.25);
+    }
+    .st {
+      font-family: 'Spectral', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 44px;
+      line-height: 1.08;
+      color: var(--forest);
+      margin-bottom: 36px;
+    }
+    .st-light { color: var(--cream); }
+
+    /* ─────────────────────────────── PAGE 1: COVER ─── */
+    .cover {
+      background: var(--forest);
+      min-height: 1123px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .cover-top {
+      padding: 52px 68px 0;
+    }
+    .cover-brand-line {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 9.5px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+    .cover-botanical {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 360px;
+      height: 580px;
+      opacity: 0.07;
+      pointer-events: none;
+    }
+    .cover-mid {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 68px 0;
+    }
+    .cover-eyebrow {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--amber);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .cover-eyebrow::before {
+      content: '';
+      width: 44px;
+      height: 1px;
+      background: var(--amber);
+    }
+    .cover-h1 {
+      font-family: 'Spectral', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 80px;
+      line-height: 0.95;
+      color: var(--cream);
+      letter-spacing: -1px;
+    }
+    .cover-h1 strong {
+      display: block;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 88px;
+      color: #fff;
+    }
+    .cover-year-tag {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      color: var(--amber);
+      letter-spacing: 2px;
+      margin-top: 14px;
+    }
+    .cover-rule {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, var(--amber) 0%, rgba(192,138,58,0.15) 70%, transparent 100%);
+      margin: 36px 0;
+    }
+    .cover-stats {
+      display: flex;
+      gap: 52px;
+    }
+    .cs-num {
+      font-family: 'Spectral', serif;
+      font-weight: 600;
+      font-size: 30px;
+      color: var(--amber-light);
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .cs-lbl {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 9.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(250,245,238,0.45);
+    }
+    .cover-footer {
+      padding: 0 68px 52px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 36px;
+    }
+    .cover-tagline {
+      font-family: 'Spectral', serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(250,245,238,0.55);
+      max-width: 380px;
+    }
+    .cover-conf {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      text-align: right;
+      color: rgba(250,245,238,0.3);
+      letter-spacing: 1.5px;
+      line-height: 2;
+    }
+
+    /* ─────────────────────────────── PAGE 2: DIAGNÓSTICO ─── */
+    table.dt {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 28px;
+    }
+    table.dt thead tr { background: var(--forest-mid); }
+    table.dt thead th {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 500;
+      font-size: 8.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amber);
+      padding: 13px 16px;
+      text-align: left;
+    }
+    table.dt tbody tr:nth-child(even) { background: rgba(14,34,23,0.04); }
+    table.dt tbody td {
+      padding: 13px 16px;
+      font-size: 12.5px;
+      color: var(--dark);
+      border-bottom: 1px solid rgba(14,34,23,0.07);
+      vertical-align: top;
+      line-height: 1.55;
+    }
+    table.dt tbody td:first-child {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 600;
+      font-size: 11.5px;
+      color: var(--green);
+      white-space: nowrap;
+    }
+    table.dt tbody td:last-child {
+      font-family: 'Figtree', sans-serif;
+      font-size: 11.5px;
+      font-weight: 300;
+      color: rgba(20,20,20,0.6);
+    }
+    .callout {
+      background: var(--amber);
+      padding: 22px 28px;
+    }
+    .callout-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--forest);
+      margin-bottom: 9px;
+    }
+    .callout-text {
+      font-family: 'Spectral', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 16.5px;
+      line-height: 1.55;
+      color: var(--forest);
+    }
+
+    /* ─────────────────────────────── PAGE 3: PILARES ─── */
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+    .pillar { display: flex; flex-direction: column; gap: 10px; }
+    .p-pct {
+      font-family: 'Spectral', serif;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 1;
+    }
+    .p-bar {
+      width: 100%;
+      height: 3px;
+      background: rgba(0,0,0,0.08);
+      position: relative;
+      border-radius: 2px;
+    }
+    .p-bar-fill {
+      position: absolute;
+      left: 0; top: 0;
+      height: 100%;
+      border-radius: 2px;
+    }
+    .p-name {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 600;
+      font-size: 10.5px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      line-height: 1.35;
+    }
+    .p-desc {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 1.6;
+      color: rgba(20,20,20,0.6);
+    }
+    .p-examples {
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      color: rgba(20,20,20,0.38);
+      line-height: 1.9;
+    }
+    .c1 { color: #2a6b43; }
+    .c2 { color: #1e4a2f; }
+    .c3 { color: #c08a3a; }
+    .c4 { color: #4a8c62; }
+    .c5 { color: #8b5e2a; }
+
+    .divl {
+      height: 1px;
+      background: rgba(14,34,23,0.1);
+      margin: 28px 0;
+    }
+    .mini-label {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 600;
+      font-size: 9.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+    .mini-body {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 12.5px;
+      line-height: 1.9;
+      color: rgba(20,20,20,0.68);
+    }
+
+    /* ─────────────────────────────── PAGE 4: REELS ─── */
+    .reel-rule-box {
+      border: 1px solid rgba(250,245,238,0.12);
+      background: rgba(250,245,238,0.04);
+      padding: 22px 26px;
+      margin-bottom: 28px;
+    }
+    .rrb-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 3px;
+      color: var(--amber);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .rrb-text {
+      font-family: 'Spectral', serif;
+      font-style: italic;
+      font-size: 19px;
+      line-height: 1.5;
+      color: var(--cream);
+    }
+    .timeline {
+      display: flex;
+      margin-bottom: 28px;
+    }
+    .tl-step {
+      flex: 1;
+      padding: 18px 18px 18px 20px;
+      border-left: 2px solid rgba(250,245,238,0.1);
+    }
+    .tl-step:first-child {
+      border-left-color: var(--amber);
+      background: rgba(192,138,58,0.07);
+    }
+    .tl-time {
+      font-family: 'Space Mono', monospace;
+      font-size: 9.5px;
+      color: var(--amber);
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .tl-title {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 600;
+      font-size: 12.5px;
+      color: var(--cream);
+      margin-bottom: 7px;
+    }
+    .tl-desc {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      color: rgba(250,245,238,0.58);
+      line-height: 1.6;
+    }
+    .reel-tips {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .rtip {
+      background: rgba(42,107,67,0.18);
+      border-left: 2px solid var(--green-light);
+      padding: 15px 18px;
+    }
+    .rtip-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 2px;
+      color: var(--amber);
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+    .rtip-text {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 11.5px;
+      color: rgba(250,245,238,0.72);
+      line-height: 1.6;
+    }
+
+    /* ─────────────────────────────── PAGE 5: IDIOMA ─── */
+    .lang-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 32px;
+    }
+    .lang-h-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 6px;
+    }
+    .lang-h-bar {
+      height: 5px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .lang-h-label {
+      font-family: 'Spectral', serif;
+      white-space: nowrap;
+      line-height: 1;
+    }
+    .lang-h-note {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 11px;
+      color: rgba(20,20,20,0.55);
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+    .bio-box {
+      background: var(--forest);
+      padding: 22px 26px;
+    }
+    .bio-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 14px;
+    }
+    .bio-code {
+      font-family: 'Space Mono', monospace;
+      font-size: 11.5px;
+      line-height: 2.2;
+      color: var(--cream);
+    }
+    .ht-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+    }
+    .ht-cat-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 2px;
+      color: var(--amber);
+      text-transform: uppercase;
+      padding-bottom: 7px;
+      border-bottom: 1px solid rgba(192,138,58,0.28);
+      margin-bottom: 10px;
+    }
+    .ht-tag {
+      font-family: 'Figtree', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--dark);
+      line-height: 1.9;
+    }
+
+    /* ─────────────────────────────── PAGE 6: PLATAFORMAS ─── */
+    .plat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+      margin-bottom: 32px;
+    }
+    .plat-name {
+      font-family: 'Spectral', serif;
+      font-weight: 600;
+      font-size: 26px;
+      color: var(--forest);
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .plat-badge {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--amber);
+      font-weight: 400;
+    }
+    .plat-item {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+      margin-bottom: 11px;
+    }
+    .plat-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+    .plat-dot-a { background: var(--amber); }
+    .plat-txt {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      color: rgba(20,20,20,0.72);
+      line-height: 1.55;
+    }
+    .plat-txt strong { font-weight: 600; color: var(--dark); }
+    .funnel-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(14,34,23,0.1);
+    }
+
+    /* ─────────────────────────────── PAGE 7: ROADMAP ─── */
+    .phases {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 22px;
+      margin-bottom: 32px;
+    }
+    .phase {
+      border-top: 2px solid;
+      padding-top: 18px;
+    }
+    .ph1 { border-color: var(--amber); }
+    .ph2 { border-color: var(--green-light); }
+    .ph3 { border-color: rgba(250,245,238,0.3); }
+    .phase-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .ph1 .phase-label { color: var(--amber); }
+    .ph2 .phase-label { color: #5bb87d; }
+    .ph3 .phase-label { color: rgba(250,245,238,0.38); }
+    .phase-title {
+      font-family: 'Spectral', serif;
+      font-weight: 600;
+      font-size: 21px;
+      color: var(--cream);
+      margin-bottom: 14px;
+    }
+    .phase-item {
+      font-family: 'Figtree', sans-serif;
+      font-weight: 300;
+      font-size: 11.5px;
+      color: rgba(250,245,238,0.6);
+      line-height: 1.5;
+      padding: 8px 0 8px 14px;
+      border-left: 1px solid rgba(250,245,238,0.1);
+      margin-bottom: 4px;
+    }
+    .rm-footer {
+      border-top: 1px solid rgba(250,245,238,0.12);
+      padding-top: 26px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+    }
+    .rm-outcome-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 2px;
+      color: var(--amber);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .rm-outcome-value {
+      font-family: 'Spectral', serif;
+      font-style: italic;
+      font-size: 16px;
+      color: var(--cream);
+      line-height: 1.55;
+    }
+
+    @media print {
+      body { background: white; padding: 0; gap: 0; }
+      .page { box-shadow: none; page-break-after: always; width: 210mm; min-height: 297mm; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ PAGE 1 — COVER -->
+<div class="page cover">
+
+  <!-- Botanical SVG decoration -->
+  <svg class="cover-botanical" viewBox="0 0 360 580" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <!-- Central stem -->
+    <line x1="180" y1="580" x2="180" y2="80" stroke="#5db87d" stroke-width="1.5"/>
+    <!-- Top leaf -->
+    <path d="M180,80 Q248,118 238,186 Q228,254 180,272 Q132,254 122,186 Q112,118 180,80Z" stroke="#5db87d" stroke-width="1"/>
+    <!-- Midrib top leaf -->
+    <line x1="180" y1="92" x2="180" y2="268" stroke="#5db87d" stroke-width="0.5"/>
+    <line x1="180" y1="130" x2="218" y2="152" stroke="#5db87d" stroke-width="0.4"/>
+    <line x1="180" y1="130" x2="142" y2="152" stroke="#5db87d" stroke-width="0.4"/>
+    <line x1="180" y1="166" x2="222" y2="185" stroke="#5db87d" stroke-width="0.4"/>
+    <line x1="180" y1="166" x2="138" y2="185" stroke="#5db87d" stroke-width="0.4"/>
+    <line x1="180" y1="196" x2="219" y2="212" stroke="#5db87d" stroke-width="0.4"/>
+    <line x1="180" y1="196" x2="141" y2="212" stroke="#5db87d" stroke-width="0.4"/>
+    <line x1="180" y1="224" x2="214" y2="237" stroke="#5db87d" stroke-width="0.4"/>
+    <line x1="180" y1="224" x2="146" y2="237" stroke="#5db87d" stroke-width="0.4"/>
+    <!-- Node dots -->
+    <circle cx="180" cy="310" r="3.5" fill="#5db87d"/>
+    <circle cx="180" cy="360" r="3" fill="#5db87d"/>
+    <circle cx="180" cy="410" r="2.5" fill="#5db87d"/>
+    <circle cx="180" cy="460" r="2" fill="#5db87d"/>
+    <!-- Right branch set -->
+    <path d="M180,310 Q242,305 274,265 Q292,240 282,218" stroke="#5db87d" stroke-width="1"/>
+    <path d="M180,360 Q254,348 290,305 Q308,278 296,255" stroke="#5db87d" stroke-width="1"/>
+    <path d="M180,410 Q252,405 286,365 Q302,340 292,318" stroke="#5db87d" stroke-width="1"/>
+    <path d="M180,460 Q246,458 278,420 Q294,396 285,376" stroke="#5db87d" stroke-width="1"/>
+    <!-- Left branch set -->
+    <path d="M180,310 Q118,305 86,265 Q68,240 78,218" stroke="#5db87d" stroke-width="1"/>
+    <path d="M180,360 Q106,348 70,305 Q52,278 64,255" stroke="#5db87d" stroke-width="1"/>
+    <path d="M180,410 Q108,405 74,365 Q58,340 68,318" stroke="#5db87d" stroke-width="1"/>
+    <!-- Small terminal leaves right -->
+    <ellipse cx="278" cy="260" rx="18" ry="8" stroke="#5db87d" stroke-width="0.7" transform="rotate(-35,278,260)"/>
+    <ellipse cx="294" cy="302" rx="16" ry="7" stroke="#5db87d" stroke-width="0.7" transform="rotate(-25,294,302)"/>
+    <ellipse cx="288" cy="360" rx="16" ry="7" stroke="#5db87d" stroke-width="0.7" transform="rotate(-15,288,360)"/>
+    <ellipse cx="281" cy="417" rx="15" ry="6" stroke="#5db87d" stroke-width="0.7" transform="rotate(-10,281,417)"/>
+    <!-- Small terminal leaves left -->
+    <ellipse cx="82" cy="260" rx="18" ry="8" stroke="#5db87d" stroke-width="0.7" transform="rotate(35,82,260)"/>
+    <ellipse cx="66" cy="302" rx="16" ry="7" stroke="#5db87d" stroke-width="0.7" transform="rotate(25,66,302)"/>
+    <ellipse cx="72" cy="360" rx="16" ry="7" stroke="#5db87d" stroke-width="0.7" transform="rotate(15,72,360)"/>
+    <!-- Fine detail dots scattered -->
+    <circle cx="220" cy="290" r="1" fill="#5db87d"/>
+    <circle cx="254" cy="330" r="1" fill="#5db87d"/>
+    <circle cx="140" cy="290" r="1" fill="#5db87d"/>
+    <circle cx="108" cy="325" r="1" fill="#5db87d"/>
+    <!-- Seed/pod suggestion at bottom -->
+    <ellipse cx="180" cy="520" rx="12" ry="20" stroke="#5db87d" stroke-width="0.8"/>
+    <line x1="180" y1="500" x2="180" y2="478" stroke="#5db87d" stroke-width="0.8"/>
+  </svg>
+
+  <div class="cover-top">
+    <div class="cover-brand-line">Amazon Eco Travellers &nbsp;·&nbsp; Manaus, Amazonas, Brasil</div>
+  </div>
+
+  <div class="cover-mid">
+    <div class="cover-eyebrow">International Growth Campaign</div>
+    <div class="cover-h1">
+      Estratégia
+      <strong>Global</strong>
+      2026
+    </div>
+    <div class="cover-year-tag">Instagram · TikTok · Web · EN · DE · ES</div>
+    <div class="cover-rule"></div>
+    <div class="cover-stats">
+      <div>
+        <div class="cs-num">19</div>
+        <div class="cs-lbl">Tours Ativos</div>
+      </div>
+      <div>
+        <div class="cs-num">EN · DE · ES</div>
+        <div class="cs-lbl">Mercados-Alvo</div>
+      </div>
+      <div>
+        <div class="cs-num">90 dias</div>
+        <div class="cs-lbl">Plano de Ativação</div>
+      </div>
+      <div>
+        <div class="cs-num">0 reais</div>
+        <div class="cs-lbl">Orçamento Inicial</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-footer">
+    <div class="cover-tagline">
+      Guias naturalistas-biólogos.<br>
+      O diferencial que o mercado internacional<br>
+      ainda não conhece.
+    </div>
+    <div class="cover-conf">
+      CONFIDENCIAL<br>
+      MAI 2026<br>
+      V 1.0
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ PAGE 2 — DIAGNÓSTICO -->
+<div class="page">
+  <div class="ph">
+    <span class="ph-brand">Amazon Eco Travellers</span>
+    <span class="ph-num">01 — Diagnóstico</span>
+  </div>
+  <div class="pb">
+    <div class="sn">01 — Diagnóstico</div>
+    <div class="st">Por que o Instagram<br>não converte</div>
+
+    <table class="dt">
+      <thead>
+        <tr>
+          <th style="width:28%">Causa</th>
+          <th style="width:44%">O que acontece</th>
+          <th style="width:28%">Impacto direto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sem Reels consistentes</td>
+          <td>Instagram suprime contas sem vídeo desde 2022. Fotos chegam apenas a quem já segue.</td>
+          <td>Alcance orgânico próximo de zero para novos públicos</td>
+        </tr>
+        <tr>
+          <td>Copy sem gancho internacional</td>
+          <td>Textos em português ou sem hook claro. Turista europeu/americano não para no post.</td>
+          <td>Alto scroll-past, baixo engajamento</td>
+        </tr>
+        <tr>
+          <td>Sem pilares de conteúdo</td>
+          <td>Feed aleatório sem identidade. Algoritmo não sabe para quem recomendar a conta.</td>
+          <td>Audiência difusa, sem nicho definido</td>
+        </tr>
+        <tr>
+          <td>Bio fraca / sem CTA</td>
+          <td>Visitante não entende o que a empresa oferece, onde parte, nem como reservar.</td>
+          <td>Conversão zero do tráfego orgânico</td>
+        </tr>
+        <tr>
+          <td>Hashtags genéricas</td>
+          <td>#amazon #brazil competem com milhões de posts. Sem alcance de nicho específico.</td>
+          <td>Invisível para eco-travellers e birdwatchers</td>
+        </tr>
+        <tr>
+          <td>Frequência irregular</td>
+          <td>Algoritmo penaliza inconsistência. Gaps maiores que 5 dias reduzem alcance.</td>
+          <td>Queda progressiva a cada pausa de publicação</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <div class="callout-label">Decisão estratégica — manter @amazonecotravellers</div>
+      <div class="callout-text">
+        O algoritmo não tem memória de mau desempenho passado. Handle perfeito para mercado internacional.
+        Criar conta nova perde tudo — mudar estratégia hoje gera resultado visível em 4–6 semanas.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ PAGE 3 — PILARES -->
+<div class="page">
+  <div class="ph">
+    <span class="ph-brand">Amazon Eco Travellers</span>
+    <span class="ph-num">02 — Estratégia de Conteúdo</span>
+  </div>
+  <div class="pb">
+    <div class="sn">02 — Estratégia</div>
+    <div class="st">Os 5 Pilares<br>de Conteúdo</div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="p-pct c1">35%</div>
+        <div class="p-bar"><div class="p-bar-fill" style="width:35%;background:#2a6b43;"></div></div>
+        <div class="p-name c1">Wildlife<br>Encounters</div>
+        <div class="p-desc">Animais, espécies identificadas, encontros raros no campo</div>
+        <div class="p-examples">Boto-cor-de-rosa↵Gavião-real↵Espécies noturnas↵Insetos macro</div>
+      </div>
+      <div class="pillar">
+        <div class="p-pct c2">25%</div>
+        <div class="p-bar"><div class="p-bar-fill" style="width:25%;background:#1e4a2f;"></div></div>
+        <div class="p-name c2">Guia<br>Naturalista</div>
+        <div class="p-desc">O biólogo em campo — expertise que nenhum concorrente exibe</div>
+        <div class="p-examples">Day in the field↵Kit do guia↵Identificação ao vivo↵Bastidores</div>
+      </div>
+      <div class="pillar">
+        <div class="p-pct c3">20%</div>
+        <div class="p-bar"><div class="p-bar-fill" style="width:20%;background:#c08a3a;"></div></div>
+        <div class="p-name c3">Guest<br>Experience</div>
+        <div class="p-desc">Depoimentos em vídeo, UGC, grupos em expedição</div>
+        <div class="p-examples">Video testimonials↵Grupo no campo↵Reações reais↵Before/after</div>
+      </div>
+      <div class="pillar">
+        <div class="p-pct c4">15%</div>
+        <div class="p-bar"><div class="p-bar-fill" style="width:15%;background:#4a8c62;"></div></div>
+        <div class="p-name c4">Educação<br>Amazônica</div>
+        <div class="p-desc">Fatos sobre a floresta, ecossistemas, plantas medicinais</div>
+        <div class="p-examples">Igapó vs Várzea↵Águas negras↵Etnobotânica↵Ciclo cheias</div>
+      </div>
+      <div class="pillar">
+        <div class="p-pct c5">5%</div>
+        <div class="p-bar"><div class="p-bar-fill" style="width:5%;background:#8b5e2a;"></div></div>
+        <div class="p-name c5">Tours &amp;<br>Booking</div>
+        <div class="p-desc">Vagas abertas, lançamentos, datas disponíveis</div>
+        <div class="p-examples">Disponibilidade↵Pacote novo↵Vagas limitadas↵Link in bio</div>
+      </div>
+    </div>
+
+    <div class="divl"></div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px;">
+      <div>
+        <div class="mini-label">Frequência mínima viável</div>
+        <div class="mini-body">
+          4× / semana — Reels (15–30s)<br>
+          2× / semana — Carrossel educacional<br>
+          Diário — Stories (polls, bastidores)
+        </div>
+      </div>
+      <div>
+        <div class="mini-label">Ferramenta recomendada</div>
+        <div class="mini-body">
+          CapCut (gratuito) — gera legendas automáticas em inglês em 1 clique.<br>
+          Remove a maior barreira técnica da equipe.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ PAGE 4 — REELS -->
+<div class="page">
+  <div class="ph">
+    <span class="ph-brand">Amazon Eco Travellers</span>
+    <span class="ph-num">03 — Reels First</span>
+  </div>
+  <div class="pb-dark">
+    <div class="sn" style="color:var(--amber);">03 — Reels</div>
+    <div class="st st-light">A Fórmula<br>que gera alcance</div>
+
+    <div class="reel-rule-box">
+      <div class="rrb-label">A Regra dos 3 Segundos</div>
+      <div class="rrb-text">
+        Você tem 3 segundos para parar o scroll.<br>
+        Visual + Verbal + Legenda na tela — tudo no primeiro segundo.
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-step">
+        <div class="tl-time">0–3s → HOOK</div>
+        <div class="tl-title">Gancho Visual</div>
+        <div class="tl-desc">Imagem impactante imediata. Boto saindo d'água. Gavião pousando. Filhote de onça. Sem introdução, sem fade.</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-time">3–10s → CONTEXTO</div>
+        <div class="tl-title">Identificação</div>
+        <div class="tl-desc">Nome da espécie + 1 fato surpreendente. Legenda em inglês na tela. Voz do guia naturalista.</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-time">10–25s → VALOR</div>
+        <div class="tl-title">Guia em Ação</div>
+        <div class="tl-desc">Contexto do tour, expertise do biólogo visível, ambiente real da expedição.</div>
+      </div>
+      <div class="tl-step">
+        <div class="tl-time">25–30s → CTA</div>
+        <div class="tl-title">Convite</div>
+        <div class="tl-desc">"Link in bio to join us." Suave, não agressivo. Convite, não venda forçada.</div>
+      </div>
+    </div>
+
+    <div class="reel-tips">
+      <div class="rtip">
+        <div class="rtip-label">Legendas obrigatórias</div>
+        <div class="rtip-text">70% dos vídeos são assistidos sem som. CapCut gera legendas em inglês automaticamente. Aplicar em todos os Reels.</div>
+      </div>
+      <div class="rtip">
+        <div class="rtip-label">Duração ideal</div>
+        <div class="rtip-text">15–30 segundos. Se pode ser mais curto, corta. Retenção total pesa mais no algoritmo do que duração.</div>
+      </div>
+      <div class="rtip">
+        <div class="rtip-label">Idioma</div>
+        <div class="rtip-text">Inglês no caption e legenda de vídeo. Português como segundo parágrafo. Alemão para birdwatching.</div>
+      </div>
+      <div class="rtip">
+        <div class="rtip-label">Diferencial único</div>
+        <div class="rtip-text">Guia naturalista-biólogo. Nenhum concorrente tem isso visível no conteúdo. Centro de cada vídeo.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ PAGE 5 — IDIOMA + HASHTAGS -->
+<div class="page">
+  <div class="ph">
+    <span class="ph-brand">Amazon Eco Travellers</span>
+    <span class="ph-num">04 — Linguagem Global</span>
+  </div>
+  <div class="pb">
+    <div class="sn">04 — Linguagem</div>
+    <div class="st">Idioma &amp;<br>Hashtags</div>
+
+    <div class="lang-cols">
+      <div>
+        <div class="lang-h-row">
+          <div class="lang-h-bar" style="width:200px;background:var(--forest);"></div>
+          <div class="lang-h-label" style="font-size:17px;font-weight:600;color:var(--forest);">English — Primário</div>
+        </div>
+        <div class="lang-h-note" style="padding-left:214px;">100% dos captions. USA, UK, Austrália, Europa toda.</div>
+
+        <div class="lang-h-row">
+          <div class="lang-h-bar" style="width:130px;background:var(--green);"></div>
+          <div class="lang-h-label" style="font-size:14px;color:var(--green);">Português — Secundário</div>
+        </div>
+        <div class="lang-h-note" style="padding-left:144px;">Parágrafo final ou Stories. Mercado Brasil.</div>
+
+        <div class="lang-h-row">
+          <div class="lang-h-bar" style="width:80px;background:var(--amber);"></div>
+          <div class="lang-h-label" style="font-size:12px;color:var(--amber);">Deutsch — Nicho</div>
+        </div>
+        <div class="lang-h-note" style="padding-left:94px;">Posts de birdwatching. Mercado alemão = maior valor por tour na Europa.</div>
+
+        <div class="lang-h-row">
+          <div class="lang-h-bar" style="width:40px;background:rgba(14,34,23,0.2);"></div>
+          <div class="lang-h-label" style="font-size:11px;color:rgba(14,34,23,0.35);">Español — Expansão futura</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bio-box">
+          <div class="bio-label">Bio Otimizada — Modelo</div>
+          <div class="bio-code">
+            🌿 Amazon tours by naturalist-biologists<br>
+            🦜 Birding · Wildlife · Eco expeditions<br>
+            📍 Departing Manaus, Brazil<br>
+            📩 Book → link below
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divl"></div>
+    <div class="mini-label">Mix de Hashtags por Post</div>
+
+    <div class="ht-grid">
+      <div>
+        <div class="ht-cat-label">Grandes (3)</div>
+        <div class="ht-tag">#ecotourism</div>
+        <div class="ht-tag">#sustainabletravel</div>
+        <div class="ht-tag">#wildlifephotography</div>
+      </div>
+      <div>
+        <div class="ht-cat-label">Médios (5)</div>
+        <div class="ht-tag">#amazonwildlife</div>
+        <div class="ht-tag">#birdingtravel</div>
+        <div class="ht-tag">#naturalistguide</div>
+        <div class="ht-tag">#amazonecotourism</div>
+        <div class="ht-tag">#neotropics</div>
+      </div>
+      <div>
+        <div class="ht-cat-label">Nicho (4)</div>
+        <div class="ht-tag">#tropicalrainforest</div>
+        <div class="ht-tag">#manausbrasil</div>
+        <div class="ht-tag">#amazonbirding</div>
+        <div class="ht-tag">#rainforestlife</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ PAGE 6 — PLATAFORMAS -->
+<div class="page">
+  <div class="ph">
+    <span class="ph-brand">Amazon Eco Travellers</span>
+    <span class="ph-num">05 — Plataformas</span>
+  </div>
+  <div class="pb">
+    <div class="sn">05 — Plataformas</div>
+    <div class="st">Instagram Reformado<br>+ TikTok</div>
+
+    <div class="plat-grid">
+      <div>
+        <div class="plat-name">Instagram <span class="plat-badge">REFORMAR</span></div>
+        <div class="plat-item"><div class="plat-dot"></div><div class="plat-txt">Bio otimizada em inglês com link direto para WhatsApp ou página de tours</div></div>
+        <div class="plat-item"><div class="plat-dot"></div><div class="plat-txt">Reels 4× por semana — único formato com alcance orgânico real hoje</div></div>
+        <div class="plat-item"><div class="plat-dot"></div><div class="plat-txt">Highlights organizados: Tours · Wildlife · Guides · Reviews</div></div>
+        <div class="plat-item"><div class="plat-dot"></div><div class="plat-txt">Stories diários — polls "adivinhe o animal", bastidores, clima da floresta</div></div>
+        <div class="plat-item"><div class="plat-dot"></div><div class="plat-txt">Responder todos comentários em até 1h após publicação</div></div>
+      </div>
+      <div>
+        <div class="plat-name">TikTok <span class="plat-badge">LANÇAR AGORA</span></div>
+        <div class="plat-item"><div class="plat-dot plat-dot-a"></div><div class="plat-txt">Alcance orgânico <strong>muito superior</strong> para contas novas — diferença crítica vs Instagram</div></div>
+        <div class="plat-item"><div class="plat-dot plat-dot-a"></div><div class="plat-txt">Mesmo conteúdo dos Reels, repurposado. Handle: @amazonecotravellers</div></div>
+        <div class="plat-item"><div class="plat-dot plat-dot-a"></div><div class="plat-txt">Mercado europeu (DE, NL, UK) usa TikTok ativamente para pesquisar destinos</div></div>
+        <div class="plat-item"><div class="plat-dot plat-dot-a"></div><div class="plat-txt">Tom mais cru e autêntico — perfeito para ambiente selvagem real</div></div>
+        <div class="plat-item"><div class="plat-dot plat-dot-a"></div><div class="plat-txt">60 segundos ideal. Sem custo adicional de produção além dos Reels.</div></div>
+      </div>
+    </div>
+
+    <div class="funnel-grid">
+      <div>
+        <div class="mini-label">Funil de Conversão</div>
+        <div class="mini-body">
+          Reel / TikTok → Perfil → Bio link →<br>
+          Site novo (página de tours) →<br>
+          WhatsApp / Formulário → Reserva confirmada
+        </div>
+        <div style="font-family:'Spectral',serif;font-style:italic;font-size:12.5px;color:var(--green);margin-top:10px;line-height:1.5;">
+          O site novo completa esse funil. WordPress atual não converte.
+        </div>
+      </div>
+      <div>
+        <div class="mini-label">Colaborações prioritárias</div>
+        <div class="mini-body">
+          Travel creators visitando a Amazônia<br>
+          Canais de birdwatching (EN / DE)<br>
+          Blogs de ecoturismo europeus<br>
+          Press trips para fotógrafos de wildlife
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ PAGE 7 — ROADMAP -->
+<div class="page">
+  <div class="ph">
+    <span class="ph-brand">Amazon Eco Travellers</span>
+    <span class="ph-num">06 — Roadmap 90 Dias</span>
+  </div>
+  <div class="pb-dark">
+    <div class="sn" style="color:var(--amber);">06 — Execução</div>
+    <div class="st st-light">Os Próximos<br>90 Dias</div>
+
+    <div class="phases">
+      <div class="phase ph1">
+        <div class="phase-label">Semanas 1–4 · Fundação</div>
+        <div class="phase-title">Ativar</div>
+        <div class="phase-item">Otimizar bio em inglês com CTA claro</div>
+        <div class="phase-item">Criar @amazonecotravellers no TikTok</div>
+        <div class="phase-item">Definir 5 pilares e banco de vídeos/fotos</div>
+        <div class="phase-item">Publicar primeiros 16 Reels (4/semana)</div>
+        <div class="phase-item">Instalar CapCut, treinar legendas EN</div>
+        <div class="phase-item">Lançar site novo — completar o funil</div>
+      </div>
+
+      <div class="phase ph2">
+        <div class="phase-label">Semanas 5–8 · Crescimento</div>
+        <div class="phase-title">Escalar</div>
+        <div class="phase-item">Analisar top 3 Reels e dobrar o formato</div>
+        <div class="phase-item">Iniciar série educacional em inglês</div>
+        <div class="phase-item">Contatar 5 travel creators para collab</div>
+        <div class="phase-item">Stories diários com polls em inglês</div>
+        <div class="phase-item">Posts bilíngues EN/DE para birdwatching</div>
+        <div class="phase-item">Solicitar vídeo-depoimento aos hóspedes</div>
+      </div>
+
+      <div class="phase ph3">
+        <div class="phase-label">Semanas 9–12 · Consolidação</div>
+        <div class="phase-title">Converter</div>
+        <div class="phase-item">Revisar analytics: cliques no bio, DMs</div>
+        <div class="phase-item">Otimizar página de tours pelo comportamento</div>
+        <div class="phase-item">Primeira collab de creator publicada</div>
+        <div class="phase-item">Série: "A Naturalist's Guide to Amazon"</div>
+        <div class="phase-item">Avaliar Meta Ads para temporada alta</div>
+        <div class="phase-item">Definir estratégia para próxima temporada</div>
+      </div>
+    </div>
+
+    <div class="rm-footer">
+      <div>
+        <div class="rm-outcome-label">Expectativa 8–12 semanas</div>
+        <div class="rm-outcome-value">Crescimento orgânico visível. Alcance além da base de seguidores. Primeiros leads internacionais chegando via DM.</div>
+      </div>
+      <div>
+        <div class="rm-outcome-label">O Diferencial Central</div>
+        <div class="rm-outcome-value">"Guided by naturalist-biologists" — essa frase em cada vídeo, cada bio, cada página. É o que nenhum concorrente tem.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

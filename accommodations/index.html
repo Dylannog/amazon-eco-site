@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -529,7 +529,7 @@
     </a>
     <nav>
         <div class="dd">
-            <span class="nl dd-t">Tours <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <span class="nl dd-t"><span data-i18n="nav.tours">Tours</span> <i class="fa-solid fa-chevron-down dd-ch"></i></span>
             <div class="dd-p">
                 <a href="../tours/amazon-explorers/index.html" class="di"><span>Amazon Explorers</span><span class="di-dur">5D / 4N</span></a>
                 <a href="../tours/river-explorer/index.html" class="di"><span>River Explorer</span><span class="di-dur">5D / 4N</span></a>
@@ -549,23 +549,23 @@
             </div>
         </div>
         <div class="dd">
-            <span class="nl dd-t" style="color: var(--green) !important;">Accommodations <i class="fa-solid fa-chevron-down dd-ch"></i></span>
+            <span class="nl dd-t" style="color: var(--green) !important;"><span data-i18n="nav.accommodations">Accommodations</span> <i class="fa-solid fa-chevron-down dd-ch"></i></span>
             <div class="dd-p">
-                <a href="../accommodations/index.html#lodge" class="di">Amazon Lodge</a>
-                <a href="../accommodations/index.html#riverboat" class="di">River Boat</a>
+                <a href="../accommodations/index.html#lodge" class="di" data-i18n="nav.dd_lodge">Amazon Lodge</a>
+                <a href="../accommodations/index.html#riverboat" class="di" data-i18n="nav.dd_riverboat">River Boat</a>
             </div>
         </div>
-        <a href="../tours/index.html" class="nl">All Tours</a>
-        <a href="../about/index.html" class="nl">About Us</a>
-        <a href="../blog/index.html" class="nl">Blog</a>
-        <a href="../contact/index.html" class="nl">Contact</a>
+        <a href="../tours/index.html" class="nl" data-i18n="nav.all_tours">All Tours</a>
+        <a href="../about/index.html" class="nl" data-i18n="nav.about">About Us</a>
+        <a href="../blog/index.html" class="nl" data-i18n="nav.blog">Blog</a>
+        <a href="../contact/index.html" class="nl" data-i18n="nav.contact">Contact</a>
         <div class="lang">
             <button class="lb on">EN</button>
             <button class="lb">DE</button>
             <button class="lb">ES</button>
             <button class="lb">PT</button>
         </div>
-        <a href="https://wa.me/5592991321047" target="_blank" class="btn-book">Book Now</a>
+        <a href="https://wa.me/5592991321047" target="_blank" class="btn-book" data-i18n="nav.book_now">Book Now</a>
         <button class="mob-btn" id="mob-open" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
     </nav>
 </header>
@@ -580,12 +580,12 @@
             <i class="fa-solid fa-chevron-right" style="font-size:9px;opacity:0.6;"></i>
             <span>Accommodations</span>
         </nav>
-        <p class="ac-eyebrow rv">Accommodations</p>
-        <h1 class="ac-hero-h rv d1">Where you'll sleep<br>in the Amazon.</h1>
-        <p class="ac-hero-sub rv d2">Two options. Both boat-access only. Both surrounded by primary Amazon forest. No roads — just the river, the canopy, and the sounds that city life never reaches.</p>
+        <p class="ac-eyebrow rv" data-i18n="ac.eyebrow">Accommodations</p>
+        <h1 class="ac-hero-h rv d1"><span data-i18n="ac.hero_h1">Where you'll sleep</span><br><span data-i18n="ac.hero_h2">in the Amazon.</span></h1>
+        <p class="ac-hero-sub rv d2" data-i18n="ac.hero_sub">Two options. Both boat-access only. Both surrounded by primary Amazon forest. No roads — just the river, the canopy, and the sounds that city life never reaches.</p>
         <div class="ac-hero-anchors rv d3">
-            <a href="#lodge" class="ac-anc-lodge"><i class="fa-solid fa-tent"></i> Amazon Lodge</a>
-            <a href="#riverboat" class="ac-anc-boat"><i class="fa-solid fa-sailboat"></i> River Boat</a>
+            <a href="#lodge" class="ac-anc-lodge"><i class="fa-solid fa-tent"></i> <span data-i18n="ac.anc_lodge">Amazon Lodge</span></a>
+            <a href="#riverboat" class="ac-anc-boat"><i class="fa-solid fa-sailboat"></i> <span data-i18n="ac.anc_boat">River Boat</span></a>
         </div>
     </div>
 </section>
@@ -596,29 +596,29 @@
         <a href="#lodge" class="ac-strip-item">
             <div class="ac-strip-icon"><i class="fa-solid fa-tent"></i></div>
             <div>
-                <p class="ac-strip-label">Option 1</p>
-                <p class="ac-strip-val">Amazon Jungle Lodge</p>
+                <p class="ac-strip-label" data-i18n="ac.strip_opt1">Option 1</p>
+                <p class="ac-strip-val" data-i18n="ac.strip_lodge">Amazon Jungle Lodge</p>
             </div>
         </a>
         <a href="#riverboat" class="ac-strip-item">
             <div class="ac-strip-icon"><i class="fa-solid fa-sailboat"></i></div>
             <div>
-                <p class="ac-strip-label">Option 2</p>
-                <p class="ac-strip-val">River Boat</p>
+                <p class="ac-strip-label" data-i18n="ac.strip_opt2">Option 2</p>
+                <p class="ac-strip-val" data-i18n="ac.strip_boat">River Boat</p>
             </div>
         </a>
         <div class="ac-strip-item" style="cursor:default;">
             <div class="ac-strip-icon"><i class="fa-solid fa-location-dot"></i></div>
             <div>
-                <p class="ac-strip-label">Departure</p>
+                <p class="ac-strip-label" data-i18n="ac.strip_dep">Departure</p>
                 <p class="ac-strip-val">Manaus, AM, Brazil</p>
             </div>
         </div>
         <div class="ac-strip-item" style="cursor:default;">
             <div class="ac-strip-icon"><i class="fa-solid fa-road-barrier"></i></div>
             <div>
-                <p class="ac-strip-label">Access</p>
-                <p class="ac-strip-val">River Only — No Roads</p>
+                <p class="ac-strip-label" data-i18n="ac.strip_access">Access</p>
+                <p class="ac-strip-val" data-i18n="ac.strip_access_val">River Only — No Roads</p>
             </div>
         </div>
     </div>
@@ -632,28 +632,29 @@
 
         <!-- TEXT -->
         <div class="rv">
-            <p class="ac-sec-label">Amazon Jungle Lodge</p>
-            <h2 class="ac-sec-h">Primary forest,<br>no roads in.</h2>
-            <p class="ac-sec-sub">A working eco-lodge accessible only by boat, set inside primary Amazon rainforest on the banks of a black-water river tributary.</p>
-            <p class="ac-sec-p">The lodge sits at the end of a river route that no paved road reaches. Getting there means a boat transfer from Manaus — first through the Meeting of the Waters, then upriver into forest that has never been cleared. The structure itself was built to interfere as little as possible with its surroundings: open-sided communal areas that let the forest in, rooms with screened windows and the sounds of the canopy at night, and a dock where the river comes directly to the threshold.<br><br>Meals are prepared on-site using regional ingredients and served in the communal dining area overlooking the forest. Power comes from solar panels; the only light at night is what the lodge provides and what the forest does on its own. Fireflies. Moonlit river. The occasional eyeshine of a caiman along the bank.</p>
+            <p class="ac-sec-label" data-i18n="ac.lodge_label">Amazon Jungle Lodge</p>
+            <h2 class="ac-sec-h"><span data-i18n="ac.lodge_h1">Primary forest,</span><br><span data-i18n="ac.lodge_h2">no roads in.</span></h2>
+            <p class="ac-sec-sub" data-i18n="ac.lodge_sub">A working eco-lodge accessible only by boat, set inside primary Amazon rainforest on the banks of a black-water river tributary.</p>
+            <p class="ac-sec-p" data-i18n="ac.lodge_p1">The lodge sits at the end of a river route that no paved road reaches. Getting there means a boat transfer from Manaus — first through the Meeting of the Waters, then upriver into forest that has never been cleared. The structure itself was built to interfere as little as possible with its surroundings: open-sided communal areas that let the forest in, rooms with screened windows and the sounds of the canopy at night, and a dock where the river comes directly to the threshold.</p>
+                            <p class="ac-sec-p" data-i18n="ac.lodge_p2">Meals are prepared on-site using regional ingredients and served in the communal dining area overlooking the forest. Power comes from solar panels; the only light at night is what the lodge provides and what the forest does on its own. Fireflies. Moonlit river. The occasional eyeshine of a caiman along the bank.</p>
 
             <div class="ac-amenities">
-                <div class="ac-am-item"><i class="fa-solid fa-bed"></i> Private rooms</div>
-                <div class="ac-am-item"><i class="fa-solid fa-bowl-food"></i> Full board meals</div>
-                <div class="ac-am-item"><i class="fa-solid fa-solar-panel"></i> Solar-powered</div>
-                <div class="ac-am-item"><i class="fa-solid fa-water"></i> River dock</div>
-                <div class="ac-am-item"><i class="fa-solid fa-fan"></i> Ceiling fans</div>
-                <div class="ac-am-item"><i class="fa-solid fa-shield-halved"></i> Screened windows</div>
-                <div class="ac-am-item"><i class="fa-solid fa-person-hiking"></i> Forest trails</div>
-                <div class="ac-am-item"><i class="fa-solid fa-binoculars"></i> Wildlife decks</div>
+                <div class="ac-am-item"><i class="fa-solid fa-bed"></i> <span data-i18n="ac.lodge_am1">Private rooms</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-bowl-food"></i> <span data-i18n="ac.lodge_am2">Full board meals</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-solar-panel"></i> <span data-i18n="ac.lodge_am3">Solar-powered</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-water"></i> <span data-i18n="ac.lodge_am4">River dock</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-fan"></i> <span data-i18n="ac.lodge_am5">Ceiling fans</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="ac.lodge_am6">Screened windows</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-person-hiking"></i> <span data-i18n="ac.lodge_am7">Forest trails</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-binoculars"></i> <span data-i18n="ac.lodge_am8">Wildlife decks</span></div>
             </div>
 
             <div class="ac-sec-cta-wrap">
                 <a href="../tours/amazon-lodge/index.html" class="ac-cta-primary">
-                    <i class="fa-solid fa-tent"></i> Lodge Tours
+                    <i class="fa-solid fa-tent"></i> <span data-i18n="ac.lodge_cta">Lodge Tours</span>
                 </a>
                 <a href="https://wa.me/5592991321047?text=Hi!%20I'd%20like%20to%20know%20more%20about%20the%20Amazon%20Lodge." target="_blank" class="ac-cta-secondary">
-                    Ask about the lodge <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="ac.lodge_ask">Ask about the lodge</span> <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -671,7 +672,7 @@
                 <img src="../assets/images/accommodations/ac-lodge-canoe.jpg" alt="Traditional wooden canoe on a black-water river tributary near the Amazon Lodge" loading="lazy">
             </div>
         </div>
-        <p style="font-size:10px;color:oklch(72% 0.006 140);text-align:right;margin-top:10px;font-style:italic;letter-spacing:0.2px;">In partnership with local owners.</p>
+        <p style="font-size:10px;color:oklch(72% 0.006 140);text-align:right;margin-top:10px;font-style:italic;letter-spacing:0.2px;"><span data-i18n="ac.lodge_partner">In partnership with local owners.</span></p>
 
     </div>
 </section>
@@ -683,7 +684,7 @@
 <!-- Lodge gallery strip -->
 <section style="background:var(--warm-cream);padding:0 56px 80px;">
     <div style="max-width:1200px;margin:0 auto;">
-        <p style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gray-l);margin-bottom:24px;">Lodge — More Views</p>
+        <p style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gray-l);margin-bottom:24px;"><span data-i18n="ac.lodge_gallery">Lodge — More Views</span></p>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
             <div style="height:220px;border-radius:14px;overflow:hidden;">
                 <img src="../assets/images/accommodations/ac-lodge-room1.jpg" alt="Lodge bedroom with macaw carved headboard and colourful handmade decor" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform 500ms var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
@@ -706,28 +707,30 @@
 
         <!-- TEXT -->
         <div class="rv">
-            <p class="ac-sec-label">River Boat</p>
-            <h2 class="ac-sec-h">Your cabin moves<br>with the river.</h2>
-            <p class="ac-sec-sub">A private expedition boat that doubles as your accommodation — sleeping aboard as the Amazon moves around you, anchoring in different sections of the river each night.</p>
-            <p class="ac-sec-p">The riverboat is for travellers who want the Amazon to be fully surrounding, not simply adjacent. Rather than sleeping in a fixed point and going out to the forest, the boat moves through it — anchoring at different locations along the Rio Negro and its tributaries, positioning guests for activities that the lodge cannot reach and staying as long as the wildlife warrants.<br><br>Cabins are private, with full bedding and ventilation. The boat carries a small team: skipper, naturalist guide, and cook. Meals are prepared fresh onboard, adapted to the day's route and the local catch. Evenings on the upper deck watching the river turn orange and then black are, for most guests, among the most memorable hours of the entire trip.<br><br>The riverboat is part of multi-day expedition packages. Some itineraries combine both — nights aboard the boat and nights at the lodge — for guests who want the full range of what the Amazon offers. Ask us about combined routes.</p>
+            <p class="ac-sec-label" data-i18n="ac.boat_label">River Boat</p>
+            <h2 class="ac-sec-h"><span data-i18n="ac.boat_h1">Your cabin moves</span><br><span data-i18n="ac.boat_h2">with the river.</span></h2>
+            <p class="ac-sec-sub" data-i18n="ac.boat_sub">A private expedition boat that doubles as your accommodation — sleeping aboard as the Amazon moves around you, anchoring in different sections of the river each night.</p>
+            <p class="ac-sec-p" data-i18n="ac.boat_p1">The riverboat is for travellers who want the Amazon to be fully surrounding, not simply adjacent. Rather than sleeping in a fixed point and going out to the forest, the boat moves through it — anchoring at different locations along the Rio Negro and its tributaries, positioning guests for activities that the lodge cannot reach and staying as long as the wildlife warrants.</p>
+                            <p class="ac-sec-p" data-i18n="ac.boat_p2">Cabins are private, with full bedding and ventilation. The boat carries a small team: skipper, naturalist guide, and cook. Meals are prepared fresh onboard, adapted to the day's route and the local catch. Evenings on the upper deck watching the river turn orange and then black are, for most guests, among the most memorable hours of the entire trip.</p>
+                            <p class="ac-sec-p" data-i18n="ac.boat_p3">The riverboat is part of multi-day expedition packages. Some itineraries combine both — nights aboard the boat and nights at the lodge — for guests who want the full range of what the Amazon offers. Ask us about combined routes.</p>
 
             <div class="ac-amenities">
-                <div class="ac-am-item"><i class="fa-solid fa-bed"></i> Private cabins</div>
-                <div class="ac-am-item"><i class="fa-solid fa-utensils"></i> Onboard cook</div>
-                <div class="ac-am-item"><i class="fa-solid fa-route"></i> Multiple anchoring spots</div>
-                <div class="ac-am-item"><i class="fa-solid fa-fish"></i> Fishing off the deck</div>
-                <div class="ac-am-item"><i class="fa-solid fa-moon"></i> Night river excursions</div>
-                <div class="ac-am-item"><i class="fa-solid fa-binoculars"></i> Upper observation deck</div>
-                <div class="ac-am-item"><i class="fa-solid fa-user-tie"></i> Naturalist onboard</div>
-                <div class="ac-am-item"><i class="fa-solid fa-anchor"></i> Black-water river routes</div>
+                <div class="ac-am-item"><i class="fa-solid fa-bed"></i> <span data-i18n="ac.boat_am1">Private cabins</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-utensils"></i> <span data-i18n="ac.boat_am2">Onboard cook</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-route"></i> <span data-i18n="ac.boat_am3">Multiple anchoring spots</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-fish"></i> <span data-i18n="ac.boat_am4">Fishing off the deck</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-moon"></i> <span data-i18n="ac.boat_am5">Night river excursions</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-binoculars"></i> <span data-i18n="ac.boat_am6">Upper observation deck</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-user-tie"></i> <span data-i18n="ac.boat_am7">Naturalist onboard</span></div>
+                <div class="ac-am-item"><i class="fa-solid fa-anchor"></i> <span data-i18n="ac.boat_am8">Black-water river routes</span></div>
             </div>
 
             <div class="ac-sec-cta-wrap">
                 <a href="../tours/amazon-expedition/index.html" class="ac-cta-primary">
-                    <i class="fa-solid fa-sailboat"></i> Boat Tours
+                    <i class="fa-solid fa-sailboat"></i> <span data-i18n="ac.boat_cta">Boat Tours</span>
                 </a>
                 <a href="https://wa.me/5592991321047?text=Hi!%20I'd%20like%20to%20know%20more%20about%20the%20riverboat%20option." target="_blank" class="ac-cta-secondary">
-                    Ask about the boat <i class="fa-solid fa-arrow-right"></i>
+                    <span data-i18n="ac.boat_ask">Ask about the boat</span> <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -745,7 +748,7 @@
                 <img src="../assets/images/accommodations/ac-boat-cabin.jpg" alt="Private cabin aboard the Amazon riverboat with comfortable bunk beds" loading="lazy">
             </div>
         </div>
-        <p style="font-size:10px;color:oklch(72% 0.006 140);text-align:right;margin-top:10px;font-style:italic;letter-spacing:0.2px;">In partnership with local owners.</p>
+        <p style="font-size:10px;color:oklch(72% 0.006 140);text-align:right;margin-top:10px;font-style:italic;letter-spacing:0.2px;"><span data-i18n="ac.lodge_partner">In partnership with local owners.</span></p>
 
     </div>
 </section>
@@ -756,22 +759,22 @@
 <section class="ac-tours">
     <div class="ac-tours-inner">
         <div class="ac-tours-hd">
-            <p class="ac-tours-ey rv">Tours that include accommodation</p>
-            <h2 class="ac-tours-h rv d1">Choose your expedition</h2>
+            <p class="ac-tours-ey rv"><span data-i18n="ac.tours_ey">Tours that include accommodation</span></p>
+            <h2 class="ac-tours-h rv d1"><span data-i18n="ac.tours_h">Choose your expedition</span></h2>
         </div>
         <div class="ac-tours-grid">
 
             <div class="ac-tc rv d1">
                 <div class="ac-tc-photo">
                     <img src="../assets/images/tours/al-canopy.jpg" alt="Amazon Lodge 2-day tour" loading="lazy">
-                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> <span data-i18n="ac.badge_lodge">Lodge</span></span>
                 </div>
                 <div class="ac-tc-body">
                     <h3 class="ac-tc-name">Amazon Lodge Overnight</h3>
-                    <p class="ac-tc-p">Two days, one night. Meeting of the Waters, pink dolphins, piranha fishing, caiman search by spotlight, and a canopy sunrise.</p>
+                    <p class="ac-tc-p"><span data-i18n="ac.tc1_p">Two days, one night. Meeting of the Waters, pink dolphins, piranha fishing, caiman search by spotlight, and a canopy sunrise.</span></p>
                     <div class="ac-tc-ft">
-                        <span class="ac-tc-dur">2 Days / 1 Night</span>
-                        <a href="../tours/amazon-lodge/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="ac-tc-dur"><span data-i18n="ac.tc1_dur">2 Days / 1 Night</span></span>
+                        <a href="../tours/amazon-lodge/index.html" class="ac-tc-link"><span data-i18n="ac.view_tour">View tour</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -779,14 +782,14 @@
             <div class="ac-tc rv d2">
                 <div class="ac-tc-photo">
                     <img src="../assets/images/tours/jle-wildlife.jpg" alt="Jungle Lodge 3-day expedition" loading="lazy">
-                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> <span data-i18n="ac.badge_lodge">Lodge</span></span>
                 </div>
                 <div class="ac-tc-body">
                     <h3 class="ac-tc-name">Jungle Lodge Expedition</h3>
-                    <p class="ac-tc-p">Three days, two nights. Deep into primary forest with night caiman search, jungle treks, and visits to riverside communities.</p>
+                    <p class="ac-tc-p"><span data-i18n="ac.tc2_p">Three days, two nights. Deep into primary forest with night caiman search, jungle treks, and visits to riverside communities.</span></p>
                     <div class="ac-tc-ft">
-                        <span class="ac-tc-dur">3 Days / 2 Nights</span>
-                        <a href="../tours/jungle-lodge-3days/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="ac-tc-dur"><span data-i18n="ac.tc2_dur">3 Days / 2 Nights</span></span>
+                        <a href="../tours/jungle-lodge-3days/index.html" class="ac-tc-link"><span data-i18n="ac.view_tour">View tour</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -794,14 +797,14 @@
             <div class="ac-tc rv d3">
                 <div class="ac-tc-photo">
                     <img src="../assets/images/tours/ex6-hero.jpg" alt="Amazon Expedition 6-day riverboat tour" loading="lazy">
-                    <span class="ac-tc-badge"><i class="fa-solid fa-sailboat"></i> Riverboat</span>
+                    <span class="ac-tc-badge"><i class="fa-solid fa-sailboat"></i> <span data-i18n="ac.badge_riverboat">Riverboat</span></span>
                 </div>
                 <div class="ac-tc-body">
                     <h3 class="ac-tc-name">Amazon Expedition</h3>
-                    <p class="ac-tc-p">Six days aboard a private boat on the Rio Negro. The most immersive option — multiple river systems, remote anchoring, expedition wildlife.</p>
+                    <p class="ac-tc-p"><span data-i18n="ac.tc3_p">Six days aboard a private boat on the Rio Negro. The most immersive option — multiple river systems, remote anchoring, expedition wildlife.</span></p>
                     <div class="ac-tc-ft">
-                        <span class="ac-tc-dur">6 Days / 5 Nights</span>
-                        <a href="../tours/amazon-expedition/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="ac-tc-dur"><span data-i18n="ac.tc3_dur">6 Days / 5 Nights</span></span>
+                        <a href="../tours/amazon-expedition/index.html" class="ac-tc-link"><span data-i18n="ac.view_tour">View tour</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -809,14 +812,14 @@
             <div class="ac-tc rv d1">
                 <div class="ac-tc-photo">
                     <img src="../assets/images/tours/jr-community.jpg" alt="Jungle Retreat 4-day tour" loading="lazy">
-                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> <span data-i18n="ac.badge_lodge">Lodge</span></span>
                 </div>
                 <div class="ac-tc-body">
                     <h3 class="ac-tc-name">Jungle Retreat</h3>
-                    <p class="ac-tc-p">Four days, three nights combining lodge and jungle camp. Victoria-Régia water lilies, igarapé canoe, and deep forest trekking.</p>
+                    <p class="ac-tc-p"><span data-i18n="ac.tc4_p">Four days, three nights combining lodge and jungle camp. Victoria-Régia water lilies, igarapé canoe, and deep forest trekking.</span></p>
                     <div class="ac-tc-ft">
-                        <span class="ac-tc-dur">4 Days / 3 Nights</span>
-                        <a href="../tours/jungle-retreat/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="ac-tc-dur"><span data-i18n="ac.tc4_dur">4 Days / 3 Nights</span></span>
+                        <a href="../tours/jungle-retreat/index.html" class="ac-tc-link"><span data-i18n="ac.view_tour">View tour</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -824,14 +827,14 @@
             <div class="ac-tc rv d2">
                 <div class="ac-tc-photo">
                     <img src="../assets/images/tours/fa-wildlife.jpg" alt="The Full Amazon 5-day tour" loading="lazy">
-                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> <span data-i18n="ac.badge_lodge">Lodge</span></span>
                 </div>
                 <div class="ac-tc-body">
                     <h3 class="ac-tc-name">The Full Amazon</h3>
-                    <p class="ac-tc-p">Five days built around the most complete range of Amazonian habitats, wildlife, and cultural experiences available from Manaus.</p>
+                    <p class="ac-tc-p"><span data-i18n="ac.tc5_p">Five days built around the most complete range of Amazonian habitats, wildlife, and cultural experiences available from Manaus.</span></p>
                     <div class="ac-tc-ft">
-                        <span class="ac-tc-dur">5 Days / 4 Nights</span>
-                        <a href="../tours/amazon-complete/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="ac-tc-dur"><span data-i18n="ac.tc5_dur">5 Days / 4 Nights</span></span>
+                        <a href="../tours/amazon-complete/index.html" class="ac-tc-link"><span data-i18n="ac.view_tour">View tour</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -839,35 +842,35 @@
             <div class="ac-tc rv d3">
                 <div class="ac-tc-photo">
                     <img src="../assets/images/tours/amazon-explorers.jpg" alt="Amazon Explorers 5-day tour" loading="lazy">
-                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> Lodge</span>
+                    <span class="ac-tc-badge"><i class="fa-solid fa-tent"></i> <span data-i18n="ac.badge_lodge">Lodge</span></span>
                 </div>
                 <div class="ac-tc-body">
                     <h3 class="ac-tc-name">Amazon Explorers</h3>
-                    <p class="ac-tc-p">The original expedition. Five days of canopy towers, riverside communities, night walks, and time in primary forest off the tourist trail.</p>
+                    <p class="ac-tc-p"><span data-i18n="ac.tc6_p">The original expedition. Five days of canopy towers, riverside communities, night walks, and time in primary forest off the tourist trail.</span></p>
                     <div class="ac-tc-ft">
-                        <span class="ac-tc-dur">5 Days / 4 Nights</span>
-                        <a href="../tours/amazon-explorers/index.html" class="ac-tc-link">View tour <i class="fa-solid fa-arrow-right"></i></a>
+                        <span class="ac-tc-dur"><span data-i18n="ac.tc5_dur">5 Days / 4 Nights</span></span>
+                        <a href="../tours/amazon-explorers/index.html" class="ac-tc-link"><span data-i18n="ac.view_tour">View tour</span> <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
 
         </div>
         <div style="text-align:center;margin-top:40px;">
-            <a href="../tours/index.html" class="ac-cta-primary rv" style="display:inline-flex;">See all 14 tours <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="../tours/index.html" class="ac-cta-primary rv" style="display:inline-flex;"><span data-i18n="ac.see_all">See all 14 tours</span> <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 </section>
 
 <!-- CTA -->
 <section id="ac-cta">
-    <h2 class="ac-cta-h rv">Not sure which option<br>fits your trip?</h2>
-    <p class="ac-cta-p rv d1">Tell us your dates, group size, and what you want from the Amazon. We'll match you with the right accommodation and build the itinerary around it.</p>
+    <h2 class="ac-cta-h rv"><span data-i18n="ac.cta_h1">Not sure which option</span><br><span data-i18n="ac.cta_h2">fits your trip?</span></h2>
+    <p class="ac-cta-p rv d1"><span data-i18n="ac.cta_p">Tell us your dates, group size, and what you want from the Amazon. We'll match you with the right accommodation and build the itinerary around it.</span></p>
     <div class="ac-cta-btns rv d2">
         <a href="https://wa.me/5592991321047?text=Hi!%20I'd%20like%20help%20choosing%20between%20the%20lodge%20and%20riverboat%20options." target="_blank" class="btn-wa-lg">
-            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="ac.cta_wa">WhatsApp Us</span>
         </a>
         <a href="../tours/index.html" class="btn-tours-lg">
-            Browse all tours <i class="fa-solid fa-arrow-right"></i>
+            <span data-i18n="ac.cta_browse">Browse all tours</span> <i class="fa-solid fa-arrow-right"></i>
         </a>
     </div>
 </section>
@@ -877,7 +880,7 @@
     <div class="ft-grid">
         <div class="ft-brand">
             <img src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
-            <p class="ft-tag">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-guided expeditions for curious travellers from around the world.</p>
+            <p class="ft-tag" data-i18n="footer.tagline">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-guided expeditions for curious travellers from around the world.</p>
             <div class="ft-soc">
                 <a href="https://www.facebook.com/EcoBiologists" target="_blank" class="fs"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/amazonecotravellers" target="_blank" class="fs"><i class="fa-brands fa-instagram"></i></a>
@@ -886,7 +889,7 @@
             </div>
         </div>
         <div class="ft-col">
-            <h5>Tours</h5>
+            <h5 data-i18n="footer.tours">Tours</h5>
             <ul>
                 <li><a href="../tours/amazon-explorers/index.html">Amazon Explorers</a></li>
                 <li><a href="../tours/river-explorer/index.html">River Explorer</a></li>
@@ -905,17 +908,17 @@
             </ul>
         </div>
         <div class="ft-col">
-            <h5>Information</h5>
+            <h5 data-i18n="footer.information">Information</h5>
             <ul>
                 <li><a href="../faq/index.html">FAQ</a></li>
                 <li><a href="../gallery/index.html">Gallery</a></li>
-                <li><a href="../contact/index.html">Contact</a></li>
+                <li><a href="../contact/index.html" data-i18n="footer.contact">Contact</a></li>
             </ul>
         </div>
         <div class="ft-col">
-            <h5>Company</h5>
+            <h5 data-i18n="footer.company">Company</h5>
             <ul>
-                <li><a href="../about/index.html">About Us</a></li>
+                <li><a href="../about/index.html" data-i18n="footer.about">About Us</a></li>
                 <li><a href="../accommodations/index.html">Accommodations</a></li>
             </ul>
         </div>
@@ -940,7 +943,7 @@
             <button class="mob-close" id="mob-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="mob-section">
-            <h6>Multi-Day Tours</h6>
+            <h6 data-i18n="mob.multi_day">Multi-Day Tours</h6>
             <a href="../tours/amazon-explorers/index.html" class="mob-link">Amazon Explorers <span class="mob-link-dur">5D / 4N</span></a>
             <a href="../tours/river-explorer/index.html" class="mob-link">River Explorer <span class="mob-link-dur">5D / 4N</span></a>
             <a href="../tours/jungle-lodge-3days/index.html" class="mob-link">Jungle Lodge Expedition <span class="mob-link-dur">3D / 2N</span></a>
@@ -953,24 +956,25 @@
             <a href="../tours/ecological-expedition/index.html" class="mob-link">Ecological Expedition <span class="mob-link-dur">8D / 7N</span></a>
         </div>
         <div class="mob-section">
-            <h6>Day Excursions</h6>
+            <h6 data-i18n="mob.day_ex">Day Excursions</h6>
             <a href="../tours/pink-dolphins/index.html" class="mob-link">Pink Dolphins &amp; Indigenous Village <span class="mob-link-dur">1 Day</span></a>
             <a href="../tours/ariau-river/index.html" class="mob-link">Ariau River &amp; Rio Negro <span class="mob-link-dur">1 Day</span></a>
             <a href="../tours/anavilhanas/index.html" class="mob-link">Pink Dolphins &amp; Anavilhanas <span class="mob-link-dur">1 Day</span></a>
             <a href="../tours/presidente-figueiredo/index.html" class="mob-link">Presidente Figueiredo <span class="mob-link-dur">1 Day</span></a>
         </div>
         <div class="mob-section">
-            <h6>Explore</h6>
+            <h6 data-i18n="mob.explore">Explore</h6>
             <a href="../accommodations/index.html" class="mob-link" style="color:var(--green);">Accommodations</a>
-            <a href="../about/index.html" class="mob-link">About Us</a>
-            <a href="../gallery/index.html" class="mob-link">Gallery</a>
-            <a href="../faq/index.html" class="mob-link">FAQ</a>
-            <a href="../contact/index.html" class="mob-link">Contact</a>
+            <a href="../about/index.html" class="mob-link" data-i18n="mob.about">About Us</a>
+            <a href="../gallery/index.html" class="mob-link" data-i18n="mob.gallery">Gallery</a>
+            <a href="../faq/index.html" class="mob-link" data-i18n="mob.faq">FAQ</a>
+            <a href="../contact/index.html" class="mob-link" data-i18n="mob.contact">Contact</a>
         </div>
-        <a href="https://wa.me/5592991321047" target="_blank" class="mob-book">Book Now on WhatsApp</a>
+        <a href="https://wa.me/5592991321047" target="_blank" class="mob-book" data-i18n="mob.book_wa">Book Now on WhatsApp</a>
     </nav>
 </div>
 
+<script src="../assets/js/i18n.js"></script>
 <script src="../assets/js/main.js"></script>
 <script>
     // Animate hero bg on load

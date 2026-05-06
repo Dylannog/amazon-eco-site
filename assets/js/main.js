@@ -14,8 +14,12 @@ window.addEventListener('scroll', () => {
 // Language selector
 document.querySelectorAll('.lb').forEach(b => {
     b.addEventListener('click', () => {
-        document.querySelectorAll('.lb').forEach(x => x.classList.remove('on'));
-        b.classList.add('on');
+        if (window.i18nSetLang) {
+            window.i18nSetLang(b.textContent.trim().toLowerCase());
+        } else {
+            document.querySelectorAll('.lb').forEach(x => x.classList.remove('on'));
+            b.classList.add('on');
+        }
     });
 });
 
