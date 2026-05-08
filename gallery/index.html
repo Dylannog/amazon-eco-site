@@ -442,6 +442,8 @@
                 <div class="lang">
             <button class="lb on">EN</button>
             <button class="lb">DE</button>
+            <button class="lb">ES</button>
+            <button class="lb">PT</button>
         </div>
         <a href="https://wa.me/5592991321047" target="_blank" class="btn-book" data-i18n="nav.book_now">Book Now</a>
         <button class="mob-btn" id="mob-open" aria-label="Open menu">
@@ -455,26 +457,26 @@
     <div class="gl-hero-inner">
         <div>
             <nav class="gl-hero-bc" aria-label="Breadcrumb">
-                <a href="../index.html">Home</a>
+                <a href="../index.html" data-i18n="gallery.bc_home">Home</a>
                 <i class="fa-solid fa-chevron-right"></i>
-                <span>Gallery</span>
+                <span data-i18n="gallery.bc_current">Gallery</span>
             </nav>
-            <p class="gl-hero-ey">In the field</p>
-            <h1 class="gl-hero-h">The Amazon<br>through our <em>lens.</em></h1>
+            <p class="gl-hero-ey" data-i18n="gallery.hero_ey">In the field</p>
+            <h1 class="gl-hero-h" data-i18n-html="gallery.hero_h">The Amazon<br>through our <em>lens.</em></h1>
         </div>
         <div class="gl-hero-right">
-            <p class="gl-hero-p">Every photo taken in the field during our expeditions. Wildlife, landscapes, and life on the river — nothing staged, nothing manufactured.</p>
-            <p class="gl-hero-count"><strong id="gl-count">39</strong> photographs from the Amazon basin</p>
+            <p class="gl-hero-p" data-i18n="gallery.hero_p">Every photo taken in the field during our expeditions. Wildlife, landscapes, and life on the river — nothing staged, nothing manufactured.</p>
+            <p class="gl-hero-count"><strong id="gl-count">39</strong> <span data-i18n="gallery.hero_count_text">photographs from the Amazon basin</span></p>
         </div>
     </div>
 </section>
 
 <!-- FILTER BAR -->
 <div class="gl-bar" role="toolbar" aria-label="Filter gallery">
-    <button class="gl-fb is-active" data-filter="all">All <span class="gl-fb-n" id="gl-n-all">39</span></button>
-    <button class="gl-fb" data-filter="wildlife">Wildlife <span class="gl-fb-n" id="gl-n-wildlife">21</span></button>
-    <button class="gl-fb" data-filter="landscape">Landscapes <span class="gl-fb-n" id="gl-n-landscape">8</span></button>
-    <button class="gl-fb" data-filter="people">People &amp; Culture <span class="gl-fb-n" id="gl-n-people">10</span></button>
+    <button class="gl-fb is-active" data-filter="all" data-i18n-html="gallery.filter_all">All <span class="gl-fb-n" id="gl-n-all">39</span></button>
+    <button class="gl-fb" data-filter="wildlife" data-i18n-html="gallery.filter_wildlife">Wildlife <span class="gl-fb-n" id="gl-n-wildlife">21</span></button>
+    <button class="gl-fb" data-filter="landscape" data-i18n-html="gallery.filter_landscapes">Landscapes <span class="gl-fb-n" id="gl-n-landscape">8</span></button>
+    <button class="gl-fb" data-filter="people" data-i18n-html="gallery.filter_people">People &amp; Culture <span class="gl-fb-n" id="gl-n-people">10</span></button>
 </div>
 
 <!-- GRID -->
@@ -484,235 +486,235 @@
         <!-- WIDE: hero — landscape -->
         <figure class="gl-item gl-item--wide" data-cat="landscape">
             <img src="../assets/images/hero.jpg" alt="The Amazon River at dusk from the water" loading="eager">
-            <figcaption class="gl-cap">The Amazon River at dusk</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_river_dusk">The Amazon River at dusk</figcaption>
         </figure>
 
         <!-- TALL: spider monkey — wildlife -->
         <figure class="gl-item gl-item--tall" data-cat="wildlife">
             <img src="../assets/images/tours/ae-day2-monkey.jpg" alt="Spider monkey Ateles belzebuth in the canopy" loading="eager">
-            <figcaption class="gl-cap">Spider monkey — Amazon Explorers</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_spider_monkey">Spider monkey — Amazon Explorers</figcaption>
         </figure>
 
         <!-- normal: amazon-explorers tour hero — landscape -->
         <figure class="gl-item" data-cat="landscape">
             <img src="../assets/images/tours/amazon-explorers.jpg" alt="Tour boat navigating through flooded igapó forest" loading="lazy">
-            <figcaption class="gl-cap">Igapó — flooded forest, Amazon Explorers</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_igapo">Igapó — flooded forest, Amazon Explorers</figcaption>
         </figure>
 
         <!-- normal: observation tower — people -->
         <figure class="gl-item" data-cat="people">
             <img src="../assets/images/tours/ae-day1-tower.jpg" alt="Group of guests at an observation tower at dawn" loading="lazy">
-            <figcaption class="gl-cap">Dawn at the observation tower</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_tower_dawn">Dawn at the observation tower</figcaption>
         </figure>
 
         <!-- WIDE: mirrored canal — landscape -->
         <figure class="gl-item gl-item--wide" data-cat="landscape">
             <img src="../assets/images/tours/ae-day3-river.jpg" alt="Perfectly mirrored canal deep in the Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">A mirrored igarapé — Amazon Explorers</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_mirrored_igarape">A mirrored igarapé — Amazon Explorers</figcaption>
         </figure>
 
         <!-- normal: guides examining trunk — people -->
         <figure class="gl-item" data-cat="people">
             <img src="../assets/images/tours/ae-day4-walk.jpg" alt="Naturalist guides examining a fallen trunk in primary forest" loading="lazy">
-            <figcaption class="gl-cap">Reading the forest floor</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_forest_floor">Reading the forest floor</figcaption>
         </figure>
 
         <!-- WIDE: boat on misty river — landscape -->
         <figure class="gl-item gl-item--wide" data-cat="landscape">
             <img src="../assets/images/tours/re-day1-boat.jpg" alt="River boat moving through early morning mist on the Amazon" loading="lazy">
-            <figcaption class="gl-cap">Morning on the river — River Explorer</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_river_morning">Morning on the river — River Explorer</figcaption>
         </figure>
 
         <!-- TALL: red macaw — wildlife -->
         <figure class="gl-item gl-item--tall" data-cat="wildlife">
             <img src="../assets/images/tours/ch-macaw.jpg" alt="Red macaw in close-up, vivid plumage" loading="lazy">
-            <figcaption class="gl-cap">Red macaw — Chlorophyll</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_red_macaw">Red macaw — Chlorophyll</figcaption>
         </figure>
 
         <!-- normal: aerial dawn over forest — landscape -->
         <figure class="gl-item" data-cat="landscape">
             <img src="../assets/images/tours/re-day1-tower.jpg" alt="Aerial view of primary Amazon forest at dawn from a tower" loading="lazy">
-            <figcaption class="gl-cap">Primary forest at first light</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_primary_first_light">Primary forest at first light</figcaption>
         </figure>
 
         <!-- normal: swimming with dolphins — people -->
         <figure class="gl-item" data-cat="people">
             <img src="../assets/images/tours/re-day2-dolphins.jpg" alt="Guests swimming with pink river dolphins in the Amazon" loading="lazy">
-            <figcaption class="gl-cap">Swimming with river dolphins — River Explorer</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_dolphin_habitat">Pink river dolphin habitat — River Explorer</figcaption>
         </figure>
 
         <!-- normal: floating riverside village — people -->
         <figure class="gl-item" data-cat="people">
             <img src="../assets/images/tours/re-day3-village.jpg" alt="A ribeirinho community floating on the Amazon River" loading="lazy">
-            <figcaption class="gl-cap">A river community — River Explorer</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_river_community">A river community — River Explorer</figcaption>
         </figure>
 
         <!-- WIDE: sunset over canopy — landscape -->
         <figure class="gl-item gl-item--wide" data-cat="landscape">
             <img src="../assets/images/tours/ch-canopy.jpg" alt="Golden sunset over the unbroken Amazon canopy" loading="lazy">
-            <figcaption class="gl-cap">Sunset over the canopy — Chlorophyll</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_canopy_sunset">Sunset over the canopy — Chlorophyll</figcaption>
         </figure>
 
         <!-- normal: canoe in igarapé — people -->
         <figure class="gl-item" data-cat="people">
             <img src="../assets/images/tours/ch-canoe.jpg" alt="Guests paddling a canoe through a narrow igarapé" loading="lazy">
-            <figcaption class="gl-cap">Exploring by canoe — Chlorophyll</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_canoe">Exploring by canoe — Chlorophyll</figcaption>
         </figure>
 
         <!-- normal: pink dolphin surfacing — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/ch-boto.jpg" alt="Pink river dolphin surfacing in the black waters of the Negro" loading="lazy">
-            <figcaption class="gl-cap">Pink river dolphin — Chlorophyll</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_pink_dolphin">Pink river dolphin — Chlorophyll</figcaption>
         </figure>
 
         <!-- normal: capuchin monkey — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/ch-monkey.jpg" alt="Capuchin monkey in the forest" loading="lazy">
-            <figcaption class="gl-cap">Capuchin monkey — Chlorophyll</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_capuchin_ch">Capuchin monkey — Chlorophyll</figcaption>
         </figure>
 
         <!-- normal: yellow riverside house — landscape -->
         <figure class="gl-item" data-cat="landscape">
             <img src="../assets/images/tours/ch-ribeirinho.jpg" alt="Brightly painted yellow house on stilts on the Amazon riverbank" loading="lazy">
-            <figcaption class="gl-cap">Riverside life — Chlorophyll</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_riverside_life">Riverside life — Chlorophyll</figcaption>
         </figure>
 
         <!-- normal: trogon — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/bw-trogon.jpg" alt="Violaceous trogon perched on a branch in the Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">Violaceous trogon — Birdwatching</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_trogon">Violaceous trogon — Birdwatching</figcaption>
         </figure>
 
         <!-- TALL: toucan — wildlife -->
         <figure class="gl-item gl-item--tall" data-cat="wildlife">
             <img src="../assets/images/tours/bw-toucan.jpg" alt="Toucan with vivid colourful beak, Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">Toucan — Birdwatching</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_toucan">Toucan — Birdwatching</figcaption>
         </figure>
 
         <!-- normal: hummingbird — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/bw-hummingbird.jpg" alt="Hummingbird hovering at a white flower in the Amazon" loading="lazy">
-            <figcaption class="gl-cap">Hummingbird — Birdwatching</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_hummingbird">Hummingbird — Birdwatching</figcaption>
         </figure>
 
         <!-- normal: raptor — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/bw-raptor.jpg" alt="Black-and-white hawk perched on river driftwood" loading="lazy">
-            <figcaption class="gl-cap">Hawk on driftwood — Birdwatching</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_hawk">Hawk on driftwood — Birdwatching</figcaption>
         </figure>
 
         <!-- WIDE: heron in flight — wildlife -->
         <figure class="gl-item gl-item--wide" data-cat="wildlife">
             <img src="../assets/images/tours/bw-heron.jpg" alt="Great heron in full flight over the Amazon várzea at dusk" loading="lazy">
-            <figcaption class="gl-cap">Heron in flight — Birdwatching</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_heron">Heron in flight — Birdwatching</figcaption>
         </figure>
 
         <!-- normal: parrots — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/bw-parrots.jpg" alt="Pair of Amazon parrots in dense forest foliage" loading="lazy">
-            <figcaption class="gl-cap">Amazon parrots — Birdwatching</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_parrots">Amazon parrots — Birdwatching</figcaption>
         </figure>
 
         <!-- TALL: cock-of-the-rock — wildlife -->
         <figure class="gl-item gl-item--tall" data-cat="wildlife">
             <img src="../assets/images/tours/ee-cock-of-rock.jpg" alt="Brilliant orange Cock-of-the-rock on a branch in the Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">Cock-of-the-rock — Ecological Expedition</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_cock_of_rock">Cock-of-the-rock — Ecological Expedition</figcaption>
         </figure>
 
         <!-- normal: dolphin leaping — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/ee-dolphin.jpg" alt="River dolphin leaping dramatically from the Amazon" loading="lazy">
-            <figcaption class="gl-cap">River dolphin — Ecological Expedition</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_river_dolphin">River dolphin — Ecological Expedition</figcaption>
         </figure>
 
         <!-- normal: night monkey trio — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/ee-night-monkey.jpg" alt="Trio of Aotus night monkeys roosting in the Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">Night monkeys — Ecological Expedition</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_night_monkeys">Night monkeys — Ecological Expedition</figcaption>
         </figure>
 
         <!-- normal: orchid — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/ee-orchid.jpg" alt="Purple orchid growing from a trunk in primary Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">Forest orchid — Ecological Expedition</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_orchid">Forest orchid — Ecological Expedition</figcaption>
         </figure>
 
         <!-- normal: guide in forest — people -->
         <figure class="gl-item" data-cat="people">
             <img src="../assets/images/tours/ee-trek.jpg" alt="Naturalist guide at rest in primary Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">In the field — Ecological Expedition</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_in_field">In the field — Ecological Expedition</figcaption>
         </figure>
 
         <!-- normal: tamarin — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/ee-tamarin.jpg" alt="Saddleback tamarin perched on a branch looking directly at the camera" loading="lazy">
-            <figcaption class="gl-cap">Saddleback tamarin — Ecological Expedition</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_tamarin">Saddleback tamarin — Ecological Expedition</figcaption>
         </figure>
 
         <!-- normal: dolphin leap — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/pd-dolphin-leap.jpg" alt="Pink river dolphin leaping with water spray" loading="lazy">
-            <figcaption class="gl-cap">Dolphin leap — Pink Dolphins excursion</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_dolphin_leap">Dolphin leap — Pink Dolphins excursion</figcaption>
         </figure>
 
         <!-- normal: dolphin pink surfacing — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/pd-dolphin-pink.jpg" alt="Pink boto surfacing in the river" loading="lazy">
-            <figcaption class="gl-cap">Boto rosa — Pink Dolphins excursion</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_boto">Boto rosa — Pink Dolphins excursion</figcaption>
         </figure>
 
         <!-- WIDE: monkey leaping — wildlife -->
         <figure class="gl-item gl-item--wide" data-cat="wildlife">
             <img src="../assets/images/tours/ar-monkey-leap.jpg" alt="Spider monkey mid-leap between trees in the Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">Spider monkey in flight — Ariau River</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_spider_flight">Spider monkey in flight — Ariau River</figcaption>
         </figure>
 
         <!-- TALL: cotinga — wildlife -->
         <figure class="gl-item gl-item--tall" data-cat="wildlife">
             <img src="../assets/images/tours/ar-cotinga.jpg" alt="Spangled Cotinga, electric blue plumage, on a branch" loading="lazy">
-            <figcaption class="gl-cap">Spangled Cotinga — Ariau River</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_cotinga">Spangled Cotinga — Ariau River</figcaption>
         </figure>
 
         <!-- normal: aracari — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/ar-aracari.jpg" alt="Lettered Aracari toucanet on a perch in the Amazon" loading="lazy">
-            <figcaption class="gl-cap">Lettered Aracari — Ariau River</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_aracari">Lettered Aracari — Ariau River</figcaption>
         </figure>
 
         <!-- normal: capuchin looking — wildlife -->
         <figure class="gl-item" data-cat="wildlife">
             <img src="../assets/images/tours/ar-capuchin.jpg" alt="Capuchin monkey looking directly at the camera" loading="lazy">
-            <figcaption class="gl-cap">Capuchin — Ariau River</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_capuchin_ar">Capuchin — Ariau River</figcaption>
         </figure>
 
         <!-- WIDE: birdwatching from canoe at dawn — people -->
         <figure class="gl-item gl-item--wide" data-cat="people">
             <img src="../assets/images/about/about-hero.jpg" alt="Guests birdwatching from a canoe at dawn on the Amazon" loading="lazy">
-            <figcaption class="gl-cap">Dawn birdwatching by canoe</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_dawn_birdwatching">Dawn birdwatching by canoe</figcaption>
         </figure>
 
         <!-- TALL: guide portrait at sunset — people -->
         <figure class="gl-item gl-item--tall" data-cat="people">
             <img src="../assets/images/about/about-guide.jpg" alt="Amazon Eco Travellers naturalist guide on the Rio Negro at golden hour" loading="lazy">
-            <figcaption class="gl-cap">Naturalist guide — Rio Negro</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_guide">Naturalist guide — Rio Negro</figcaption>
         </figure>
 
         <!-- WIDE: guests laughing on canoe — people -->
         <figure class="gl-item gl-item--wide" data-cat="people">
             <img src="../assets/images/about/about-group.jpg" alt="Guests laughing together on a river canoe excursion" loading="lazy">
-            <figcaption class="gl-cap">Life on the river</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_life_river">Life on the river</figcaption>
         </figure>
 
         <!-- normal: misty Rio Negro canoe — landscape -->
         <figure class="gl-item" data-cat="landscape">
             <img src="../assets/images/about/about-river.jpg" alt="Naturalist canoe on the misty Rio Negro at dawn" loading="lazy">
-            <figcaption class="gl-cap">Dawn on the Rio Negro</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_rio_negro_dawn">Dawn on the Rio Negro</figcaption>
         </figure>
 
         <!-- normal: naturalist in forest trek — people -->
         <figure class="gl-item" data-cat="people">
             <img src="../assets/images/about/about-trek.jpg" alt="Field naturalist at rest in primary Amazon forest" loading="lazy">
-            <figcaption class="gl-cap">A moment in primary forest</figcaption>
+            <figcaption class="gl-cap" data-i18n="gallery.cap_primary_moment">A moment in primary forest</figcaption>
         </figure>
 
     </div>
@@ -721,12 +723,12 @@
 <!-- CTA -->
 <section class="gl-cta">
     <div class="gl-cta-inner rv">
-        <p class="gl-cta-label">See it in person</p>
-        <h2 class="gl-cta-h">These photos don't capture<br>what being there <em>feels like.</em></h2>
-        <p class="gl-cta-p">Browse our tours and find the expedition that fits your time and interests. Not sure where to start? We're happy to help.</p>
+        <p class="gl-cta-label" data-i18n="gallery.cta_label">See it in person</p>
+        <h2 class="gl-cta-h" data-i18n-html="gallery.cta_h">These photos don't capture<br>what being there <em>feels like.</em></h2>
+        <p class="gl-cta-p" data-i18n="gallery.cta_p">Browse our tours and find the expedition that fits your time and interests. Not sure where to start? We're happy to help.</p>
         <div class="gl-cta-btns">
-            <a href="../tours/index.html" class="btn-solid">View All Tours</a>
-            <a href="https://wa.me/5592991321047?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20your%20Amazon%20tours." target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
+            <a href="../tours/index.html" class="btn-solid" data-i18n="gallery.cta_tours">View All Tours</a>
+            <a href="https://wa.me/5592991321047?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20your%20Amazon%20tours." target="_blank" class="btn-wa" data-i18n-html="gallery.cta_wa"><i class="fa-brands fa-whatsapp"></i> Ask on WhatsApp</a>
         </div>
     </div>
 </section>
@@ -919,7 +921,8 @@
         setTimeout(function () {
             lbImg.src = img.src;
             lbImg.alt = img.alt;
-            lbCap.textContent = img.alt;
+            var cap = item.querySelector('.gl-cap');
+            lbCap.textContent = cap ? cap.textContent : img.alt;
             lbImg.style.opacity = '1';
         }, 160);
         lbCtr.textContent = (current + 1) + ' / ' + pool.length;
