@@ -644,6 +644,27 @@
         }
         .mob-book:hover { background: var(--green-d); }
 
+        .mob-lang {
+            display: flex; gap: 6px; margin-bottom: 24px;
+        }
+        .mob-lb {
+            flex: 1;
+            padding: 9px 0;
+            border-radius: 8px;
+            border: 1.5px solid var(--border);
+            background: none;
+            font-family: var(--b);
+            font-size: 13px; font-weight: 600;
+            color: var(--gray);
+            cursor: pointer;
+            transition: background 150ms var(--ease), color 150ms var(--ease), border-color 150ms var(--ease);
+        }
+        .mob-lb.on {
+            background: var(--green-l);
+            color: var(--green-d);
+            border-color: var(--green);
+        }
+
         /* ── HOW IT WORKS (conversion) ── */
         #how {
             background: var(--warm-white);
@@ -957,6 +978,7 @@
             #tours { padding: 72px 24px; }
             .tours-hd { flex-direction: column; align-items: flex-start; gap: 20px; }
             .tours-grid { grid-template-columns: 1fr; }
+            .tc.featured { grid-column: span 1; }
 
             #trust { padding: 0 24px; }
             .trust-item { padding: 14px 20px; border-right: none; border-bottom: 1px solid oklch(100% 0 0 / 0.1); }
@@ -1746,6 +1768,13 @@
             <a href="contact/index.html" class="mob-link" data-i18n="mob.contact">Contact</a>
         </div>
 
+        <div class="mob-lang">
+            <button class="mob-lb on" data-lang="en">EN</button>
+            <button class="mob-lb" data-lang="de">DE</button>
+            <button class="mob-lb" data-lang="es">ES</button>
+            <button class="mob-lb" data-lang="pt">PT</button>
+        </div>
+
         <a href="https://wa.me/5592991321047" target="_blank" class="mob-book" data-i18n="mob.book_wa">Book Now on WhatsApp</a>
     </nav>
 </div>
@@ -1766,16 +1795,21 @@
         }
     }, { passive: true });
 
-    // Language selector
-    document.querySelectorAll('.lb').forEach(b => {
-        b.addEventListener('click', () => {
-            if (window.i18nSetLang) {
-                window.i18nSetLang(b.textContent.trim().toLowerCase());
-            } else {
-                document.querySelectorAll('.lb').forEach(x => x.classList.remove('on'));
-                b.classList.add('on');
-            }
+    // Language selector (desktop + mobile)
+    function setLang(lang) {
+        if (window.i18nSetLang) window.i18nSetLang(lang);
+        document.querySelectorAll('.lb').forEach(x => {
+            x.classList.toggle('on', x.textContent.trim().toLowerCase() === lang);
         });
+        document.querySelectorAll('.mob-lb').forEach(x => {
+            x.classList.toggle('on', x.dataset.lang === lang);
+        });
+    }
+    document.querySelectorAll('.lb').forEach(b => {
+        b.addEventListener('click', () => setLang(b.textContent.trim().toLowerCase()));
+    });
+    document.querySelectorAll('.mob-lb').forEach(b => {
+        b.addEventListener('click', () => setLang(b.dataset.lang));
     });
 
     // Mobile drawer
