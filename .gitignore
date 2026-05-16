@@ -13,3 +13,10 @@ desktop.ini
 # Temporários
 *.tmp
 *.log
+
+# Estratégia interna
+seo-strategy.html
+campaign-strategy.html
+
+# Base de dados de análise de código (interna)
+.code-review-graph/

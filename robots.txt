@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /campaign-strategy.html
+Disallow: /seo-strategy.html
+Disallow: /HANDOFF.md
+Disallow: /campaign-philosophy.md
+Disallow: /TRANSLATION-PROMPT.md
+Disallow: /SECURITY-AUDIT-PROMPT.md
+Disallow: /SECURITY-AUDIT-REPORT.md
+Disallow: /.git/
+Disallow: /.code-review-graph/
+
+Sitemap: https://amazonecotravellers.com/sitemap.xml

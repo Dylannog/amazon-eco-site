@@ -865,10 +865,11 @@
                     '<div class="ct-thanks">',
                     '  <div class="ct-thanks-icon"><i class="fa-solid fa-check"></i></div>',
                     '  <h3 class="ct-thanks-h">Message received.</h3>',
-                    '  <p class="ct-thanks-p">Thanks, ' + first + '. We\'ll get back to you at ' + email + ' as soon as we can &mdash; usually within a few hours.</p>',
+                    '  <p class="ct-thanks-p" id="ct-thanks-msg"></p>',
                     '  <a href="../tours/index.html" class="btn-solid" style="margin-top:8px;">Explore all tours</a>',
                     '</div>'
                 ].join('');
+                document.getElementById('ct-thanks-msg').textContent = 'Thanks, ' + first + '. We’ll get back to you at ' + email + ' as soon as we can — usually within a few hours.';
             })
             .catch(function () {
                 submit.disabled    = false;
