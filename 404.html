@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Amazon Eco Travellers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --green:      oklch(50% 0.18 142);
+            --green-d:    oklch(34% 0.14 142);
+            --green-l:    oklch(94% 0.06 142);
+            --amber:      oklch(66% 0.17 75);
+            --dark:       oklch(15% 0.01 100);
+            --gray:       oklch(48% 0.01 140);
+            --gray-l:     oklch(70% 0.008 140);
+            --warm-cream: oklch(97% 0.014 90);
+            --warm-white: oklch(99% 0.008 90);
+            --border:     oklch(88% 0.01 120);
+            --ease:       cubic-bezier(0.23, 1, 0.32, 1);
+            --h: 'Spectral', Georgia, serif;
+            --b: 'Figtree', system-ui, sans-serif;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { -webkit-font-smoothing: antialiased; }
+        body {
+            font-family: var(--b);
+            background: var(--warm-white);
+            color: var(--dark);
+            min-height: 100svh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 24px;
+        }
+
+        .icon {
+            font-size: 64px;
+            color: var(--green-l);
+            margin-bottom: 24px;
+            animation: sway 4s ease-in-out infinite;
+        }
+        @keyframes sway {
+            0%, 100% { transform: rotate(-4deg); }
+            50%       { transform: rotate(4deg); }
+        }
+
+        h1 {
+            font-family: var(--h);
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 700;
+            color: var(--green-d);
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 440px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-family: var(--b);
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 200ms var(--ease), box-shadow 200ms var(--ease);
+        }
+        .btn:hover { transform: translateY(-2px); }
+
+        .btn-primary {
+            background: var(--green);
+            color: #fff;
+            box-shadow: 0 4px 20px oklch(50% 0.18 142 / 0.35);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 8px 32px oklch(50% 0.18 142 / 0.45);
+        }
+
+        .btn-secondary {
+            background: var(--warm-cream);
+            color: var(--green-d);
+            border: 1.5px solid var(--border);
+        }
+        .btn-secondary:hover {
+            background: var(--green-l);
+            border-color: var(--green);
+        }
+
+        .divider {
+            width: 48px;
+            height: 2px;
+            background: var(--border);
+            margin: 48px auto 0;
+            border-radius: 2px;
+        }
+
+        .brand {
+            margin-top: 24px;
+            font-size: 13px;
+            color: var(--gray-l);
+        }
+        .brand strong {
+            color: var(--gray);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="icon">
+        <i class="fa-solid fa-leaf"></i>
+    </div>
+
+    <h1>Lost in the jungle?</h1>
+    <p>This page doesn't exist — but the Amazon does. Let us guide you back to the right trail.</p>
+
+    <div class="actions">
+        <a href="/" class="btn btn-primary">
+            <i class="fa-solid fa-house"></i> Back to Home
+        </a>
+        <a href="/tours/" class="btn btn-secondary">
+            <i class="fa-solid fa-compass"></i> Explore Tours
+        </a>
+    </div>
+
+    <div class="divider"></div>
+    <p class="brand">
+        <strong>Amazon Eco Travellers</strong> · Manaus, Brazil
+    </p>
+
+</body>
+</html>
