@@ -1,0 +1,47 @@
+# Amazon Eco Travellers
+
+Expert naturalist-guided Amazon eco tours departing from Manaus, Brazil.
+
+## About
+
+Amazon Eco Travellers offers immersive multi-day expeditions and day excursions into the Brazilian Amazon rainforest. All tours depart from Manaus, Amazonas, Brazil. Guides are specialist naturalists — not biologists — with deep knowledge of Amazonian ecosystems, wildlife, and indigenous culture.
+
+## Tours
+
+### Multi-day expeditions
+- **Amazon Explorers** — 5 days / 4 nights. Rio Negro basin, canopy tower, flooded igapó forest, pink river dolphin habitat, eco-lodge + riverboat. /tours/amazon-explorers/
+- **River Explorer** — 5 days / 4 nights. Rio Negro upriver, MUSA canopy tower, Anavilhanas National Park, indigenous village visit. /tours/river-explorer/
+- **Chlorophyll** — 6 days / 5 nights. Five ecosystems: canopy, igapó, terra firme, várzea, riverine community. /tours/chlorophyll/
+- **Birdwatching** — 7 days / 6 nights. Ornithologist-guided, 600+ potential species, Cock-of-the-Rock arena, Anavilhanas floodplain. /tours/birdwatching/
+- **Ecological Expedition** — 8 days / 7 nights. Most comprehensive route. Ducke Reserve canopy to Madeira River. /tours/ecological-expedition/
+- **Jungle Lodge Expedition** — 3 days / 2 nights. Meeting of the Waters, riverside lodge, piranha fishing, caiman search, jungle walk. /tours/jungle-lodge-3days/
+- **Amazon Lodge** — 2 days / 1 night. Overnight lodge stay, dolphins, piranha fishing, caiman search. From R$1,000/person. /tours/amazon-lodge/
+- **Jungle Retreat** — 4 days / 3 nights. Manaus historic market, Meeting of the Waters, lodge + jungle camp, caboclo community. /tours/jungle-retreat/
+- **The Full Amazon** — 5 days / 4 nights. Most culturally complete: dolphins, indigenous overnight stay, optional Ayahuasca ceremony. /tours/amazon-complete/
+- **Amazon Expedition** — 6 days / 5 nights. Lodge + remote tapiri camp at Lago do Arara, survival techniques, deep forest walks. From R$4,200/person. /tours/amazon-expedition/
+
+### Day excursions
+- **Pink Dolphins & Indigenous Village** — 1 day from Manaus. /tours/pink-dolphins/
+- **Ariau River & Rio Negro** — 1 day from Manaus. /tours/ariau-river/
+- **Pink Dolphins & Anavilhanas** — 1 day from Manaus. R$1,100/person. /tours/anavilhanas/
+- **Presidente Figueiredo** — 1 day, waterfalls & caves. /tours/presidente-figueiredo/
+
+## Key information
+
+- **Departures:** Manaus, Amazonas, Brazil
+- **Languages:** English, Portuguese, Spanish, German
+- **Group sizes:** Private & small group (minimum 2 participants)
+- **Contact:** WhatsApp +55 92 99132-1047 | info@amazonecotravellers.com
+- **Website:** https://amazonecotravellers.com
+
+## Pages
+
+- Home: /
+- All tours: /tours/
+- Accommodations: /accommodations/
+- About us: /about/
+- Gallery: /gallery/
+- Reviews: /reviews/
+- Blog: /blog/
+- FAQ: /faq/
+- Contact: /contact/
