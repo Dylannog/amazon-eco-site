@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha384-/o6I2CkkWC//PSjvWC/eYN7l3xM3tJm8ZzVkCOfp//W05QcE3mlGskpoHB6XqI+B" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" integrity="sha384-SALc35EccAf6RzGw4iNsyj7kTPr33K7RoGzYu+7heZhT8s0GZouafRiCg1qy44AS" crossorigin="anonymous"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
     <style>
         /* ── HERO ── */
@@ -699,6 +700,7 @@
                     </div>
                     <div class="ct-form-foot">
                         <p class="ct-form-note" data-i18n="contact.form_note">We'll reply to your email within one business day.</p>
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAADR9U3GSY-gupKsT" data-theme="light" style="margin-bottom:12px;"></div>
                         <button type="submit" class="ct-submit" data-i18n="contact.submit">Send message</button>
                     </div>
                 </form>
@@ -853,6 +855,19 @@
 
         if (!name)  { document.getElementById('ct-name').focus();  return; }
         if (!email || !email.includes('@')) { document.getElementById('ct-email').focus(); return; }
+
+        var tsResponse = document.querySelector('[name="cf-turnstile-response"]');
+        if (!tsResponse || !tsResponse.value) {
+            var tsErr = form.querySelector('.ct-ts-err');
+            if (!tsErr) {
+                tsErr = document.createElement('p');
+                tsErr.className = 'ct-ts-err';
+                tsErr.style.cssText = 'color:#c0392b;font-size:14px;margin-top:8px;';
+                tsErr.textContent = 'Please complete the security check.';
+                form.querySelector('.cf-turnstile').after(tsErr);
+            }
+            return;
+        }
 
         var first = name.split(' ')[0];
 
