@@ -1,3 +1,29 @@
+# URLs indexadas pelo Google do site ANTERIOR — redirecionam para estrutura nova
+
+/about-us/      /about/     301
+/about-us       /about/     301
+/contact-us/    /contact/   301
+/contact-us     /contact/   301
+
+# /packages/* → /tours/*
+/packages/amazon-explorers/     /tours/amazon-explorers/    301
+/packages/birdwatching/         /tours/birdwatching/        301
+/packages/river-explorer/       /tours/river-explorer/      301
+/packages/chlorophyll/          /tours/chlorophyll/         301
+/packages/ecological-expedition/ /tours/ecological-expedition/ 301
+/packages/jungle-lodge-3days/   /tours/jungle-lodge-3days/  301
+/packages/amazon-lodge/         /tours/amazon-lodge/        301
+/packages/jungle-retreat/       /tours/jungle-retreat/      301
+/packages/amazon-complete/      /tours/amazon-complete/     301
+/packages/amazon-expedition/    /tours/amazon-expedition/   301
+/packages/pink-dolphins/        /tours/pink-dolphins/       301
+/packages/ariau-river/          /tours/ariau-river/         301
+/packages/anavilhanas/          /tours/anavilhanas/         301
+/packages/presidente-figueiredo/ /tours/presidente-figueiredo/ 301
+
+# Wildcard geral para /packages/* não coberto acima
+/packages/*     /tours/:splat   301
+
 # Redirects de URLs antigas (site anterior tinha /home/ como prefixo)
 
 /home/contact%20us      /contact/   301
