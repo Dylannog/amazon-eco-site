@@ -1,0 +1,33 @@
+# Redirects de URLs antigas (site anterior tinha /home/ como prefixo)
+
+/home/contact%20us      /contact/   301
+/home/contact           /contact/   301
+/home/accommodations    /accommodations/ 301
+/home/gallery           /gallery/   301
+/home/about             /about/     301
+/home/tours             /tours/     301
+/home/faq               /faq/       301
+/home/blog              /blog/      301
+/home/reviews           /reviews/   301
+
+# Tours antigos com /home/ prefixo
+/home/birdwatching              /tours/birdwatching/            301
+/home/amazon-explorers          /tours/amazon-explorers/        301
+/home/ecological-expedition     /tours/ecological-expedition/   301
+/home/amazon-expedition         /tours/amazon-expedition/       301
+/home/amazon-complete           /tours/amazon-complete/         301
+/home/amazon-lodge              /tours/amazon-lodge/            301
+/home/anavilhanas               /tours/anavilhanas/             301
+/home/ariau-river               /tours/ariau-river/             301
+/home/chlorophyll               /tours/chlorophyll/             301
+/home/jungle-lodge-3days        /tours/jungle-lodge-3days/      301
+/home/jungle-retreat            /tours/jungle-retreat/          301
+/home/pink-dolphins             /tours/pink-dolphins/           301
+/home/presidente-figueiredo     /tours/presidente-figueiredo/   301
+/home/river-explorer            /tours/river-explorer/          301
+
+# Wildcard geral para /home/* não coberto acima
+/home/*     /:splat     301
+
+# Raiz /home → home
+/home       /           301
