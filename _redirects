@@ -1,5 +1,8 @@
 # URLs indexadas pelo Google do site ANTERIOR — redirecionam para estrutura nova
 
+/faqs/          /faq/       301
+/faqs           /faq/       301
+
 /about-us/      /about/     301
 /about-us       /about/     301
 /contact-us/    /contact/   301
