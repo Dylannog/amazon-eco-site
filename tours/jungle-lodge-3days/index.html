@@ -346,6 +346,42 @@
             margin-top: 6px;
         }
 
+        .sc-tier {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-top: 10px;
+        }
+        .sc-tier--recommended {
+            border-color: oklch(58% 0.14 142);
+            background: oklch(97.5% 0.02 142);
+        }
+        .sc-tier-badge {
+            display: inline-block;
+            background: oklch(48% 0.17 142);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            padding: 2px 8px;
+            margin-bottom: 6px;
+        }
+        .sc-tier-from {
+            font-size: 11px;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            margin-bottom: 2px;
+        }
+        .sc-tier .sc-price { font-size: 22px; }
+        .sc-tier .sc-price-alt {
+            border-top: 1px solid oklch(88% 0.06 142);
+            margin-top: 8px;
+            padding-top: 8px;
+        }
+
         .sc-body { padding: 20px 28px 28px; }
 
         .sc-scarcity {
@@ -725,9 +761,23 @@
         <div class="sidebar-card rv">
             <div class="sc-head">
                 <p class="sec-label" data-i18n="jungle-lodge-3days.price_label">Pricing</p>
-                <p class="sc-price" data-i18n-html="jungle-lodge-3days.price">R$ 1.500 <span>/ per person</span></p>
-                <p class="sc-price-alt" data-i18n-html="jungle-lodge-3days.price_alt">Private room (en-suite + AC) · min. 2 guests<br><strong>R$ 1.900</strong> <span style="font-size:13px;color:var(--gray);">/ single occupancy</span></p>
-                <p class="sc-price-note" data-i18n="jungle-lodge-3days.price_note">Spots are limited — book ahead</p>
+
+                <!-- Standard -->
+                <div class="sc-tier">
+                    <p class="sc-tier-from">Standard — a partir de</p>
+                    <p class="sc-price">R$ 1.500 <span>/ per person</span></p>
+                    <p class="sc-price-note">Min. 2 guests</p>
+                </div>
+
+                <!-- Recommended -->
+                <div class="sc-tier sc-tier--recommended">
+                    <span class="sc-tier-badge">Most Popular</span>
+                    <p class="sc-price">R$ 3.600 <span>/ per person</span></p>
+                    <p class="sc-price-note">Min. 2 guests · Premium experience</p>
+                    <p class="sc-price-alt">Single occupancy <strong>R$ 5.500</strong></p>
+                </div>
+
+                <p class="sc-price-note" style="margin-top:10px;" data-i18n="jungle-lodge-3days.price_note">Spots are limited — book ahead</p>
             </div>
             <div class="sc-body">
                 <div class="sc-scarcity" data-i18n-html="jungle-lodge-3days.scarcity">
@@ -1062,14 +1112,20 @@
   "offers": [
     {
       "@type": "Offer",
-      "name": "Private Room (en-suite + AC) — min. 2 guests",
+      "name": "Standard — min. 2 guests",
       "price": "1500",
       "priceCurrency": "BRL"
     },
     {
       "@type": "Offer",
-      "name": "Single Occupancy",
-      "price": "1900",
+      "name": "Premium (Most Popular) — min. 2 guests",
+      "price": "3600",
+      "priceCurrency": "BRL"
+    },
+    {
+      "@type": "Offer",
+      "name": "Premium — Single Occupancy",
+      "price": "5500",
       "priceCurrency": "BRL"
     }
   ]
