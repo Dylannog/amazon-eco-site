@@ -1,9 +1,6 @@
 (function () {
     var T = {
         en: {
-            common: {
-                custom_itinerary: 'Every itinerary is custom-built for your group — dates, pace, and activities tailored to you.'
-            },
             nav: {
                 tours: 'Tours', accommodations: 'Accommodations', all_tours: 'All Tours',
                 about: 'About Us', blog: 'Blog', contact: 'Contact', book_now: 'Book Now',
@@ -20,6 +17,7 @@
                 about: 'About Us', contact: 'Contact'
             },
             common: {
+                custom_itinerary: 'Every itinerary is custom-built for your group — dates, pace, and activities tailored to you.',
                 view_tour: 'View Tour', most_pop: 'Most Popular',
                 pill_4n: '5 Days · 4 Nights', pill_5n: '6 Days · 5 Nights',
                 pill_6n: '7 Days · 6 Nights', pill_7n: '8 Days · 7 Nights',
@@ -1915,9 +1913,6 @@
             }
         },
         de: {
-            common: {
-                custom_itinerary: 'Jedes Reiseprogramm wird individuell für Ihre Gruppe zusammengestellt — Termine, Tempo und Aktivitäten nach Ihren Wünschen.'
-            },
             nav: {
                 tours: 'Touren', accommodations: 'Unterkünfte', all_tours: 'Alle Touren',
                 about: 'Über uns', blog: 'Blog', contact: 'Kontakt', book_now: 'Jetzt buchen',
@@ -1934,6 +1929,7 @@
                 about: 'Über uns', contact: 'Kontakt'
             },
             common: {
+                custom_itinerary: 'Jedes Reiseprogramm wird individuell für Ihre Gruppe zusammengestellt — Termine, Tempo und Aktivitäten nach Ihren Wünschen.',
                 view_tour: 'Tour ansehen', most_pop: 'Beliebteste',
                 pill_4n: '5 Tage · 4 Nächte', pill_5n: '6 Tage · 5 Nächte',
                 pill_6n: '7 Tage · 6 Nächte', pill_7n: '8 Tage · 7 Nächte',
@@ -3830,9 +3826,6 @@
             }
         },
         es: {
-            common: {
-                custom_itinerary: 'Cada itinerario se diseña a medida para su grupo — fechas, ritmo y actividades adaptados a usted.'
-            },
             nav: {
                 tours: 'Tours', accommodations: 'Alojamientos', all_tours: 'Todos los tours',
                 about: 'Nosotros', blog: 'Blog', contact: 'Contacto', book_now: 'Reservar ahora',
@@ -3849,6 +3842,7 @@
                 about: 'Nosotros', contact: 'Contacto'
             },
             common: {
+                custom_itinerary: 'Cada itinerario se diseña a medida para su grupo — fechas, ritmo y actividades adaptados a usted.',
                 view_tour: 'Ver tour', most_pop: 'Más popular',
                 pill_4n: '5 Días · 4 Noches', pill_5n: '6 Días · 5 Noches',
                 pill_6n: '7 Días · 6 Noches', pill_7n: '8 Días · 7 Noches',
@@ -5745,9 +5739,6 @@
             }
         },
         pt: {
-            common: {
-                custom_itinerary: 'Cada itinerário é construído sob medida para o seu grupo — datas, ritmo e atividades adaptados a você.'
-            },
             nav: {
                 tours: 'Tours', accommodations: 'Acomodações', all_tours: 'Todos os tours',
                 about: 'Sobre nós', blog: 'Blog', contact: 'Contato', book_now: 'Reservar agora',
@@ -5764,6 +5755,7 @@
                 about: 'Sobre nós', contact: 'Contato'
             },
             common: {
+                custom_itinerary: 'Cada itinerário é construído sob medida para o seu grupo — datas, ritmo e atividades adaptados a você.',
                 view_tour: 'Ver tour', most_pop: 'Mais popular',
                 pill_4n: '5 Dias · 4 Noites', pill_5n: '6 Dias · 5 Noites',
                 pill_6n: '7 Dias · 6 Noites', pill_7n: '8 Dias · 7 Noites',
