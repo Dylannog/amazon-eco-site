@@ -1,6 +1,9 @@
 (function () {
     var T = {
         en: {
+            common: {
+                custom_itinerary: 'Every itinerary is custom-built for your group — dates, pace, and activities tailored to you.'
+            },
             nav: {
                 tours: 'Tours', accommodations: 'Accommodations', all_tours: 'All Tours',
                 about: 'About Us', blog: 'Blog', contact: 'Contact', book_now: 'Book Now',
@@ -1912,6 +1915,9 @@
             }
         },
         de: {
+            common: {
+                custom_itinerary: 'Jedes Reiseprogramm wird individuell für Ihre Gruppe zusammengestellt — Termine, Tempo und Aktivitäten nach Ihren Wünschen.'
+            },
             nav: {
                 tours: 'Touren', accommodations: 'Unterkünfte', all_tours: 'Alle Touren',
                 about: 'Über uns', blog: 'Blog', contact: 'Kontakt', book_now: 'Jetzt buchen',
@@ -3824,6 +3830,9 @@
             }
         },
         es: {
+            common: {
+                custom_itinerary: 'Cada itinerario se diseña a medida para su grupo — fechas, ritmo y actividades adaptados a usted.'
+            },
             nav: {
                 tours: 'Tours', accommodations: 'Alojamientos', all_tours: 'Todos los tours',
                 about: 'Nosotros', blog: 'Blog', contact: 'Contacto', book_now: 'Reservar ahora',
@@ -5736,6 +5745,9 @@
             }
         },
         pt: {
+            common: {
+                custom_itinerary: 'Cada itinerário é construído sob medida para o seu grupo — datas, ritmo e atividades adaptados a você.'
+            },
             nav: {
                 tours: 'Tours', accommodations: 'Acomodações', all_tours: 'Todos os tours',
                 about: 'Sobre nós', blog: 'Blog', contact: 'Contato', book_now: 'Reservar agora',
