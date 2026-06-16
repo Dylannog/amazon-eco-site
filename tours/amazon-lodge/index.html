@@ -93,6 +93,12 @@
         .sc-divider { display: flex; align-items: center; gap: 10px; margin: 4px 0 14px; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--gray-l); }
         .sc-divider::before, .sc-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
         .sc-note { text-align: center; font-size: 12px; color: var(--gray-l); }
+        .sc-tier { border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-top: 10px; }
+        .sc-tier--recommended { border-color: oklch(58% 0.14 142); background: oklch(97.5% 0.02 142); }
+        .sc-tier-badge { display: inline-block; background: oklch(48% 0.17 142); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; border-radius: 4px; padding: 2px 8px; margin-bottom: 6px; }
+        .sc-tier-from { font-size: 11px; color: var(--gray); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+        .sc-tier .sc-price { font-size: 22px; }
+        .sc-tier .sc-price-alt { border-top: 1px solid oklch(88% 0.06 142); margin-top: 8px; padding-top: 8px; }
         .inc-list { display: flex; flex-direction: column; gap: 10px; }
         .inc-item { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: oklch(38% 0.01 142); line-height: 1.5; }
         .inc-item i { font-size: 13px; flex-shrink: 0; margin-top: 3px; }
@@ -283,8 +289,22 @@
         <div class="sidebar-card rv">
             <div class="sc-head">
                 <p class="sec-label" data-i18n="amazon-lodge.price_label">Pricing</p>
-                <p class="sc-price">R$ 1.000 <span data-i18n="amazon-lodge.price_pp">/ per person</span></p>
-                <p class="sc-price-note" data-i18n="amazon-lodge.price_note">Min. 2 guests · Private group</p>
+                <!-- Standard -->
+                <div class="sc-tier">
+                    <p class="sc-tier-from">Standard — a partir de</p>
+                    <p class="sc-price">R$ 1.000 <span>/ per person</span></p>
+                    <p class="sc-price-note">Min. 2 guests</p>
+                </div>
+
+                <!-- Recommended -->
+                <div class="sc-tier sc-tier--recommended">
+                    <span class="sc-tier-badge">Premium Experience</span>
+                    <p class="sc-price">R$ 2.400 <span>/ per person</span></p>
+                    <p class="sc-price-note">Min. 2 guests · Premium experience</p>
+                    <p class="sc-price-alt">Single occupancy <strong>R$ 4.000</strong></p>
+                </div>
+
+                <p class="sc-price-note" style="margin-top:10px;" data-i18n="amazon-lodge.price_note">Spots are limited — book ahead</p>
             </div>
             <div class="sc-body">
                 <div class="sc-scarcity">

@@ -81,6 +81,14 @@
         .sc-price { font-family: var(--h); font-size: 26px; color: var(--dark); line-height: 1.1; }
         .sc-price span { font-family: var(--b); font-size: 13px; color: var(--gray); font-style: normal; }
         .sc-price-note { font-size: 12px; color: var(--gray); margin-top: 6px; }
+        .sc-price-alt { font-size: 13px; color: oklch(44% 0.01 142); margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); }
+        .sc-price-alt strong { color: var(--dark); font-size: 15px; }
+        .sc-tier { border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; margin-top: 10px; }
+        .sc-tier--recommended { border-color: oklch(58% 0.14 142); background: oklch(97.5% 0.02 142); }
+        .sc-tier-badge { display: inline-block; background: oklch(48% 0.17 142); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; border-radius: 4px; padding: 2px 8px; margin-bottom: 6px; }
+        .sc-tier-from { font-size: 11px; color: var(--gray); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 2px; }
+        .sc-tier .sc-price { font-size: 22px; }
+        .sc-tier .sc-price-alt { border-top: 1px solid oklch(88% 0.06 142); margin-top: 8px; padding-top: 8px; }
         .sc-body { padding: 20px 28px 28px; }
         .sc-scarcity { display: flex; align-items: center; gap: 8px; background: oklch(98% 0.02 45); border: 1px solid oklch(88% 0.06 45); border-radius: 10px; padding: 10px 14px; font-size: 12px; font-weight: 600; color: oklch(42% 0.08 45); margin-bottom: 16px; }
         .sc-scarcity i { color: oklch(58% 0.14 45); font-size: 13px; flex-shrink: 0; }
@@ -335,8 +343,22 @@
         <div class="sidebar-card rv">
             <div class="sc-head">
                 <p class="sec-label" data-i18n="amazon-expedition.price_label">Pricing</p>
-                <p class="sc-price" data-i18n-html="amazon-expedition.price_text">R$ 4.200 <span>/ per person</span></p>
-                <p class="sc-price-note" data-i18n="amazon-expedition.price_note">Min. 2 guests · Private group</p>
+                <!-- Standard -->
+                <div class="sc-tier">
+                    <p class="sc-tier-from">Standard — a partir de</p>
+                    <p class="sc-price">R$ 4.200 <span>/ per person</span></p>
+                    <p class="sc-price-note">Min. 2 guests</p>
+                </div>
+
+                <!-- Recommended -->
+                <div class="sc-tier sc-tier--recommended">
+                    <span class="sc-tier-badge">Premium Experience</span>
+                    <p class="sc-price">R$ 6.000 <span>/ per person</span></p>
+                    <p class="sc-price-note">Min. 2 guests · Premium experience</p>
+                    <p class="sc-price-alt">Single occupancy <strong>R$ 8.400</strong></p>
+                </div>
+
+                <p class="sc-price-note" style="margin-top:10px;" data-i18n="amazon-expedition.price_note">Spots are limited — book ahead</p>
             </div>
             <div class="sc-body">
                 <div class="sc-scarcity">
