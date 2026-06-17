@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with Amazon Eco Travellers. Ask us about tours, group availability, dates, or anything else — we speak English, German, Portuguese and Spanish.">
+    <meta name="description" content="Get in touch with Amazon Eco Travellers. Ask us about tours, group availability, dates, or anything else â€” we speak English, German, Portuguese and Spanish.">
     <title>Contact Us | Amazon Eco Travellers</title>
     <link rel="canonical" href="https://amazonecotravellers.com/contact/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
@@ -15,7 +15,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://amazonecotravellers.com/contact/">
     <meta property="og:site_name" content="Amazon Eco Travellers">
-    <meta property="og:title" content="Contact Amazon Eco Travellers — Manaus, Brazil">
+    <meta property="og:title" content="Contact Amazon Eco Travellers â€” Manaus, Brazil">
     <meta property="og:description" content="Questions about tours, timing, wildlife, or what to bring? We're happy to help you plan the right expedition.">
     <meta property="og:image" content="https://amazonecotravellers.com/assets/images/about/about-hero.jpg">
     <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact Amazon Eco Travellers">
-    <meta name="twitter:description" content="Ask us anything about guided Amazon tours from Manaus. We respond fast — WhatsApp or email.">
+    <meta name="twitter:description" content="Ask us anything about guided Amazon tours from Manaus. We respond fast â€” WhatsApp or email.">
     <meta name="twitter:image" content="https://amazonecotravellers.com/assets/images/about/about-hero.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
     <style>
-        /* ── HERO ── */
+        /* â”€â”€ HERO â”€â”€ */
         .ct-hero {
             background: oklch(14% 0.07 142);
             min-height: 52vh;
@@ -113,7 +113,7 @@
             max-width: 500px;
         }
 
-        /* ── BODY ── */
+        /* â”€â”€ BODY â”€â”€ */
         .ct-body {
             background: var(--warm-cream);
             padding: 100px 72px 120px;
@@ -128,7 +128,7 @@
             align-items: start;
         }
 
-        /* ── CHANNELS (left column) ── */
+        /* â”€â”€ CHANNELS (left column) â”€â”€ */
         .ct-channels {
             position: sticky;
             top: 96px;
@@ -285,7 +285,7 @@
         .ct-ch-meta-text a { color: var(--green); }
         .ct-ch-meta-text a:hover { text-decoration: underline; }
 
-        /* ── FORM (right column) ── */
+        /* â”€â”€ FORM (right column) â”€â”€ */
         .ct-form-head {
             margin-bottom: 40px;
         }
@@ -421,7 +421,7 @@
         }
         .ct-submit:active { transform: scale(0.97); }
 
-        /* ── THANK-YOU STATE ── */
+        /* â”€â”€ THANK-YOU STATE â”€â”€ */
         .ct-thanks {
             background: var(--warm-white);
             border: 1px solid var(--border);
@@ -465,7 +465,7 @@
             margin: 0 auto 32px;
         }
 
-        /* ── LOCATION STRIP ── */
+        /* â”€â”€ LOCATION STRIP â”€â”€ */
         .ct-loc {
             background: oklch(16% 0.08 142);
             padding: 76px 72px;
@@ -513,7 +513,7 @@
             line-height: 1.62;
         }
 
-        /* ── RESPONSIVE ── */
+        /* â”€â”€ RESPONSIVE â”€â”€ */
         @media (max-width: 1024px) {
             .ct-body-inner {
                 grid-template-columns: 1fr;
@@ -605,7 +605,7 @@
         </nav>
         <p class="ct-hero-ey" data-i18n="contact.hero_ey">Get in touch</p>
         <h1 class="ct-hero-h" data-i18n-html="contact.hero_h">Every expedition starts<br>with a <em>question.</em></h1>
-        <p class="ct-hero-p" data-i18n="contact.hero_p">Ask us about tours, group sizes, wildlife, or what to pack. We're here to help you plan the right trip — honestly and without pressure.</p>
+        <p class="ct-hero-p" data-i18n="contact.hero_p">Ask us about tours, group sizes, wildlife, or what to pack. We're here to help you plan the right trip â€” honestly and without pressure.</p>
     </div>
 </section>
 
@@ -837,12 +837,12 @@
     </nav>
 </div>
 
-<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/i18n.js" defer></script>
 <script src="../assets/js/main.js"></script>
 
 <script>
 (function () {
-    // ── EmailJS credentials ── replace with your own from emailjs.com
+    // â”€â”€ EmailJS credentials â”€â”€ replace with your own from emailjs.com
     var EMAILJS_PUBLIC_KEY  = 'xAyW3r9tTskrr7fc_';
     var EMAILJS_SERVICE_ID  = 'service_8tvotys';
     var EMAILJS_TEMPLATE_ID = 'template_hm38kb8';
@@ -878,7 +878,7 @@
         var first = name.split(' ')[0];
 
         submit.disabled     = true;
-        submit.textContent  = 'Sending…';
+        submit.textContent  = 'Sendingâ€¦';
 
         emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
             .then(function () {
@@ -890,7 +890,7 @@
                     '  <a href="../tours/index.html" class="btn-solid" style="margin-top:8px;">Explore all tours</a>',
                     '</div>'
                 ].join('');
-                document.getElementById('ct-thanks-msg').textContent = 'Thanks, ' + first + '. We’ll get back to you at ' + email + ' as soon as we can — usually within a few hours.';
+                document.getElementById('ct-thanks-msg').textContent = 'Thanks, ' + first + '. Weâ€™ll get back to you at ' + email + ' as soon as we can â€” usually within a few hours.';
             })
             .catch(function () {
                 submit.disabled    = false;
