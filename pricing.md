@@ -1,6 +1,6 @@
 # Pricing — Amazon Eco Travellers
 
-Amazon rainforest tours departing from Manaus, Brazil. All prices are per person in Brazilian Reais (BRL). Private and small-group departures, minimum 2 participants unless noted. Book via WhatsApp +55 92 99132-1047 or info@amazonecotravellers.com.
+Amazon rainforest tours departing from Manaus, Brazil. Day excursions and short tours priced in Brazilian Reais (BRL). Multi-day expeditions (5+ days) priced in US Dollars (USD). Private and small-group departures, minimum 2 participants unless noted. Book via WhatsApp +55 92 99132-1047 or info@amazonecotravellers.com.
 
 ## Day excursions (from Manaus)
 
@@ -53,17 +53,17 @@ Amazon rainforest tours departing from Manaus, Brazil. All prices are per person
 
 ### Amazon Explorers
 - Duration: 5 days / 4 nights
-- Price: on request (WhatsApp +55 92 99132-1047)
+- Price: $3,000 per person (min. 2 guests) | $4,000 single occupancy
 - Details: https://amazonecotravellers.com/tours/amazon-explorers/
 
 ### River Explorer
 - Duration: 5 days / 4 nights
-- Price: on request (WhatsApp +55 92 99132-1047)
+- Price: $2,300 per person (min. 2 guests) | $4,200 single occupancy
 - Details: https://amazonecotravellers.com/tours/river-explorer/
 
 ### Chlorophyll
 - Duration: 6 days / 5 nights
-- Price: on request (WhatsApp +55 92 99132-1047)
+- Price: $2,600 per person (min. 2 guests) | $5,000 single occupancy
 - Details: https://amazonecotravellers.com/tours/chlorophyll/
 
 ### Birdwatching
@@ -86,7 +86,7 @@ Amazon rainforest tours departing from Manaus, Brazil. All prices are per person
 
 ## Notes
 
-- Prices last updated: 2026-06-11
+- Prices last updated: 2026-06-16
 - Custom itineraries and larger groups: quote via WhatsApp +55 92 99132-1047
 - Full tour list: https://amazonecotravellers.com/tours/
 - Machine-readable site overview: https://amazonecotravellers.com/llms.txt
