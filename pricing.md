@@ -53,17 +53,17 @@ Amazon rainforest tours departing from Manaus, Brazil. Day excursions and short 
 
 ### Amazon Explorers
 - Duration: 5 days / 4 nights
-- Price: $3,000 per person (min. 2 guests) | $4,000 single occupancy
+- Price: on request (customised itinerary — WhatsApp +55 92 99132-1047)
 - Details: https://amazonecotravellers.com/tours/amazon-explorers/
 
 ### River Explorer
 - Duration: 5 days / 4 nights
-- Price: $2,300 per person (min. 2 guests) | $4,200 single occupancy
+- Price: on request (customised itinerary — WhatsApp +55 92 99132-1047)
 - Details: https://amazonecotravellers.com/tours/river-explorer/
 
 ### Chlorophyll
 - Duration: 6 days / 5 nights
-- Price: $2,600 per person (min. 2 guests) | $5,000 single occupancy
+- Price: on request (customised itinerary — WhatsApp +55 92 99132-1047)
 - Details: https://amazonecotravellers.com/tours/chlorophyll/
 
 ### Birdwatching
