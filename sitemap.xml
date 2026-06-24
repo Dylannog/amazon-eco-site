@@ -40,9 +40,27 @@
   </url>
   <url>
     <loc>https://amazonecotravellers.com/blog/</loc>
-    <lastmod>2026-05-20</lastmod>
+    <lastmod>2026-06-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://amazonecotravellers.com/blog/amazon-tours-manaus/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://amazonecotravellers.com/blog/best-time-visit-amazon/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://amazonecotravellers.com/blog/pink-river-dolphins-amazon/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://amazonecotravellers.com/faq/</loc>
