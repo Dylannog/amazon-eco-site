@@ -156,78 +156,41 @@
         }
         .bl-cat i { font-size: 11px; }
 
-        /* -- ARTICLES GRID -- */
-        .bl-articles {
-            max-width: 1200px; margin: 0 auto;
-            padding: 80px 56px 96px;
-        }
-        .bl-articles-hd { margin-bottom: 52px; }
-        .bl-articles-ey {
-            font-size: 11px; font-weight: 700;
-            letter-spacing: 3px; text-transform: uppercase;
-            color: var(--gray-l); margin-bottom: 14px;
-        }
-        .bl-articles-h {
-            font-family: var(--h);
-            font-size: clamp(26px, 3vw, 38px);
-            font-style: italic; font-weight: 400; color: var(--dark);
-        }
-        .bl-articles-grid {
+        /* â”€â”€ COMING SOON â”€â”€ */
+        .bl-soon {
+            padding: 120px 56px;
+            max-width: 1200px;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
         }
-        .bl-article-card {
-            background: var(--warm-white);
-            border: 1px solid var(--border);
-            border-radius: 20px; overflow: hidden;
-            display: block; color: inherit; text-decoration: none;
-            transition: box-shadow 220ms, transform 220ms;
-        }
-        .bl-article-card:hover {
-            box-shadow: 0 10px 40px oklch(0% 0 0 / 0.09);
-            transform: translateY(-3px);
-        }
-        .bl-article-img {
-            height: 220px; overflow: hidden; position: relative;
-        }
-        .bl-article-img img {
-            width: 100%; height: 100%; object-fit: cover;
-            transition: transform 500ms var(--ease);
-        }
-        .bl-article-card:hover .bl-article-img img { transform: scale(1.06); }
-        .bl-article-cat-pill {
-            position: absolute; top: 14px; left: 14px;
-            background: oklch(8% 0.03 140 / 0.72);
-            backdrop-filter: blur(6px);
-            border-radius: 50px; padding: 4px 12px;
-            font-size: 11px; font-weight: 700;
-            color: var(--warm-white);
-            display: flex; align-items: center; gap: 6px;
-        }
-        .bl-article-cat-pill i { color: var(--green); font-size: 10px; }
-        .bl-article-body { padding: 26px; }
-        .bl-article-meta {
-            display: flex; align-items: center; gap: 14px;
-            font-size: 12px; color: var(--gray-l); margin-bottom: 10px;
-        }
-        .bl-article-meta span { display: flex; align-items: center; gap: 5px; }
-        .bl-article-h {
+        .bl-soon-h {
             font-family: var(--h);
-            font-size: clamp(17px, 1.6vw, 20px);
-            font-style: italic; color: var(--dark);
-            line-height: 1.32; margin-bottom: 12px;
+            font-size: clamp(30px, 3vw, 46px);
+            font-style: italic; font-weight: 400;
+            color: var(--dark);
+            line-height: 1.14;
+            margin-bottom: 22px;
         }
-        .bl-article-p {
-            font-size: 13px; color: var(--gray);
-            line-height: 1.72; margin-bottom: 18px;
+        .bl-soon-p {
+            font-size: 15px; color: var(--gray);
+            line-height: 1.85; margin-bottom: 32px;
         }
-        .bl-article-read {
-            display: inline-flex; align-items: center; gap: 7px;
-            font-size: 12px; font-weight: 700; color: var(--green);
+        .bl-notify {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
         }
-        .bl-article-read i { font-size: 10px; transition: transform 200ms; }
-        .bl-article-card:hover .bl-article-read i { transform: translateX(3px); }
+        .btn-notify {
+            display: inline-flex; align-items: center; gap: 9px;
+            background: var(--green); color: var(--warm-white);
+            padding: 13px 26px; border-radius: 50px;
+            font-size: 14px; font-weight: 600;
+            transition: background 180ms, transform 150ms;
+        }
+        .btn-notify:hover { background: var(--green-d); transform: translateY(-1px); }
 
         /* â”€â”€ TOPIC PREVIEWS â”€â”€ */
         .bl-topics {
@@ -332,22 +295,21 @@
         }
         .btn-tours-lg:hover { background: oklch(100% 0 0 / 0.08); transform: translateY(-1px); }
 
-        /* -- RESPONSIVE -- */
+        /* â”€â”€ RESPONSIVE â”€â”€ */
         @media (max-width: 1100px) {
-            .bl-articles { padding: 64px 40px 80px; }
+            .bl-soon { gap: 56px; padding: 96px 40px; }
             .bl-topics { padding: 72px 40px; }
             .bl-cats { padding: 0 40px; }
             #bl-cta { padding: 80px 40px; }
         }
         @media (max-width: 900px) {
-            .bl-articles-grid { grid-template-columns: 1fr 1fr; }
+            .bl-soon { grid-template-columns: 1fr; gap: 40px; }
             .bl-topics-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 768px) {
             .bl-hero-c { padding: 0 24px 56px; }
             .bl-hero-bc { left: 24px; }
-            .bl-articles { padding: 48px 24px 64px; }
-            .bl-articles-grid { grid-template-columns: 1fr; }
+            .bl-soon { padding: 64px 24px; }
             .bl-topics { padding: 64px 24px; }
             .bl-cats { padding: 0 24px; }
             #bl-cta { padding: 72px 24px; }
@@ -437,67 +399,26 @@
     </div>
 </div>
 
-<!-- PUBLISHED ARTICLES -->
-<div class=”bl-articles”>
-    <div class=”bl-articles-hd rv”>
-        <p class=”bl-articles-ey”>Field Notes</p>
-        <h2 class=”bl-articles-h”>Latest from the Amazon</h2>
-    </div>
-    <div class=”bl-articles-grid” style=”display:grid;grid-template-columns:repeat(3,1fr);gap:28px;”>
-
-        <a href=”amazon-tours-manaus/index.html” style=”background:var(--warm-white);border:1px solid var(--border);border-radius:20px;overflow:hidden;display:block;color:inherit;text-decoration:none;transition:box-shadow 220ms,transform 220ms;”>
-            <div style=”height:220px;overflow:hidden;position:relative;”>
-                <img src=”../assets/images/tours/ec5-sunrise.jpg” alt=”Amazon tours from Manaus” loading=”eager” style=”width:100%;height:100%;object-fit:cover;display:block;”>
-                <span style=”position:absolute;top:14px;left:14px;background:rgba(8,20,10,0.72);backdrop-filter:blur(6px);border-radius:50px;padding:4px 12px;font-size:11px;font-weight:700;color:#fff;display:flex;align-items:center;gap:6px;”><i class=”fa-solid fa-map” style=”color:var(--green);font-size:10px;”></i> Travel Guide</span>
-            </div>
-            <div style=”padding:26px;”>
-                <div style=”display:flex;gap:14px;font-size:12px;color:var(--gray-l);margin-bottom:10px;”>
-                    <span><i class=”fa-regular fa-clock”></i> 8 min</span>
-                    <span><i class=”fa-regular fa-calendar”></i> June 2026</span>
-                </div>
-                <h3 style=”font-family:var(--h);font-size:20px;font-style:italic;color:var(--dark);line-height:1.32;margin-bottom:12px;”>Amazon Rainforest Tours from Manaus: What to Expect</h3>
-                <p style=”font-size:13px;color:var(--gray);line-height:1.72;margin-bottom:18px;”>Types of tours, activities, wildlife, logistics — a practical guide from field naturalists based in Manaus.</p>
-                <span style=”display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--green);”>Read article <i class=”fa-solid fa-arrow-right”></i></span>
-            </div>
-        </a>
-
-        <a href=”best-time-visit-amazon/index.html” style=”background:var(--warm-white);border:1px solid var(--border);border-radius:20px;overflow:hidden;display:block;color:inherit;text-decoration:none;transition:box-shadow 220ms,transform 220ms;”>
-            <div style=”height:220px;overflow:hidden;position:relative;”>
-                <img src=”../assets/images/tours/al-sunrise.jpg” alt=”Best time to visit the Amazon” loading=”eager” style=”width:100%;height:100%;object-fit:cover;display:block;”>
-                <span style=”position:absolute;top:14px;left:14px;background:rgba(8,20,10,0.72);backdrop-filter:blur(6px);border-radius:50px;padding:4px 12px;font-size:11px;font-weight:700;color:#fff;display:flex;align-items:center;gap:6px;”><i class=”fa-solid fa-calendar” style=”color:var(--green);font-size:10px;”></i> Seasonality</span>
-            </div>
-            <div style=”padding:26px;”>
-                <div style=”display:flex;gap:14px;font-size:12px;color:var(--gray-l);margin-bottom:10px;”>
-                    <span><i class=”fa-regular fa-clock”></i> 7 min</span>
-                    <span><i class=”fa-regular fa-calendar”></i> June 2026</span>
-                </div>
-                <h3 style=”font-family:var(--h);font-size:20px;font-style:italic;color:var(--dark);line-height:1.32;margin-bottom:12px;”>Best Time to Visit the Amazon: A Month-by-Month Guide</h3>
-                <p style=”font-size:13px;color:var(--gray);line-height:1.72;margin-bottom:18px;”>Dry season or wet season? Both have genuine advantages. A practical breakdown of every month from Manaus.</p>
-                <span style=”display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--green);”>Read article <i class=”fa-solid fa-arrow-right”></i></span>
-            </div>
-        </a>
-
-        <a href=”pink-river-dolphins-amazon/index.html” style=”background:var(--warm-white);border:1px solid var(--border);border-radius:20px;overflow:hidden;display:block;color:inherit;text-decoration:none;transition:box-shadow 220ms,transform 220ms;”>
-            <div style=”height:220px;overflow:hidden;position:relative;”>
-                <img src=”../assets/images/tours/pd-dolphin-pink.jpg” alt=”Pink river dolphins in the Amazon” loading=”eager” style=”width:100%;height:100%;object-fit:cover;display:block;”>
-                <span style=”position:absolute;top:14px;left:14px;background:rgba(8,20,10,0.72);backdrop-filter:blur(6px);border-radius:50px;padding:4px 12px;font-size:11px;font-weight:700;color:#fff;display:flex;align-items:center;gap:6px;”><i class=”fa-solid fa-otter” style=”color:var(--green);font-size:10px;”></i> Wildlife</span>
-            </div>
-            <div style=”padding:26px;”>
-                <div style=”display:flex;gap:14px;font-size:12px;color:var(--gray-l);margin-bottom:10px;”>
-                    <span><i class=”fa-regular fa-clock”></i> 6 min</span>
-                    <span><i class=”fa-regular fa-calendar”></i> June 2026</span>
-                </div>
-                <h3 style=”font-family:var(--h);font-size:20px;font-style:italic;color:var(--dark);line-height:1.32;margin-bottom:12px;”>Pink River Dolphins: Where to See Them in the Amazon</h3>
-                <p style=”font-size:13px;color:var(--gray);line-height:1.72;margin-bottom:18px;”>Biology, habitat, best locations near Manaus, and how to observe them responsibly — without feeding stations.</p>
-                <span style=”display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;color:var(--green);”>Read article <i class=”fa-solid fa-arrow-right”></i></span>
-            </div>
-        </a>
-
+<!-- COMING SOON -->
+<div style="max-width:1200px;margin:0 auto;padding:96px 56px 0;">
+    <div class="rv" style="max-width:660px;">
+        <p style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:18px;" data-i18n="blog.soon_label">Coming Soon</p>
+        <h2 style="font-family:var(--h);font-size:clamp(28px,3vw,42px);font-style:italic;font-weight:400;color:var(--dark);line-height:1.18;margin-bottom:20px;" data-i18n="blog.soon_h">Field notes are in preparation.</h2>
+        <p style="font-size:15px;color:var(--gray);line-height:1.85;margin-bottom:28px;" data-i18n="blog.soon_p1">Our guides spend most of their time in the field, not at a desk. The blog is coming â€” written from first-hand observation, not from research papers. Topics will cover wildlife identification, seasonality guides, what to expect on each type of expedition, and occasional accounts of specific days in the forest that are worth recording.</p>
+        <p style="font-size:15px;color:var(--gray);line-height:1.85;margin-bottom:36px;" data-i18n="blog.soon_p2">In the meantime, send us a message via WhatsApp â€” every question you have about the Amazon, our guides answer directly.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="https://wa.me/5592991321047?text=Hi!%20I%20have%20a%20question%20about%20the%20Amazon." target="_blank" rel="noopener noreferrer" class="btn-notify" data-i18n-html="blog.ask_question">
+                <i class="fa-brands fa-whatsapp"></i> Ask a Question
+            </a>
+            <a href="../tours/index.html" style="display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:14px;font-weight:600;border-bottom:1px solid var(--border);padding-bottom:2px;transition:border-color 150ms;" data-i18n-html="blog.browse_tours">
+                Browse Tours <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
     </div>
 </div>
 
-<!-- TOPIC PREVIEWS (coming soon) -->
-<section class=”bl-topics” style=”margin-top:0;”>
+<!-- TOPIC PREVIEWS -->
+<section class="bl-topics" style="margin-top:80px;">
     <div class="bl-topics-inner">
         <div class="bl-topics-hd rv">
             <p class="bl-topics-ey" data-i18n="blog.topics_ey">What's coming</p>
