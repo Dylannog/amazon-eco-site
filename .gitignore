@@ -20,3 +20,8 @@ campaign-strategy.html
 
 # Base de dados de análise de código (interna)
 .code-review-graph/
+graphify-out/
+
+# Documentos internos e dados de clientes — nunca commitar
+docs/
+assets/docs/
