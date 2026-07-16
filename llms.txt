@@ -34,7 +34,14 @@ Amazon Eco Travellers offers immersive multi-day expeditions and day excursions 
 - **Contact:** WhatsApp +55 92 99132-1047 | info@amazonecotravellers.com
 - **Website:** https://amazonecotravellers.com
 - **Full pricing (machine-readable):** https://amazonecotravellers.com/pricing.md
-- **Last updated:** 2026-06-11
+- **Last updated:** 2026-07-16
+
+## Blog
+
+Field notes and travel guides written by the Amazon Eco Travellers team in Manaus.
+
+- **Amazon Rainforest Tours from Manaus: What to Expect** — first-hand guide to what happens on a tour, how many days you need, best season, and realistic wildlife expectations. /blog/amazon-tours-from-manaus/
+- **Best Time to Visit the Amazon: A Month-by-Month Guide** — high-water vs low-water season and month-by-month planning. /blog/best-time-to-visit-amazon/
 
 ## Pages
 
