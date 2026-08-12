@@ -1,4 +1,18 @@
+# Content Signals Policy
+# As a condition of accessing this website, you agree to abide by the following content signals:
+# (a) If a content-signal = yes, you may collect content for the corresponding use.
+# (b) If a content-signal = no, you may not collect content for the corresponding use.
+# (c) If no content signal is present for a given use, this agreement does not state your permissions.
+#
+# search: building a search index and providing search results (e.g. returning hyperlinks and short excerpts).
+# ai-input: inputting content into one or more AI models (e.g. retrieval augmented generation, grounding).
+# ai-train: training or fine-tuning AI models.
+#
+# Any use case not listed is not covered by this policy. Restrictions here are separate from,
+# and in addition to, any restrictions in our Terms of Service.
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Disallow: /assets/docs/
 
 Sitemap: https://amazonecotravellers.com/sitemap.xml
