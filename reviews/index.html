@@ -29,7 +29,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha384-/o6I2CkkWC//PSjvWC/eYN7l3xM3tJm8ZzVkCOfp//W05QcE3mlGskpoHB6XqI+B" crossorigin="anonymous">
+    <link rel="preload" href="../assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../assets/css/fa.css">
     <link rel="stylesheet" href="../assets/css/main.css">
 
     <style>
@@ -461,8 +462,8 @@
 <!-- HEADER -->
 <header id="hdr">
     <a href="../" class="logo">
-        <img class="logo-w" src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
-        <img class="logo-c" src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+        <img class="logo-w" fetchpriority="high" src="../assets/images/logo-white-sm.png" alt="Amazon Eco Travellers">
+        <img class="logo-c" src="../assets/images/logo-sm.png" alt="Amazon Eco Travellers">
     </a>
     <nav>
         <div class="dd">
@@ -523,7 +524,7 @@
             </div>
             <div class="rv-trust-item" style="color:oklch(52% 0.05 142);">·</div>
             <div class="rv-trust-item">
-                <i class="fa-brands fa-tripadvisor ta-i"></i>
+                <svg class="ta-svg ta-i" viewBox="0 0 24 24" role="img" aria-label="TripAdvisor"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg>
                 <span data-i18n="reviews.trust_ta">Excellent on TripAdvisor</span>
             </div>
         </div>
@@ -544,7 +545,7 @@
             </div>
         </div>
         <div class="rv-si">
-            <div class="rv-si-icon"><i class="fa-brands fa-tripadvisor"></i></div>
+            <div class="rv-si-icon"><svg class="ta-svg" viewBox="0 0 24 24" role="img" aria-label="TripAdvisor"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg></div>
             <div>
                 <p class="rv-si-label" data-i18n="reviews.stat_trip_lbl">TripAdvisor Status</p>
                 <p class="rv-si-val" data-i18n="reviews.stat_trip_val">Excellent</p>
@@ -577,7 +578,7 @@
                 <div class="rv-card-top">
                     <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <div class="rv-platform">
-                        <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
+                        <svg class="ta-svg" viewBox="0 0 24 24" role="img" aria-label="TripAdvisor"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg> TripAdvisor
                     </div>
                 </div>
                 <p class="rv-text" data-i18n="reviews.r1_text">"It was a trip of a lifetime. My guide Edson was very attentive to the details of the five day itinerary. I stayed in two different eco lodges with excellent local food. I saw lots of wildlife including sloths, caimans, beautiful birds, pink dolphins and grey river dolphins. I felt safe as a solo traveller and had a wonderful experience."</p>
@@ -595,7 +596,7 @@
                 <div class="rv-card-top">
                     <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <div class="rv-platform">
-                        <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
+                        <svg class="ta-svg" viewBox="0 0 24 24" role="img" aria-label="TripAdvisor"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg> TripAdvisor
                     </div>
                 </div>
                 <p class="rv-text" data-i18n="reviews.r2_text">"Edson is a super guide. He has a vast knowledge on the Amazon ecosystem and is really dedicated. I travelled both north and south Amazon with him in 4 nights and got some excellent photos. From a tiny sound he can guess the wildlife surrounding you. Amazing skill for the Amazon."</p>
@@ -613,7 +614,7 @@
                 <div class="rv-card-top">
                     <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <div class="rv-platform">
-                        <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
+                        <svg class="ta-svg" viewBox="0 0 24 24" role="img" aria-label="TripAdvisor"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg> TripAdvisor
                     </div>
                 </div>
                 <p class="rv-text" data-i18n="reviews.r3_text">"We had one of our best travel experiences so far with this package! From pick up at the airport, to delivery in the Amazon, we felt our every need taken care of. The lodges give you the feeling of truly being in the middle of nowhere. We saw crocodiles, sloths, dolphins, monkeys and a massive variety of birds. Sincere recommendations!"</p>
@@ -631,7 +632,7 @@
                 <div class="rv-card-top">
                     <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <div class="rv-platform">
-                        <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
+                        <svg class="ta-svg" viewBox="0 0 24 24" role="img" aria-label="TripAdvisor"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg> TripAdvisor
                     </div>
                 </div>
                 <p class="rv-text" data-i18n="reviews.r4_text">"The six of us, three couples, spent an unforgettable 5 days in the Amazon with Edson. He is highly professional and profoundly knowledgeable, with great passion for nature and habitat preservation. He selected secluded private lodges providing an out of the world experience, fully immersed in Amazon habitats. We highly recommend Edson and his tour."</p>
@@ -663,7 +664,7 @@
             <h2 class="rv-ta-h" data-i18n-html="reviews.ta_h">Find more reviews<br>on TripAdvisor</h2>
             <p class="rv-ta-p" data-i18n="reviews.ta_p">We're listed on TripAdvisor as an Amazon tour operator based in Manaus. All reviews there are submitted directly by guests who booked through us — the platform verifies that they actually travelled with the provider. No curated selection, no moderation on our end.</p>
             <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" rel="noopener noreferrer" class="btn-ta" data-i18n-html="reviews.ta_btn">
-                <i class="fa-brands fa-tripadvisor"></i> View on TripAdvisor
+                <svg class="ta-svg" viewBox="0 0 24 24" role="img" aria-label="TripAdvisor"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg> View on TripAdvisor
             </a>
         </div>
         <div class="rv-ta-badge rv d1">
@@ -727,12 +728,12 @@
 <footer>
     <div class="ft-grid">
         <div class="ft-brand">
-            <img src="../assets/images/logo-white.png" alt="Amazon Eco Travellers">
+            <img src="../assets/images/logo-white-sm.png" alt="Amazon Eco Travellers">
             <p class="ft-tag" data-i18n="footer.tagline">Expert-guided eco tours in the Brazilian Amazon, departing from Manaus. Naturalist-guided expeditions for curious travellers from around the world.</p>
             <div class="ft-soc">
                 <a href="https://www.facebook.com/EcoBiologists" target="_blank" rel="noopener noreferrer" class="fs"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/amazonecotravellers" target="_blank" rel="noopener noreferrer" class="fs"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" rel="noopener noreferrer" class="fs"><i class="fa-brands fa-tripadvisor"></i></a>
+                <a href="https://www.tripadvisor.com.br/Attraction_Review-g303235-d15588527" target="_blank" rel="noopener noreferrer" class="fs"><svg class="ta-svg" viewBox="0 0 24 24" role="img" aria-label="TripAdvisor"><path d="M12.006 4.295c-2.67 0-5.338.784-7.645 2.353H0l1.963 2.135a5.997 5.997 0 0 0 4.04 10.43 5.976 5.976 0 0 0 4.075-1.6L12 19.705l1.922-2.09a5.972 5.972 0 0 0 4.072 1.598 6 6 0 0 0 6-5.998 5.982 5.982 0 0 0-1.957-4.432L24 6.648h-4.35a13.573 13.573 0 0 0-7.644-2.353zM12 6.255c1.531 0 3.063.303 4.504.903C13.943 8.138 12 10.43 12 13.1c0-2.671-1.942-4.962-4.504-5.942A11.72 11.72 0 0 1 12 6.256zM6.002 9.157a4.059 4.059 0 1 1 0 8.118 4.059 4.059 0 0 1 0-8.118zm11.992.002a4.057 4.057 0 1 1 .003 8.115 4.057 4.057 0 0 1-.003-8.115zm-11.992 1.93a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256zm11.992 0a2.128 2.128 0 0 0 0 4.256 2.128 2.128 0 0 0 0-4.256z"/></svg></a>
                 <a href="https://wa.me/5592991321047" target="_blank" rel="noopener noreferrer" class="fs"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
@@ -790,7 +791,7 @@
     <div class="mob-overlay" id="mob-overlay"></div>
     <nav class="mob-panel">
         <div class="mob-head">
-            <img src="../assets/images/logo.png" alt="Amazon Eco Travellers">
+            <img src="../assets/images/logo-sm.png" alt="Amazon Eco Travellers">
             <button class="mob-close" id="mob-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="mob-section">

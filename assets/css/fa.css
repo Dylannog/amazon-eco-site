@@ -1,0 +1,134 @@
+/*!
+ * Font Awesome Free 6.5.0 — subset local
+ * Contém apenas os 90 ícones usados neste site (de ~2000).
+ * Fontes: SIL OFL 1.1 | Ícones: CC BY 4.0 | Código: MIT
+ * https://fontawesome.com/license/free
+ *
+ * Gerado a partir do all.min.css oficial + pyftsubset.
+ * Para adicionar um ícone novo: incluir a regra .fa-<nome>:before aqui
+ * E re-subsetar o .woff2 correspondente incluindo o codepoint.
+ */
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../webfonts/fa-solid-900.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../webfonts/fa-regular-400.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../webfonts/fa-brands-400.woff2) format("woff2");
+}
+
+.fa,.fa-brands,.fa-classic,.fa-regular,.fa-sharp,.fa-solid,.fab,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}
+.fa-brands,.fab{font-family:"Font Awesome 6 Brands";font-weight:400}
+.fa-classic,.fa-regular,.fa-solid,.far,.fas{font-family:"Font Awesome 6 Free"}
+.fa-regular,.far{font-weight:400}
+.fa-solid,.fas{font-weight:900}
+
+.fa-anchor:before{content:"\f13d"}
+.fa-archway:before{content:"\f557"}
+.fa-arrow-right:before{content:"\f061"}
+.fa-arrows-split-up-and-left:before{content:"\e4bc"}
+.fa-award:before{content:"\f559"}
+.fa-bars:before{content:"\f0c9"}
+.fa-bed:before{content:"\f236"}
+.fa-binoculars:before{content:"\f1e5"}
+.fa-border-all:before{content:"\f84c"}
+.fa-bowl-food:before{content:"\e4c6"}
+.fa-bridge-water:before{content:"\e4ce"}
+.fa-calendar:before{content:"\f133"}
+.fa-calendar-check:before{content:"\f274"}
+.fa-calendar-days:before{content:"\f073"}
+.fa-camera:before{content:"\f030"}
+.fa-campground:before{content:"\f6bb"}
+.fa-car:before{content:"\f1b9"}
+.fa-check:before{content:"\f00c"}
+.fa-chevron-down:before{content:"\f078"}
+.fa-chevron-left:before{content:"\f053"}
+.fa-chevron-right:before{content:"\f054"}
+.fa-circle-check:before{content:"\f058"}
+.fa-circle-info:before{content:"\f05a"}
+.fa-circle-xmark:before{content:"\f057"}
+.fa-clock:before{content:"\f017"}
+.fa-cloud-rain:before{content:"\f73d"}
+.fa-compass:before{content:"\f14e"}
+.fa-dove:before{content:"\f4ba"}
+.fa-droplet:before{content:"\f043"}
+.fa-earth-americas:before{content:"\f57d"}
+.fa-envelope:before{content:"\f0e0"}
+.fa-eye:before{content:"\f06e"}
+.fa-eye-slash:before{content:"\f070"}
+.fa-facebook-f:before{content:"\f39e"}
+.fa-fan:before{content:"\f863"}
+.fa-feather:before{content:"\f52d"}
+.fa-feather-pointed:before{content:"\f56b"}
+.fa-fire:before{content:"\f06d"}
+.fa-fish:before{content:"\f578"}
+.fa-frog:before{content:"\f52e"}
+.fa-gauge-simple:before{content:"\f629"}
+.fa-globe:before{content:"\f0ac"}
+.fa-graduation-cap:before{content:"\f19d"}
+.fa-house:before{content:"\f015"}
+.fa-instagram:before{content:"\f16d"}
+.fa-language:before{content:"\f1ab"}
+.fa-leaf:before{content:"\f06c"}
+.fa-location-dot:before{content:"\f3c5"}
+.fa-magnifying-glass:before{content:"\f002"}
+.fa-map:before{content:"\f279"}
+.fa-moon:before{content:"\f186"}
+.fa-mountain:before{content:"\f6fc"}
+.fa-mug-hot:before{content:"\f7b6"}
+.fa-otter:before{content:"\f700"}
+.fa-paw:before{content:"\f1b0"}
+.fa-people-group:before{content:"\e533"}
+.fa-people-roof:before{content:"\e537"}
+.fa-person-hiking:before{content:"\f6ec"}
+.fa-person-swimming:before{content:"\f5c4"}
+.fa-plane-arrival:before{content:"\f5af"}
+.fa-plane-departure:before{content:"\f5b0"}
+.fa-plus:before{content:"\2b"}
+.fa-repeat:before{content:"\f363"}
+.fa-road:before{content:"\f018"}
+.fa-road-barrier:before{content:"\e562"}
+.fa-route:before{content:"\f4d7"}
+.fa-sailboat:before{content:"\e445"}
+.fa-seedling:before{content:"\f4d8"}
+.fa-shield-halved:before{content:"\f3ed"}
+.fa-shield-heart:before{content:"\e574"}
+.fa-ship:before{content:"\f21a"}
+.fa-shirt:before{content:"\f553"}
+.fa-shoe-prints:before{content:"\f54b"}
+.fa-socks:before{content:"\f696"}
+.fa-solar-panel:before{content:"\f5ba"}
+.fa-spray-can-sparkles:before{content:"\f5d0"}
+.fa-star:before{content:"\f005"}
+.fa-store:before{content:"\f54e"}
+.fa-sun:before{content:"\f185"}
+.fa-tent:before{content:"\e57d"}
+.fa-tower-observation:before{content:"\e586"}
+.fa-tree:before{content:"\f1bb"}
+.fa-umbrella-beach:before{content:"\f5ca"}
+.fa-user-tie:before{content:"\f508"}
+.fa-users:before{content:"\f0c0"}
+.fa-utensils:before{content:"\f2e7"}
+.fa-water:before{content:"\f773"}
+.fa-wave-square:before{content:"\f83e"}
+.fa-whatsapp:before{content:"\f232"}
+.fa-xmark:before{content:"\f00d"}
+
+/* TripAdvisor não existe no Font Awesome Free 6.5.0.
+   Renderizado como SVG inline no markup, com esta classe para alinhar
+   com os demais ícones da fileira social. */
+.ta-svg{width:1em;height:1em;display:inline-block;vertical-align:-.125em;fill:currentColor}
