@@ -555,7 +555,7 @@ header.scrolled .lb:hover, header.scrolled .lb.on { color: var(--dark); backgrou
     width: 40px;
 }
 
-.step-body h4 { font-size: 17px; font-weight: 600; color: var(--dark); margin-bottom: 6px; }
+.step-body h3 { font-size: 17px; font-weight: 600; color: var(--dark); margin-bottom: 6px; }
 .step-body p  { font-size: 15px; color: var(--gray); line-height: 1.65; }
 
 /* ── ABOUT ── */
@@ -595,7 +595,7 @@ header.scrolled .lb:hover, header.scrolled .lb.on { color: var(--dark); backgrou
     flex-shrink: 0; margin-top: 2px;
 }
 .afi i { font-size: 14px; color: var(--green); }
-.af h4 { font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+.af h3 { font-size: 15px; font-weight: 600; margin-bottom: 3px; }
 .af p  { font-size: 14px; color: var(--gray); line-height: 1.6; }
 
 .about-img {
@@ -702,7 +702,7 @@ header.scrolled .lb:hover, header.scrolled .lb.on { color: var(--dark); backgrou
 /* ── FOOTER ── */
 footer {
     background: oklch(11% 0.007 142);
-    color: oklch(58% 0.01 142);
+    color: oklch(62% 0.01 142);
     padding: 80px 56px 36px;
 }
 
@@ -726,13 +726,13 @@ footer {
 }
 .fs:hover { background: var(--green); color: var(--warm-white); }
 
-.ft-col h5 {
+.ft-col h3 {
     font-size: 10.5px; font-weight: 700;
     letter-spacing: 2px; text-transform: uppercase;
     color: oklch(84% 0.008 142); margin-bottom: 20px;
 }
 .ft-col ul { display: flex; flex-direction: column; gap: 13px; }
-.ft-col ul a { font-size: 14px; color: oklch(56% 0.01 142); transition: color 180ms var(--ease); }
+.ft-col ul a { font-size: 14px; color: oklch(64% 0.01 142); transition: color 180ms var(--ease); }
 .ft-col ul a:hover { color: var(--green); }
 
 .ft-btm {
@@ -743,8 +743,9 @@ footer {
     align-items: center;
     font-size: 13px;
 }
-.ft-btm a { color: oklch(46% 0.007 142); transition: color 180ms; }
+.ft-btm a { color: oklch(62% 0.007 142); transition: color 180ms; }
 .ft-btm a:hover { color: var(--green); }
+.ft-btm p a { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ── MOBILE NAV ── */
 .mob-btn {
@@ -795,7 +796,7 @@ header.scrolled .mob-btn { color: var(--dark); }
 .mob-close:hover { color: var(--dark); }
 
 .mob-section { margin-bottom: 28px; }
-.mob-section h6 {
+.mob-section h4 {
     font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase;
     color: var(--gray-l); margin-bottom: 4px;
 }
