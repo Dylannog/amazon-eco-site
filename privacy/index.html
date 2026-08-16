@@ -6,6 +6,15 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      var ccPrior = null;
+      try { ccPrior = localStorage.getItem('cookie-consent'); } catch (e) {}
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: ccPrior === 'granted' ? 'granted' : 'denied',
+        wait_for_update: 500
+      });
       gtag('js', new Date());
 
       gtag('config', 'G-3044ZX3CYP');
@@ -229,7 +238,8 @@
         <li><strong>WhatsApp:</strong> if you contact us directly, your phone number and messages.</li>
         <li><strong>Email:</strong> if you write to us directly, your email address and message content.</li>
     </ul>
-    <p>We do not use tracking cookies, advertising pixels, or behavioural analytics. We do not collect data automatically beyond what is described below under Third-Party Services.</p>
+    <p>We use one analytics cookie, and only if you agree to it. When you first visit the site, a banner asks whether you accept analytics cookies. If you decline — or simply ignore it — Google Analytics runs without storing anything on your device and we receive only anonymous, aggregated counts. If you accept, Google Analytics sets the cookies <code>_ga</code> and <code>_ga_3044ZX3CYP</code> to recognise repeat visits. These expire after two years and you can delete them at any time in your browser settings.</p>
+    <p>We do not use advertising pixels, remarketing tags, or cross-site tracking of any kind. We do not collect data automatically beyond what is described below under Third-Party Services.</p>
 
     <h2>3. How We Use Your Data</h2>
     <p>We use the information you provide solely to respond to your enquiry and, where relevant, to arrange and manage your booking. We do not send marketing emails, newsletters, or promotional material unless you have explicitly asked to receive them.</p>
@@ -241,12 +251,13 @@
         <li><strong>EmailJS</strong> — processes contact form submissions and sends them to our inbox. Your name, email, phone, and message are transmitted to EmailJS servers to deliver your enquiry. See <a href="https://www.emailjs.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">EmailJS Privacy Policy</a>.</li>
         <li><strong>Cloudflare</strong> — our site is served through Cloudflare's global network. Cloudflare processes request metadata (IP address, browser type) for security and performance. Cloudflare also provides aggregated, anonymised traffic analytics that we use to understand how many visitors the site receives. No individual-level tracking. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare Privacy Policy</a>.</li>
         <li><strong>Cloudflare Turnstile</strong> — our contact form uses Turnstile (a privacy-preserving CAPTCHA) to prevent spam. Turnstile does not set tracking cookies and does not build user profiles. See <a href="https://www.cloudflare.com/products/turnstile/" target="_blank" rel="noopener noreferrer">Cloudflare Turnstile</a>.</li>
+        <li><strong>Google Analytics 4</strong> — measures how many people visit the site, which pages they read, and which countries they come from. It runs only in consent mode: without your agreement no cookie is stored and no identifier is retained. We use it to improve the site, never for advertising. IP addresses are truncated by Google before storage. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
         <li><strong>Google Fonts</strong> — our site loads fonts from Google's servers, which means your IP address is transmitted to Google when the page loads. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
         <li><strong>Font Awesome (Cloudflare CDN)</strong> — icons are loaded from Cloudflare's CDN. Your IP is transmitted in the request.</li>
     </ul>
 
     <h2>5. Legal Basis for Processing</h2>
-    <p>We process your personal data on the basis of <strong>legitimate interest</strong> (responding to an enquiry you initiated) and, where a booking is involved, <strong>contractual necessity</strong>. We comply with Brazil's Lei Geral de Proteção de Dados (LGPD — Law 13,709/2018) and, where applicable, the EU General Data Protection Regulation (GDPR).</p>
+    <p>We process your personal data on the basis of <strong>legitimate interest</strong> (responding to an enquiry you initiated) and, where a booking is involved, <strong>contractual necessity</strong>. Analytics cookies are set only on the basis of your <strong>consent</strong>, which you give through the banner shown on your first visit and may withdraw at any time by clearing this site's data in your browser. We comply with Brazil's Lei Geral de Proteção de Dados (LGPD — Law 13,709/2018) and, where applicable, the EU General Data Protection Regulation (GDPR).</p>
 
     <h2>6. Data Retention</h2>
     <p>We retain enquiry and booking correspondence for a maximum of 3 years from the date of your last interaction, unless a longer period is required by Brazilian law (e.g., for fiscal or legal records). If your enquiry did not result in a booking, data is deleted within 12 months.</p>
@@ -387,5 +398,6 @@
 
 <script src="../assets/js/i18n.js" defer></script>
 <script src="../assets/js/main.js"></script>
+<script src="/assets/js/consent.js" defer></script>
 </body>
 </html>
