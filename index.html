@@ -294,26 +294,6 @@
         
         
 
-        .mob-lang {
-            display: flex; gap: 6px; margin-bottom: 24px;
-        }
-        .mob-lb {
-            flex: 1;
-            padding: 9px 0;
-            border-radius: 8px;
-            border: 1.5px solid var(--border);
-            background: none;
-            font-family: var(--b);
-            font-size: 13px; font-weight: 600;
-            color: var(--gray);
-            cursor: pointer;
-            transition: background 150ms var(--ease), color 150ms var(--ease), border-color 150ms var(--ease);
-        }
-        .mob-lb.on {
-            background: var(--green-l);
-            color: var(--green-d);
-            border-color: var(--green);
-        }
 
         
 
@@ -669,12 +649,6 @@
 <a href="blog/" class="nl" data-i18n="nav.blog">Blog</a>
         <a href="gallery/" class="nl" data-i18n="mob.gallery">Gallery</a>
         <a href="contact/" class="nl" data-i18n="nav.contact">Contact</a>
-                <div class="lang">
-            <button class="lb on">EN</button>
-            <button class="lb">DE</button>
-            <button class="lb">ES</button>
-            <button class="lb">PT</button>
-        </div>
         <a href="https://wa.me/5592991321047" target="_blank" rel="noopener noreferrer" class="btn-book" data-i18n="nav.book_now">Book Now</a>
         <button class="mob-btn" id="mob-open" aria-label="Open menu">
             <i class="fa-solid fa-bars"></i>
@@ -1231,13 +1205,6 @@
             <a href="contact/" class="mob-link" data-i18n="mob.contact">Contact</a>
         </div>
 
-        <div class="mob-lang">
-            <button class="mob-lb on" data-lang="en">EN</button>
-            <button class="mob-lb" data-lang="de">DE</button>
-            <button class="mob-lb" data-lang="es">ES</button>
-            <button class="mob-lb" data-lang="pt">PT</button>
-        </div>
-
         <a href="https://wa.me/5592991321047" target="_blank" rel="noopener noreferrer" class="mob-book" data-i18n="mob.book_wa">Book Now on WhatsApp</a>
     </nav>
 </div>
@@ -1259,22 +1226,6 @@
         }
     }, { passive: true });
 
-    // Language selector (desktop + mobile)
-    function setLang(lang) {
-        if (window.i18nSetLang) window.i18nSetLang(lang);
-        document.querySelectorAll('.lb').forEach(x => {
-            x.classList.toggle('on', x.textContent.trim().toLowerCase() === lang);
-        });
-        document.querySelectorAll('.mob-lb').forEach(x => {
-            x.classList.toggle('on', x.dataset.lang === lang);
-        });
-    }
-    document.querySelectorAll('.lb').forEach(b => {
-        b.addEventListener('click', () => setLang(b.textContent.trim().toLowerCase()));
-    });
-    document.querySelectorAll('.mob-lb').forEach(b => {
-        b.addEventListener('click', () => setLang(b.dataset.lang));
-    });
 
     // Mobile drawer
     const drawer   = document.getElementById('mob-drawer');

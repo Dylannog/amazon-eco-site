@@ -11,18 +11,6 @@ window.addEventListener('scroll', () => {
     }
 }, { passive: true });
 
-// Language selector
-document.querySelectorAll('.lb').forEach(b => {
-    b.addEventListener('click', () => {
-        if (window.i18nSetLang) {
-            window.i18nSetLang(b.textContent.trim().toLowerCase());
-        } else {
-            document.querySelectorAll('.lb').forEach(x => x.classList.remove('on'));
-            b.classList.add('on');
-        }
-    });
-});
-
 // Mobile drawer
 const drawer   = document.getElementById('mob-drawer');
 const overlay  = document.getElementById('mob-overlay');

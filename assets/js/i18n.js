@@ -7653,8 +7653,56 @@
         }
     };
 
+    /* ──────────────────────────────────────────────────────────
+       Motor de idioma — dono unico do seletor (desktop + mobile).
+       Nenhuma pagina declara markup de idioma: tudo e injetado
+       daqui, para que as 26 paginas nao possam mais divergir.
+    ────────────────────────────────────────────────────────── */
+
+    var LANGS = [
+        { code: 'en', name: 'English'    },
+        { code: 'de', name: 'Deutsch'    },
+        { code: 'es', name: 'Español'    },
+        { code: 'pt', name: 'Português'  }
+    ];
+
+    var UI = {
+        en: { label: 'Language', only_en: 'This article is only available in English.',
+              suggest: 'View this site in English?', yes: 'Yes', no: 'Keep English' },
+        de: { label: 'Sprache',  only_en: 'Dieser Artikel ist nur auf Englisch verfügbar.',
+              suggest: 'Diese Seite auf Deutsch ansehen?', yes: 'Ja', no: 'Keep English' },
+        es: { label: 'Idioma',   only_en: 'Este artículo solo está disponible en inglés.',
+              suggest: '¿Ver este sitio en español?', yes: 'Sí', no: 'Keep English' },
+        pt: { label: 'Idioma',   only_en: 'Este artigo está disponível apenas em inglês.',
+              suggest: 'Ver este site em português?', yes: 'Sim', no: 'Keep English' }
+    };
+
+    function nameOf(code) {
+        for (var i = 0; i < LANGS.length; i++) if (LANGS[i].code === code) return LANGS[i].name;
+        return code;
+    }
+
     function get(obj, key) {
         return key.split('.').reduce(function (o, k) { return o ? o[k] : undefined; }, obj);
+    }
+
+    /* ── Roteamento (Q13b) ───────────────────────────────────────
+       A propria pagina declara suas versoes fisicas via
+       <link rel="alternate" hreflang="xx">. Se existe alternate
+       para o idioma escolhido, navegamos. Se a pagina nao declara
+       nenhum alternate, o corpo e traduzido por data-i18n e a troca
+       e in-place. Uma fonte de verdade servindo SEO e UI.
+    ─────────────────────────────────────────────────────────── */
+    function alternates() {
+        var map = {};
+        document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function (l) {
+            var h = l.getAttribute('hreflang').toLowerCase();
+            if (h !== 'x-default') map[h.split('-')[0]] = l.getAttribute('href');
+        });
+        return map;
+    }
+    function declaresAlternates() {
+        return Object.keys(alternates()).length > 0;
     }
 
     function apply(lang) {
@@ -7668,25 +7716,157 @@
             if (val !== undefined) el.innerHTML = val;
         });
         document.documentElement.lang = lang;
+        syncUI(lang);
+        bodyNotice(lang);
     }
 
-    function setLang(lang) {
+    /* ── Aviso de corpo nao traduzido (Q17b) ─────────────────────
+       Dispara sozinho: a pagina declara alternates mas nao ha um
+       para o idioma escolhido -> o corpo nao existe nesse idioma.
+       Paginas sem alternates (tours, home...) nunca acionam isto.
+    ─────────────────────────────────────────────────────────── */
+    function bodyNotice(lang) {
+        var old = document.getElementById('i18n-notice');
+        if (old) old.remove();
+        if (lang === 'en' || !declaresAlternates() || alternates()[lang]) return;
+        var main = document.querySelector('main, article, .post, body');
+        if (!main) return;
+        var n = document.createElement('p');
+        n.id = 'i18n-notice';
+        n.className = 'i18n-notice';
+        n.textContent = (UI[lang] || UI.en).only_en;
+        main.insertBefore(n, main.firstChild);
+    }
+
+    function setLang(lang, src) {
         if (!T[lang]) lang = 'en';
-        localStorage.setItem('lang', lang);
-        apply(lang);
-        document.querySelectorAll('.lb').forEach(function (b) {
-            b.classList.toggle('on', b.textContent.trim().toLowerCase() === lang);
-        });
-    }
+        try { localStorage.setItem('lang', lang); } catch (e) {}
 
+        if (typeof gtag === 'function') {
+            gtag('event', 'language_change', {
+                language: lang,
+                source: src || 'selector',
+                page_path: location.pathname
+            });
+        }
+
+        var alt = alternates()[lang];
+        if (alt) { location.href = alt; return; }
+        apply(lang);
+    }
     window.i18nSetLang = setLang;
 
-    function init() {
-        var lang = localStorage.getItem('lang') || 'en';
-        apply(lang);
-        document.querySelectorAll('.lb').forEach(function (b) {
-            b.classList.toggle('on', b.textContent.trim().toLowerCase() === lang);
+    /* ── Construcao do seletor ───────────────────────────────── */
+    function buildSelector(variant) {
+        var wrap = document.createElement('div');
+        wrap.className = variant === 'mob' ? 'mob-lang' : 'lang';
+
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = variant === 'mob' ? 'mob-lang-t' : 'lang-t';
+        btn.setAttribute('aria-expanded', 'false');
+        btn.innerHTML = '<span class="lang-cur"><i class="fa-solid fa-globe"></i> ' +
+                        '<span class="lang-cur-n"></span></span>' +
+                        '<i class="fa-solid fa-chevron-down lang-ch"></i>';
+
+        var list = document.createElement('div');
+        list.className = variant === 'mob' ? 'mob-lang-list' : 'lang-list';
+        list.hidden = true;
+
+        LANGS.forEach(function (l) {
+            var b = document.createElement('button');
+            b.type = 'button';
+            b.className = variant === 'mob' ? 'mob-lb' : 'lb';
+            b.dataset.lang = l.code;
+            b.textContent = l.name;
+            b.addEventListener('click', function () {
+                setLang(l.code);
+                if (variant !== 'mob') close();   // drawer fica aberto (Q7)
+            });
+            list.appendChild(b);
         });
+
+        function close() { list.hidden = true; btn.setAttribute('aria-expanded', 'false'); wrap.classList.remove('open'); }
+        function toggle() {
+            var open = list.hidden;
+            list.hidden = !open;
+            btn.setAttribute('aria-expanded', String(open));
+            wrap.classList.toggle('open', open);
+        }
+        btn.addEventListener('click', function (e) { e.stopPropagation(); toggle(); });
+        document.addEventListener('click', function (e) { if (!wrap.contains(e.target)) close(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+
+        wrap.appendChild(btn);
+        wrap.appendChild(list);
+        return wrap;
+    }
+
+    function mount() {
+        var nav = document.querySelector('header nav');
+        if (nav && !nav.querySelector('.lang')) {
+            var book = nav.querySelector('.btn-book');
+            var d = buildSelector('desk');
+            book ? nav.insertBefore(d, book) : nav.appendChild(d);
+        }
+        var panel = document.querySelector('.mob-panel');
+        if (panel && !panel.querySelector('.mob-lang')) {
+            var head = panel.querySelector('.mob-head');
+            var m = buildSelector('mob');
+            head && head.nextSibling ? panel.insertBefore(m, head.nextSibling)
+                                     : panel.insertBefore(m, panel.firstChild);
+        }
+    }
+
+    function syncUI(lang) {
+        document.querySelectorAll('.lang-cur-n').forEach(function (el) { el.textContent = nameOf(lang); });
+        document.querySelectorAll('.lb, .mob-lb').forEach(function (b) {
+            b.classList.toggle('on', b.dataset.lang === lang);
+        });
+    }
+
+    /* ── Sugestao por navigator.language (Q9c) ───────────────────
+       Sugere, nunca impoe. Nao se oferece quando a pagina declara
+       alternates e nao ha versao no idioma detectado (Q17b).
+    ─────────────────────────────────────────────────────────── */
+    function suggest(current) {
+        var stored;
+        try { stored = localStorage.getItem('lang'); } catch (e) {}
+        if (stored) return;
+        try { if (localStorage.getItem('lang_prompted')) return; } catch (e) {}
+
+        var nav = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+        var want = nav.toLowerCase().split('-')[0];
+        if (!T[want] || want === current) return;
+        if (declaresAlternates() && !alternates()[want]) return;
+
+        var u = UI[want] || UI.en;
+        var bar = document.createElement('div');
+        bar.className = 'i18n-suggest';
+        bar.setAttribute('role', 'region');
+        bar.innerHTML = '<span>' + u.suggest + '</span>';
+
+        var ok = document.createElement('button');
+        ok.className = 'i18n-suggest-y'; ok.type = 'button'; ok.textContent = u.yes;
+        ok.addEventListener('click', function () { mark(); setLang(want, 'suggest_banner'); bar.remove(); });
+
+        var no = document.createElement('button');
+        no.className = 'i18n-suggest-n'; no.type = 'button'; no.textContent = u.no;
+        no.addEventListener('click', function () { mark(); bar.remove(); });
+
+        function mark() { try { localStorage.setItem('lang_prompted', '1'); } catch (e) {} }
+
+        bar.appendChild(ok); bar.appendChild(no);
+        document.body.appendChild(bar);
+    }
+
+    function init() {
+        var lang;
+        try { lang = localStorage.getItem('lang'); } catch (e) {}
+        lang = T[lang] ? lang : 'en';
+        mount();
+        apply(lang);
+        suggest(lang);
     }
 
     if (document.readyState === 'loading') {
