@@ -28,7 +28,7 @@ Amazon rainforest tours departing from Manaus, Brazil. Day excursions and short 
 
 ### Amazon Lodge
 - Duration: 2 days / 1 night
-- Price: R$ 1,000 per person
+- Price: R$ 1,200 per person
 - Details: https://amazonecotravellers.com/tours/amazon-lodge/
 
 ### Jungle Lodge Expedition
