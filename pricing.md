@@ -48,7 +48,7 @@ Amazon rainforest tours departing from Manaus, Brazil. Day excursions and short 
 
 ### Amazon Expedition
 - Duration: 6 days / 5 nights
-- Price: R$ 6,000 per person, premium/private only (min. 2 guests) | R$ 8,400 single occupancy
+- Price: R$ 6,000 per person, premium/private only (min. 2 guests) | R$ 10,000 single occupancy
 - Details: https://amazonecotravellers.com/tours/amazon-expedition/
 
 ### Amazon Explorers
