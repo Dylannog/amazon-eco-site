@@ -28,22 +28,22 @@ Amazon rainforest tours departing from Manaus, Brazil. Day excursions and short 
 
 ### Amazon Lodge
 - Duration: 2 days / 1 night
-- Price: R$ 1,200 per person
+- Price: R$ 1,400 per person
 - Details: https://amazonecotravellers.com/tours/amazon-lodge/
 
 ### Jungle Lodge Expedition
 - Duration: 3 days / 2 nights
-- Price: R$ 1,500 per person (private room, en-suite + AC, min. 2 guests) | R$ 1,900 single occupancy
+- Price: R$ 1,800 per person (private room, en-suite + AC, min. 2 guests) | R$ 2,200 single occupancy
 - Details: https://amazonecotravellers.com/tours/jungle-lodge-3days/
 
 ### Jungle Retreat
 - Duration: 4 days / 3 nights
-- Price: R$ 2,000 per person (shared room, min. 2 guests) | R$ 2,400 single occupancy
+- Price: R$ 2,400 per person (shared room, min. 2 guests) | R$ 2,800 single occupancy
 - Details: https://amazonecotravellers.com/tours/jungle-retreat/
 
 ### The Full Amazon
 - Duration: 5 days / 4 nights
-- Price: R$ 2,500 per person (private room, min. 2 guests) | R$ 2,900 single room | R$ 5,000 per person premium/private (min. 2 guests)
+- Price: R$ 3,000 per person (private room, min. 2 guests) | R$ 3,400 single room | R$ 5,000 per person premium/private (min. 2 guests)
 - Details: https://amazonecotravellers.com/tours/amazon-complete/
 
 ### Amazon Expedition
@@ -86,7 +86,7 @@ Amazon rainforest tours departing from Manaus, Brazil. Day excursions and short 
 
 ## Notes
 
-- Prices last updated: 2026-06-16
+- Prices last updated: 2026-10-26
 - Custom itineraries and larger groups: quote via WhatsApp +55 92 99132-1047
 - Full tour list: https://amazonecotravellers.com/tours/
 - Machine-readable site overview: https://amazonecotravellers.com/llms.txt
