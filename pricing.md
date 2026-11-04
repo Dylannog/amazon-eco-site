@@ -28,17 +28,17 @@ Amazon rainforest tours departing from Manaus, Brazil. Day excursions and short 
 
 ### Amazon Lodge
 - Duration: 2 days / 1 night
-- Price: R$ 1,400 per person
+- Price: Standard R$ 1,400 per person (min. 2 guests) | R$ 1,800 single occupancy · Premium (private) R$ 2,000 per person (min. 2 guests) | R$ 3,600 single occupancy
 - Details: https://amazonecotravellers.com/tours/amazon-lodge/
 
 ### Jungle Lodge Expedition
 - Duration: 3 days / 2 nights
-- Price: R$ 1,800 per person (private room, en-suite + AC, min. 2 guests) | R$ 2,200 single occupancy
+- Price: Standard R$ 1,800 per person (min. 2 guests) | R$ 2,200 single occupancy · Premium (private) R$ 3,000 per person (min. 2 guests) | R$ 4,500 single occupancy
 - Details: https://amazonecotravellers.com/tours/jungle-lodge-3days/
 
 ### Jungle Retreat
 - Duration: 4 days / 3 nights
-- Price: R$ 2,400 per person (shared room, min. 2 guests) | R$ 2,800 single occupancy
+- Price: Standard R$ 2,400 per person (min. 2 guests) | R$ 2,800 single occupancy · Premium (private) R$ 4,000 per person (min. 2 guests) | R$ 5,750 single occupancy
 - Details: https://amazonecotravellers.com/tours/jungle-retreat/
 
 ### The Full Amazon
@@ -76,17 +76,22 @@ Amazon rainforest tours departing from Manaus, Brazil. Day excursions and short 
 - Price: R$ 20,000 per person (min. 2 guests)
 - Details: https://amazonecotravellers.com/tours/ecological-expedition/
 
+## Standard vs Premium
+
+- Standard: shared small group (up to 8 guests); activities, guides and transport in group; simpler lodge.
+- Premium (private): activities, guides and transport private to your group; newer, more comfortable lodge.
+
 ## What is included
 
 - Naturalist guide (English, Portuguese, Spanish or German)
-- All transfers from/to Manaus
+- All transfers, including airport and Manaus hotel pickup/drop-off
 - Accommodation (eco-lodge, riverboat or jungle camp, per itinerary)
 - All meals during the tour
 - Listed activities and excursions
 
 ## Notes
 
-- Prices last updated: 2026-10-26
+- Prices last updated: 2026-11-04
 - Custom itineraries and larger groups: quote via WhatsApp +55 92 99132-1047
 - Full tour list: https://amazonecotravellers.com/tours/
 - Machine-readable site overview: https://amazonecotravellers.com/llms.txt
