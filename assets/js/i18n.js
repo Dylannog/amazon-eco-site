@@ -7809,15 +7809,22 @@
         return Object.keys(alternates()).length > 0;
     }
 
+    /* So reescreve o que muda de fato. Reescrever um texto identico (ex.: o
+       H1 da home em ingles) cria um novo candidato a LCP depois que este
+       arquivo baixa, e o LCP no celular passava de 7 s. */
+    function same(a, b) {
+        return a.replace(/\s+/g, ' ').trim() === String(b).replace(/\s+/g, ' ').trim();
+    }
+
     function apply(lang) {
         var data = T[lang] || T.en;
         document.querySelectorAll('[data-i18n]').forEach(function (el) {
             var val = get(data, el.dataset.i18n);
-            if (val !== undefined) el.textContent = val;
+            if (val !== undefined && !same(el.textContent, val)) el.textContent = val;
         });
         document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
             var val = get(data, el.dataset.i18nHtml);
-            if (val !== undefined) el.innerHTML = val;
+            if (val !== undefined && !same(el.innerHTML, val)) el.innerHTML = val;
         });
         document.documentElement.lang = lang;
         syncUI(lang);

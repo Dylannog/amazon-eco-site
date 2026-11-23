@@ -22,6 +22,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="image" type="image/webp" href="assets/images/hero-m.webp" media="(max-width: 768px) and (orientation: portrait)" fetchpriority="high">
+    <link rel="preload" as="image" type="image/webp" imagesrcset="assets/images/hero-1280.webp 1280w, assets/images/hero-1920.webp 1920w" imagesizes="100vw" media="not all and (max-width: 768px) and (orientation: portrait)" fetchpriority="high">
     <meta name="description" content="Expert naturalist-guided Amazon tours from Manaus, Brazil. Wildlife, rivers & rainforest expeditions with eco-lodge stays. Book your Amazon tour today.">
     <title>Amazon Tours Manaus, Brazil | Amazon Eco Travellers</title>
     <link rel="canonical" href="https://amazonecotravellers.com/">
@@ -53,7 +55,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preload" href="assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/css/fa.css">
+    <link rel="stylesheet" href="assets/css/fa.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/fa.css"></noscript>
     <link rel="stylesheet" href="assets/css/main.css">
 
     <style>
@@ -109,6 +111,7 @@
         /* ── HERO ── */
         #hero {
             min-height: 100svh;
+            background: oklch(26% 0.05 140); /* tom da mata enquanto a foto chega */
             position: relative;
             display: flex;
             flex-direction: column;
@@ -120,8 +123,14 @@
 
         .hero-bg {
             position: absolute; inset: 0;
-            background: url('assets/images/hero.jpg') center 34% / cover no-repeat;
             transform: scale(1.04);
+        }
+        .hero-bg picture,
+        .hero-bg img {
+            display: block;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            object-position: center 34%;
         }
 
         
@@ -466,13 +475,15 @@
             from { opacity: 0; transform: translateY(32px); }
             to   { opacity: 1; transform: translateY(0); }
         }
+        /* sem fade de opacidade: a foto e o LCP no celular e o Chrome ignora
+           elementos que comecam com opacity 0. Fica so o zoom suave. */
         @keyframes heroBgIn {
-            from { opacity: 0; transform: scale(1.1); }
-            to   { opacity: 1; transform: scale(1.04); }
+            from { transform: scale(1.1); }
+            to   { transform: scale(1.04); }
         }
         .hero-bg  { animation: heroBgIn 2.2s var(--ease) both; }
         .hero-ey  { opacity: 0; animation: heroFadeUp 0.9s var(--ease) 0.25s forwards; }
-        .hero-h   { opacity: 0; animation: heroFadeUp 1.1s var(--ease) 0.45s forwards; }
+        /* .hero-h sem animacao de entrada: e o elemento LCP no celular. */
         .hero-s   { opacity: 0; animation: heroFadeUp 0.9s var(--ease) 0.68s forwards; }
         .hero-btns { opacity: 0; animation: heroFadeUp 0.9s var(--ease) 0.9s forwards; }
         .hero-scroll { opacity: 0; animation: heroFadeUp 0.8s var(--ease) 1.5s forwards; }
@@ -613,7 +624,7 @@
 ────────────────────────────────── -->
 <header id="hdr">
     <a href="./" class="logo">
-        <img class="logo-w" fetchpriority="high" src="assets/images/logo-white-sm.png" alt="Amazon Eco Travellers">
+        <img class="logo-w" src="assets/images/logo-white-sm.png" alt="Amazon Eco Travellers">
         <img class="logo-c" src="assets/images/logo-sm.png" alt="Amazon Eco Travellers">
     </a>
     <nav>
@@ -661,7 +672,13 @@
      HERO
 ────────────────────────────────── -->
 <section id="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+        <picture>
+            <source media="(max-width: 768px) and (orientation: portrait)" srcset="assets/images/hero-m.webp" type="image/webp">
+            <source srcset="assets/images/hero-1280.webp 1280w, assets/images/hero-1920.webp 1920w" sizes="100vw" type="image/webp">
+            <img src="assets/images/hero.jpg" alt="" width="1920" height="1272" fetchpriority="high">
+        </picture>
+    </div>
     <div class="hero-ov"></div>
     <div class="hero-c">
         <p class="hero-ey" data-i18n="home.hero_eyebrow">Naturalist-led Expeditions · Manaus, Brazil</p>
@@ -729,7 +746,7 @@
 
         <div class="tc rv d1">
             <div class="tc-photo grad-1">
-                <img src="assets/images/tours/al-canopy-card.webp" alt="Amazon Lodge 2-day overnight tour from Manaus — giant rainforest canopy, pink dolphin habitat and night caiman search" loading="eager" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/al-canopy-card-640.webp" srcset="assets/images/tours/al-canopy-card-400.webp 400w, assets/images/tours/al-canopy-card-640.webp 640w, assets/images/tours/al-canopy-card-800.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(50vw - 52px), calc(33vw - 53px)" width="400" height="300" alt="Amazon Lodge 2-day overnight tour from Manaus — giant rainforest canopy, pink dolphin habitat and night caiman search" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-house"></i></div>
                 <span class="tc-pill" data-i18n="common.pill_1n">2 Days · 1 Night</span>
             </div>
@@ -749,7 +766,7 @@
 
         <div class="tc featured rv d2">
             <div class="tc-photo grad-2">
-                <img src="assets/images/tours/jle-wildlife-card.webp" alt="Jungle Lodge Expedition 3-day Amazon tour from Manaus — lodge nights, wildlife, caiman search by canoe" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/jle-wildlife-card-640.webp" srcset="assets/images/tours/jle-wildlife-card-400.webp 400w, assets/images/tours/jle-wildlife-card-640.webp 640w, assets/images/tours/jle-wildlife-card.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(100vw - 80px), 600px" width="400" height="267" alt="Jungle Lodge Expedition 3-day Amazon tour from Manaus — lodge nights, wildlife, caiman search by canoe" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-tree"></i></div>
                 <span class="tc-pill" data-i18n="common.pill_2n">3 Days · 2 Nights</span>
                 <span class="tc-pop" data-i18n="common.most_pop">Most Popular</span>
@@ -770,7 +787,7 @@
 
         <div class="tc rv d3">
             <div class="tc-photo grad-3">
-                <img src="assets/images/tours/jr-community-card.webp" alt="Jungle Retreat 4-day Amazon tour from Manaus — lodge and jungle camp, riverside caboclo community" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/jr-community-card-640.webp" srcset="assets/images/tours/jr-community-card-400.webp 400w, assets/images/tours/jr-community-card-640.webp 640w, assets/images/tours/jr-community-card.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(50vw - 52px), calc(33vw - 53px)" width="400" height="301" alt="Jungle Retreat 4-day Amazon tour from Manaus — lodge and jungle camp, riverside caboclo community" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-tent"></i></div>
                 <span class="tc-pill" data-i18n="common.pill_3n">4 Days · 3 Nights</span>
             </div>
@@ -790,7 +807,7 @@
 
         <div class="tc rv d4">
             <div class="tc-photo grad-4">
-                <img src="assets/images/tours/fa-wildlife-card.webp" alt="The Full Amazon 5-day tour from Manaus — jungle lodge, wildlife and a night camping in the rainforest" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/fa-wildlife-card-640.webp" srcset="assets/images/tours/fa-wildlife-card-400.webp 400w, assets/images/tours/fa-wildlife-card-640.webp 640w, assets/images/tours/fa-wildlife-card-800.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(50vw - 52px), calc(33vw - 53px)" width="400" height="300" alt="The Full Amazon 5-day tour from Manaus — jungle lodge, wildlife and a night camping in the rainforest" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-leaf"></i></div>
                 <span class="tc-pill" data-i18n="common.pill_4n">5 Days · 4 Nights</span>
             </div>
@@ -810,7 +827,7 @@
 
         <div class="tc rv d5">
             <div class="tc-photo grad-5">
-                <img src="assets/images/tours/ex6-hero-card.webp" alt="Amazon Expedition 6-day deep forest tour from Manaus — lodge and tapiri jungle camp at Lago do Arara" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/ex6-hero-card-640.webp" srcset="assets/images/tours/ex6-hero-card-400.webp 400w, assets/images/tours/ex6-hero-card-640.webp 640w, assets/images/tours/ex6-hero-card.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(50vw - 52px), calc(33vw - 53px)" width="400" height="225" alt="Amazon Expedition 6-day deep forest tour from Manaus — lodge and tapiri jungle camp at Lago do Arara" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-campground"></i></div>
                 <span class="tc-pill" data-i18n="common.pill_5n">6 Days · 5 Nights</span>
             </div>
@@ -845,7 +862,7 @@
 
         <div class="tc rv d1">
             <div class="tc-photo grad-6">
-                <img src="assets/images/tours/an-indigenous-ceremony-card.webp" alt="Indigenous village ceremony visit on Pink Dolphins day tour from Manaus" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/an-indigenous-ceremony-card-640.webp" srcset="assets/images/tours/an-indigenous-ceremony-card-400.webp 400w, assets/images/tours/an-indigenous-ceremony-card-640.webp 640w, assets/images/tours/an-indigenous-ceremony-card-800.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(50vw - 52px), calc(33vw - 53px)" width="400" height="300" alt="Indigenous village ceremony visit on Pink Dolphins day tour from Manaus" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-water"></i></div>
                 <span class="tc-pill" data-i18n="common.pill_1day">1 Day</span>
             </div>
@@ -866,7 +883,7 @@
 
         <div class="tc rv d2">
             <div class="tc-photo grad-7">
-                <img src="assets/images/tours/ariau-river-card.webp" alt="Ariau River and Rio Negro day tour from Manaus — Anavilhanas archipelago, macaws, monkeys and Amazon beach" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/ariau-river-card-640.webp" srcset="assets/images/tours/ariau-river-card-400.webp 400w, assets/images/tours/ariau-river-card-640.webp 640w, assets/images/tours/ariau-river-card.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(50vw - 52px), calc(33vw - 53px)" width="400" height="225" alt="Ariau River and Rio Negro day tour from Manaus — Anavilhanas archipelago, macaws, monkeys and Amazon beach" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-tree"></i></div>
                 <span class="tc-pill">1 Day</span>
             </div>
@@ -887,7 +904,7 @@
 
         <div class="tc rv d3">
             <div class="tc-photo grad-8">
-                <img src="assets/images/tours/pink-dolphins-boto-card.webp" alt="Pink Dolphins and Anavilhanas Archipelago day trip from Manaus — Novo Airão, wild river beaches and 400-island labyrinth" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/pink-dolphins-boto-card-640.webp" srcset="assets/images/tours/pink-dolphins-boto-card-400.webp 400w, assets/images/tours/pink-dolphins-boto-card-640.webp 640w, assets/images/tours/pink-dolphins-boto-card.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(50vw - 52px), calc(33vw - 53px)" width="400" height="267" alt="Pink Dolphins and Anavilhanas Archipelago day trip from Manaus — Novo Airão, wild river beaches and 400-island labyrinth" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-map"></i></div>
                 <span class="tc-pill">1 Day</span>
             </div>
@@ -907,7 +924,7 @@
 
         <div class="tc rv d4">
             <div class="tc-photo grad-9">
-                <img src="assets/images/tours/pf-hero-card.webp" alt="Presidente Figueiredo day tour from Manaus — ancient sandstone caves, waterfalls and natural swimming pools" loading="lazy" onload="this.parentElement.classList.add('has-img')">
+                <img src="assets/images/tours/pf-hero-card-640.webp" srcset="assets/images/tours/pf-hero-card-400.webp 400w, assets/images/tours/pf-hero-card-640.webp 640w, assets/images/tours/pf-hero-card.webp 800w" sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1100px) calc(50vw - 52px), calc(33vw - 53px)" width="400" height="150" alt="Presidente Figueiredo day tour from Manaus — ancient sandstone caves, waterfalls and natural swimming pools" loading="lazy" decoding="async" onload="this.parentElement.classList.add('has-img')">
                 <div class="tc-ph"><i class="fa-solid fa-mountain"></i></div>
                 <span class="tc-pill" data-i18n="common.pill_1priv">1 Day · Private</span>
             </div>
